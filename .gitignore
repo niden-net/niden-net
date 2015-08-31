@@ -1,0 +1,14 @@
+# .htaccess
+.htaccess
+
+# Composer
+vendor/
+composer.lock
+
+# PHPStorm
+.idea/
+
+# Cache
+var/cache/
+var/log/
+var/config/config.php
