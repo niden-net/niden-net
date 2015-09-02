@@ -86,5 +86,8 @@ blockquote {
     float: right;
     margin-bottom: 1em;
     margin-left: 1em;
-    height: 100px;
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
 }

@@ -1,6 +1,7 @@
 ### Building a web app with PhalconPHP and AngularJS Update
 
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.jpg" />
+<img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
 It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](http://www.harryhogfootball.com/) using [PhalconPHP](http://phalconphp.com/) and [AngularJS](http://angularjs.org/)
 
