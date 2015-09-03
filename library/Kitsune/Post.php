@@ -78,14 +78,9 @@ class Post extends PhInjectable
         return $this->data['file'];
     }
 
-    public function getDisqusId()
+    public function getGooglePlusUrl()
     {
-        return $this->data['disqusId'];
-    }
-
-    public function getDisqusUrl()
-    {
-        return $this->data['disqusUrl'];
+        return $this->data['googlePlusUrl'];
     }
 
     public function __construct($post)
@@ -104,20 +99,16 @@ class Post extends PhInjectable
         $this->data['link']  = $post['link'];
 
         /**
-         * Old Tumblr posts have a link so we need the unique identifier
-         * from them to be able to link to disqus
+         * Old Blogger posts have a link so we need the unique identifier
          */
-        if ($this->getLink()) {
-            $this->data['disqusUrl'] = 'http://phalconphp.tumblr.com/post/'
-                                     . $this->getLink();
-            $this->data['disqusId']  = 'Phalcon Framework - '
-                                     . $this->getTitle();
-        } else {
-            $this->data['disqusUrl'] = 'https://blog.phalconphp.com/post/'
-                                     . $this->getSlug();
-            $this->data['disqusId']  = 'Phalcon Framework - ' .
-                                     str_replace(['"', "''"], ['', ''], $this->getTitle());
-        }
+        $scheme = ($this->getLink()) ? 'http'           : 'https';
+        $url    = ($this->getLink()) ? $this->getLink() : $this->getSlug();
+
+        $this->data['googlePlusUrl'] = sprintf(
+            '%s://www.niden.net/%s',
+            $scheme,
+            $url
+        );
 
         $this->data['file'] = sprintf(
             '%s/%s/%s-%s.md',

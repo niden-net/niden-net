@@ -83,5 +83,6 @@
         <script type="text/javascript"
                 src="//cdn.jsdelivr.net/g/jquery@2.1,bootstrap@3.1,prettify@0.1(prettify.js+lang-css.js+lang-sql.js)"></script>
         <script type="text/javascript">prettyPrint();</script>
+        <script src="https://apis.google.com/js/plusone.js"></script>
     </body>
 </html>
