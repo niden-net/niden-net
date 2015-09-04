@@ -91,12 +91,21 @@ class PostsController extends Controller
     }
 
 
-    public function viewLegacyBySlugAction($time, $slug)
+    public function viewLegacy($year, $month, $slug)
     {
+        prd('legacy');
         $this->dispatcher->forward(
             [
                 'controller' => 'errors',
-                'action'     => 'show404'
+                'action'     => 'show404',
+                'params'     => [
+                    sprintf(
+                        '%s/%s/%s',
+                        $year,
+                        $month,
+                        $slug
+                    )
+                ]
             ]
         );
     }

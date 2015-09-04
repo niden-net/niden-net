@@ -91,3 +91,9 @@ blockquote {
     max-width: 150px;
     max-height: 150px;
 }
+
+.tags-container {
+    border-top: 1px solid #000066;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

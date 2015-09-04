@@ -85,13 +85,5 @@ return [
             'controller' => 'posts',
             'action'     => 'index'
         ],
-        '/{page:[0-9]+}' => [
-            'controller' => 'posts',
-            'action'     => 'index'
-        ],
-        '/{page:[0-9]+}/{number:[0-9]+}' => [
-            'controller' => 'posts',
-            'action'     => 'index'
-        ],
     ],
 ];

@@ -1,5 +1,19 @@
 [
   {
+    "title": "Downgrading PHPUnit from 3.6 to 3.5",
+    "slug": "downgrading-phpunit-from-36-to-35",
+    "date": "2012-01-15",
+    "tags": "phpunit, linux, how-to",
+    "link": "2012\/01\/downgrading-phpunit-from-36-to-35.html"
+  },
+  {
+    "title": "Localization and Country Regions",
+    "slug": "localization-and-country-regions",
+    "date": "2012-03-05",
+    "tags": "localization, github, json",
+    "link": "2012\/03\/localization-and-country-regions.html"
+  },
+  {
     "title": "How to build an inexpensive RAID for storage and streaming",
     "slug": "how-to-build-inexpensive-raid-for-storage-and-streaming",
     "date": "2012-06-29",
