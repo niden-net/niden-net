@@ -560,13 +560,15 @@ var ngModule = angular.module(
     )
 ```
 
-### Conclusion
+#### Conclusion
 
 I spent at most a day working on this mostly because I wanted to try various things and see how it works. The actual time to convert the application (because let's face it, it is a small application) was a couple of hours inclusive of the time it took me to rename certain fields, restructure the folder structure, compile the new extension on my server and upload the data upstream.
 
 I am very satisfied with both [AngularJS](http://angularjs.org/), which helps tremendously in my presentation layer, as well as with [Phalcon](https://phalconphp.com/). Phalcon's new design makes implementation a breeze, while [AngularJS](<a href="http://angularjs.org/) offers a lot of flexibility on the view layer.
 
 As written before, you are more than welcome to download the [source code](https://github.com/niden/phalcon-angular-harryhogfootball) of this application here and use it for your own needs. Some resources are:
+
+#### References
 
 * [AngularJS main site](http://angularjs.org/)
 * [AngularJS documentation](http://docs.angularjs.org/api)

@@ -13,7 +13,6 @@
         </div>
         <div class="g-comments"
              data-href="{{ post.getGooglePlusUrl() }}"
-             data-width="642"
              data-first_party_property="BLOGGER"
              data-view_type="FILTERED_POSTMOD">
         </div>
