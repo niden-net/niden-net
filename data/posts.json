@@ -1,5 +1,12 @@
 [
   {
+    "title": "Fast serialization of data in PHP",
+    "slug": "fast-serialization-of-data-in-php",
+    "date": "2011-11-22",
+    "tags": "php, performance, igbinary, serialize, json, how-to",
+    "link": "2011\/11\/fast-serialization-of-data-in-php-how.html"
+  },
+  {
     "title": "Change the encoding of a MySQL database to UTF8",
     "slug": "change-encoding-of-mysql-database-to-utf8",
     "date": "2011-12-09",
@@ -21,11 +28,25 @@
     "link": "2012\/03\/localization-and-country-regions.html"
   },
   {
+    "title": "2012 Memorial Day",
+    "slug": "2012-memorial-day",
+    "date": "2012-05-28",
+    "tags": "usa, celebrations",
+    "link": "2012\/05\/2012-memorial-day-usacelebrations.html"
+  },
+  {
     "title": "How to build an inexpensive RAID for storage and streaming",
     "slug": "how-to-build-inexpensive-raid-for-storage-and-streaming",
     "date": "2012-06-29",
     "tags": "storage, nas, how-to",
     "link": "2012\/06\/how-to-build-inexpensive-raid-for.html"
+  },
+  {
+    "title": "2012 4th of July - Independence Day",
+    "slug": "2012-independence-day",
+    "date": "2012-07-04",
+    "tags": "usa, celebrations",
+    "link": "2012\/07\/2012-4th-of-july-independence-day.html"
   },
   {
     "title": "Building a web app with PhalconPHP and AngularJS Part I",
@@ -54,6 +75,13 @@
     "date": "2012-11-25",
     "tags": "php, phalcon, angularjs, how-to",
     "link": "2012\/11\/building-web-app-with-phalconphp-and.html"
+  },
+  {
+    "title": "2013 Memorial Day",
+    "slug": "2013-memorial-day",
+    "date": "2013-05-27",
+    "tags": "usa, celebrations",
+    "link": "2013\/05\/2013-memorial-day-usacelebrations.html"
   },
   {
     "title": "Voting for Phalcon as a cPanel feature woes",
