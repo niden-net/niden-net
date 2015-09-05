@@ -1,5 +1,12 @@
 [
   {
+    "title": "Change the encoding of a MySQL database to UTF8",
+    "slug": "change-encoding-of-mysql-database-to-utf8",
+    "date": "2011-12-09",
+    "tags": "php, mysql, encoding, utf8, how-to",
+    "link": "2011\/12\/change-encoding-of-mysql-database-to.html"
+  },
+  {
     "title": "Downgrading PHPUnit from 3.6 to 3.5",
     "slug": "downgrading-phpunit-from-36-to-35",
     "date": "2012-01-15",
