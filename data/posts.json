@@ -1,5 +1,33 @@
 [
   {
+    "title": "Annoyed",
+    "slug": "annoyed",
+    "date": "2009-11-16",
+    "tags": "personal, rant",
+    "link": "2009\/11\/annoyed.html"
+  },
+  {
+    "title": "Relationships and the Internet",
+    "slug": "relationships-and-the-internet",
+    "date": "2009-11-17",
+    "tags": "communications, internet, relationships",
+    "link": "2009\/11\/relationships-and-internet_16.html"
+  },
+  {
+    "title": "Flexible storage in MySQL",
+    "slug": "flexible-storage-in-mysql",
+    "date": "2009-11-18",
+    "tags": "storage, programming, mysql, how-to",
+    "link": "2009\/11\/flexible-storage-in-mysql-how-to_16.html"
+  },
+  {
+    "title": "Gentoo Stage 1 Installation",
+    "slug": "gentoo-stage-1-installation",
+    "date": "2009-11-19",
+    "tags": "gentoo, installation, linux, notebook, how-to",
+    "link": "2009\/11\/gentoo-stage-1-installation-how-to_16.html"
+  },
+  {
     "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11",

@@ -7,7 +7,7 @@
         <div class="tags-container">
             {% for tag in post.getTags() %}
             <a href="/tag/{{ tag }}">
-                <span class="badge">{{ tag }}</span>
+                <span class="label label-info">{{ tag }}</span>
             </a>
             {% endfor %}
         </div>
