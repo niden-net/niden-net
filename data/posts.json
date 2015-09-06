@@ -1,5 +1,19 @@
 [
   {
+    "title": "New beginnings – sleep(6566400)",
+    "slug": "new-beginnings-sleep6566400",
+    "date": "2011-11-11",
+    "tags": "personal, update",
+    "link": "2011\/11\/new-beginnings-sleep6566400.html"
+  },
+  {
+    "title": "Git pre-commit - Another check to ensure clean code",
+    "slug": "git-pre-commit-another-check-to-ensure-clean-code",
+    "date": "2011-11-13",
+    "tags": "git, how-to",
+    "link": "2011\/11\/git-pre-commit-another-check-to-ensure.html"
+  },
+  {
     "title": "Fast serialization of data in PHP",
     "slug": "fast-serialization-of-data-in-php",
     "date": "2011-11-22",

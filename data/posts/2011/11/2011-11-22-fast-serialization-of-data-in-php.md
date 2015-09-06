@@ -1,6 +1,6 @@
 ## Fast serialization of data in PHP
 
-<img class="post-image" src="{{ cdnUrl }}/files/2011-11-22-serialization.jpg" />
+<img class="post-image" src="{{ cdnUrl }}/files/2011-11-22-serialization.png" />
 
 ### Serializing/Unserializing data
 

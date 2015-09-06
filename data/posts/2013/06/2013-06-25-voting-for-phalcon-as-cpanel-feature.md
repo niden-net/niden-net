@@ -1,6 +1,6 @@
-### Voting for Phalcon as a cPanel feature woes
+## Voting for Phalcon as a cPanel feature woes
 
-<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.jpg" />
+<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 
 Those that have been following my blog and posts on [Google+](http://l.niden.net/nikos-g+) know that for the last year or so I have been involved heavily in [PhalconPHP](http://www.phalconphp.com/), a C based PHP framework, which delivers its functionality as an extension loaded on the web server.
 

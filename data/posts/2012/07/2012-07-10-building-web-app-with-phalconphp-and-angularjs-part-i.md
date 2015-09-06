@@ -1,6 +1,6 @@
-### Building a web app with PhalconPHP and AngularJS Part I
+## Building a web app with PhalconPHP and AngularJS Part I
 
-<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.jpg" />
+<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
 There are ample frameworks on the Internet, most free, that a programmer can use to build a web application. Two of these frameworks are [PhalconPHP](https://phalconphp.com) and [AngularJS](http://angularjs.org).
@@ -27,7 +27,7 @@ This of course is by no means the perfect implementation. It has been a fun proj
 
 NOTE: The Github repository contains code that works with nginx. If you are having problems with Apache, check the `public/index.php` - there is a note there for nginx (probably will need to remove it)
 
-#### References
+### References
 
 * [AngularJS main site](http://angularjs.org/)
 * [AngularJS documentation](http://docs.angularjs.org/api)

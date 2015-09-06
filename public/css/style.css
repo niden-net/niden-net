@@ -1,14 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400);
-
 body {
     padding-top: 50px;
     overflow: hidden;
-    font-family: 'Lato', serif;
+    font-family: Georgia, serif;
     font-size: 16px;
 }
 
 h1,h2,h3,h4 {
-    font-family: 'Lato', serif;
+    font-family: Georgia, serif;
     font-weight: 800;
 }
 

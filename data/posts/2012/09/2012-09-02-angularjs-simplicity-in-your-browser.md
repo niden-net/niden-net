@@ -1,4 +1,4 @@
-### AngularJS - Simplicity in your browser
+## AngularJS - Simplicity in your browser
 
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
@@ -6,10 +6,10 @@ Recently I was contacted by an acquaintance through my Google+ circles, who need
 
 Her task was to redesign a church website. Pretty simple stuff, CSS, HTML and content.
 
-#### Scope
+### Scope
 The particular church videotapes all the sermons and posts them on their channel in [LiveStream](http://www.livestream.com/) for their followers to watch. One of the requirements was to redo the video archives page and to offer a link where followers can download the audio of each sermon for listening.
 
-#### Design (kinda)
+### Design (kinda)
 After the initial contact, I decided to get rid of all the bloated [jQuery](http://www.jquery.com/) code that was there to control the video player and use [AngularJS](http://angularjs.org/) to control the generation of content. There were two key facts that influenced my decision:
 
 * the use of `ng-repeat` to generate the table that will list all the available sermons and
@@ -17,7 +17,7 @@ After the initial contact, I decided to get rid of all the bloated [jQuery](http
 
 I also decided to switch the player to a new updated one that [LiveStream](http://www.livestream.com/) offered, which features a slider to jump through the video, volume control and more.
 
-#### Previous code
+### Previous code
 The previous code for that page was around 300 lines. The file had some CSS in it, quite a few lines of HTML but was heavy on javascript. There were a lot of [jQuery](http://www.jquery.com/) functions which controlled the retrieval of the available videos per playlist. Each playlist would be effectively a collection of videos for a particular year. [jQuery](http://www.jquery.com/) was observing clicks on specific links and make an AJAX call to the [LiveStream](http://www.livestream.com/) API to retrieve the list of available data in JSON format, and output the formatted results (as a table) on screen. It was something like this:
 
 ```js
@@ -61,7 +61,7 @@ end body
 end html
 ```
 
-#### Enter AngularJS
+### Enter AngularJS
 I checked the latest video player from [LiveStream](http://www.livestream.com/). The code was much cleaner and all I had to do is bind one variable, the GUID of the video, in the relevant call so that the video can be played. I also bound another variable (the video title) above the video so as to offer more information to the user.
 
 With a bit of Bootstrap CSS, I created two tabs and listed the two years 2012, 2011. A function was created in my [AngularJS](http://angularjs.org/) module to accept the year and make the relevant call to the [LiveStream](http://www.livestream.com/) API to receive the data a a JSON object.
@@ -194,7 +194,7 @@ The final page looks something like this:
 
 ![]({{ cdnUrl }}/files/2012-09-02-sermon.png)
 
-#### Pointers
+### Pointers
 
 ```html
 <div id="playerContainer" style='text-align:center;'>
@@ -245,7 +245,7 @@ Finally the data is displayed on screen. `ng-cloak` makes sure that the content 
 
 The description of the video is used as a storage for the URL that will point to the MP3 audio file so as the users can download it. Therefore I use `ng-show` to show the link, if it exists.
 
-#### Conclusion
+### Conclusion
 This whole project was no more than 30 minutes, which included the time I had to research and experiment a bit with the [LiveStream](http://www.livestream.com/) API. This is a flexible design, with much much cleaner code (and a lot less of it). When the admin needs to add a new playlist (aka year), all they have to do is open the JS file and type a new element in the `$scope.playlists` array. The application will take care of the rest automatically.
 
 I cannot think of doing this with less lines of code than this.

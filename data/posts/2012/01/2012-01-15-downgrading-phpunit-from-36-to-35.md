@@ -1,6 +1,6 @@
-### Downgrading PHPUnit from 3.6 to 3.5
+## Downgrading PHPUnit from 3.6 to 3.5
 
-<img class="post-image" src="{{ cdnUrl }}/files/2012-01-15-phpunit.jpg" />
+<img class="post-image" src="{{ cdnUrl }}/files/2012-01-15-phpunit.png" />
 
 Recently I had to rebuild my computer, and decided to install [Linux Mint](http://www.linuxmint.com/) 12 (Lisa), which is a very lean installation - for my taste that is.
 
@@ -47,7 +47,7 @@ since it would pull the latest version again and I would end up with the 3.6 fil
 
 So I went one step further and installed specific versions of the relevant dependencies to satisfy the 3.5.15 version.
 
-#### Uninstallation of 3.6
+## Uninstallation of 3.6
 
 ```sh
 pear uninstall phpunit/PHPUnit_Selenium
@@ -63,7 +63,7 @@ pear uninstall phpunit/File_Iterator
 pear uninstall pear.symfony-project.com/YAML
 ```
 
-#### Installation of 3.5.15
+## Installation of 3.5.15
 
 ```sh
 pear install pear.symfony-project.com/YAML-1.0.2

@@ -1,7 +1,7 @@
-### Let the RDBMS do more than just store data
+## Let the RDBMS do more than just store data
 
 <img class="post-image" src="{{ cdnUrl }}/files/2013-09-15-mariadb.png" />
-<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.jpg" />
+<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 
 One of the common "mistakes" that programmers (and have been guilty as charged many a times in the past) is not to use the tools that are available to them to the maximum extent possible.
 
@@ -11,7 +11,7 @@ A RDBMS can do much, much more. One can use triggers that can auto update fields
 
 In this blog post I will show you a simple example on how one can transfer some of the processing of an application to the [RDBMS](http://www.mariadb.org/). I am using MariaDB as the [RDBMS](http://www.mariadb.org/) and [PhalconPHP](https://phalconphp.com/) as the PHP framework.
 
-#### The RDBMS
+### The RDBMS
 Each table of my database has several common fields that are used for logging and reporting as well as recording status.
 
 An example table is as follows
@@ -55,7 +55,7 @@ The fields are:
 
 There is not much I can do with the user ids (`created`/`updated`) or the `deleted` column (see also notes below regarding this). However as far as the dates are concerned I can definitely let MariaDB handle those updates.
 
-#### Triggers
+### Triggers
 The work is delegated to triggers, attached to each table.
 
 ```sql
@@ -77,7 +77,7 @@ DELIMITER ;
 ```
 The triggers above update the created_date and updated_date fields automatically upon insert/update.
 
-#### Phalcon Model
+### Phalcon Model
 I needed to make some changes to my model `Address`, in order to allow the triggers to work without interference from the model.
 
 ```php
@@ -117,8 +117,8 @@ class Model extends PhModel
 
 By using [skipAttributes](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_Model.html), I am instructing the Phalcon model not to update those fields. By doing so, I am letting my triggers worry about that data.
 
-#### Conclusion
+### Conclusion
 It might seem a very trivial task that I am delegating but in the grand scheme of things, the models of an application can be very complex and have a lot of logic in them (and so might controllers). Delegating some of that logic in the RDBMS simplifies things and also increases performance of the application, which now requires just a bit less computational power.
 
-#### NOTES
+### NOTES
 For a soft delete feature i.e. automatically updating the deleted field when a `DELETE` is called, a trigger will not work. Instead one can use a stored procedure for it. See [this](http://stackoverflow.com/questions/8056964/cancel-delete-with-triggers) Stack Overflow answer.
