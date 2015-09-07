@@ -49,6 +49,20 @@
     "link": "2009\/11\/ultimate-incompetence-2.html"
   },
   {
+    "title": "New Blog",
+    "slug": "new-blog",
+    "date": "2009-11-23",
+    "tags": "personal, update",
+    "link": "2009\/11\/new-blog.html"
+  },
+  {
+    "title": "Test Driven Development",
+    "slug": "test-driven-development",
+    "date": "2009-11-24",
+    "tags": "php, tdd, test driven development, phpunit, how-to",
+    "link": "2009\/11\/test-driven-development-how-to.html"
+  },
+  {
     "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11",
