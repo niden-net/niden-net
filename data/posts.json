@@ -147,6 +147,27 @@
     "link": "2010\/01\/design-patterns-series-serieshow-to.html"
   },
   {
+    "title": "Create a SSL Certificate in Linux",
+    "slug": "create-a-ssl-certificate-in-linux",
+    "date": "2010-01-10",
+    "tags": "gentoo, linux, ssl, how-to",
+    "link": "2010\/01\/create-ssl-certificate-linux-how-to.html"
+  },
+  {
+    "title": "Design Patterns - Singleton",
+    "slug": "php-design-patterns-signleton",
+    "date": "2010-01-22",
+    "tags": "design patterns, mysql, php, programming, series, zend framework, how-to",
+    "link": "2010\/01\/design-patterns-singleton-serieshow-to.html"
+  },
+  {
+    "title": "Update",
+    "slug": "update",
+    "date": "2010-05-18",
+    "tags": "update, personal",
+    "link": "2010\/01\/update-personal.html"
+  },
+  {
     "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11",
