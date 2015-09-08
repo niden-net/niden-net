@@ -2,65 +2,149 @@
   {
     "title": "Annoyed",
     "slug": "annoyed",
-    "date": "2009-11-16",
+    "date": "2009-11-01",
     "tags": "personal, rant",
     "link": "2009\/11\/annoyed.html"
   },
   {
     "title": "Relationships and the Internet",
     "slug": "relationships-and-the-internet",
-    "date": "2009-11-17",
+    "date": "2009-11-02",
     "tags": "communications, internet, relationships",
     "link": "2009\/11\/relationships-and-internet_16.html"
   },
   {
     "title": "Flexible storage in MySQL",
     "slug": "flexible-storage-in-mysql",
-    "date": "2009-11-18",
+    "date": "2009-11-03",
     "tags": "storage, programming, mysql, how-to",
     "link": "2009\/11\/flexible-storage-in-mysql-how-to_16.html"
   },
   {
     "title": "Gentoo Stage 1 Installation",
     "slug": "gentoo-stage-1-installation",
-    "date": "2009-11-19",
+    "date": "2009-11-04",
     "tags": "gentoo, installation, linux, notebook, how-to",
     "link": "2009\/11\/gentoo-stage-1-installation-how-to_16.html"
   },
   {
     "title": "Google Apps review",
     "slug": "google-apps-review",
-    "date": "2009-11-20",
+    "date": "2009-11-05",
     "tags": "google, google apps, review, GMail, Docs",
     "link": "2009\/11\/google-apps-review_16.html"
   },
   {
     "title": "Ultimate Incompetence",
     "slug": "ultimate-incompetence",
-    "date": "2009-11-21",
+    "date": "2009-11-06",
     "tags": "personal, rant",
     "link": "2009\/11\/ultimate-incompetence_16.html"
   },
   {
     "title": "Ultimate Incompetence #2",
     "slug": "ultimate-incompetence-2",
-    "date": "2009-11-22",
+    "date": "2009-11-07",
     "tags": "personal, rant",
     "link": "2009\/11\/ultimate-incompetence-2.html"
   },
   {
     "title": "New Blog",
     "slug": "new-blog",
-    "date": "2009-11-23",
+    "date": "2009-11-08",
     "tags": "personal, update",
     "link": "2009\/11\/new-blog.html"
   },
   {
     "title": "Test Driven Development",
     "slug": "test-driven-development",
-    "date": "2009-11-24",
+    "date": "2009-11-09",
     "tags": "php, tdd, test driven development, phpunit, how-to",
     "link": "2009\/11\/test-driven-development-how-to.html"
+  },
+  {
+    "title": "Google Paid Storage",
+    "slug": "google-paid-storage",
+    "date": "2009-11-18",
+    "tags": "google, online storage, storage, picasa, review",
+    "link": "2009\/11\/google-paid-storage-review.html"
+  },
+  {
+    "title": "Chromium OS Part I",
+    "slug": "chromium-os-part-i",
+    "date": "2009-11-24",
+    "tags": "chromium, chromium os, google, installation, linux, how-to",
+    "link": "2009\/11\/chromium-os-part-1-how-to.html"
+  },
+  {
+    "title": "Chromium OS - Part II",
+    "slug": "chromium-os-part-ii",
+    "date": "2009-11-24",
+    "tags": "chromium, chromium os, google, installation, linux, how-to",
+    "link": "2009\/11\/chromium-os-part-2-how-to.html"
+  },
+  {
+    "title": "Chromium OS - Part III",
+    "slug": "chromium-os-part-iii",
+    "date": "2009-11-24",
+    "tags": "chromium, chromium os, google, installation, linux, how-to",
+    "link": "2009\/11\/chromium-os-part-3-how-to.html"
+  },
+  {
+    "title": "The world with Angular - Part I",
+    "slug": "world-with-angular-part-i",
+    "date": "2009-12-01",
+    "tags": "amazon, angularjs, cloud computing, ec2, programming, review, how-to",
+    "link": "2009\/12\/world-with-part-1-reviewhow-to.html"
+  },
+  {
+    "title": "The world with Angular - Part II",
+    "slug": "world-with-angular-part-ii",
+    "date": "2009-12-01",
+    "tags": "amazon, angularjs, cloud computing, ec2, programming, review, how-to",
+    "link": "2009\/12\/world-with-part-2-reviewhow-to.html"
+  },
+  {
+    "title": "The world with Angular - Part III",
+    "slug": "world-with-angular-part-iii",
+    "date": "2009-12-01",
+    "tags": "amazon, angularjs, cloud computing, ec2, programming, review, how-to",
+    "link": "2009\/12\/world-with-part-3-reviewhow-to.html"
+  },
+  {
+    "title": "Faster rsync and emege in Gentoo",
+    "slug": "faster-rsync-and-emerge-in-gentoo",
+    "date": "2009-12-10",
+    "tags": "gentoo, emerge, rsync, installation, how-to",
+    "link": "2009\/12\/faster-rsync-and-emerge-in-gentoo-how.html"
+  },
+  {
+    "title": "Variables in php.ini",
+    "slug": "variables-in-php-ini",
+    "date": "2009-12-11",
+    "tags": "php, programming, zend framework, how-to",
+    "link": "2009\/12\/variables-in-phpini-how-to.html"
+  },
+  {
+    "title": "URL beautification in PHP",
+    "slug": "url-beautification-in-php",
+    "date": "2009-12-15",
+    "tags": "php, programming, zend framework, input, mod_rewrite, how-to",
+    "link": "2009\/12\/url-beautification-how-to.html"
+  },
+  {
+    "title": "niden.net on Technorati",
+    "slug": "niden-net-on-technorati",
+    "date": "2009-12-28",
+    "tags": "technorati",
+    "link": "2009\/12\/nidennet-on-technorati.html"
+  },
+  {
+    "title": "Design Patterns in PHP Series",
+    "slug": "design-patterns-in-php-series",
+    "date": "2010-01-06",
+    "tags": "design, patterns, design patterns, php, programming, series, how-to",
+    "link": "2010\/01\/design-patterns-series-serieshow-to.html"
   },
   {
     "title": "New beginnings – sleep(6566400)",
