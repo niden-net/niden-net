@@ -1,5 +1,3 @@
-## Git `pre-commit` - Another check to ensure clean code
-
 <img class="post-image" src="{{ cdnUrl }}/files/git-logo.png" />
 
 Throughout my career I have been using various [revision control systems](http://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.
@@ -24,7 +22,7 @@ From time to time, as we fix bugs and explore certain behaviors that sometimes i
 
 I have been the culprit of using the function, forgot that I had it in a certain part of the code, and committed that code in our development branch. That caused some colleagues to experience inconsistent behavior with errors showing up on the screen and time was wasted.
 
-To combat this scenario, I wrote a `pre-commit` hook that will allow you to check for the existence of certain functions in the code and ensure that those functions (or strings for that matter since I am using [grep])http://en.wikipedia.org/wiki/Grep)) do not exist in what is to be committed.
+To combat this scenario, I wrote a `pre-commit` hook that will allow you to check for the existence of certain functions in the code and ensure that those functions (or strings for that matter since I am using [grep](http://en.wikipedia.org/wiki/Grep)) do not exist in what is to be committed.
 
 The `pre-commit hook` that I wrote is listed below and the code has been heavily based on Remigijus Jarmalavičius's [pre-commit syntax checker](https://github.com/ReekenX/git-php-syntax-checker).
 

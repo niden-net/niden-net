@@ -1,5 +1,3 @@
-## Localization and country regions
-
 <img class="post-image" src="{{ cdnUrl }}/files/2012-03-05-world.png" />
 
 I was recently assigned a task in my current job, to try and standardize address related data.

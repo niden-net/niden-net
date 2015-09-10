@@ -1,5 +1,3 @@
-## The world with Angular - Part III
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
 
 Continued from [Part II](/post/world-with-angular-part-ii)

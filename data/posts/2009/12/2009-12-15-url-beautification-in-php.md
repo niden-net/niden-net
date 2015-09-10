@@ -1,5 +1,3 @@
-## URL beautification in PHP
-
 <img class="post-image" src="{{ cdnUrl }}/files/php.png" />
 
 ### Preface

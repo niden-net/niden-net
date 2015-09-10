@@ -1,5 +1,3 @@
-## Faster `rsync` and `emerge` in Gentoo
-
 <img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
 
 ### Scenario

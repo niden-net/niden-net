@@ -95,7 +95,7 @@ class Post extends PhInjectable
         $this->data['month'] = $dateParts[1];
         $this->data['date']  = $post['date'];
         $this->data['slug']  = $post['slug'];
-        $this->data['title'] = $post['title'];
+        $this->data['title'] = $this->markdown->render($post['title']);
         $this->data['link']  = $post['link'];
 
         /**

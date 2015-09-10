@@ -1,5 +1,3 @@
-## New beginnings - `sleep(6566400)`
-
 <img class="post-image" src="{{ cdnUrl }}/files/2011-11-11-update.png" />
 
 It has been a very long time since I last blogged.

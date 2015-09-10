@@ -1,5 +1,3 @@
-## Test Driven Development
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-tdd.png" />
 
 ### Preface

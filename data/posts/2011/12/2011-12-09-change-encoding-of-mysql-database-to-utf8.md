@@ -1,5 +1,3 @@
-## Change the Encoding of a MySQL database to UTF8
-
 <img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
 
 ### Overview

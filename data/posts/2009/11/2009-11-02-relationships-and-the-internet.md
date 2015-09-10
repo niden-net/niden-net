@@ -1,5 +1,3 @@
-## Relationships and the Internet
-
 You might wonder how these two topics can mix. Well it appears that technology has brought people closer together by means of email, instant messaging, video collaboration, chat rooms and discussion forums to name a few. 
 
 Sites like omogenia personals, greeksingles, marriedsingles, hi5, match, myspace etc. were created to bring people together irrespective of race or ethnicity. Discussion forum software was developed purely for this reason. 
