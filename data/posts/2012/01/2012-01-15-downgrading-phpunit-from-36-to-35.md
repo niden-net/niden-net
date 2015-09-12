@@ -1,3 +1,5 @@
+## Downgrading PHPUnit from 3.6 to 3.5
+
 <img class="post-image" src="{{ cdnUrl }}/files/2012-01-15-phpunit.png" />
 
 Recently I had to rebuild my computer, and decided to install [Linux Mint](http://www.linuxmint.com/) 12 (Lisa), which is a very lean installation - for my taste that is.

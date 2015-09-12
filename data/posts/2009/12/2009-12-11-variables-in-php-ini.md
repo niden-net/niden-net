@@ -1,3 +1,5 @@
+## Variables in `php.ini`
+
 <img class="post-image" src="{{ cdnUrl }}/files/php.png" />
 
 In my workplace we have been using [Zend Framework](http://framework.zend.com/) for more than a year primarily as a glue framework. We have managed to integrate a lot of components from the framework to suit our needs and slowly we are moving towards the full MVC pattern.

@@ -30,6 +30,7 @@ class PostFinder extends PhDiInjectable
     private $data       = [];
     private $tags       = [];
     private $links      = [];
+    private $linkNumber = [];
     private $dates      = [];
 
     /**
@@ -77,6 +78,15 @@ class PostFinder extends PhDiInjectable
              * Links
              */
             $this->links[$post->getLink()] = $post->getSlug();
+
+            /**
+             * Check if the link is a tumblr one and get its number
+             */
+            $position = strpos($post->getLink(), '/');
+            if (false !== $position) {
+                $linkNumber = substr($post->getLink(), 0, $position);
+                $this->linkNumber[$linkNumber] = $post->getSlug();
+            }
 
             /**
              * Dates (sorting)
@@ -220,6 +230,13 @@ class PostFinder extends PhDiInjectable
      */
     public function get($slug)
     {
+        if (is_numeric($slug)) {
+            if (array_key_exists($slug, $this->linkNumber)) {
+                $slug = $this->linkNumber[$slug];
+                $this->response->redirect('/post/' . $slug, false, 301);
+            }
+        }
+
         $key  = 'post-' . $slug . '.cache';
         $post = $this->utils->cacheGet($key);
 

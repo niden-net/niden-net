@@ -1,3 +1,5 @@
+## AngularJS - Simplicity in your browser
+
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
 Recently I was contacted by an acquaintance through my Google+ circles, who needed some help with a project of hers.

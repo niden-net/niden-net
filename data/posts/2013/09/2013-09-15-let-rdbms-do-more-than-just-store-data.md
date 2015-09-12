@@ -1,3 +1,5 @@
+## Let the RDBMS do more than just store data
+
 <img class="post-image" src="{{ cdnUrl }}/files/2013-09-15-mariadb.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 

@@ -161,13 +161,6 @@
     "link": "2010\/01\/design-patterns-singleton-serieshow-to.html"
   },
   {
-    "title": "Spam - Oh how I hate it",
-    "slug": "spam-oh-how-i-hate-it",
-    "date": "2010-02-18",
-    "tags": "communications, rant, wordpress, spam",
-    "link": "2010\/01\/spam-oh-how-i-hate-it-rant.html"
-  },
-  {
     "title": "Update",
     "slug": "update",
     "date": "2010-05-18",
@@ -175,14 +168,14 @@
     "link": "2010\/01\/update-personal.html"
   },
   {
-    "title": "New beginnings – `sleep(6566400)`",
+    "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11",
     "tags": "personal, update",
     "link": "2011\/11\/new-beginnings-sleep6566400.html"
   },
   {
-    "title": "Git `pre-commit` - Another check to ensure clean code",
+    "title": "Git pre-commit - Another check to ensure clean code",
     "slug": "git-pre-commit-another-check-to-ensure-clean-code",
     "date": "2011-11-13",
     "tags": "git, how-to",

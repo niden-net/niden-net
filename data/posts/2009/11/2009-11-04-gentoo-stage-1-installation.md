@@ -1,3 +1,5 @@
+## Gentoo Stage 1 Installation
+
 <img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
 
 This is my effort to install Gentoo Linux on my *Acer Ferrari LMi 3000*.

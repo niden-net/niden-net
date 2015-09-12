@@ -1,3 +1,5 @@
+## 2012 4th og July - Independence Day
+
 <img class="post-image" src="{{ cdnUrl }}/files/2012-07-04-independence-day.png" />
 
 Today we celebrate the Declaration of Independence in the United States, also known widely as the 4th of July.
