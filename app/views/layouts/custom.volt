@@ -12,32 +12,10 @@
 
     <link rel="stylesheet"
           type="text/css"
-          href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/bootstrap-social/4.10.1/bootstrap-social.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/bootstrap.metismenu/1.1.2/css/metismenu.min.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/prettify/0.1/prettify.css">
+          href="https://cdn.jsdelivr.net/g/prettify@0.1(prettify.css),fontawesome@4.4.0,bootstrap@3.3.5(css/bootstrap.min.css),bootstrap-social@4.10.1,bootstrap.metismenu@1.1.2(css/metismenu.min.css)">
 
     <link rel="stylesheet" type="text/css"
-          href="{{ cdnUrl }}/css/sb-admin-2.css">
-
-    <link rel="stylesheet" type="text/css"
-          href="{{ cdnUrl }}/css/style.css">
-
-    <link rel="stylesheet" type="text/css"
-          href="{{ cdnUrl }}/css/prettify-dark.css">
+          href="{{ cdnUrl }}/css/style.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
