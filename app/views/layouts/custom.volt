@@ -10,10 +10,6 @@
 
     <title>{{ config.blog.title }}</title>
 
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/g/prettify@0.1(prettify.css),fontawesome@4.4.0,bootstrap@3.3.5(css/bootstrap.min.css),bootstrap-social@4.10.1,bootstrap.metismenu@1.1.2(css/metismenu.min.css)">
-
     <link rel="stylesheet" type="text/css"
           href="{{ cdnUrl }}/css/style.min.css">
 
@@ -142,12 +138,10 @@
 </div>
 <!-- /#wrapper -->
 
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.5,bootstrap.metismenu@1.1.2,prettify@0.1(prettify.js+lang-css.js+lang-sql.js)"></script>
-    <script type="text/javascript">prettyPrint();</script>
     <!-- Custom Theme JavaScript -->
     <script type="text/javascript"
-            src="{{ cdnUrl }}/js/sb-admin-2.js"></script>
+            src="{{ cdnUrl }}/js/js.min.js"></script>
+    <script type="text/javascript">prettyPrint();</script>
 
 </body>
 </html>
