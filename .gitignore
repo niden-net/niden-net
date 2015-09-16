@@ -12,3 +12,8 @@ composer.lock
 var/cache/
 var/log/
 var/config/config.php
+
+# Custom templates
+app/views/layouts/custom.volt
+app/views/posts/custom.index.volt
+app/views/posts/custom.view.volt
