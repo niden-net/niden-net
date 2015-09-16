@@ -165,7 +165,17 @@
 <!-- /#wrapper -->
 
     <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.5,bootstrap.metismenu@1.1.2,prettify@0.1(prettify.js+lang-css.js+lang-sql.js)"></script>
+            src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/bootstrap.metismenu/1.1.2/js/metismenu.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/prettify/0.1/prettify.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/prettify/0.1/lang-css.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/prettify/0.1/lang-sql.js"></script>
     <script type="text/javascript">prettyPrint();</script>
     <!-- Custom Theme JavaScript -->
     <script type="text/javascript"
