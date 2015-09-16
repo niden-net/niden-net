@@ -1,10 +1,3 @@
-<h4>Sorry this page cannot be found</h4>
+<h3>Sorry this page cannot be found</h3>
 
-<pre class="prettyprint lang-php">
-    <code>
-        &lt;?php
-
-        echo chr(52) . chr(48) . chr(52) . PHP_EOL;
-
-    </code>
-</pre>
+<img src='{{ cdnUrl }}/images/404.png' />

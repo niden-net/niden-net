@@ -78,9 +78,14 @@ class Post extends PhInjectable
         return $this->data['file'];
     }
 
-    public function getGooglePlusUrl()
+    public function getDisqusId()
     {
-        return $this->data['googlePlusUrl'];
+        return $this->data['disqusId'];
+    }
+
+    public function getDisqusUrl()
+    {
+        return $this->data['disqusUrl'];
     }
 
     public function __construct($post)
@@ -98,17 +103,24 @@ class Post extends PhInjectable
         $this->data['title'] = $post['title'];
         $this->data['link']  = $post['link'];
 
-        /**
-         * Old Blogger posts have a link so we need the unique identifier
-         */
-        $scheme = ($this->getLink()) ? 'http'           : 'https';
-        $url    = ($this->getLink()) ? $this->getLink() : $this->getSlug();
-
-        $this->data['googlePlusUrl'] = sprintf(
-            '%s://www.niden.net/%s',
-            $scheme,
-            $url
-        );
+        if ($this->getLink()) {
+            $this->data['disqusUrl'] = sprintf(
+                $this->config->blog->disqus->oldUrl,
+                $this->getLink()
+            );
+            $this->data['disqusId']  = sprintf(
+                $this->config->blog->disqus->idTemplate,
+                $this->getTitle()
+            );
+        } else {
+            $this->data['disqusUrl'] = $this->router->getRewriteUri()
+                                     . '/post/'
+                                     . $this->getSlug();
+            $this->data['disqusId']  = sprintf(
+                $this->config->blog->disqus->idTemplate,
+                str_replace(['"', "''"], ['', ''], $this->getTitle())
+            );
+        }
 
         $this->data['file'] = sprintf(
             '%s/%s/%s-%s.md',

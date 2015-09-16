@@ -11,17 +11,25 @@ class PostsController extends Controller
 {
     public function indexAction($page = 1)
     {
+        $this->view->setVar('showDisqus', false);
         $this->view->setVar(
             'posts',
             $this->finder->getLatest($page, $this->config->blog->postsPerPage)
         );
         $this->view->setVar('pages', $this->finder->getPages($page));
+
+        $viewFile = 'posts/index';
+        if (true === boolval($this->config->blog->customLayout)) {
+            $viewFile = 'posts/custom.index';
+        }
+        $this->view->pick($viewFile);
     }
 
     public function tagAction($tag)
     {
         $this->view->pick('posts/index');
-        $this->view->setVar('posts', $this->finder->getLatestByTag($tag, 10));
+        $this->view->showDisqus = false;
+        $this->view->posts = $this->finder->getLatestByTag($tag, 10);
     }
 
     /**
@@ -75,37 +83,34 @@ class PostsController extends Controller
             );
         }
 
-        $this->view->setVar('posts', $post);
+        $this->view->setVar('showDisqus', true);
         $this->view->setVar('post', $post);
         $this->view->setVar('title', $post ? $post->getTitle() : '');
+        $viewFile = 'posts/view';
+        if (true === boolval($this->config->blog->customLayout)) {
+            $viewFile = 'posts/custom.view';
+        }
+        $this->view->pick($viewFile);
     }
 
-    public function aboutAction()
+    public function pagesAction($page)
     {
-        $this->tag->setTitle('About');
+        $this->view->setVar('page', $this->finder->getPage($page));
+        $this->view->pick('posts/page');
     }
 
     public function disclaimerAction()
     {
-        $this->tag->setTitle('Disclaimer');
+        $this->view->setVar('page', $this->finder->getPage('disclaimer'));
+        $this->view->pick('posts/page');
     }
 
-
-    public function viewLegacy($year, $month, $slug)
+    public function viewLegacyBySlugAction($time, $slug)
     {
-        prd('legacy');
         $this->dispatcher->forward(
             [
                 'controller' => 'errors',
-                'action'     => 'show404',
-                'params'     => [
-                    sprintf(
-                        '%s/%s/%s',
-                        $year,
-                        $month,
-                        $slug
-                    )
-                ]
+                'action'     => 'show404'
             ]
         );
     }

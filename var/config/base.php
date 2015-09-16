@@ -7,6 +7,12 @@ return [
     'blog'       => [
         'title'        => 'Phalcon Framework Blog',
         'postsPerPage' => 10,
+        'customLayout' => false,
+        'disqus'       => [
+            'shortname'  => 'phalconphp',
+            'idTemplate' => 'Phalcon Framework - %s',
+            'oldUrl'     => 'http://phalconphp.tumblr.com/post/%s',
+        ]
     ],
     'rss'        => [
         'title'       => 'Phalcon Framework Blog',
@@ -57,14 +63,6 @@ return [
             'controller' => 'posts',
             'action'     => 'rss'
         ],
-        '/about' => [
-            'controller' => 'posts',
-            'action'     => 'about'
-        ],
-        '/disclaimer' => [
-            'controller' => 'posts',
-            'action'     => 'disclaimer'
-        ],
         '/sitemap' => [
             'controller' => 'sitemap',
             'action'     => 'index'
@@ -82,6 +80,14 @@ return [
             'action'     => 'viewLegacy'
         ],
         '/'      => [
+            'controller' => 'posts',
+            'action'     => 'index'
+        ],
+        '/{page:[0-9]+}' => [
+            'controller' => 'posts',
+            'action'     => 'index'
+        ],
+        '/{page:[0-9]+}/{number:[0-9]+}' => [
             'controller' => 'posts',
             'action'     => 'index'
         ],

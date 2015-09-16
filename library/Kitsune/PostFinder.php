@@ -32,6 +32,7 @@ class PostFinder extends PhDiInjectable
     private $links      = [];
     private $linkNumber = [];
     private $dates      = [];
+    private $pages      = [];
 
     /**
      * The constructor. Reads the posts JSON file and creates the necessary
@@ -53,6 +54,19 @@ class PostFinder extends PhDiInjectable
 
         if (false === $data) {
             throw new KException('Posts JSON file is potentially corrupted');
+        }
+
+        /**
+         * If there is a pages json
+         */
+        $sourceFile = K_PATH . '/data/pages.json';
+        if (file_exists($sourceFile)) {
+            $contents = file_get_contents($sourceFile);
+            $pages    = json_decode($contents, true);
+
+            foreach ($pages as $page) {
+                $this->pages[$page['slug']] = $page['title'];
+            }
         }
 
         /**
@@ -198,21 +212,25 @@ class PostFinder extends PhDiInjectable
         return $tagCloud;
     }
 
+    /**
+     * Returns the menu list i.e. posts (url/title)
+     *
+     * @param bool|true $reverse
+     *
+     * @return array
+     */
     public function getList($reverse = true)
     {
         $reverseKey = (true === boolval($reverse)) ? 'desc' : 'asc';
         $cacheKey   = sprintf('menu-list-%s.cache', $reverseKey);
         $menuList   = $this->utils->cacheGet($cacheKey);
-
         if (null === $menuList) {
             foreach ($this->data as $url => $post) {
                 $menuList[$url] = $post->getTitle();
             }
-
             if (true === boolval($reverse)) {
                 $menuList = array_reverse($menuList, true);
             }
-
             $this->cache->save($cacheKey, $menuList);
         }
 
@@ -248,6 +266,33 @@ class PostFinder extends PhDiInjectable
         }
 
         return $post;
+    }
+
+    public function getPage($slug)
+    {
+        $key  = 'page-' . $slug . '.cache';
+        $page = $this->utils->cacheGet($key);
+
+        if (null === $page) {
+            if (array_key_exists($slug, $this->pages)) {
+                $contents = file_get_contents(
+                    sprintf(
+                        '%s/data/pages/%s.md',
+                        K_PATH,
+                        $slug
+                    )
+                );
+
+                $page = [
+                    'page'  => $this->markdown->render($contents),
+                    'title' => $this->pages[$slug],
+                ];
+
+                $this->cache->save($key, $page);
+            }
+        }
+
+        return $page;
     }
 
     public function getPages($page = 1)
