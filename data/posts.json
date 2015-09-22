@@ -155,10 +155,24 @@
   },
   {
     "title": "Design Patterns - Singleton",
-    "slug": "php-design-patterns-signleton",
+    "slug": "php-design-patterns-singleton",
     "date": "2010-01-22",
-    "tags": "design patterns, mysql, php, programming, series, zend framework, how-to",
+    "tags": "design patterns, mysql, php, programming, series, zend framework, how-to, singleton",
     "link": "2010\/01\/design-patterns-singleton-serieshow-to.html"
+  },
+  {
+    "title": "Design Patterns - Factory",
+    "slug": "php-design-patterns-factory",
+    "date": "2010-02-02",
+    "tags": "design patterns, mysql, php, programming, series, zend framework, how-to, factory",
+    "link": "2010\/02\/design-patterns-factory-serieshow-to.html"
+  },
+  {
+    "title": "From iPhone to Nexus One",
+    "slug": "from-iphone-to-nexus-one",
+    "date": "2010-02-28",
+    "tags": "google, iphone, nexus one, review",
+    "link": "2010\/02\/from-iphone-to-nexus-one-review.html"
   },
   {
     "title": "Update",
