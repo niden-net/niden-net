@@ -105,26 +105,6 @@ class PostsController extends Controller
         $this->view->pick('posts/page');
     }
 
-    public function viewLegacyBySlugAction($time, $slug)
-    {
-        $this->dispatcher->forward(
-            [
-                'controller' => 'errors',
-                'action'     => 'show404'
-            ]
-        );
-    }
-
-    public function viewLegacyByTimeAction($time, $slug)
-    {
-        $this->dispatcher->forward(
-            [
-                'controller' => 'errors',
-                'action'     => 'show404'
-            ]
-        );
-    }
-
     protected function getFullUrl($uri = '/')
     {
         return $this->request->getScheme() . '://' . $this->request->getServerName() . $uri;
