@@ -1,5 +1,3 @@
-## Ultimate Incompetence
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-11-21-incompetence.png" />
 
 This post has nothing to do with programming or the world of computers.

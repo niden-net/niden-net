@@ -32,8 +32,9 @@ class NotFoundPlugin extends Plugin
                 case Dispatcher::EXCEPTION_ACTION_NOT_FOUND:
                     $dispatcher->forward(
                         [
-                            'controller' => 'errors',
-                            'action'     => 'show404'
+                            'controller' => 'posts',
+                            'action'     => 'pages',
+                            'params'     => ['404'],
                         ]
                     );
                     return false;

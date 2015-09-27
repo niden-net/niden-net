@@ -1,8 +1,6 @@
-## Building a web app with PhalconPHP and AngularJS Part II
-
 <img class="post-image" src="{{ cdnUrl }}/files/2012-06-29-remote-backup.png" />
 
-### Overview
+#### Overview
 
 I have written about this before and it is still my favorite mantra
 
@@ -14,7 +12,7 @@ Let's face it. Hard drives or any magnetic media are man made and will fail at s
 
 Services like [Google Drive](https://drive.google.com/), [iCloud](https://www.icloud.com/), [Dropbox](http://www.dropbox.com/), [BoundlessCloud](http://boundlesscloud.com/) and others offer good backup services, ensuring that there is at least one *safe* copy of your data. But that is not enough. You should ensure that whatever happens, the memories stored in your pictures or videos, the important email communications, the important documents are all kept in a safe place and there are multiple backups of it. Once they are gone, they are gone for good, so backups are the only way to ensure that this does not happen.
 
-### Background
+#### Background
 
 My current setup at home consists of a few notebooks, a mac-mini and a Shuttle computer with a 1TB hard drive, where I store all my pictures, some movies and my songs. I use [Google Music Manager](http://music.google.com/) for my songs so that they are available at any time on my android phone, [Picasa](http://picasaweb.google.com/)> to be able to share my photos with my family and friends and [Google Drive](https://drive.google.com/) so as to keep every folder I have in sync. I also use [RocksBox](http://www.roksbox.com/) to stream some of that content (especially the movies) upstairs on either of our TVs through the [Roku](http://www.roku.com/) boxes we have.
 
@@ -24,7 +22,7 @@ Something was wrong and my best guess was the hard drive was failing. I booted u
 
 Although I had backups of all my files on the cloud through Picasa, Google Music Manager and Google Drive, I still wanted to salvage whatever I had in there just in case. I therefore booted up the system with a Linux live CD, mounted the hard drive and used FileZilla to transfer all the data from the Shuttle's hard drive to another computer. There was of course a bit of juggling going on since I had to transfer data in multiple hard drives due to space restrictions.
 
-### Replacing the storage
+#### Replacing the storage
 I had to find something very cheap and practical. I therefore went to Staples and found a very nice (for the money) computer by Lenovo. It was only $300, offering 1TB 7200 SATA hard drive, i5 processor and 6GB of RAM.
 
 As soon as I got the system I booted it up, started setting everything up and before the end of the day everything was back in place, synched to the cloud.
@@ -37,7 +35,7 @@ Purchase a cheap RAID (hardware) controller, an identical 1TB hard drive to the 
 
 I opted for a solid state drive from Crucial for the OS. Although it was not necessary to have that kind of speed, I thought it wouldn't hurt. It did hurt my pocket a bit but c'est la vie. For your own setup you can choose whatever you like.
 
-### Hardware
+#### Hardware
 
 * [HighPoint RocketRAID 620 2 SATA Port PCI-Express 2.0 x1 SATA 6Gb/s RAID Controller](http://www.amazon.com/gp/product/B0034CQR4O/ref=oh_details_o00_s00_i00) ($38.15) The RAID controller
 * [Crucial 128 GB m4 2.5-Inch Solid State Drive SATA 6Gb/s CT128M4SSD2](http://www.amazon.com/gp/product/B004W2JKZI/ref=oh_details_o00_s00_i01) ($122.49) The OS drive
@@ -45,7 +43,7 @@ I opted for a solid state drive from Crucial for the OS. Although it was not nec
 
 **NOTE** : For those that are not interested in having a solid state drive for the OS, one can always go with other, much cheaper drives such as [this one](http://www.amazon.com/Seagate-Momentus-7200RPM-Internal-ST9160412AS-Bare/dp/B0027P9BOC/ref=sr_1_1?s=pc&amp;ie=UTF8&amp;qid=1339943115&amp;sr=1-1&amp;keywords=hybrid+hard+drive).
 
-### Setup
+#### Setup
 
 <a href="{{ cdnUrl }}/files/2012-06-29-figure-1.png"><img class="post-image" src="{{ cdnUrl }}/files/2012-06-29-figure-1.png" title="Figure 1"/></a>
 
@@ -75,7 +73,7 @@ Entering the Disk Manager, I initialized and formatted the drive and from then o
 
 As a last minute change, I decided not to install [RocksBox](http://www.roksbox.com/) and instead go with [Plex Media Server](http://www.plexapp.com/). After playing around with Plex, I found out that it was a lot easier to setup than RocksBox (RocksBox requires a web server to be installed on the server machine, whereas Plex automatically discovers servers). Installing the relevant channel on my Roku boxes was really easy and everything was ready to work right out of the box so to speak.
 
-### Problems
+#### Problems
 
 The only problem that I encountered had to do with Lenovo itself. I wanted basically to install the system on the SSD drive. Since the main drive is 1TB and the SSD drive 128GB I could not use [CloneZilla](http://www.clonezilla.org/) or [Image for Windows](http://www.terabyteunlimited.com/image-for-windows.htm) to *move* the system from one drive to another. I tried almost everything. I shrank the 1TB system partition so as to make it fit in the 128GB drive. I had to shut hibernation off, reboot a couple of times in Safe Mode to remove unmovable files, in short it was a huge waste of time.
 
@@ -85,7 +83,7 @@ The create rescue process required 10 DVDs, so I started the process. On DVD 7 t
 
 The second phone call did not go very well. I was transferred to the software department again, where I was told that I have to pay $65 for the disks. The odd thing is that the technician tried to convince me that Lenovo actually doesn't pay money to Microsoft since they get an OEM license. Knowing that this is not correct, and after the fact that the technician was getting really rude, I asked to speak to a supervisor. The supervisor was even worse and having already spent 45 minutes on the phone, I asked to be transferred to the hardware department again. Once there, I spoke to another lady, explained the situation and how long I have been trying to get this resolved (we are at 55 minutes now) and she happily took my information and sent me the installation disks free of charge.
 
-### Conclusion
+#### Conclusion
 
 The setup discussed in this post is an inexpensive and relatively secure way of storing data in your own home/home network. The RAID 1 configuration offers redundancy, while the price of the system does not break the bank.
 

@@ -1,5 +1,3 @@
-## Google Paid Storage
-
 <img class="post-image" src="{{ cdnUrl }}/files/google.png" />
 
 A week or so ago I read a blog post in my Google Reader about Google providing now [more storage for less](http://googleblog.blogspot.com/2009/11/twice-storage-for-quarter-of-price.html) money.

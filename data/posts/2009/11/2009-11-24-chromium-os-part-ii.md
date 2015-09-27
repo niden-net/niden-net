@@ -1,5 +1,3 @@
-## Chromium OS - Part II
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
 
 Continued from [Part I](/post/chromium-os-part-i)
@@ -20,7 +18,7 @@ ln -s /usr/local/chromiumos/chromiumos.git ~/chromiumos
 ln -s /usr/local/chromium ~/chromium
 ```
 
-### Creating the local repository
+#### Creating the local repository
 
 All the scripts are in the src/script folder. So let's go to that folder (the symbolic link set earlier helps :))
 
@@ -36,7 +34,7 @@ and running the command to create the local repository:
 
 This command will ask you for your password - and bare in mind you must run all this as a normal user with sudo access - and then it will create a debootstrap. It will fetch the necessary packages from the Chromium OS Package Management.
 
-#### NOTE
+##### NOTE
 
 If something fails you will need to do
 
@@ -46,7 +44,7 @@ rm -rf ~/chromiumos/repo
 
 and then rerun the `./make_local_repo.sh` script again.
 
-### Creating the build environment
+#### Creating the build environment
 
 All we need to do is run the following command:
 
@@ -61,7 +59,7 @@ The script will check if all the dependencies are satisfied, and if something is
 ./make_chroot.sh --mirror=http://build.chromium.org/buildbot/packages --suite=chromeos_dev
 ```
 
-### Building Chromium OS
+#### Building Chromium OS
 
 I need to build Chromium first (since I chose to download it too). This is necessary since your build will fail if you try it the other way around :)
 
@@ -69,7 +67,7 @@ I need to build Chromium first (since I chose to download it too). This is neces
 ./build_chrome.sh --chrome_dir ~/chromium
 ```
 
-#### Enter the chroot build environment
+##### Enter the chroot build environment
 
 Run the following command gets us back in the chroot environment (you will be asked for your password)
 
@@ -77,7 +75,7 @@ Run the following command gets us back in the chroot environment (you will be as
 ./enter_chroot.sh
 ```
 
-#### Set the shared user password
+##### Set the shared user password
 
 This is a one-off step for those of us that want to be able to sudo from a terminal. I am setting the shared user password running the following script:
 
@@ -91,7 +89,7 @@ This will prompt for the password and the output will be stored in the `./shared
 clear
 ```
 
-#### Build the platform packages
+##### Build the platform packages
 
 In the chroot environment run
 
@@ -126,7 +124,7 @@ Locate the line with the `BASE_URL` variable and change `chrome-web` to `build.c
 
 Quite a bit later the script execution ended with **All packages built** :)
 
-#### Build the kernel
+##### Build the kernel
 
 In the chroot environment run
 
@@ -140,7 +138,7 @@ A bit later I am looking at this message and grinning :)
 Kernel build successful, check /home/ndimopoulos/trunk/src/build/x86/local_packages/linux-image-2.6.30-chromeos-intel-menlow_002_i386.deb
 ```
 
-#### Build the image
+##### Build the image
 
 In the chroot environment run
 

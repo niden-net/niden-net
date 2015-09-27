@@ -1,10 +1,8 @@
-## The world with Angular - Part III
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
 
 Continued from [Part II](/post/world-with-angular-part-ii)
 
-#### Presentation of Data
+##### Presentation of Data
 
 Presenting data with `<angular/>` is really easy. All we need to do is to tell `<angular/>` how we want the data to be presented and where.
 
@@ -85,7 +83,7 @@ So now I have a basic application that allows me to store and display data. If y
 
 You might have noticed that I have "E D" in the first column of every row of the HTML table. These are for `Edit` and `Delete`.
 
-#### Editing Data
+##### Editing Data
 
 Each record has a unique identifier as I showed you earlier when adding records. In order for the "E" to link to the respective record, I need to use that id. The hyperlink around the "E" becomes then:
 
@@ -99,7 +97,7 @@ Every document/record has an id field. I can it as usual with the double bracket
 <a href="#testentity={{record.id}}">E</a>
 ```html
 
-#### Deleting Data
+##### Deleting Data
 
 To delete data, instead of referencing the unique identifier of each record, I will use the `record` variable and the `$delete()` method on it. Note that the `record `variable is the one that allows us to have access to every object in the `incidents `variable and it is used in the display data loop.:
 
@@ -107,7 +105,7 @@ To delete data, instead of referencing the unique identifier of each record, I w
 <a href="#" ng-action="record.$delete()">D</a>
 ```
 
-#### Searching Data
+##### Searching Data
 
 The initial design never catered for emptying the database in regular intervals. Therefore a search function is in order to ensure quick retrieval of information. As you will see it is really easy and it does not need any `<form>` elements or anything else.
 
@@ -131,7 +129,7 @@ becomes
 
 As you can see I am using the `$filter()` method and the parameter passed is the name of the input box that I have defined earlier. This way whatever I type in the search box, `<angular/>` will try to match it with the currently displayed data and filter accordingly, thus giving me the search functionality that I want.
 
-#### Sorting data
+##### Sorting data
 
 Another easy task in `<angular/>` is sorting. Since I already have a table that I present data with, I am going to use that and its table headings to allow my user to sort. Also I am going to have a default sorting option of `Shift Date` descending and `Shift Start` descending.
 
@@ -219,7 +217,7 @@ The `ng-action` allows for the interchange in sorting order (ascending/descendin
 
 Refreshing the page shows me the final product. I can now sort in any way I like and the sorting is compounded.
 
-#### Widgets
+##### Widgets
 
 `<angular/>` has a lot of widgets that can be used as validators but also as means to enhance the user experience. One of them is the DatePicker. I am going to use it to collect data in the `shiftdate` field. So the:
 
@@ -236,7 +234,7 @@ becomes:
 and that's it. Now when I click on the input box or when it gets focus, a nice dropdown calendar appears that allows me to select the date.
 
 
-### Final thoughts
+#### Final thoughts
 
 The example above is not the final product for the WRL. There are some things missing, such as clearing up the order, enhancing the search, expanding/collapsing the add new record etc. This article is not meant as the final solution but more as a guide on what is feasible.
 

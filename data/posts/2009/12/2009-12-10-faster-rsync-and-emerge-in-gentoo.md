@@ -1,8 +1,6 @@
-## Faster `rsync` and `emerge` in Gentoo
-
 <img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
 
-### Scenario
+#### Scenario
 
 Recently I have started setting up a cluster of 7 Gentoo boxes for a project I am working on. The problem with boxes coming right out of the setup process of a hosting company is that they do not contain the packages that you need. Therefore you need to setup your `USE` flags and emerge the packages you require as per the role of every box.
 
@@ -26,9 +24,9 @@ I am going to set up the `/etc/hosts` file on each machine so that the local net
 
 Modify the above to your specific setup needs.
 
-### Setting up a local `rsync`
+#### Setting up a local `rsync`
 
-#### Server setup (ws1)
+##### Server setup (ws1)
 
 There is a really good tutorial can be found in the [Gentoo Documentation](http://www.gentoo.org/doc/en/rsync.xml) but here is the short version:
 
@@ -76,7 +74,7 @@ rc-update add rsyncd default
 -A INPUT --protocol tcp --source 10.13.18.0/24 --match state --state NEW --destination-port 873 --jump ACCEPT
 ```
 
-#### Client setup
+##### Client setup
 
 In my clients I need to edit the /etc/make.conf file and change the SYNC directive to:
 
@@ -92,7 +90,7 @@ SYNC="rsync://10.13.18.101/niden-gentoo-portage"
 
 Note that the path used in the SYNC command is what I have specified as a section in the `rsyncd.conf` file (`niden-gentoo-portage` in my setup). This path can be anything you like.
 
-#### Testing
+##### Testing
 
 I have already run
 
@@ -111,13 +109,13 @@ receiving incremental file list
 
 So everything works as I expect it.
 
-#### Setting up http-replicator
+##### Setting up http-replicator
 
 `http-replicator` is a proxy server. When a machine (the local or a remote) requests a package, `http-replicator` checks its cache and if the file is there, it passes it to the requesting machine. If the file doesn't exist though, `http-replicator` downloads it from a mirror and then passes it to the requesting machine. The file is then kept in `http-replicator`'s cache for future requests. This way I save on resources by downloading once and serving many times locally.
 
 Although this might not seem as a 'pure speedup' it will make your installations and updates faster since the download factor will be reduced to a bare minimum. Waiting for packages like mysql, Gnome or others to be downloaded does take a long time. Multiply that time with the number of machines you have on your network and you can see the benefits of having a setup like this.
 
-#### Server setup (ws1)
+##### Server setup (ws1)
 
 First of all I need to emerge the package
 
@@ -184,7 +182,7 @@ rm -rf /usr/portage/distfiles/*
 
 to clear the distfiles folder. I have added those in a bash script and I run it every night using my cron.
 
-#### Client setup
+##### Client setup
 
 In my clients I need to edit the /etc/make.conf and change the SYNC directive to:
 
@@ -195,7 +193,7 @@ RESUMECOMMAND=" /usr/bin/wget -t 5 --passive-ftp  \${URI} -O \${DISTDIR}/\${FILE
 
 I have commented any previous `RESUMECOMMAND` statements.
 
-#### Testing
+##### Testing
 
 The testing begins in one of the clients (you can choose any package):
 
@@ -226,7 +224,7 @@ Saving to: `/usr/portage/distfiles/logrotate-3.7.8.tar.gz'
 .....
 ```
 
-### Final thoughts
+#### Final thoughts
 
 Setting up local proxies allows your network to be as efficient as possible. It does not only reduce the download time for your updates but it is also courteous to the Gentoo community. Since mirrors are run by volunteers or non-profit organizations, it is only fair to not abuse the resources by downloading an update more than once for your network.
 

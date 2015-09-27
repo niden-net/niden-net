@@ -6,5 +6,9 @@
   {
     "title": "Disclaimer",
     "slug": "disclaimer"
+  },
+  {
+    "title": "Page not found!",
+    "slug": "404"
   }
 ]

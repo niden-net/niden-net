@@ -1,5 +1,3 @@
-## Building a web app with PhalconPHP and AngularJS Part I
-
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
@@ -27,7 +25,7 @@ This of course is by no means the perfect implementation. It has been a fun proj
 
 NOTE: The Github repository contains code that works with nginx. If you are having problems with Apache, check the `public/index.php` - there is a note there for nginx (probably will need to remove it)
 
-### References
+#### References
 
 * [AngularJS main site](http://angularjs.org/)
 * [AngularJS documentation](http://docs.angularjs.org/api)

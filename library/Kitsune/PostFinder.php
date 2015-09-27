@@ -213,6 +213,50 @@ class PostFinder extends PhDiInjectable
     }
 
     /**
+     * Gets the the archive posts
+     *
+     * @return array
+     */
+    public function getArchive()
+    {
+        $cacheKey   = 'post-archive.cache';
+        $postArchive = $this->utils->cacheGet($cacheKey);
+
+        if (null === $postArchive) {
+            $thisYear    = date('Y');
+            $postArchive = [];
+            foreach ($this->data as $post) {
+                $date = $post->getDate();
+
+                /**
+                 * Check which year and month this post was made and add it
+                 * to the postArchive array. If it is not this year, then
+                 * add it to the year entry for the year the post was posted
+                 */
+                $year      = date('Y', strtotime($date));
+                $month     = date('m', strtotime($date));
+                $monthText = date('F', strtotime($date));
+                $key       = ($thisYear === $year) ? $month     : $year;
+                $text      = ($thisYear === $year) ? $monthText : $year;
+
+                if (false === isset($postArchive[$key])) {
+                    $postArchive[$key] = [
+                        'key'   => $text,
+                        'value' => 0,
+                    ];
+                }
+                $postArchive[$key]['value'] = $postArchive[$key]['value'] + 1;
+            }
+
+            krsort($postArchive);
+
+            $this->cache->save($cacheKey, $postArchive);
+        }
+
+        return $postArchive;
+    }
+
+    /**
      * Returns the menu list i.e. posts (url/title)
      *
      * @param bool|true $reverse

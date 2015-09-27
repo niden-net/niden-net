@@ -1,8 +1,6 @@
-## Fast serialization of data in PHP
-
 <img class="post-image" src="{{ cdnUrl }}/files/2011-11-22-serialization.png" />
 
-### Serializing/Unserializing data
+#### Serializing/Unserializing data
 
 > Serialization is the process of converting a data structure or object state into a format that can be stored and "resurrected" later in the same or another computer environment. [source](http://en.wikipedia.org/wiki/Serialization)
 
@@ -13,7 +11,7 @@ There are a lot of areas where one can use serialization. A couple are:
 
 Based on the the application, serializing and unserializing data can be a very intensive process and can prove to have a big performance hit on the overall system.
 
-### Options
+#### Options
 
 The most obvious option for serializing and unserializing data are the [serialize](http://php.net/manual/en/function.serialize.php) and [unserialize](http://php.net/manual/en/function.unserialize.php) PHP functions. A bit less popular are [json_encode](http://us3.php.net/manual/en/function.json-encode.php) and [json_decode](http://us3.php.net/manual/en/function.json-decode.php). There is also a third option, using a third party module that one can easily install on their server. This module is called [igbinary](http://opensource.dynamoid.com/).
 
@@ -249,13 +247,13 @@ foreach ($_testSources as $_area => $_source)
 echo '' . $_output . '</pre>';
 ```
 
-### Serializing results
+#### Serializing results
 
 When serializing data we are always concerned about the size of the result but also about the time it took for the data to be serialized.
 
 As far as size is concerned, `json_encode` seems to be producing the smallest result in bytes for most of the tests.
 
-#### Size comparison
+##### Size comparison
 
 ![]({{ cdnUrl }}/files/2011-11-22-figure-1.png)
 
@@ -315,7 +313,7 @@ json_encode() [all]: Size: 462 bytes, 9.9569129943848 time to encode <==
 igbinary_serialize() [all]: Size: 478 bytes, 18.053789138794 time to encode
 ```
 
-#### Speed comparison
+##### Speed comparison
 
 ![]({{ cdnUrl }}/files/2011-11-22-figure-2.png)
 
@@ -387,13 +385,13 @@ For the Floats test the situation is reversed. `json_encode` produces a result t
 
 As far as serializing data, in my personal opinion, `json_encode` is the clear winner.
 
-### Unserializing Results
+#### Unserializing Results
 
 Unserializing data is equally - and at times - more important than serializing. In many applications, developers sacrifice performance in writing but don't compromise when reading data.
 
 In the tests below once can easily see that `igbinary` is the clear winner. At times the `unserialize` function is very close (or outperforms `igbinary`) but overall, `igbinary` is the the function that unserializes data the fastest.
 
-#### Speed comparison
+##### Speed comparison
 
 ![]({{ cdnUrl }}/files/2011-11-22-figure-3.png)
 
@@ -453,16 +451,16 @@ json_decode() [all]: 14.574991941452 time to decode
 igbinary_unserialize() [all]: 10.734386920929 time to decode <==
 ```
 
-### Conclusion
+#### Conclusion
 
 If your application is mostly focused on reads rather than writes, `igbinary` is the clear winner, since it will unserialize your data faster than the other two functions. If however you are more focused on storing data, `json_encode` is the clear choice.
 
-### Updates
+#### Updates
 
 **2013-03-07**: memcached was not used with igbinary. PHP version for tests was 5.3.1 on a Linux Mint machine with 6GB RAM
 **2013-06-14**: Reader [Dennis](https://plus.google.com/108631471182890836450/posts) has been kind enough to run the same script on his server and share the results with me. He run the scripts on a i7-3930K, 64GB, Debian Squeeze with the latest version of PHP (5.4.16) and igbinary.
 
-#### Serialize
+##### Serialize
 
 **Strings**
 
@@ -520,7 +518,7 @@ json_encode() [all]: Size: 462 bytes, 7.7341570854187 time to encode <== Size
 igbinary_serialize() [all]: Size: 478 bytes, 5.6470530033112 time to encode <== Time
 ```
 
-#### Unserialize
+##### Unserialize
 
 **Strings**
         

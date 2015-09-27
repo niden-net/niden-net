@@ -1,5 +1,3 @@
-## Chromium OS - Part III
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
 
 Continued from [Part II](/post/chromium-os-part-ii)
@@ -30,9 +28,9 @@ to re-enter my previous chroot and continue where I left off. Oh well, you live 
 
 Just to be on the safe side I rerun the `./build_platform_packages.sh`, `./build_kernel.sh` and `./build_image.sh` scripts. I am now exactly where I was prior to shutting the computer off. I have built the platform packages, the kernel and the image.
 
-### Using the image
+#### Using the image
 
-#### Check the contents of the image
+##### Check the contents of the image
 
 I will mount the image locally to ensure that everything is OK. Please note that the folder below is the one created on my machine and might very well be different than yours. At the end of the <em>build_image.sh</em> script you will see a message that will reveal where your image folder is.
 
@@ -58,7 +56,7 @@ sudo umount rootfs
 
 Although I got a `cannot read table of mounted file systems: No such file or directory` when I run `df`, `dpkg` had a long list of packages installed. I will for the moment ignore the df output and proceed to the next steps.
 
-#### Copy the image to a USB key
+##### Copy the image to a USB key
 
 Somehow I have misplaced my 16GB USB drive so I had to borrow a 4GB one from a friend of mine. This step copies the actual image from the hard drive to the USB drive. The drive itself is wiped clean so make sure that you have backed up the data that you have on it prior to running this step.
 

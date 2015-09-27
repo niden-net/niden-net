@@ -1,5 +1,3 @@
-## Building a web app with PhalconPHP and AngularJS Update
-
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
@@ -13,7 +11,7 @@ There are a couple of things that I as a developer would like to see in [Phalcon
 
 Recently a new <a href="https://github.com/phalcon/incubator">repo</a> has been created on Github called the incubator, where developers can share implementations of common tasks, that act as drop ins to the framework and extend it. These implementations are all written in PHP so everyone can just download them and use them. The more submissions come in, the more the framework will grow and eventually these submissions will become part of the framework itself.
 
-### Converting the 0.4.x application to 0.5.x<
+#### Converting the 0.4.x application to 0.5.x
 
 The task of converting everything from 0.4 to 0.5 was a bit challenging. The reason behind it was the DI container and how best to use it to suit the needs of the current application. Now these challenges would not even be an issue if one started writing their application from scratch, but since I had everything in place, I ventured into upgrading vs. rewriting. Note that this kind of upgrade will most likely never happen again, since the framework has been changed accordingly so that future upgrades will not require developers to rewrite their code (like I did now). From 0.5.x onward the framework design has been kind of "*frozen*".
 
@@ -69,7 +67,6 @@ class Bootstrap
 
 
         try {
-
             foreach ($loaders as $service)
             {
                 $function = 'init' . ucfirst($service);
@@ -334,7 +331,7 @@ This is an interesting one. Registering the view and Volt. [Volt](https://docs.p
 
 The above is my implementation of behaviors. Of course it is far from perfect but it works the way I want to. A better implementation of this has been written by [Wojtek Gancarczyk](https://github.com/theDisco) and is available in the [incubator](https://github.com/phalcon/incubator). All I do here is go through the behaviors I have (Timestamp only for now) and register them in the DI container so that I can reuse them later on with any model that needs them.
 
-### Models
+#### Models
 
 Every model I have that interacts with my database tables extends the `NDN\Model`. 
 
@@ -440,11 +437,11 @@ class Episodes extends \NDN\Model
 }
 ```
 
-### Controllers
+#### Controllers
 
 Very little has changed in the controller logic, so that was the easiest part of the upgrade. Of course I tweaked a few things but the code works as is. I still extended my custom `NDN\Controller` class which takes care of my breadcrumbs (`NDN\Breadcrumbs`) as well as the construction of the top menu. The biggest difference with the previous version is that I stopped using [AngularJS](http://angularjs.org/) to populate the menu (so I am no longer sending a JSON array in the view) and used [Volt](https://docs.phalconphp.com/en/latest/reference/volt.html) instead. It was a matter of preference and nothing more.
 
-### Views
+#### Views
 
 Quite a bit of work had to be done in the views to switch everything to use [Volt](https://docs.phalconphp.com/en/latest/reference/volt.html). Of course every view extension had to be changed to `.volt` but that was not the only change. I split the layout to use partials so that the header, navigation and footer are different sections (organizing things a bit better) and kept the master layout `index.volt`. 
 
@@ -560,7 +557,7 @@ var ngModule = angular.module(
     )
 ```
 
-### Conclusion
+#### Conclusion
 
 I spent at most a day working on this mostly because I wanted to try various things and see how it works. The actual time to convert the application (because let's face it, it is a small application) was a couple of hours inclusive of the time it took me to rename certain fields, restructure the folder structure, compile the new extension on my server and upload the data upstream.
 
@@ -568,7 +565,7 @@ I am very satisfied with both [AngularJS](http://angularjs.org/), which helps tr
 
 As written before, you are more than welcome to download the [source code](https://github.com/niden/phalcon-angular-harryhogfootball) of this application here and use it for your own needs. Some resources are:
 
-### References
+#### References
 
 * [AngularJS main site](http://angularjs.org/)
 * [AngularJS documentation](http://docs.angularjs.org/api)

@@ -1,10 +1,8 @@
-## Design Patterns - Singleton
-
 <img class="post-image" src="{{ cdnUrl }}/files/2010-01-22-design-patterns-singleton.png" />
 
 A note about these series. It appears that [Giorgio Sironi](http://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Singleton](http://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-singleton.html) design pattern thoroughly in his blog post, which is recommended reading.
 
-### The Problem
+#### The Problem
 
 When I started programming in PHP I was faced with creating a simple database driven web page for a [Ferrari Fans Fun Forecast Club](https://ffff.niden.net/). The page had 5 different sections that each accessed the database to retrieve data. Each section was included in more than one page and only the menu, header and footer were common in all pages.
 
@@ -48,7 +46,7 @@ if (!$db) {
 Some might comment on my error handling or the naming of the variables. That is not the problem. The problem is that the snippet of code above was used in <strong>every script file</strong> (all 5 of them). As a result every page load was hitting the database 5 times. Although the intended user base was no more than 100 people, due to this design flaw I had the equivalent of 500 users.
 
 
-### The first step - Primitive refactoring
+#### The first step - Primitive refactoring
 
 You might argue that the two files (header, menu) can easily be combined into one (and the same with additional information and footer) and that will save me 3 connections. The layout does not change but now each of the shaded areas represent one script:
 
@@ -70,7 +68,7 @@ You might argue that the two files (header, menu) can easily be combined into on
 
 Although this is a good start it is not the solution to the problem. I have effectively reduced the number of hits to 3 per visitor (300 vs 500 before). The goal is to have one connection per visitor.
 
-### One step further - A global variable
+#### One step further - A global variable
 
 I need to create the database connection, store it in a global variable, and then let the rest of the scripts access that variable - and subsequently the database connection - when needed. The pseudo code is as follows:
 
@@ -119,7 +117,7 @@ Although this is an "acceptable" way of programming, maintaining all the global 
 * any part of the code in any script that references this global variable can effectively change that variable
 * that the code will look "ugly" (hey I am proud of the code that I write :))
 
-### Design Patterns - Singleton
+#### Design Patterns - Singleton
 
 A better approach to solve this problem is to use a design pattern. In this case I will use the Singleton Pattern.
 
@@ -210,7 +208,7 @@ while the one for the rest of the site is exactly identical sans the query to be
 
 Note that the connection parameters are in a separate file which is accessed during the `__construct()` method of the class. You can use anything you want to supply these parameters in your class.
 
-### Conclusion
+#### Conclusion
 
 The Singleton Design Pattern is a blessing in disguise. If the ground work has not been done (i.e. create tests for your code and thoroughly document it) then it is difficult for a new developer coming into a project to understand what is going on, especially when the new developer needs to make alterations and run newly created tests.
 

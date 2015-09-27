@@ -1,15 +1,13 @@
-## Change the Encoding of a MySQL database to UTF8
-
 <img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
 
-### Overview
+#### Overview
 As applications grow, so do their audiences. In this day and age, one cannot assume that all the consumers of a web based application will live in a particular region and use only one language. Even if the developer assumes that one country will be served by the particular web application, there are instances that the `latin1` character set will not suffice in storing data.
 
 Therefore, developers and database designers need to implement an encoding on their database that will safely store and retrieve any kind of data, not only latin1 based (i.e. the English alphabet).
 
 For MySQL this encoding is `utf8_general_ci`.
 
-### The problem
+#### The problem
 MySQL usually comes with the `latin1_swedish_ci` encoding as a default. This encoding will allow the developer to store data of course but when non latin1 characters need to be stored, there will be a problem. Effectively latin1 encoding will store data in 8 bits but some languages like Japanese, Thai, Arabic, even French or German have special characters that need more space in the storage engine. Trying to store a 16 bit character in a 8 bit space will fail all the time.
 
 **Latin1 based database:**
@@ -21,7 +19,7 @@ Output: ??? ??????? ????????
 
 To combat this, all you have to do is change the encoding of your database to `utf8_general_ci` and the character set to `utf8`.
 
-### The solution
+#### The solution
 
 I wrote a script in PHP to analyze a database server and produce `ALTER` statements to be executed against your database(s). The script needs to run from a web server that supports PHP.
 
@@ -29,7 +27,7 @@ First of all, the encoding of the database will change with the relevant SQL sta
 
 The safest way to transform data this way is to first change the field to a `BINARY` field and then change the field to the target encoding and collation.
 
-### Configuration
+#### Configuration
 
 There are a few configuration variables that need to be set prior to running the script.
 
@@ -80,7 +78,7 @@ if it is on, and if off, the statement will be:
 ```sql
 ALTER TABLE <table>.....
 ```
-### Databases loop
+#### Databases loop
 
 The script opens a connection to the server and runs the `SHOW DATABASES` command. Based on the result returned, it populates an array with the database names.
 
@@ -110,7 +108,7 @@ while ($row = mysql_fetch_row($result))
 
 The database names are stored in an array, so as not to keep the database resource active all the time. Had I not done that, I would have had to use three different resources (one for the database, one for the table and one for the field being checked - three nested loops).
 
-### Tables loop
+#### Tables loop
 
 The script then loops through the $dbs array and selects each database in turn. Once the database is selected, the `SHOW TABLES` query is run and a $tables array is populated with the names of the tables in that database. At the same time the `ALTER DATABASE` statements are being generated.
 
@@ -142,7 +140,7 @@ while ($row = mysql_fetch_row($result))
 }
 ```
 
-### Fields loop
+#### Fields loop
 
 The script then loops through the $tables array and runs the `SHOW FIELDS` query so as to analyze each field.
 
@@ -201,7 +199,7 @@ The `$exclude_tables_fields` array allows you to exclude a field from being proc
 
 If you set the `$use_database` variable to TRUE then each line in your .sql statements will be prefixed with a '<span style="font-family: 'Courier New', Courier, monospace;">USE <database>;</span>' statement. This is to help the accompanying bash script to execute each statement in the respective database. If you intend on not running this process one statement at a time, you can set this to FALSE. You can then run each database .sql file (or the one that contains all of the statements from all databases) as one single command.
 
-### Server processing
+#### Server processing
 
 Now that the relevant `.sql` files have been created, all you have to do is upload them on your web server. There are three ways of actually running the statements against the database.
 
@@ -294,7 +292,7 @@ START 2011-12-08-23-46 USE mydatabase; \
 END 2011-12-08-23-46
 ```
 
-### Conclusion
+#### Conclusion
 
 In order for a database to be best prepared to support localization, you need to make sure that the storage will accept any possible character. You can start by creating all your tables and fields with `utf8_general_ci` encoding, but for existing databases and data, you will need to run expensive processing queries on your RDBMS. Ensuring that the data does not get corrupted when performing the transformation process is essential so make sure you backup your databases before trying or running the output statements produced by the `db_alter.php` script.
 
@@ -480,6 +478,6 @@ $bytes = file_put_contents($output_folder . '/' . $db_host . '.sql', $output);
 echo "<pre>$db_host $bytes \r\n$output</pre>";
 ```
 
-### Downloads
+#### Downloads
 You can use these scripts at your own risk. Also feel free to distribute them freely - a mention would be nice. Both scripts can be found in my [GitHub](https://github.com/niden).
 

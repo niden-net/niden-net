@@ -1,10 +1,8 @@
-## Design Patterns in PHP - Series
-
 <img class="post-image" src="{{ cdnUrl }}/files/2010-02-02-design-patterns-factory.png" />
 
 A note about these series. It appears that [Giorgio Sironi](http://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Factory](http://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-factory-method.html) design pattern thoroughly in his blog post, which is recommended reading.
 
-### The Problem
+#### The Problem
 
 I started off my IT career as a network administrator. This was back in the good old Novell 3.11 days. After that it was Novell 4.0, Microsoft Servers etc. Following that I got more and more involved with Visual Basic and when Microsoft decided to move everyone to .NET I chose not to follow and ended up coding in PHP.
 
@@ -12,7 +10,7 @@ Since my programming knowledge came from within (studying, reading articles, tri
 
 When I started programming for the [Ferrari Fans Fun Forecast](https://ffff.niden.net) site I was running the site using my apartment's ADSL line. In the beginning there were only 20 users or so, therefore that setup was fine. The scripts were VBScript against a local instance of Microsoft SQL Server. Later on though, I switched to PHP while keeping Microsoft SQL Server.
 
-### Initial implementation
+#### Initial implementation
 
 I knew that I would have to change my scripts later on to work against MySQL since I was to change the hosting of the site. Through laziness or poor design (you can pick either or both :)) I chose to create a class for Microsoft SQL and later on I would just change it to the MySQL. It seemed the easiest thing to do at the time.
 
@@ -136,7 +134,7 @@ That week though taught me that I need to pay more attention in designing rather
 
 After thorough research, I discovered a library that would support both platforms. The library that I found was [ADOdb](http://adodb.sourceforge.net/) which is a perfect example of the Factory Pattern. I used that library later on for a different project, but just looking at the code and understanding the flow of operations as well as the implementation of the pattern itself was invaluable to me.
 
-### Interfaces
+#### Interfaces
 
 First of all I need to explain what an interface is and why we need them. According to [PHP.net](http://php.net/manual/en/language.oop5.interfaces.php):
 
@@ -166,13 +164,13 @@ interface iDatabase
 }
 ```
 
-### Design Patterns - Factory
+#### Design Patterns - Factory
 
 A class implementing the Factory Pattern is like a car&nbsp;manufacturing&nbsp;plant producing three different cars on the same assembly line. All cars have common characteristics like 4 wheels, 4 doors (well most of them), a steering wheel, a dashboard etc. and all of them perform certain operations i.e. drive, reverse etc.
 
 In my problem earlier I could have used the Factory Pattern to create one class that would have implemented my blueprint, the interface which defines the CRUD operations that I need. So based on the above, the implementation will result in three classes.
 
-#### MSSQL class - stored in the file `Db_mssql.php`
+##### MSSQL class - stored in the file `Db_mssql.php`
 
 ```php
 class Db_mssql implements iDatabase
@@ -228,7 +226,7 @@ class Db_mssql implements iDatabase
 }
 ```
 
-#### MySQL class - stored in the file `Db_mysql.php`
+##### MySQL class - stored in the file `Db_mysql.php`
 
 ```php
 class Db_mysql implements iDatabase
@@ -319,7 +317,7 @@ while for MySQL the command becomes:
 
 Again since both underlying classes implement the `iDatabase` interface, I know exactly what to expect as far as methods and functionality is concerned from each class.
 
-### Conclusion
+#### Conclusion
 
 The Factory Design Pattern is one of the most powerful design patterns. It provides 'decoupling' i.e. breaks the inherited dependency of a class and its subclasses. It also allows for great flexibility while keeping the same interface for your clients.
 

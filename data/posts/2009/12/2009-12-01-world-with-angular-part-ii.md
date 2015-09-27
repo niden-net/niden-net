@@ -1,12 +1,10 @@
-## The world with Angular - Part II
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
 
 Continued from [Part I](/post/world-with-angular-part-i)
 
-### The Wildlife Rescue League application
+#### The Wildlife Rescue League application
 
-#### Design
+##### Design
 
 For those that do not know, the [Wildlife Rescue League](http://www.wildliferescueleague.org/)
 
@@ -32,11 +30,11 @@ State
 Description of incident
 ```
 
-#### Creating the database
+##### Creating the database
 
 The data needs to be stored in the database. So logging into my account in getangular.com (do so if you haven't done this already) I created my library and my new database (both called testwrl) and I am set. Everything else will be controlled in the HTML document.
 
-##### Initial HTML file
+###### Initial HTML file
 
 My HTML file is very simple.
 
@@ -88,7 +86,7 @@ img {
 
 Note the JavaScript line at the bottom part of the snippet. It references a subdomain of getangular.com (`testwrl.getangular.com`) as well as the database I am using to store data (`database=testwrl`).
 
-##### Creating the HTML input elements
+###### Creating the HTML input elements
 
 I need to create a form to store the data. The programming is done with HTML `<input>` elements. Once I have everything mapped nicely on screen I need to bind them in the database. First of all I need to describe what I want to work with. I will use the `ng-entity` attribute in my body element. The `ng-entity` uses the expression `[instance=]Entity[:template]`. Effectively `Entity` is the name of the entity that will be stored in my database under that name.
 
@@ -332,7 +330,7 @@ img {
   </div>
 ```
 
-##### Adding data
+###### Adding data
 
 The entry screen is complete and if you type some data and click the Save button, you will store that data in the database. You will notice that this is the case since your URL will change to something like
 

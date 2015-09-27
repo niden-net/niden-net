@@ -1,13 +1,13 @@
-            <div class="col-lg-10">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        {{ page['title'] }}
-                    </div>
-                    <div class="panel-body">
-                        {{ page['page'] }}
-                    </div>
-                </div>
-            </div>
+                        <li class="media list-group-item p-a">
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <h3>{{ page['title'] }}</h3>
+                                </div>
+                                <p>
+                                    {{ page['page'] }}
+                                </p>
+                            </div>
+                        </li>
 
 
 

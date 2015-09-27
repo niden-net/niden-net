@@ -1,5 +1,3 @@
-## Chromium OS - Part I
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
 
 A lot of hype has been generated on the Internet a few months back regarding Google's [announcement](http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html) that they are building a new operating system. The announcement was met with skepticism but also enthusiasm/anticipation by a lot of people who are puzzled as to what direction Google is taking and where are they looking themselves positioned in the computer industry.
@@ -14,7 +12,7 @@ The website for the new operating system is [located here](http://www.chromium.o
 
 Curious (as usual) I tried installing the Chromium OS on a virtual machine. My experience installing the new OS and other comments is outlined below:
 
-### Prerequisites
+#### Prerequisites
 
 My DELL Studio 17 has two hard drives and because I really really do not like Windows Vista, I have installed Ubuntu 9.10 32bit on the second partition. The notebook enjoys a 2.4GHz Intel processor and 6GB RAM.
 
@@ -63,7 +61,7 @@ sudo apt-get install wdiff lighttpd php5-cgi sun-java6-fonts
 
 A few minutes later the necessary packages had been downloaded and installed. One step closer to my goal :)
 
-### Getting the code
+#### Getting the code
 
 Now that all the prerequisites have been satisfied. I need to get the code!
 

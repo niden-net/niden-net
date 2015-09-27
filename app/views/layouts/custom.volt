@@ -1,185 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <title>{{ config.blog.title }}</title>
 
-    <title>{{ config.blog.title }}</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="{{ cdnUrl }}/css/toolkit.css" rel="stylesheet">
+        <link href="{{ cdnUrl }}/css/application.css" rel="stylesheet">
+        <link href="{{ cdnUrl }}/css/prettify-dark.css" rel="stylesheet">
+        <link href="{{ cdnUrl }}/css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style>
+            /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+            /* this chunk of css is not part of the toolkit :) */
+            body {
+                width: 1px;
+                min-width: 100%;
+                *width: 100%;
+            }
+        </style>
+    </head>
 
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/bootstrap-social/4.10.1/bootstrap-social.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/bootstrap.metismenu/1.1.2/css/metismenu.min.css">
-
-    <link rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/prettify/0.1/prettify.css">
-
-    <link rel="stylesheet" type="text/css"
-          href="{{ cdnUrl }}/css/sb-admin-2.css">
-
-    <link rel="stylesheet" type="text/css"
-          href="{{ cdnUrl }}/css/style.css">
-
-    <link rel="stylesheet" type="text/css"
-          href="{{ cdnUrl }}/css/prettify-dark.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-<div id="wrapper">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">{{ config.blog.title }}</a>
-        </div>
-        <!-- /.navbar-header -->
-
-        <ul class="nav navbar-top-links navbar-right">
-            <li class="dropdown">
-                <a href="/about">
-                    <i class="fa fa-question-circle fa-fw"></i> About
-                </a>
-            </li>
-            <li class="dropdown">
-                <a href="/disclaimer">
-                    <i class="fa fa-institution fa-fw"></i> Disclaimer
-                </a>
-            </li>
-            <li class="dropdown">
-                <a href="https://github.com/niden/">
-                    <i class="fa fa-github fa-fw"></i>
-                </a>
-            </li>
-            <li class="dropdown">
-                <a href="http://l.niden.net/nikos-g+">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-            </li>
-            <li class="dropdown">
-                Nikolaos Dimopoulos
-            </li>
-        </ul>
-
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li class="sidebar-search">
-                        <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
+    <body class="with-top-navbar">
+        <nav class="navbar navbar-inverse navbar-fixed-top app-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button"
+                            class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#navbar-collapse-main">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <strong>niden.net</strong>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse"
+                     id="navbar-collapse-main">
+                    <ul class="nav navbar-nav hidden-xs">
+                        <li class="active">
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/disclaimer">Disclaimer</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
+                        <li>
+                            <a class="app-notifications"
+                               href="http://l.niden.net/nikos-g+">
+                                <span class="icon icon-google-plus-with-circle"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="app-notifications"
+                               href="http://l.niden.net/nikos-g+">
+                                <span class="icon icon-linkedin-with-circle"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    {#
+                    <form class="navbar-form navbar-right app-search"
+                          role="search">
+                        <div class="form-group">
+                            <input type="text"
+                                   class="form-control"
+                                   data-action="grow"
+                                   placeholder="Search">
                         </div>
-                        <!-- /input-group -->
-                    </li>
-                    {% for url, title in menuList %}
-                    <li>
-                        <a href="/post/{{ url }}"> {{ title|e }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
+                    </form>
+                    #}
+                    <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div id="page-wrapper">
-        <div class="row">
-            <div class="col-lg-10">
-            {{ content() }}
-            </div>
-            <div class="col-lg-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Ads
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        Ads body
-                    </div>
-                    <!-- /.panel-body -->
+        <div class="container p-t-md">
+            <div class="row">
+                <div class="col-md-9">
+                    <ul class="list-group media-list media-list-stream">
+                        {{ content() }}
+                    </ul>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <i>
-                            Boldly goes where no coder has gone before... and
-                            other ramblings.
-                        </i>
-                        <br />
-                        <br />
-                        Personal blog of Nikolaos Dimopoulos.
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Tag Cloud
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                    {% for tag, class in tagCloud %}
-                        <span style="font-size: {{ class }}">
-                            <a href='/tag/{{ tag }}'>{{ tag }}</a>
-                        </span>
-                    {% endfor %}
-                    </div>
+
+                <div class="col-md-3">
+                    {% include 'posts/custom.profile.volt' %}
+                    {# {% include 'posts/custom.ads-sidebar.volt' %} #}
+                    {% include 'posts/custom.tag-cloud.volt' %}
+                    {% include 'posts/custom.post-archive.volt' %}
+                    {% include 'posts/custom.copyright.volt' %}
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /#page-wrapper -->
 
-</div>
-<!-- /#wrapper -->
-
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/bootstrap.metismenu/1.1.2/js/metismenu.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/prettify/0.1/prettify.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/prettify/0.1/lang-css.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/prettify/0.1/lang-sql.js"></script>
-    <script type="text/javascript">prettyPrint();</script>
-    <!-- Custom Theme JavaScript -->
-    <script type="text/javascript"
-            src="{{ cdnUrl }}/js/sb-admin-2.js"></script>
-
-</body>
+        <script src="{{ cdnUrl }}/js/jquery.min.js"></script>
+        <script src="{{ cdnUrl }}/js/chart.js"></script>
+        <script src="{{ cdnUrl }}/js/toolkit.js"></script>
+        <script src="{{ cdnUrl }}/js/application.js"></script>
+        <script src="{{ cdnUrl }}/js/prettify.js"></script>
+        <script src="{{ cdnUrl }}/js/lang-css.js"></script>
+        <script src="{{ cdnUrl }}/js/lang-sql.js"></script>
+        <script>
+            prettyPrint();
+            // execute/clear BS loaders for docs
+            $(function(){
+                if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+                    while(BS.loader.length){(BS.loader.pop())()}
+                }
+            })
+        </script>
+    </body>
 </html>

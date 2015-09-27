@@ -1,8 +1,6 @@
-## Test Driven Development
-
 <img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-tdd.png" />
 
-### Preface
+#### Preface
 
 I am curious by nature. This is probably one of my best attributes as a person, since I can never rest until I find out 'what this thing is' or 'what is it used for'. This curiosity comes in handy in the programming world.
 
@@ -14,7 +12,7 @@ In his presentations, Miško announces that Singletons are pathological liars an
 
 Reading more and more about Test Driven Development as well as Dependency Injection, I wanted to get as much information as possible prior to diving into coding. I had some questions so I emailed Miško who replied promptly and pointed me to the right direction. Kudos!
 
-### TDD bug
+#### TDD bug
  
 So off I go with a TDD approach in mind. Aaahhhh testing and Q&A! I must admit I have been the worst person in testing and Q&A, always putting it off till the last minute. The problem was not laziness, the problem was twofold:
 
@@ -155,7 +153,7 @@ class My_Session
 
 Pretty simple class.
 
-#### First test
+##### First test
 
 So I wanted to write my first test. Where to begin though? How about instantiation of the object with nothing as the store name? Voila the first test!
 
@@ -175,7 +173,7 @@ So I wanted to write my first test. Where to begin though? How about instantiati
 
 I run the test as a PHPUnit test through Zend Studio and I was happy to see green lights everywhere! My test passed! I think that right at that moment something changed. I got infected by the TDD bug :). I did however notice something else. The code completion window was reporting 40% for the session.php file. OK so that tells me that with this test I only covered 40% of the code. I need to have 100% so that I can be 100% sure that my code will not 'break' under some weird circumstances that I haven't foreseen.
 
-#### More tests (initialization)
+##### More tests (initialization)
 
 ```php
     public function testCreationEmptyStoreName()
@@ -230,7 +228,7 @@ This you might argue that it is an overkill. It might be but after these tests, 
 
 Back to our tests!
 
-#### Variables
+##### Variables
 
 What happens if we store variables? We use the magic `__set` methods to add data to our class. Since our class acts as a proxy to the `$_SESSION` array, we do not need to worry about any internal arrays to hold the information passed. As usual we follow the methodical approach, testing everything in a structured/logical matter (i.e. strings, objects, floats, integers, booleans). Note that the set tests have to be accompanied by get tests since you cannot test what you set without getting it back – the class does not expose the contents stored otherwise. I am creating an extra test for the get to have them separate. It is probably an overkill but this way I know that I follow the *no stone left unturned* method (which is my method :))
 
@@ -425,7 +423,7 @@ OK done with the magic `__get` and `__set` methods! All tests have passed and I 
     }
 ```
 
-#### Bug identified!
+##### Bug identified!
 
 There is a problem now. I got red lights from my tests. Despite the fact that the get/set pair are proxies to the `__get`/`__set`. I have a bug somewhere. Checking the unit test reveals the problem:
 
@@ -451,7 +449,7 @@ makes all tests pass and the grin is back on my face.
 
 The beauty of all these tests is that I have made a change in the class that I am testing and although I changed the behavior of one method (returning a value instead of always null) I am again confident that my class will work as I expect it to do. After the change I have corrected a bug and ensured that all the tests have passed. Surprisingly enough this bug has been lurking there for quite some time and it was only until I approached my class with TDD that I found it. The question you should be asking yourself is whether your code has 100% coverage AND it passes all the tests.
 
-#### 100% coverage
+##### 100% coverage
 
 The final three tests that I need to create are for specific methods. `dump()`, `count()` and `destroy()`. The tests are as follows:
 
@@ -493,7 +491,7 @@ The final three tests that I need to create are for specific methods. `dump()`, 
 
 Running the above we get to the magic 100% coverage! Now the grin is permanent. I know now for sure that my code is bug free and that it will do what I expect it to do.
 
-### Conclusion and thoughts:
+#### Conclusion and thoughts:
 
 The above test took me the best part of 2 hours to complete. After numerous failed attempts I did manage to get the first test to run as a PHPUnit test. After that the time spent was more on the code and the tests themselves. The highlight of this exercise was that I found a lurking bug that I wouldn't have found otherwise – at least easily.
 

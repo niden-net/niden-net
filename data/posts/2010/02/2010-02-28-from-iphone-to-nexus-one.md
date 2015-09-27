@@ -1,65 +1,262 @@
-## From iPhone to Nexus One
-
 <img class="post-image" src="{{ cdnUrl }}/files/2010-02-28-iphone-nexus-one.png" />
 
 References: [Leaving the iPhone](http://www.mattcutts.com/blog/switch-iphone-to-android/) by Matt Cutts, [Android Equivalency Table](https://docs.google.com/View?id=ajmh7zht8f5f_3dbdpf6xv) and [Good Things: Ubuntu and Android](http://al3x.net/2010/02/15/ubuntu-android.html) by Alex Payne. I am pretty sure that there are other reviews and how-to's on the Internet, outlining that one of the above (or none) is the killer of the other. I am just posting what I did to switch effortlessly.
 
-### Homework
+#### Homework
 
 Of the applications currently installed on my iPhone, some are really very essential (i.e. email, web, podcast manager etc.) and some I can easily live without (Sportacular). Below is a list of the applications that I have listed in importance order and their counterparts in Android.
 
-|Severity  |Application - iPhone|Application - Nexus One|
-|:--------:|--------------------|-----------------------|
-|H        |Calendar            |Calendar (built in - syncs automatically with the account you log in)|
-|H        |Google Voice        |Google Voice (integrates with the Nexus One so you call using your Voice number)|
-|H        |GV Mobile           |Google Voice|
-|H        |iPhoneModem         |PDANet ($30) or if you root your Nexus One other applications. PDANet requires Bluetooth or the USB cable, the others can hook up a WiFi connection|
-|H        |iPod                |Listen (by Google)|
-|H        |Mail                |Mail (built in - allows for IMAP, Exchange, POP - it also syncs easily Google based email)|
-|H        |Maps                |Web based|
-|H        |Phone               |Phone (built in - can be replaced by Google Voice)|
-|H        |pTerm               |Connectbot|
-|H        |Browser             |Browser|
-|H        |Solebon             |Solitaire (not as advanced as the paid Solebon but it will do)|
-|H        |Stanza              |Apparently Panda Reader is out but I could not find it. I gave up on this since I mostly work on the notebook and not longer read books on my mobile device|
-|H        |WunderRadio         |Streamfurious - not as good as WunderRadio but it has the stations I listen to|
-|H        |YouTube             |YouTube|
-|M        |Buzz                |Web based|
-|M        |Calculator          |Calculator|
-|M        |Camera              |Camera|
-|M        |CardStar            |Key Ring Reward Cards|
-|M        |Clock               |Clock - does not have countdown or stopwatch|
-|M        |Cycorder            |Camera (built in)|
-|M        |FuelGauge           |aCar|
-|M        |Google Earth        |Google Earth|
-|M        |iTunes              |Android Marketplace|
-|M        |Lattitude           |Lattitude (a lot of privacy warnings - even an email - to ensure that you want to switch it on)|
-|M        |LinkedIn            |Droidln|
-|M        |Photos              |Photos|
-|M        |QuickMark           |Barcode Scanner|
-|M        |RedLaser            |Goggles, Barcode Scanner|
-|M        |Shazam              |Shazam|
-|M        |TweetDeck           |Seesmic|
-|M        |TWiT                |TWiT|
-|M        |VNC                 |Remote VNC Lite|
-|L        |Dictionary          |Dictionary|
-|L        |Facebook            |Facebook|
-|L        |Flixster            |Flixter|
-|L        |Messages            |Messages (built in - integrates with Google Voice)|
-|L        |Notes               |Evernote, like a billion other note apps some of which sync to Google Docs or other similar services, Tomdroid|
-|L        |Pregnancy           |A lot of applications, Pregnancy Assistant one that comes close to Pregnancy for the iPhone - either way I won't need this after May (I think :))|
-|L        |Sears2Go            |Sears2Go|
-|L        |Skype               |Fring, I also use Skype Go so no problem for me there|
-|L        |SnapTell            |Goggles|
-|L        |Sportacular         |Scoreboard|
-|L        |Stocks              |Finance|
-|L        |TrafficInfo         |INRIX Traffic|
-|L        |USAA                |USAA Mobile|
-|L        |Voice Memos         |Google Voice|
-|L        |Weather             |Weather on the top bar of one of the screens, News and Weather application|
-|L        |Wordpress           |Wordpress|
+<table class="table table-responsive">
+    <thead>
+        <th class="text-center">Severity</th>
+        <th>iPhone App</th>
+        <th>Nexus One App</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Calendar</td>
+            <td>Calendar (built in - syncs automatically with the account you log in)</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Google Voice</td>
+            <td>Google Voice (integrates with the Nexus One so you call using your Voice number)</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>GV Mobile</td>
+            <td>Google Voice</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>iPhoneModem</td>
+            <td>PDANet ($30) or if you root your Nexus One other applications. PDANet requires Bluetooth or the USB cable, the others can hook up a WiFi connection</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>iPod</td>
+            <td>Listen (by Google)</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Mail</td>
+            <td>Mail (built in - allows for IMAP, Exchange, POP - it also syncs easily Google based email)</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Maps</td>
+            <td>Web based</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Phone</td>
+            <td>Phone (built in - can be replaced by Google Voice)</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>pTerm</td>
+            <td>Connectbot</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Browser</td>
+            <td>Browser</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Solebon</td>
+            <td>Solitaire (not as advanced as the paid Solebon but it will do)</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>Stanza</td>
+            <td>Apparently Panda Reader is out but I could not find it. I gave up on this since I mostly work on the notebook and not longer read books on my mobile device</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>WunderRadio</td>
+            <td>Streamfurious - not as good as WunderRadio but it has the stations I listen to</td>
+        </tr>
+        <tr>
+            <td class="text-center">H</td>
+            <td>YouTube</td>
+            <td>YouTube</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Buzz</td>
+            <td>Web based</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Calculator</td>
+            <td>Calculator</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Camera</td>
+            <td>Camera</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>CardStar</td>
+            <td>Key Ring Reward Cards</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Clock</td>
+            <td>Clock - does not have countdown or stopwatch</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Cycorder</td>
+            <td>Camera (built in)</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>FuelGauge</td>
+            <td>aCar</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Google Earth</td>
+            <td>Google Earth</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>iTunes</td>
+            <td>Android Marketplace</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Lattitude</td>
+            <td>Lattitude (a lot of privacy warnings - even an email - to ensure that you want to switch it on)</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>LinkedIn</td>
+            <td>Droidln</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Photos</td>
+            <td>Photos</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>QuickMark</td>
+            <td>Barcode Scanner</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>RedLaser</td>
+            <td>Goggles, Barcode Scanner</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>Shazam</td>
+            <td>Shazam</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>TweetDeck</td>
+            <td>Seesmic</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>TWiT</td>
+            <td>TWiT</td>
+        </tr>
+        <tr>
+            <td class="text-center">M</td>
+            <td>VNC</td>
+            <td>Remote VNC Lite</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Dictionary</td>
+            <td>Dictionary</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Facebook</td>
+            <td>Facebook</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Flixster</td>
+            <td>Flixter</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Messages</td>
+            <td>Messages (built in - integrates with Google Voice)</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Notes</td>
+            <td>Evernote, like a billion other note apps some of which sync to Google Docs or other similar services, Tomdroid</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Pregnancy</td>
+            <td>A lot of applications, Pregnancy Assistant one that comes close to Pregnancy for the iPhone - either way I won't need this after May (I think :))</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Sears2Go</td>
+            <td>Sears2Go</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Skype</td>
+            <td>Fring, I also use Skype Go so no problem for me there</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>SnapTell</td>
+            <td>Goggles</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Sportacular</td>
+            <td>Scoreboard</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Stocks</td>
+            <td>Finance</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>TrafficInfo</td>
+            <td>INRIX Traffic</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>USAA</td>
+            <td>USAA Mobile</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Voice Memos</td>
+            <td>Google Voice</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Weather</td>
+            <td>Weather on the top bar of one of the screens, News and Weather application</td>
+        </tr>
+        <tr>
+            <td class="text-center">L</td>
+            <td>Wordpress</td>
+            <td>Wordpress</td>
+        </tr>
+    </tbody>
+</table>
 
-### The Purchase
+#### The Purchase
 
 I knew I wanted to buy the Nexus One the minute it was presented to the world :) There were however a lot of factors to take into account, the applications that I had and what their replacements will be (see table above), whether it would work reliably with AT&T's network or whether I would have to switch to T-Mobile etc.
 
@@ -69,7 +266,7 @@ I discussed the issue with the boss (my wife who else :)) and the purchase was a
 
 The purchase was really trouble free. I also purchased the dock and the really nice surprise is that Google offers free overnight FedEx to your location. It came in handy since I really wanted the phone there and then!
 
-### First experience
+#### First experience
 
 <img class="post-image" src="{{ cdnUrl }}/files/2010-02-28-001.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/2010-02-28-002.png" />
@@ -95,7 +292,7 @@ While the Nexus One was charging, I inspected my iPhone once more and synced it 
 
 I plugged in the dock and set the phone up on it so that it charges prior to turning in. A nice surprise was the again subtle green digital clock that appeared on the phone while it is docked. I always wanted to have a nice clock on my bed stand - now I got it :)
 
-### The day after
+#### The day after
 
 I started the day with the attitude of *Forget the iPhone and start anew*. It was difficult, I must admit, but I think I managed quite well. The more I was using the Nexus One the more I liked it. I installed all the applications that I wanted (see table above) and set up the screens with the relevant application icons, trying to resemble what I had on the iPhone so that I won't spend much time looking for application icons.
 
@@ -113,7 +310,7 @@ Multitasking - multiple application notifications. This one has been the most di
 
 There are other areas that I could discuss here but they are mostly focused on personal preferences on how things are done or should be done.
 
-### Conclusion
+#### Conclusion
 
 Overall I am really glad that I made the switch. The screen and camera are amazing, the phone is really responsive and apart from a couple of times that I didn't know how to do something and I had to Google it, I am using it as if I had it for a long time. I have **no restrictions**, I don't have to jailbreak the device so that I can get some applications that Apple deemed that they *ruin the user experience* (according to [their reply to the FCC](http://www.apple.com/hotnews/apple-answers-fcc-questions) regarding Google Voice), my data is synchronized with the cloud and [I can get it out of there at will](http://www.dataliberation.org/). I can even develop my own application and install it if I wish to. This is something that the iPhone does not provide and notable is the fact that I had to retype all my store cards that I used Cardscan for in the Key Card scanner and there is no way for me to get the data that FuelGauge has stored in it and potentially transfer it to aCar.
 

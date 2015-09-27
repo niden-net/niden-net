@@ -1,5 +1,3 @@
-## Git `pre-commit` - Another check to ensure clean code
-
 <img class="post-image" src="{{ cdnUrl }}/files/git-logo.png" />
 
 Throughout my career I have been using various [revision control systems](http://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.

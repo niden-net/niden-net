@@ -1,8 +1,6 @@
-## URL beautification in PHP
-
 <img class="post-image" src="{{ cdnUrl }}/files/php.png" />
 
-### Preface
+#### Preface
 
 The last few years I have been using Quicken to manage the home bank accounts and spending. My wife never had any problems with me doing so and it helps us manage our cash flow better. Of course like every couple we buy things that we need and always provision a small amount of money for personal expenses.
 
@@ -12,9 +10,9 @@ The purpose of this post is not to try to make you go buy makeup. It is however 
 
 *Beautification* in URLs is also known as *Pretty URLs*. It is a method where `mod_rewrite` is used to make a URL look easier to remember. Although this process started in an attempt to increase SEO and make a site's URLs easier to index/follow, it has now become a must for every site that wants to create awareness and make people remember as much as possible so that they can revisit. Wordpress (this blog's blogging software) as well as other blogging software use this methodology to ensure that the posts are easily indexed and remembered (see the URL of this post and the title of this post).
 
-### Beautification
+#### Beautification
 
-#### First Step
+##### First Step
 
 Instead of rewriting my whole application to have beautiful and easy to remember URLs, I started with changing the way I processed parameters. Imagine the scenario where I have a site with various pages and one script that processes everything. My URL could be something like:
 
@@ -49,7 +47,7 @@ The `$getData` array contains the parameters that have been passed and allows al
 
 Please note that I am not going to expand on security here. In my production code there are multiple checks on the variables passed so as to ensure that there are no SQL injection vulnerabilities.
 
-#### A better approach with .htaccess
+##### A better approach with .htaccess
 
 In order to make the URL look a lot more *beautified*, I need to remove the script name and the question mark of the query string. So my URL can easily be like:
 
@@ -130,7 +128,7 @@ RewriteEngine On
 RewriteRule   ^post-([0-9]+)+\.html$ /showpost.php?p=$1 [NC,L]</pre>
 ```
 
-#### Zend Framework
+##### Zend Framework
 
 If I want to push the envelope further I will need to use [Zend Framework](http://framework.zend.com/) to do all this effortlessly. Zend Framework's [front controller](http://framework.zend.com/manual/en/zend.controller.html) provides amazing flexibility in terms of how my application URLs can be displayed on the web.
 
@@ -152,7 +150,7 @@ $router->addRoute(
 
 This is a small example on how a simple controller/action sequence can still work as expected and the resulting URL is *beautified*.
 
-### Final thoughts
+#### Final thoughts
 
 Having easy to remember URLs in an application is a must. It will not only help search engines crawl your site easier - thus making your site more easily discoverable - but it will also help your users remember key areas of your site.
 
