@@ -66,7 +66,7 @@
                         </li>
                         <li>
                             <a class="app-notifications"
-                               href="http://l.niden.net/nikos-g+">
+                               href="https://www.linkedin.com/in/nikolaosdimopoulos">
                                 <span class="icon icon-linkedin-with-circle"></span>
                             </a>
                         </li>
