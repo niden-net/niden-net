@@ -3,8 +3,7 @@
                         <h5 class="m-t-0">Tag Cloud</h5>
                         {% for tag, class in tagCloud %}
                             <span style="font-size: {{ class }}">
-                                {# <a href='/tag/{{ tag }}'>{{ tag }}</a> #}
-                                {{ tag }}
+                                <a href='/tag/{{ tag }}'>{{ tag }}</a>
                             </span>
                         {% endfor %}
                     </div>

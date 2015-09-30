@@ -27,7 +27,11 @@ class PostsController extends Controller
 
     public function tagAction($tag)
     {
-        $this->view->pick('posts/index');
+        $viewFile = 'posts/index';
+        if (true === boolval($this->config->blog->customLayout)) {
+            $viewFile = 'posts/custom.index';
+        }
+        $this->view->pick($viewFile);
         $this->view->showDisqus = false;
         $this->view->posts = $this->finder->getLatestByTag($tag, 10);
     }
