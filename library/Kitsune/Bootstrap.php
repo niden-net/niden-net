@@ -59,7 +59,7 @@ use Kitsune\Utils;
  */
 class Bootstrap
 {
-    public static function run(DiInterface $di, array $options = [])
+    public function run(DiInterface $di, array $options = [])
     {
         $memoryUsage = memory_get_usage();
         $currentTime = microtime(true);
@@ -362,19 +362,7 @@ class Bootstrap
         /**
          * Posts Finder
          */
-        $di->set(
-            'finder',
-            function () use ($utils, $cache) {
-                $key        = 'post.finder.cache';
-                $postFinder = $utils->cacheGet($key);
-                if (null === $postFinder) {
-                    $postFinder = new PostFinder();
-                    $cache->save($key, $postFinder);
-                }
-                return $postFinder;
-            },
-            true
-        );
+        $di->set('finder', new PostFinder(), true);
 
         /**
          * For CLI I only need the dependency injector

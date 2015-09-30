@@ -25,14 +25,15 @@ namespace Kitsune;
 use Phalcon\Di\Injectable as PhDiInjectable;
 use Kitsune\Exceptions\Exception as KException;
 
+/**
+ * Class PostFinder
+ *
+ * @package Kitsune
+ */
 class PostFinder extends PhDiInjectable
 {
-    private $data       = [];
-    private $tags       = [];
-    private $links      = [];
-    private $linkNumber = [];
-    private $dates      = [];
-    private $pages      = [];
+    private $data  = [];
+    private $pages = [];
 
     /**
      * The constructor. Reads the posts JSON file and creates the necessary
@@ -42,85 +43,22 @@ class PostFinder extends PhDiInjectable
      */
     public function __construct()
     {
-        $sourceFile = K_PATH . '/data/posts.json';
-
-        if (!file_exists($sourceFile)) {
-            throw new KException('Posts JSON file cannot be located');
-        }
-
-        $contents = file_get_contents($sourceFile);
-        $data     = json_decode($contents, true);
-        $dates    = [];
-
-        if (false === $data) {
-            throw new KException('Posts JSON file is potentially corrupted');
-        }
+        $this->data = [
+            'data'  => [],
+            'tags'  => [],
+            'links' => [],
+            'dates' => [],
+        ];
 
         /**
-         * If there is a pages json
+         * Cached data - Pages
          */
-        $sourceFile = K_PATH . '/data/pages.json';
-        if (file_exists($sourceFile)) {
-            $contents = file_get_contents($sourceFile);
-            $pages    = json_decode($contents, true);
-
-            foreach ($pages as $page) {
-                $this->pages[$page['slug']] = $page['title'];
-            }
-        }
+        $this->pages = $this->readPagesJson();
 
         /**
-         * First all the data will go in a master array
+         * Cached data - Posts
          */
-        foreach ($data as $item) {
-            $post = new Post($item);
-
-            /**
-             * Add the element in the master array
-             */
-            $this->data[$post->getSlug()] = $post;
-
-            /**
-             * Tags
-             */
-            foreach ($post->getTags() as $tag) {
-                $key                = strtolower(trim($tag));
-                $this->tags[$key][] = $post->getSlug();
-            }
-
-            /**
-             * Links
-             */
-            $this->links[$post->getLink()] = $post->getSlug();
-
-            /**
-             * Check if the link is a tumblr one and get its number
-             */
-            $position = strpos($post->getLink(), '/');
-            if (false !== $position) {
-                $linkNumber = substr($post->getLink(), 0, $position);
-                $this->linkNumber[$linkNumber] = $post->getSlug();
-            }
-
-            /**
-             * Dates (sorting)
-             */
-            $dates[$post->getDate()] = $post->getSlug();
-        }
-
-        /**
-         * Sort the dates array
-         */
-        krsort($dates);
-        $postsPerPage = intval($this->config->blog->postsPerPage);
-        $postsPerPage = ($postsPerPage < 0) ? 10 : $postsPerPage;
-        $this->dates  = array_chunk($dates, $postsPerPage);
-
-        /**
-         * Adding one element to the beginning of the array to deal with the
-         * 0 based array index since the array keys correspond to the pages
-         */
-        array_unshift($this->dates, []);
+        $this->data = $this->readPostsJson();
     }
 
     /**
@@ -137,10 +75,10 @@ class PostFinder extends PhDiInjectable
 
         if (null === $posts) {
             $page  = ($page < 1) ? 1 : $page;
-            $dates = $this->utils->fetch($this->dates, $page, null);
+            $dates = $this->utils->fetch($this->data['dates'], $page, null);
             if (!is_null($dates)) {
                 foreach ($dates as $date) {
-                    $posts[] = $this->data[$date];
+                    $posts[] = $this->data['data'][$date];
                 }
                 $this->cache->save($key, $posts);
             } else {
@@ -158,8 +96,8 @@ class PostFinder extends PhDiInjectable
         $posts = $this->utils->cacheGet($key);
 
         if (null === $posts) {
-            foreach ((array) $this->tags[$tag] as $key) {
-                $posts[strtotime($this->data[$key]->date)] = $this->data[$key];
+            foreach ((array) $this->data['tags'][$tag] as $key) {
+                $posts[strtotime($this->data['data'][$key]->date)] = $this->data['data'][$key];
             }
             ksort($posts);
             $posts = array_slice(array_reverse($posts), 0, $number);
@@ -183,7 +121,7 @@ class PostFinder extends PhDiInjectable
             $max  = 0;
             $tags = [];
 
-            foreach ($this->tags as $key => $items) {
+            foreach ($this->data['tags'] as $key => $items) {
                 $tags[$key] = count($items);
                 $max        = ($max > count($items)) ? $max : count($items);
             }
@@ -225,7 +163,7 @@ class PostFinder extends PhDiInjectable
         if (null === $postArchive) {
             $thisYear    = date('Y');
             $postArchive = [];
-            foreach ($this->data as $post) {
+            foreach ($this->data['data'] as $post) {
                 $date = $post->getDate();
 
                 /**
@@ -292,19 +230,12 @@ class PostFinder extends PhDiInjectable
      */
     public function get($slug)
     {
-        if (is_numeric($slug)) {
-            if (array_key_exists($slug, $this->linkNumber)) {
-                $slug = $this->linkNumber[$slug];
-                $this->response->redirect('/post/' . $slug, false, 301);
-            }
-        }
-
         $key  = 'post-' . $slug . '.cache';
         $post = $this->utils->cacheGet($key);
 
         if (null === $post) {
-            if (array_key_exists($slug, $this->data)) {
-                $post = $this->data[$slug];
+            if (array_key_exists($slug, $this->data['data'])) {
+                $post = $this->data['data'][$slug];
                 $this->cache->save($key, $post);
             }
         }
@@ -346,7 +277,7 @@ class PostFinder extends PhDiInjectable
             'next'     => $page + 1
         ];
 
-        $totalPages = count($this->dates);
+        $totalPages = count($this->data['dates']);
 
         if (($page + 1) > $totalPages) {
             $return['next'] = 0;
@@ -359,4 +290,135 @@ class PostFinder extends PhDiInjectable
         return $return;
     }
 
+    /**
+     * Returns the array of posts
+     *
+     * @return array
+     * @throws \Kitsune\Exceptions\Exception
+     */
+    private function readPostsJson()
+    {
+        $key  = 'post.finder.data.cache';
+        $data = $this->utils->cacheGet($key);
+
+        if (null === $data) {
+            $sourceFile = K_PATH . '/data/posts.json';
+
+            if (!file_exists($sourceFile)) {
+                throw new KException('Posts JSON file cannot be located');
+            }
+
+            $contents = file_get_contents($sourceFile);
+            $posts    = json_decode($contents, true);
+
+            if (false === $posts) {
+                throw new KException('Posts JSON file is potentially corrupted');
+            }
+
+            $data = $this->processPostData($posts);
+
+            $this->cache->save($key, $data);
+        }
+
+        return $data;
+    }
+
+    /**
+     * Processes posts from the JSON file and arranges them for internal use
+     *
+     * @param array $posts
+     *
+     * @return array
+     */
+    private function processPostData($posts)
+    {
+        $data      = [];
+        $tags      = [];
+        $links     = [];
+        $dates     = [];
+
+        foreach ($posts as $item) {
+            $post = new Post(
+                $this->config,
+                $this->markdown,
+                $this->router->getRewriteUri()
+            );
+            $post->load($item);
+
+            /**
+             * Add the element in the master array
+             */
+            $data[$post->getSlug()] = $post;
+
+            /**
+             * Tags
+             */
+            foreach ($post->getTags() as $tag) {
+                $key          = strtolower(trim($tag));
+                $tags[$key][] = $post->getSlug();
+            }
+
+            /**
+             * Links
+             */
+            $links[$post->getLink()] = $post->getSlug();
+
+            /**
+             * Dates (sorting)
+             */
+            $dates[$post->getDate()] = $post->getSlug();
+        }
+
+        /**
+         * Sort the dates array
+         */
+        krsort($dates);
+        $postsPerPage = intval($this->config->blog->postsPerPage);
+        $postsPerPage = ($postsPerPage < 0) ? 10 : $postsPerPage;
+        $dates        = array_chunk($dates, $postsPerPage);
+
+        /**
+         * Adding one element to the beginning of the array to deal with the
+         * 0 based array index since the array keys correspond to the pages
+         */
+        array_unshift($dates, []);
+
+        return [
+            'data'  => $data,
+            'tags'  => $tags,
+            'links' => $links,
+            'dates' => $dates,
+        ];
+    }
+
+    /**
+     * Returns the array of pages
+     *
+     * @return array|mixed
+     */
+    private function readPagesJson()
+    {
+        $key   = 'post.finder.pages.cache';
+        $pages = $this->utils->cacheGet($key);
+
+        if (null === $pages) {
+            /**
+             * If there is a pages json
+             */
+            $pages      = [];
+            $sourceFile = K_PATH . '/data/pages.json';
+            if (file_exists($sourceFile)) {
+                $contents = file_get_contents($sourceFile);
+                $data     = json_decode($contents, true);
+
+                foreach ($data as $page) {
+                    $pages[$page['slug']] = $page['title'];
+                }
+            }
+            $this->pages = $pages;
+            $this->cache->save($key, $pages);
+        }
+
+        return $pages;
+    }
 }

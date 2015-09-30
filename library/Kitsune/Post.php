@@ -22,9 +22,7 @@
  */
 namespace Kitsune;
 
-use \Phalcon\DI\Injectable as PhInjectable;
-
-class Post extends PhInjectable
+class Post
 {
     private $data = [];
 
@@ -88,7 +86,16 @@ class Post extends PhInjectable
         return $this->data['disqusUrl'];
     }
 
-    public function __construct($post)
+    public function __construct($config, $markdown, $url = '')
+    {
+        $this->config   = $config;
+        $this->markdown = $markdown;
+        $this->url      = $url;
+
+        $this->init();
+    }
+
+    public function load($post)
     {
         /**
          * Initialize the internal array
@@ -113,7 +120,7 @@ class Post extends PhInjectable
                 $this->getTitle()
             );
         } else {
-            $this->data['disqusUrl'] = $this->router->getRewriteUri()
+            $this->data['disqusUrl'] = $this->url
                                      . '/post/'
                                      . $this->getSlug();
             $this->data['disqusId']  = sprintf(
