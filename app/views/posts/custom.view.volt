@@ -21,7 +21,7 @@
                             {% endfor %}
                             </div>
 
-                            {% if showDisqus %}
+                            {% if notImplemented is defined and showDisqus %}
                             <div class="media-body">
                                 <div id="disqus_thread"></div>
                                 <script type="text/javascript">
