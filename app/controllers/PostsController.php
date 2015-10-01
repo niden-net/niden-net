@@ -69,6 +69,47 @@ class PostsController extends Controller
     }
 
     /**
+     * Sitemap generator
+     */
+    public function sitemapAction()
+    {
+        $this->view->disable();
+
+        $cacheKey = 'post-sitemap.cache';
+        $sitemap  = $this->utils->cacheGet($cacheKey);
+
+        if (null === $sitemap) {
+            /**
+             * All posts
+             */
+            $template = 'http://www.niden.net/post/%s';
+            $posts    = $this->finder->getPosts();
+            $data     = [];
+            foreach ($posts as $post) {
+                $data[] = [
+                    'location'        => sprintf($template, $post->getSlug()),
+                    'lastModified'    => $post->getDate(),
+                    'changeFrequency' => 'monthly',
+                    'priority'        => 0.5
+                ];
+            }
+
+            $sitemap = $this->viewSimple->render(
+                'posts/sitemap',
+                ['sitemap' => $data]
+            );
+
+            $this->cache->save($cacheKey, $sitemap);
+        }
+
+        $response = new Response();
+        $response->setHeader('Content-Type', 'application/xml');
+        $response->setContent($sitemap);
+
+        return $response;
+    }
+
+    /**
      * Handles the viewing of a post. The $slug can be either a number or a
      * string (actual slug). The number is when we have previous posts i.e.
      * from Disqus

@@ -67,8 +67,8 @@ return [
             'action'     => 'rss'
         ],
         '/sitemap' => [
-            'controller' => 'sitemap',
-            'action'     => 'index'
+            'controller' => 'posts',
+            'action'     => 'sitemap'
         ],
         '/post/{slug:[0-9a-zA-Z\-]+}' => [
             'controller' => 'posts',

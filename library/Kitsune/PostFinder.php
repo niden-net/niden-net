@@ -195,6 +195,16 @@ class PostFinder extends PhDiInjectable
     }
 
     /**
+     * Returns all the posts
+     *
+     * @return array
+     */
+    public function getPosts()
+    {
+        return $this->data['data'];
+    }
+
+    /**
      * Returns the menu list i.e. posts (url/title)
      *
      * @param bool|true $reverse

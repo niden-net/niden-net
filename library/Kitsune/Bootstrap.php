@@ -36,6 +36,7 @@ use Phalcon\Mvc\Url as UrlProvider;
 use Phalcon\Mvc\Router;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Volt as VoltEngine;
+use Phalcon\Mvc\View\Simple as ViewSimple;
 use Phalcon\Session\Adapter\Files as SessionAdapter;
 use Phalcon\Events\Manager as EventsManager;
 
@@ -59,10 +60,13 @@ use Kitsune\Utils;
  */
 class Bootstrap
 {
-    public function run(DiInterface $di, array $options = [])
+    private $diContainer = null;
+
+    public function run(DiInterface $diContainer, array $options = [])
     {
-        $memoryUsage = memory_get_usage();
-        $currentTime = microtime(true);
+        $memoryUsage       = memory_get_usage();
+        $currentTime       = microtime(true);
+        $this->diContainer = $diContainer;
 
         /**
          * The app path
@@ -80,7 +84,7 @@ class Bootstrap
          * Utils class
          */
         $utils = new Utils();
-        $di->set('utils', $utils, true);
+        $this->diContainer->set('utils', $utils, true);
 
         /**
          * Check if this is a CLI app or not
@@ -116,9 +120,7 @@ class Bootstrap
         $combined = array_replace_recursive($base, $specific);
 
         $config = new Config($combined);
-        $di->set('config', $config, true);
-
-        $config = $di->get('config');
+        $this->diContainer->set('config', $config, true);
 
         /**
          * Check if we are in debug/dev mode
@@ -155,7 +157,7 @@ class Bootstrap
         $logger    = new LoggerFile($name);
         $formatter = new LoggerFormatter($format);
         $logger->setFormatter($formatter);
-        $di->set('logger', $logger, true);
+        $this->diContainer->set('logger', $logger, true);
 
         /**
          * ERROR HANDLING
@@ -206,100 +208,61 @@ class Bootstrap
          * Routes
          */
         if (!K_CLI) {
-            $di->set(
-                'router',
-                function () use ($config) {
-                    $router = new Router(false);
-                    $router->removeExtraSlashes(true);
-                    $routes = $config->routes->toArray();
-                    foreach ($routes as $pattern => $options) {
-                        $router->add($pattern, $options);
-                    }
+            $router = new Router(false);
+            $router->removeExtraSlashes(true);
+            $routes = $config->routes->toArray();
+            foreach ($routes as $pattern => $options) {
+                $router->add($pattern, $options);
+            }
 
-                    return $router;
-                },
-                true
-            );
+            $this->diContainer->set('router', $router, true);
         }
 
         /**
          * We register the events manager
          */
-        $di->set(
-            'dispatcher',
-            function () use ($di) {
+        $eventsManager = new EventsManager;
 
-                $eventsManager = new EventsManager;
+        /**
+         * Handle exceptions and not-found exceptions using NotFoundPlugin
+         */
+        $eventsManager->attach('dispatch:beforeException', new NotFoundPlugin);
 
-                /**
-                 * Handle exceptions and not-found exceptions using NotFoundPlugin
-                 */
-                $eventsManager->attach('dispatch:beforeException', new NotFoundPlugin);
+        $dispatcher = new Dispatcher;
+        $dispatcher->setEventsManager($eventsManager);
 
-                $dispatcher = new Dispatcher;
-                $dispatcher->setEventsManager($eventsManager);
+        $dispatcher->setDefaultNamespace('Kitsune\Controllers');
 
-                $dispatcher->setDefaultNamespace('Kitsune\Controllers');
-
-                return $dispatcher;
-            }
-        );
+        $this->diContainer->set('dispatcher', $dispatcher);
 
         /**
          * The URL component is used to generate all kind of urls in the application
          */
-        $di->set(
-            'url',
-            function () use ($config) {
-                $url = new UrlProvider();
-                $url->setBaseUri($config->baseUri);
-                return $url;
-            }
+        $url = new UrlProvider();
+        $url->setBaseUri($config->baseUri);
+        $this->diContainer->set('url', $url);
+
+        $view = new View();
+        $view->setViewsDir(K_PATH . '/app/views/');
+        $view->registerEngines(
+            [
+                ".volt" => function ($view) {
+                    return $this->setVoltOptions($view);
+                },
+            ]
         );
+        $this->diContainer->set('view', $view);
 
-        $di->set(
-            'view',
-            function () use ($config) {
-
-                $view = new View();
-                $view->setViewsDir(K_PATH . '/app/views/');
-                $view->registerEngines([".volt" => 'volt']);
-                return $view;
-            }
+        $viewSimple = new ViewSimple();
+        $viewSimple->setViewsDir(K_PATH . '/app/views/');
+        $viewSimple->registerEngines(
+            [
+                ".volt" => function ($view) {
+                    return $this->setVoltOptions($view);
+                },
+            ]
         );
-
-        /**
-         * Setting up volt
-         */
-        $di->set(
-            'volt',
-            function ($view, $di) {
-
-                $volt = new VoltEngine($view, $di);
-                $volt->setOptions(
-                    [
-                        "compiledPath"  => K_PATH . '/var/cache/volt/',
-                        'stat'          => K_DEBUG,
-                        'compileAlways' => K_DEBUG,
-                    ]
-                );
-                return $volt;
-            },
-            true
-        );
-
-        /**
-         * Start the session the first time some component request the session
-         * service
-         */
-        $di->set(
-            'session',
-            function () {
-                $session = new SessionAdapter();
-                $session->start();
-                return $session;
-            }
-        );
+        $this->diContainer->set('viewSimple', $viewSimple);
 
         /**
          * Cache
@@ -310,67 +273,47 @@ class Bootstrap
         $frontCache  = new $class($frontConfig['params']);
         $class       = '\Phalcon\Cache\Backend\\' . $backConfig['adapter'];
         $cache       = new $class($frontCache, $backConfig['params']);
-        $di->set('cache', $cache, true);
-
-        /**
-         * viewCache
-         */
-        $di->set(
-            'viewCache',
-            function () use ($config) {
-                $frontConfig = $config->cache_view->front->toArray();
-                $backConfig  = $config->cache_view->back->toArray();
-                $class       = '\Phalcon\Cache\Frontend\\' . $frontConfig['adapter'];
-                $frontCache  = new $class($frontConfig['params']);
-                $class       = '\Phalcon\Cache\Backend\\' . $backConfig['adapter'];
-                $cache       = new $class($frontCache, $backConfig['params']);
-                return $cache;
-            }
-        );
+        $this->diContainer->set('cache', $cache, true);
 
         /**
          * Markdown renderer
          */
-        $di->set(
-            'markdown',
-            function () {
-                $ciconia = new Ciconia();
-                $ciconia->addExtension(new FencedCodeBlockExtension());
-                $ciconia->addExtension(new TaskListExtension());
-                $ciconia->addExtension(new InlineStyleExtension());
-                $ciconia->addExtension(new WhiteSpaceExtension());
-                $ciconia->addExtension(new TableExtension());
-                $ciconia->addExtension(new UrlAutoLinkExtension());
-                $ciconia->addExtension(new MentionExtension());
 
-                $extension = new IssueExtension();
-                $extension->setIssueUrl(
-                    '[#%s](https://github.com/phalcon/cphalcon/issues/%s)'
-                );
-                $ciconia->addExtension($extension);
+        $ciconia = new Ciconia();
+        $ciconia->addExtension(new FencedCodeBlockExtension());
+        $ciconia->addExtension(new TaskListExtension());
+        $ciconia->addExtension(new InlineStyleExtension());
+        $ciconia->addExtension(new WhiteSpaceExtension());
+        $ciconia->addExtension(new TableExtension());
+        $ciconia->addExtension(new UrlAutoLinkExtension());
+        $ciconia->addExtension(new MentionExtension());
 
-                $extension = new PullRequestExtension();
-                $extension->setIssueUrl(
-                    '[#%s](https://github.com/phalcon/cphalcon/pull/%s)'
-                );
-                $ciconia->addExtension($extension);
-                return $ciconia;
-            },
-            true
+        $extension = new IssueExtension();
+        $extension->setIssueUrl(
+            '[#%s](https://github.com/phalcon/cphalcon/issues/%s)'
         );
+        $ciconia->addExtension($extension);
+
+        $extension = new PullRequestExtension();
+        $extension->setIssueUrl(
+            '[#%s](https://github.com/phalcon/cphalcon/pull/%s)'
+        );
+        $ciconia->addExtension($extension);
+
+        $this->diContainer->set('markdown', $ciconia, true);
 
         /**
          * Posts Finder
          */
-        $di->set('finder', new PostFinder(), true);
+        $this->diContainer->set('finder', new PostFinder(), true);
 
         /**
          * For CLI I only need the dependency injector
          */
         if (K_CLI) {
-            return $di;
+            return $this->diContainer;
         } else {
-            $application = new Application($di);
+            $application = new Application($this->diContainer);
 
             if (K_TESTS) {
                 return $application;
@@ -378,5 +321,27 @@ class Bootstrap
                 return $application->handle()->getContent();
             }
         }
+    }
+
+    /**
+     * Sets Volt options for the various views
+     *
+     * @param \Phalcon\Mvc\View $view
+     *
+     * @return VoltEngine
+     */
+    private function setVoltOptions($view)
+    {
+        $di   = $this->diContainer;
+        $volt = new VoltEngine($view, $di);
+        $volt->setOptions(
+            [
+                "compiledPath"  => K_PATH . '/var/cache/volt/',
+                'stat'          => K_DEBUG,
+                'compileAlways' => K_DEBUG,
+            ]
+        );
+
+        return $volt;
     }
 }
