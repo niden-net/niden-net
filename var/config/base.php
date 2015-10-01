@@ -5,13 +5,16 @@ return [
     'baseUri'    => '/blog/',
     'cdnUrl'     => '',
     'blog'       => [
-        'title'        => 'Phalcon Framework Blog',
+        'title'        => 'niden.net',
         'postsPerPage' => 10,
-        'customLayout' => false,
+        'customLayout' => true,
         'disqus'       => [
+            'enabled'    => false,
+            'url'        => 'https://phalconphp.com',
             'shortname'  => 'phalconphp',
             'idTemplate' => 'Phalcon Framework - %s',
             'oldUrl'     => 'http://phalconphp.tumblr.com/post/%s',
+            'shortName'  => 'nidennetblog',
         ]
     ],
     'rss'        => [

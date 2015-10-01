@@ -4,300 +4,300 @@
     "slug": "annoyed",
     "date": "2009-11-01",
     "tags": "personal, rant",
-    "link": "2009\/11\/annoyed.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/annoyed.html"
   },
   {
     "title": "Relationships and the Internet",
     "slug": "relationships-and-the-internet",
     "date": "2009-11-02",
     "tags": "communications, internet, relationships",
-    "link": "2009\/11\/relationships-and-internet_16.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/relationships-and-internet_16.html"
   },
   {
     "title": "Flexible storage in MySQL",
     "slug": "flexible-storage-in-mysql",
     "date": "2009-11-03",
     "tags": "storage, programming, mysql, how-to",
-    "link": "2009\/11\/flexible-storage-in-mysql-how-to_16.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/flexible-storage-in-mysql-how-to_16.html"
   },
   {
     "title": "Gentoo Stage 1 Installation",
     "slug": "gentoo-stage-1-installation",
     "date": "2009-11-04",
     "tags": "gentoo, installation, linux, notebook, how-to",
-    "link": "2009\/11\/gentoo-stage-1-installation-how-to_16.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/gentoo-stage-1-installation-how-to_16.html"
   },
   {
     "title": "Google Apps review",
     "slug": "google-apps-review",
     "date": "2009-11-05",
     "tags": "google, google apps, review, GMail, Docs",
-    "link": "2009\/11\/google-apps-review_16.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/google-apps-review_16.html"
   },
   {
     "title": "Ultimate Incompetence",
     "slug": "ultimate-incompetence",
     "date": "2009-11-06",
     "tags": "personal, rant",
-    "link": "2009\/11\/ultimate-incompetence_16.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/ultimate-incompetence_16.html"
   },
   {
     "title": "Ultimate Incompetence #2",
     "slug": "ultimate-incompetence-2",
     "date": "2009-11-07",
     "tags": "personal, rant",
-    "link": "2009\/11\/ultimate-incompetence-2.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/ultimate-incompetence-2.html"
   },
   {
     "title": "New Blog",
     "slug": "new-blog",
     "date": "2009-11-08",
     "tags": "personal, update",
-    "link": "2009\/11\/new-blog.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/new-blog.html"
   },
   {
     "title": "Test Driven Development",
     "slug": "test-driven-development",
     "date": "2009-11-09",
     "tags": "php, tdd, test driven development, phpunit, how-to",
-    "link": "2009\/11\/test-driven-development-how-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/test-driven-development-how-to.html"
   },
   {
     "title": "Google Paid Storage",
     "slug": "google-paid-storage",
     "date": "2009-11-18",
     "tags": "google, online storage, storage, picasa, review",
-    "link": "2009\/11\/google-paid-storage-review.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/google-paid-storage-review.html"
   },
   {
     "title": "Chromium OS Part I",
     "slug": "chromium-os-part-i",
     "date": "2009-11-24",
     "tags": "chromium, chromium os, google, installation, linux, how-to",
-    "link": "2009\/11\/chromium-os-part-1-how-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/chromium-os-part-1-how-to.html"
   },
   {
     "title": "Chromium OS - Part II",
     "slug": "chromium-os-part-ii",
     "date": "2009-11-24",
     "tags": "chromium, chromium os, google, installation, linux, how-to",
-    "link": "2009\/11\/chromium-os-part-2-how-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/chromium-os-part-2-how-to.html"
   },
   {
     "title": "Chromium OS - Part III",
     "slug": "chromium-os-part-iii",
     "date": "2009-11-24",
     "tags": "chromium, chromium os, google, installation, linux, how-to",
-    "link": "2009\/11\/chromium-os-part-3-how-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/11\/chromium-os-part-3-how-to.html"
   },
   {
     "title": "The world with Angular - Part I",
     "slug": "world-with-angular-part-i",
     "date": "2009-12-01",
     "tags": "amazon, angularjs, cloud computing, ec2, programming, review, how-to",
-    "link": "2009\/12\/world-with-part-1-reviewhow-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/world-with-part-1-reviewhow-to.html"
   },
   {
     "title": "The world with Angular - Part II",
     "slug": "world-with-angular-part-ii",
     "date": "2009-12-01",
     "tags": "amazon, angularjs, cloud computing, ec2, programming, review, how-to",
-    "link": "2009\/12\/world-with-part-2-reviewhow-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/world-with-part-2-reviewhow-to.html"
   },
   {
     "title": "The world with Angular - Part III",
     "slug": "world-with-angular-part-iii",
     "date": "2009-12-01",
     "tags": "amazon, angularjs, cloud computing, ec2, programming, review, how-to",
-    "link": "2009\/12\/world-with-part-3-reviewhow-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/world-with-part-3-reviewhow-to.html"
   },
   {
     "title": "Faster rsync and emege in Gentoo",
     "slug": "faster-rsync-and-emerge-in-gentoo",
     "date": "2009-12-10",
     "tags": "gentoo, emerge, rsync, installation, how-to",
-    "link": "2009\/12\/faster-rsync-and-emerge-in-gentoo-how.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/faster-rsync-and-emerge-in-gentoo-how.html"
   },
   {
     "title": "Variables in php.ini",
     "slug": "variables-in-php-ini",
     "date": "2009-12-11",
     "tags": "php, programming, zend framework, how-to",
-    "link": "2009\/12\/variables-in-phpini-how-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/variables-in-phpini-how-to.html"
   },
   {
     "title": "URL beautification in PHP",
     "slug": "url-beautification-in-php",
     "date": "2009-12-15",
     "tags": "php, programming, zend framework, input, mod_rewrite, how-to",
-    "link": "2009\/12\/url-beautification-how-to.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/url-beautification-how-to.html"
   },
   {
     "title": "niden.net on Technorati",
     "slug": "niden-net-on-technorati",
     "date": "2009-12-28",
     "tags": "technorati",
-    "link": "2009\/12\/nidennet-on-technorati.html"
+    "link":"http:\/\/www.niden.net\/2009\/12\/nidennet-on-technorati.html"
   },
   {
     "title": "Design Patterns in PHP Series",
     "slug": "design-patterns-in-php-series",
     "date": "2010-01-06",
     "tags": "design, patterns, design patterns, php, programming, series, how-to",
-    "link": "2010\/01\/design-patterns-series-serieshow-to.html"
+    "link":"http:\/\/www.niden.net\/2010\/01\/design-patterns-series-serieshow-to.html"
   },
   {
     "title": "Create a SSL Certificate in Linux",
     "slug": "create-a-ssl-certificate-in-linux",
     "date": "2010-01-10",
     "tags": "gentoo, linux, ssl, how-to",
-    "link": "2010\/01\/create-ssl-certificate-linux-how-to.html"
+    "link":"http:\/\/www.niden.net\/2010\/01\/create-ssl-certificate-linux-how-to.html"
   },
   {
     "title": "Design Patterns - Singleton",
     "slug": "php-design-patterns-singleton",
     "date": "2010-01-22",
     "tags": "design patterns, mysql, php, programming, series, zend framework, how-to, singleton",
-    "link": "2010\/01\/design-patterns-singleton-serieshow-to.html"
+    "link":"http:\/\/www.niden.net\/2010\/01\/design-patterns-singleton-serieshow-to.html"
   },
   {
     "title": "Design Patterns - Factory",
     "slug": "php-design-patterns-factory",
     "date": "2010-02-02",
     "tags": "design patterns, mysql, php, programming, series, zend framework, how-to, factory",
-    "link": "2010\/02\/design-patterns-factory-serieshow-to.html"
+    "link":"http:\/\/www.niden.net\/2010\/02\/design-patterns-factory-serieshow-to.html"
   },
   {
     "title": "From iPhone to Nexus One",
     "slug": "from-iphone-to-nexus-one",
     "date": "2010-02-28",
     "tags": "google, iphone, nexus one, review",
-    "link": "2010\/02\/from-iphone-to-nexus-one-review.html"
+    "link":"http:\/\/www.niden.net\/2010\/02\/from-iphone-to-nexus-one-review.html"
   },
   {
     "title": "Update",
     "slug": "update",
     "date": "2010-05-18",
     "tags": "update, personal",
-    "link": "2010\/01\/update-personal.html"
+    "link":"http:\/\/www.niden.net\/2010\/01\/update-personal.html"
   },
   {
     "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11",
     "tags": "personal, update",
-    "link": "2011\/11\/new-beginnings-sleep6566400.html"
+    "link":"http:\/\/www.niden.net\/2011\/11\/new-beginnings-sleep6566400.html"
   },
   {
     "title": "Git pre-commit - Another check to ensure clean code",
     "slug": "git-pre-commit-another-check-to-ensure-clean-code",
     "date": "2011-11-13",
     "tags": "git, how-to",
-    "link": "2011\/11\/git-pre-commit-another-check-to-ensure.html"
+    "link":"http:\/\/www.niden.net\/2011\/11\/git-pre-commit-another-check-to-ensure.html"
   },
   {
     "title": "Fast serialization of data in PHP",
     "slug": "fast-serialization-of-data-in-php",
     "date": "2011-11-22",
     "tags": "php, performance, igbinary, serialize, json, how-to",
-    "link": "2011\/11\/fast-serialization-of-data-in-php-how.html"
+    "link":"http:\/\/www.niden.net\/2011\/11\/fast-serialization-of-data-in-php-how.html"
   },
   {
     "title": "Change the encoding of a MySQL database to UTF8",
     "slug": "change-encoding-of-mysql-database-to-utf8",
     "date": "2011-12-09",
     "tags": "php, mysql, encoding, utf8, how-to",
-    "link": "2011\/12\/change-encoding-of-mysql-database-to.html"
+    "link":"http:\/\/www.niden.net\/2011\/12\/change-encoding-of-mysql-database-to.html"
   },
   {
     "title": "Downgrading PHPUnit from 3.6 to 3.5",
     "slug": "downgrading-phpunit-from-36-to-35",
     "date": "2012-01-15",
     "tags": "phpunit, linux, how-to",
-    "link": "2012\/01\/downgrading-phpunit-from-36-to-35.html"
+    "link":"http:\/\/www.niden.net\/2012\/01\/downgrading-phpunit-from-36-to-35.html"
   },
   {
     "title": "Localization and Country Regions",
     "slug": "localization-and-country-regions",
     "date": "2012-03-05",
     "tags": "localization, github, json",
-    "link": "2012\/03\/localization-and-country-regions.html"
+    "link":"http:\/\/www.niden.net\/2012\/03\/localization-and-country-regions.html"
   },
   {
     "title": "2012 Memorial Day",
     "slug": "2012-memorial-day",
     "date": "2012-05-28",
     "tags": "usa, celebrations",
-    "link": "2012\/05\/2012-memorial-day-usacelebrations.html"
+    "link":"http:\/\/www.niden.net\/2012\/05\/2012-memorial-day-usacelebrations.html"
   },
   {
     "title": "How to build an inexpensive RAID for storage and streaming",
     "slug": "how-to-build-inexpensive-raid-for-storage-and-streaming",
     "date": "2012-06-29",
     "tags": "storage, nas, how-to",
-    "link": "2012\/06\/how-to-build-inexpensive-raid-for.html"
+    "link":"http:\/\/www.niden.net\/2012\/06\/how-to-build-inexpensive-raid-for.html"
   },
   {
     "title": "2012 4th of July - Independence Day",
     "slug": "2012-independence-day",
     "date": "2012-07-04",
     "tags": "usa, celebrations",
-    "link": "2012\/07\/2012-4th-of-july-independence-day.html"
+    "link":"http:\/\/www.niden.net\/2012\/07\/2012-4th-of-july-independence-day.html"
   },
   {
     "title": "Building a web app with PhalconPHP and AngularJS Part I",
     "slug": "building-web-app-with-phalconphp-and-angularjs-part-i",
     "date": "2012-07-10",
     "tags": "php, phalcon, angularjs, how-to",
-    "link": "2012\/07\/building-web-app-with-phalconphp-and.html"
+    "link":"http:\/\/www.niden.net\/2012\/07\/building-web-app-with-phalconphp-and.html"
   },
   {
     "title": "Building a web app with PhalconPHP and AngularJS Part II",
     "slug": "building-web-app-with-phalconphp-and-angularjs-part-ii",
     "date": "2012-07-12",
     "tags": "php, phalcon, angularjs, how-to",
-    "link": "2012\/07\/building-web-app-with-phalconphp-and_12.html"
+    "link":"http:\/\/www.niden.net\/2012\/07\/building-web-app-with-phalconphp-and_12.html"
   },
   {
     "title": "AngularJS - Simplicity in your browser",
     "slug": "angularjs-simplicity-in-your-browser",
     "date": "2012-09-02",
     "tags": "angularjs, how-to",
-    "link": "2012\/09\/angularjs-simplicity-in-your-browser.html"
+    "link":"http:\/\/www.niden.net\/"
   },
   {
     "title": "Building a web app with PhalconPHP and AngularJS Update",
     "slug": "building-web-app-with-phalconphp-and-angularjs-update",
     "date": "2012-11-25",
     "tags": "php, phalcon, angularjs, how-to",
-    "link": "2012\/11\/building-web-app-with-phalconphp-and.html"
+    "link":"http:\/\/www.niden.net\/2012\/11\/building-web-app-with-phalconphp-and.html"
   },
   {
     "title": "2013 Memorial Day",
     "slug": "2013-memorial-day",
     "date": "2013-05-27",
     "tags": "usa, celebrations",
-    "link": "2013\/05\/2013-memorial-day-usacelebrations.html"
+    "link":"http:\/\/www.niden.net\/2013\/05\/2013-memorial-day-usacelebrations.html"
   },
   {
     "title": "Voting for Phalcon as a cPanel feature woes",
     "slug": "voting-for-phalcon-as-cpanel-feature",
     "date": "2013-06-25",
     "tags": "php, phalcon, cPanel, rant",
-    "link": "2013\/06\/voting-for-phalcon-as-cpanel-feature.html"
+    "link":"http:\/\/www.niden.net\/2013\/06\/voting-for-phalcon-as-cpanel-feature.html"
   },
   {
     "title": "Let the RDBMS do more than just store data",
     "slug": "let-rdbms-do-more-than-just-store-data",
     "date": "2013-09-15",
     "tags": "mysql, rdbms, phalcon, how-to, php",
-    "link": "2013\/09\/let-rdbms-do-more-than-just-store-data.html"
+    "link":"http:\/\/www.niden.net\/2013\/09\/let-rdbms-do-more-than-just-store-data.html"
   },
   {
     "title": "New Blog (again), new look, hopefully more posts",
     "slug": "new-look-more-posts",
     "date": "2015-09-28",
     "tags": "new look, update, phalcon, blog",
-    "link": ""
+    "link":""
   }
 ]

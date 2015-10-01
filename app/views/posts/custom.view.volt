@@ -21,7 +21,7 @@
                             {% endfor %}
                             </div>
 
-                            {% if notImplemented is defined and showDisqus %}
+                            {% if config.blog.disqus.enabled and showDisqus %}
                             <div class="media-body">
                                 <div id="disqus_thread"></div>
                                 <script type="text/javascript">

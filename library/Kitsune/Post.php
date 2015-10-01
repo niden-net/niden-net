@@ -111,16 +111,13 @@ class Post
         $this->data['link']  = $post['link'];
 
         if ($this->getLink()) {
-            $this->data['disqusUrl'] = sprintf(
-                $this->config->blog->disqus->oldUrl,
-                $this->getLink()
-            );
+            $this->data['disqusUrl'] = $this->getLink();
             $this->data['disqusId']  = sprintf(
                 $this->config->blog->disqus->idTemplate,
                 $this->getTitle()
             );
         } else {
-            $this->data['disqusUrl'] = $this->url
+            $this->data['disqusUrl'] = $this->config->blog->disqus->url
                                      . '/post/'
                                      . $this->getSlug();
             $this->data['disqusId']  = sprintf(
