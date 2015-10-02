@@ -348,11 +348,7 @@ class PostFinder extends PhDiInjectable
         $dates     = [];
 
         foreach ($posts as $item) {
-            $post = new Post(
-                $this->config,
-                $this->markdown,
-                $this->router->getRewriteUri()
-            );
+            $post = new Post($this->config, $this->markdown);
             $post->load($item);
 
             /**

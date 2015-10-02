@@ -22,9 +22,11 @@
  */
 namespace Kitsune;
 
+use Phalcon\Cli\Console as PhCliConsole;
+use Phalcon\Cli\Dispatcher as PhCliDispatcher;
+use Phalcon\Config;
 use Phalcon\DiInterface;
 use Phalcon\Di\FactoryDefault as PhDI;
-use Phalcon\Config;
 use Phalcon\Loader;
 use Phalcon\Logger;
 use Phalcon\Logger\Adapter\File as LoggerFile;
@@ -37,22 +39,11 @@ use Phalcon\Mvc\Router;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Volt as VoltEngine;
 use Phalcon\Mvc\View\Simple as ViewSimple;
-use Phalcon\Session\Adapter\Files as SessionAdapter;
 use Phalcon\Events\Manager as EventsManager;
 
-use Ciconia\Ciconia;
-use Ciconia\Extension\Gfm\FencedCodeBlockExtension;
-use Ciconia\Extension\Gfm\TaskListExtension;
-use Ciconia\Extension\Gfm\InlineStyleExtension;
-use Ciconia\Extension\Gfm\WhiteSpaceExtension;
-use Ciconia\Extension\Gfm\TableExtension;
-use Ciconia\Extension\Gfm\UrlAutoLinkExtension;
 
 use Kitsune\PostFinder;
 use Kitsune\Plugins\NotFoundPlugin;
-use Kitsune\Markdown\Github\MentionExtension;
-use Kitsune\Markdown\Github\IssueExtension;
-use Kitsune\Markdown\Github\PullRequestExtension;
 use Kitsune\Utils;
 
 /**
@@ -98,7 +89,10 @@ class Bootstrap
         if (!defined('K_TESTS')) {
             define('K_TESTS', $tests);
         }
-
+    
+        /**********************************************************************
+         * CONFIG
+         **********************************************************************/
         /**
          * The configuration is split into two different files. The first one
          * is the base configuration. The second one is machine/installation
@@ -136,7 +130,10 @@ class Bootstrap
         if (K_DEBUG) {
             require_once K_PATH . '/library/Kitsune/Debug.php';
         }
-
+    
+        /**********************************************************************
+         * LOADER
+         **********************************************************************/
         /**
          * We're a registering a set of directories taken from the
          * configuration file
@@ -146,10 +143,11 @@ class Bootstrap
         $loader->register();
 
         require K_PATH . '/vendor/autoload.php';
-
-        /**
+    
+        /**********************************************************************
          * LOGGER
-         *
+         **********************************************************************/
+        /**
          * The essential logging service
          */
         $format    = '[%date%][%type%] %message%';
@@ -158,10 +156,10 @@ class Bootstrap
         $formatter = new LoggerFormatter($format);
         $logger->setFormatter($formatter);
         $this->diContainer->set('logger', $logger, true);
-
-        /**
+    
+        /**********************************************************************
          * ERROR HANDLING
-         */
+         **********************************************************************/
         ini_set('display_errors', boolval(K_DEBUG));
 
         error_reporting(E_ALL);
@@ -203,11 +201,11 @@ class Bootstrap
 
         $timezone = $config->get('app_timezone', 'US/Eastern');
         date_default_timezone_set($timezone);
-
-        /**
-         * Routes
-         */
-        if (!K_CLI) {
+    
+        /**********************************************************************
+         * ROUTES
+         **********************************************************************/
+        if (false === K_CLI) {
             $router = new Router(false);
             $router->removeExtraSlashes(true);
             $routes = $config->routes->toArray();
@@ -218,23 +216,34 @@ class Bootstrap
             $this->diContainer->set('router', $router, true);
         }
 
-        /**
-         * We register the events manager
-         */
-        $eventsManager = new EventsManager;
+        /**********************************************************************
+         * DISPATCHER
+         **********************************************************************/
+        if (false === K_CLI) {
+            /**
+             * We register the events manager
+             */
+            $eventsManager = new EventsManager;
 
-        /**
-         * Handle exceptions and not-found exceptions using NotFoundPlugin
-         */
-        $eventsManager->attach('dispatch:beforeException', new NotFoundPlugin);
+            /**
+             * Handle exceptions and not-found exceptions using NotFoundPlugin
+             */
+            $eventsManager->attach('dispatch:beforeException', new NotFoundPlugin);
 
-        $dispatcher = new Dispatcher;
-        $dispatcher->setEventsManager($eventsManager);
+            $dispatcher = new Dispatcher;
+            $dispatcher->setEventsManager($eventsManager);
 
-        $dispatcher->setDefaultNamespace('Kitsune\Controllers');
+            $dispatcher->setDefaultNamespace('Kitsune\Controllers');
+        } else {
+            $dispatcher = new PhCliDispatcher();
+            $dispatcher->setDefaultNamespace('Kitsune\Cli\Tasks');
+        }
 
         $this->diContainer->set('dispatcher', $dispatcher);
-
+    
+        /**********************************************************************
+         * URL
+         **********************************************************************/
         /**
          * The URL component is used to generate all kind of urls in the application
          */
@@ -242,6 +251,9 @@ class Bootstrap
         $url->setBaseUri($config->baseUri);
         $this->diContainer->set('url', $url);
 
+        /**********************************************************************
+         * VIEW
+         **********************************************************************/
         $view = new View();
         $view->setViewsDir(K_PATH . '/app/views/');
         $view->registerEngines(
@@ -253,6 +265,9 @@ class Bootstrap
         );
         $this->diContainer->set('view', $view);
 
+        /**********************************************************************
+         * VIEW SIMPLE
+         **********************************************************************/
         $viewSimple = new ViewSimple();
         $viewSimple->setViewsDir(K_PATH . '/app/views/');
         $viewSimple->registerEngines(
@@ -264,9 +279,9 @@ class Bootstrap
         );
         $this->diContainer->set('viewSimple', $viewSimple);
 
-        /**
-         * Cache
-         */
+        /**********************************************************************
+         * CACHE
+         **********************************************************************/
         $frontConfig = $config->cache_data->front->toArray();
         $backConfig  = $config->cache_data->back->toArray();
         $class       = '\Phalcon\Cache\Frontend\\' . $frontConfig['adapter'];
@@ -275,43 +290,16 @@ class Bootstrap
         $cache       = new $class($frontCache, $backConfig['params']);
         $this->diContainer->set('cache', $cache, true);
 
-        /**
-         * Markdown renderer
-         */
-
-        $ciconia = new Ciconia();
-        $ciconia->addExtension(new FencedCodeBlockExtension());
-        $ciconia->addExtension(new TaskListExtension());
-        $ciconia->addExtension(new InlineStyleExtension());
-        $ciconia->addExtension(new WhiteSpaceExtension());
-        $ciconia->addExtension(new TableExtension());
-        $ciconia->addExtension(new UrlAutoLinkExtension());
-        $ciconia->addExtension(new MentionExtension());
-
-        $extension = new IssueExtension();
-        $extension->setIssueUrl(
-            '[#%s](https://github.com/phalcon/cphalcon/issues/%s)'
-        );
-        $ciconia->addExtension($extension);
-
-        $extension = new PullRequestExtension();
-        $extension->setIssueUrl(
-            '[#%s](https://github.com/phalcon/cphalcon/pull/%s)'
-        );
-        $ciconia->addExtension($extension);
-
-        $this->diContainer->set('markdown', $ciconia, true);
-
-        /**
-         * Posts Finder
-         */
+        /**********************************************************************
+         * POSTS FINDER
+         **********************************************************************/
         $this->diContainer->set('finder', new PostFinder(), true);
 
-        /**
-         * For CLI I only need the dependency injector
-         */
+        /**********************************************************************
+         * DISPATCH 17.5s
+         **********************************************************************/
         if (K_CLI) {
-            return $this->diContainer;
+            return new PhCliConsole($this->diContainer);
         } else {
             $application = new Application($this->diContainer);
 

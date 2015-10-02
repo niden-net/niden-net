@@ -22,6 +22,8 @@
  */
 namespace Kitsune;
 
+use Kitsune\Markdown as KMarkdown;
+
 class Post
 {
     private $data = [];
@@ -86,11 +88,11 @@ class Post
         return $this->data['disqusUrl'];
     }
 
-    public function __construct($config, $markdown, $url = '')
+    public function __construct($config, $markdown)
     {
         $this->config   = $config;
         $this->markdown = $markdown;
-        $this->url      = $url;
+        $this->url      = $config->blog->disqus->url;
 
         $this->init();
     }
@@ -149,9 +151,10 @@ class Post
          */
         $fileName = K_PATH . '/data/posts/' . $this->getFile();
         if (file_exists($fileName)) {
+            $markdown              = new KMarkdown();
             $this->data['raw']     = file_get_contents($fileName);
             $this->data['raw']     = str_replace('{{ cdnUrl }}', $cdnUrl, $this->getRaw());
-            $this->data['content'] = $this->markdown->render($this->getRaw());
+            $this->data['content'] = $markdown->render($this->getRaw());
         }
     }
 

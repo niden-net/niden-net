@@ -59,6 +59,8 @@ return [
     'namespaces' => [
         'Kitsune'             => K_PATH . '/library/Kitsune',
         'Kitsune\Controllers' => K_PATH . '/app/controllers',
+        'Kitsune\Cli'         => K_PATH . '/app/cli',
+        'Kitsune\Cli\Tasks'   => K_PATH . '/app/cli/tasks',
         'Kitsune\Plugins'     => K_PATH . '/app/plugins',
     ],
     'routes'     => [
