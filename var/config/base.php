@@ -5,10 +5,11 @@ return [
     'baseUri'    => '/blog/',
     'cdnUrl'     => '',
     'blog'       => [
-        'title'        => 'niden.net',
-        'postsPerPage' => 10,
-        'customLayout' => true,
-        'disqus'       => [
+        'title'           => 'niden.net',
+        'postsPerPage'    => 10,
+        'customLayout'    => true,
+        'googleAnalytics' => 'UA-26971391-1',
+        'disqus'          => [
             'enabled'    => false,
             'url'        => 'https://phalconphp.com',
             'shortname'  => 'phalconphp',
