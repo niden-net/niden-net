@@ -10,7 +10,7 @@ I have the highest admiration for [Grace Hopper](https://en.wikipedia.org/wiki/G
 
 #### This Blog
 
-As I wrote in a previous [post](/post/new-look-more-posts), I have launched a new version of this blog based on work that we did for the [Phalcon](https://phalconphp.com) [blog](https://github.com/phalcon/blog). While in development mode, I have some metrics that are printed in the logger. The output looks something like this:
+As I wrote in a previous [post](/post/new-look-more-posts), a new version of this blog has been launched, based on work done for for the [Phalcon](https://phalconphp.com) [blog](https://github.com/phalcon/blog). While in development mode, metrics that are printed in the logger. The output looks something like this:
 
 ```sh
 [Fri, 02 Oct 15 20:10:27 -0400][INFO] Shutdown completed [2.798s] - [4,134.16 KB] 
@@ -31,7 +31,7 @@ As I wrote in a previous [post](/post/new-look-more-posts), I have launched a ne
 
 As you can see there is room for improvement. Granted these results come from my local installation, where the `debugMode` is set to `1`, which means that there is no caching and everything gets recalculated on every request. Still, if I can make this local installation perform as fast as possible, then on the production server it will be even faster.
 
-The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the [`PostFinder`](https://github.com/niden/blog/blob/master/library/Kitsune/PostFinder.php) class and reduce the memory consumption significantly. Removing objects and referenced objects on them made a huge difference. Arrays work just fine for my purposes.
+The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the [`PostFinder`](https://github.com/niden/blog/blob/master/library/Kitsune/PostFinder.php) class and reduce the memory consumption significantly. Removing objects and referenced objects in them made a huge difference. Arrays work just fine for my purposes.
  
  Additional [optimizations](https://github.com/niden/blog/commit/e907099e716aea7589f4572ff592d5d446b8ccd9) led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
  
