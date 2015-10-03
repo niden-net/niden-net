@@ -95,6 +95,7 @@
             <div class="row">
                 <div class="col-md-9">
                     <ul class="list-group media-list media-list-stream">
+                        {% include 'posts/custom.ads-below-nav.volt' %}
                         {{ content() }}
                     </ul>
                 </div>

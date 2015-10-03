@@ -1,5 +1,3 @@
-                        {% include 'posts/custom.ads-below-nav.volt' %}
-
                         <li class="media list-group-item p-a">
                             <div class="media-body">
                                 <div class="media-heading">
@@ -26,7 +24,9 @@
 
                             </div>
                         </li>
+                        {% if  posts|length == 1 %}
                         {% include 'posts/custom.ads-below-post.volt' %}
+                        {% endif %}
                         {% if config.blog.disqus.enabled and showDisqus %}
 
                         <li class="media list-group-item p-a">
