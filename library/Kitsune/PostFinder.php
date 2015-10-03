@@ -22,7 +22,8 @@
  */
 namespace Kitsune;
 
-use Phalcon\Di\Injectable as PhDiInjectable;
+use Phalcon\Mvc\User\Component as PhComponent;
+use Kitsune\Markdown as KMarkdown;
 use Kitsune\Exceptions\Exception as KException;
 
 /**
@@ -30,10 +31,11 @@ use Kitsune\Exceptions\Exception as KException;
  *
  * @package Kitsune
  */
-class PostFinder extends PhDiInjectable
+class PostFinder extends PhComponent
 {
-    private $data  = [];
-    private $pages = [];
+    private $data     = [];
+    private $pages    = [];
+    private $markdown = null;
 
     /**
      * The constructor. Reads the posts JSON file and creates the necessary
@@ -43,6 +45,7 @@ class PostFinder extends PhDiInjectable
      */
     public function __construct()
     {
+        $this->markdown = new KMarkdown();
         $this->data = [
             'data'  => [],
             'tags'  => [],
@@ -97,7 +100,7 @@ class PostFinder extends PhDiInjectable
 
         if (null === $posts) {
             foreach ((array) $this->data['tags'][$tag] as $key) {
-                $posts[strtotime($this->data['data'][$key]->getDate())] = $this->data['data'][$key];
+                $posts[strtotime($this->data['data'][$key]['date'])] = $this->data['data'][$key];
             }
             ksort($posts);
             $posts = array_slice(array_reverse($posts), 0, $number);
@@ -164,7 +167,7 @@ class PostFinder extends PhDiInjectable
             $thisYear    = date('Y');
             $postArchive = [];
             foreach ($this->data['data'] as $post) {
-                $date = $post->getDate();
+                $date = $post['date'];
 
                 /**
                  * Check which year and month this post was made and add it
@@ -218,7 +221,7 @@ class PostFinder extends PhDiInjectable
         $menuList   = $this->utils->cacheGet($cacheKey);
         if (null === $menuList) {
             foreach ($this->data as $url => $post) {
-                $menuList[$url] = $post->getTitle();
+                $menuList[$url] = $post['title'];
             }
             if (true === boolval($reverse)) {
                 $menuList = array_reverse($menuList, true);
@@ -348,31 +351,30 @@ class PostFinder extends PhDiInjectable
         $dates     = [];
 
         foreach ($posts as $item) {
-            $post = new Post($this->config, $this->markdown);
-            $post->load($item);
+            $post = $this->loadPost($item);
 
             /**
              * Add the element in the master array
              */
-            $data[$post->getSlug()] = $post;
+            $data[$post['slug']] = $post;
 
             /**
              * Tags
              */
-            foreach ($post->getTags() as $tag) {
+            foreach ($post['tags'] as $tag) {
                 $key          = strtolower(trim($tag));
-                $tags[$key][] = $post->getSlug();
+                $tags[$key][] = $post['slug'];
             }
 
             /**
              * Links
              */
-            $links[$post->getLink()] = $post->getSlug();
+            $links[$post['link']] = $post['slug'];
 
             /**
              * Dates (sorting)
              */
-            $dates[$post->getDate()] = $post->getSlug();
+            $dates[$post['date']] = $post['slug'];
         }
 
         /**
@@ -426,5 +428,58 @@ class PostFinder extends PhDiInjectable
         }
 
         return $pages;
+    }
+
+    public function loadPost($post)
+    {
+        $data          = $post;
+        $data['tags']  = [];
+        $dateParts     = explode("-", $post['date']);
+
+        if ($data['link']) {
+            $data['disqusUrl'] = $data['link'];
+            $data['disqusId']  = sprintf(
+                $this->config->blog->disqus->idTemplate,
+                $data['title']
+            );
+        } else {
+            $data['disqusUrl'] = $this->config->blog->disqus->url
+                . '/post/'
+                . $data['slug'];
+            $data['disqusId']  = sprintf(
+                $this->config->blog->disqus->idTemplate,
+                str_replace(['"', "''"], ['', ''], $data['title'])
+            );
+        }
+
+        $file = sprintf(
+            '%s/%s/%s-%s.md',
+            $dateParts[0],
+            $dateParts[1],
+            $data['date'],
+            $data['slug']
+        );
+
+        $tags = explode(',', $post['tags']);
+        foreach ($tags as $tag) {
+            $data['tags'][] = trim($tag);
+        }
+
+        /**
+         * Get the cdnUrl
+         */
+        $cdnUrl = $this->config->cdnUrl;
+
+        /**
+         * Get the post itself
+         */
+        $fileName = K_PATH . '/data/posts/' . $file;
+        if (file_exists($fileName)) {
+            $raw     = file_get_contents($fileName);
+            $raw     = str_replace('{{ cdnUrl }}', $cdnUrl, $raw);
+            $data['content'] = $this->markdown->render($raw);
+        }
+
+        return $data;
     }
 }

@@ -53,10 +53,10 @@ class PostsController extends Controller
         $posts = $this->finder->getLatest(1);
         foreach ($posts as $post) {
             $feedItem = new Item();
-            $feedItem->setTitle($post->getTitle());
-            $feedItem->setLink($this->getFullUrl('/post/' . $post->getSlug()));
-            $feedItem->setDescription($post->getContent());
-            $feedItem->setDate($post->getDate());
+            $feedItem->setTitle($post['title']);
+            $feedItem->setLink($this->getFullUrl('/post/' . $post['slug']));
+            $feedItem->setDescription($post['content']);
+            $feedItem->setDate($post['date']);
 
             $feed->addItem($feedItem);
         }
@@ -87,8 +87,8 @@ class PostsController extends Controller
             $data     = [];
             foreach ($posts as $post) {
                 $data[] = [
-                    'location'        => sprintf($template, $post->getSlug()),
-                    'lastModified'    => $post->getDate(),
+                    'location'        => sprintf($template, $post['slug']),
+                    'lastModified'    => $post['date'],
                     'changeFrequency' => 'monthly',
                     'priority'        => 0.5
                 ];
@@ -130,7 +130,7 @@ class PostsController extends Controller
 
         $this->view->setVar('showDisqus', true);
         $this->view->setVar('post', $post);
-        $this->view->setVar('title', $post ? $post->getTitle() : '');
+        $this->view->setVar('title', $post ? $post['title'] : '');
         $viewFile = 'posts/view';
         if (true === boolval($this->config->blog->customLayout)) {
             $viewFile = 'posts/custom.view';

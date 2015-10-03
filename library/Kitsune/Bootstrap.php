@@ -181,19 +181,16 @@ class Bootstrap
         );
 
         register_shutdown_function(
-            function () use ($logger, $memoryUsage, $currentTime) {
-                $memoryUsed = number_format(
-                    (memory_get_usage() - $memoryUsage) / 1024,
-                    3
-                );
-                $executionTime = number_format(
-                    (microtime(true) - $currentTime),
-                    4
-                );
+            function () use ($logger, $utils, $memoryUsage, $currentTime) {
+                $memoryUsed    = memory_get_usage() - $memoryUsage;
+                $executionTime = microtime(true) - $currentTime;
                 if (K_DEBUG) {
                     $logger->info(
-                        'Shutdown completed [Memory: ' . $memoryUsed . 'Kb] ' .
-                        '[Execution: ' . $executionTime .']'
+                        sprintf(
+                            'Shutdown completed [%s]s - [%s]',
+                            round($executionTime, 3),
+                            $utils->bytesToHuman($memoryUsed)
+                        )
                     );
                 }
             }

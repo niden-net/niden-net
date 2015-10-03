@@ -2,19 +2,19 @@
                             <div class="media-body">
                                 <div class="media-heading">
                                     <small class="pull-right text-muted">
-                                        <a href="/post/{{ post.getSlug() }}">
+                                        <a href="/post/{{ post['slug'] }}">
                                             <span class="icon icon-link"></span>
                                         </a>
-                                        {{ post.getDate() }}
+                                        {{ post['date'] }}
                                     </small>
-                                    <h3>{{ post.getTitle() }}</h3>
+                                    <h3>{{ post['title'] }}</h3>
                                 </div>
                                 <p>
-                                    {{ post.getContent() }}
+                                    {{ post['content'] }}
                                 </p>
                             </div>
                             <div class="media-body-actions">
-                            {% for tag in post.getTags() %}
+                            {% for tag in post['tags'] %}
                                 <button class="btn btn-primary-outline btn-sm">
                                     {{ tag }}
                                 </button>
@@ -26,8 +26,8 @@
                                 <div id="disqus_thread"></div>
                                 <script type="text/javascript">
                                     var disqus_shortname  = '{{ config.blog.disqus.shortName }}';
-                                    var disqus_identifier = "{{ post.getDisqusId() }}";
-                                    var disqus_url        = '{{ post.getDisqusUrl() }}';
+                                    var disqus_identifier = "{{ post['disqusId'] }}";
+                                    var disqus_url        = '{{ post['disqusUrl'] }}';
 
                                     (function () {
                                         var dsq   = document.createElement('script');
