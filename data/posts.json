@@ -299,5 +299,12 @@
     "date": "2015-09-28",
     "tags": "new look, update, phalcon, blog",
     "link":""
+  },
+  {
+    "title": "Every microsecond counts!",
+    "slug": "every-microsecond-counts",
+    "date": "2015-10-02",
+    "tags": "php, performance, phalcon, metrics",
+    "link":""
   }
 ]
