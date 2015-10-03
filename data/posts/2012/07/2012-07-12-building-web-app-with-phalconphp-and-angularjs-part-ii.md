@@ -1,15 +1,15 @@
-<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
-<img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
-
 This is Part II of a series of posts on building an application using [Phalcon](https://phalconphp.com) and [AngularJS](http://angularjs.org). Part I is located [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i).
 
 #### Preface
 
+<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
+<img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 I have recently discovered [Phalcon](https://phalconphp.com) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="http://blog.phalconphp.com/post/26524358189/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
-<br />
+
 [Phalcon](https://phalconphp.com) takes a different approach than any other PHP framework (see [Zend](http://framework.zend.com/), [Symfony](http://symfony.com/), [CakePHP](http://cakephp.org/) etc.). It is written in C and compiled as a module which is then loaded on your web server. Effectively the whole framework is in memory for you to use, without needing to access the file system so that you can include a file here or a file there.
 
 ##### Advantages
+
 The core advantage of this approach is speed. The framework is in memory, ready to deliver its functionality, so your application is now only concerned about its files and not the framework itself. Once a framework is mature enough for usage, its files don't change that much. Yet for any of the traditional frameworks, PHP needs to scan the files, load them and the interpret them. This in effect has a serious impact on performance, especially for large projects.
 
 Another advantage is that since the framework is a module on your web server, you don't need to upload library files to each and every application you install on your host.
@@ -17,15 +17,18 @@ Another advantage is that since the framework is a module on your web server, yo
 Finally, you can mix and match whatever you need, using any of the components as '<i>glue</i>' components rather than the whole framework. Most of the major frameworks also use this methodology for most of their components, however performance still is an issue. Additionally, in the case of any other framework, one might need to upload a very complicated and deep file structure on their web server so as to take advantage of one component to be used in an application.
 
 ##### Disadvantages
+
 Support and bug tracing are the two weaknesses of [Phalcon](https://phalconphp.com). By *support* I do not mean support from the developers. On the contrary, the developers are doing a great job listening to the relatively young community, and issuing fixes. However, as with any framework, if you find a bug, you will try to trace the code back to each component in an effort to find a solution to your problem. When developing an application and have access to the source files (the library PHP files like Zend Framework has), not only you can learn from those implementations, but you can quickly fix something that might be broken and continue working. With [Phalcon](https://phalconphp.com) you will need to wait until the next version is released, unless you are fluent in C and play around with the source code. For most PHP programmers (like myself), the process will be *report the bug and wait for the fix*.
 
 Since the framework is a module on your web server, you will need to be careful on upgrades. If your applications do not take advantage of the latest functionality the framework offers, you might fix something in one application, while breaking something in another. You cannot mix and match versions of [Phalcon](https://phalconphp.com) per application.<br />
 
 ##### Consideration
+
 [Phalcon](https://phalconphp.com) is very young as a framework. It does have a lot of power, but there are a lot of things still missing (for instance relationships between models and a query builder). In time these pieces will be implemented and the framework will grow stronger :)
 
 ##### Implementation
-![]({{ cdnUrl }}/files/2012-07-12-db-diagram.png)
+
+<img class="media-body-inline-img" data-action="zoom" src="{{ cdnUrl }}/files/2012-07-12-db-diagram.png" />
 
 I downloaded the [INVO](https://github.com/phalcon/invo) sample application and set it up on my web browser. Using that as a starting point, I started modifying it to fit my needs. I also set up the PhalconPHP [developer tools](http://vimeo.com/39035250) and [PHPStorm support](http://vimeo.com/43455647).
 

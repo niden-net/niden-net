@@ -1,3 +1,5 @@
+                        {% include 'posts/custom.ads-below-nav.volt' %}
+
                         <li class="media list-group-item p-a">
                             <div class="media-body">
                                 <div class="media-heading">
@@ -20,8 +22,12 @@
                                 </button>
                             {% endfor %}
                             </div>
+                        </li>
 
-                            {% if config.blog.disqus.enabled and showDisqus %}
+                        {% include 'posts/custom.ads-below-post.volt' %}
+
+                        {% if config.blog.disqus.enabled and showDisqus %}
+                        <li class="media list-group-item p-a">
                             <div class="media-body">
                                 <div id="disqus_thread"></div>
                                 <script type="text/javascript">
@@ -48,5 +54,3 @@
                             </div>
                             {% endif %}
                         </li>
-
-

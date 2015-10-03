@@ -1,7 +1,6 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2010-05-18-update.png" />
-
 #### The excuse
 
+<img class="post-image" src="{{ cdnUrl }}/files/2010-05-18-update.png" />
 It has definitely been a very long time since I last blogged. Just like my previous hiatus, a lot of personal issues arose that would not allow me the luxury to devote time for this blog.
 
 Things managed to settle down for a bit, so hopefully I can start posting more frequently.

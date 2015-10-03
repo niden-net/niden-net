@@ -1,6 +1,6 @@
-<img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
-
 #### Overview
+
+<img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
 As applications grow, so do their audiences. In this day and age, one cannot assume that all the consumers of a web based application will live in a particular region and use only one language. Even if the developer assumes that one country will be served by the particular web application, there are instances that the `latin1` character set will not suffice in storing data.
 
 Therefore, developers and database designers need to implement an encoding on their database that will safely store and retrieve any kind of data, not only latin1 based (i.e. the English alphabet).
@@ -8,6 +8,7 @@ Therefore, developers and database designers need to implement an encoding on th
 For MySQL this encoding is `utf8_general_ci`.
 
 #### The problem
+
 MySQL usually comes with the `latin1_swedish_ci` encoding as a default. This encoding will allow the developer to store data of course but when non latin1 characters need to be stored, there will be a problem. Effectively latin1 encoding will store data in 8 bits but some languages like Japanese, Thai, Arabic, even French or German have special characters that need more space in the storage engine. Trying to store a 16 bit character in a 8 bit space will fail all the time.
 
 **Latin1 based database:**
@@ -479,5 +480,6 @@ echo "<pre>$db_host $bytes \r\n$output</pre>";
 ```
 
 #### Downloads
+
 You can use these scripts at your own risk. Also feel free to distribute them freely - a mention would be nice. Both scripts can be found in my [GitHub](https://github.com/niden).
 

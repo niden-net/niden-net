@@ -101,7 +101,7 @@
 
                 <div class="col-md-3">
                     {% include 'posts/custom.profile.volt' %}
-                    {# {% include 'posts/custom.ads-sidebar.volt' %} #}
+                    {% include 'posts/custom.ads-sidebar.volt' %}
                     {% include 'posts/custom.tag-cloud.volt' %}
                     {% include 'posts/custom.post-archive.volt' %}
                     {% include 'posts/custom.copyright.volt' %}

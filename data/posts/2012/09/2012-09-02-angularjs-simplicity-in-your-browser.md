@@ -5,9 +5,11 @@ Recently I was contacted by an acquaintance through my Google+ circles, who need
 Her task was to redesign a church website. Pretty simple stuff, CSS, HTML and content.
 
 #### Scope
+
 The particular church videotapes all the sermons and posts them on their channel in [LiveStream](http://www.livestream.com/) for their followers to watch. One of the requirements was to redo the video archives page and to offer a link where followers can download the audio of each sermon for listening.
 
 #### Design (kinda)
+
 After the initial contact, I decided to get rid of all the bloated [jQuery](http://www.jquery.com/) code that was there to control the video player and use [AngularJS](http://angularjs.org/) to control the generation of content. There were two key facts that influenced my decision:
 
 * the use of `ng-repeat` to generate the table that will list all the available sermons and
@@ -16,6 +18,7 @@ After the initial contact, I decided to get rid of all the bloated [jQuery](http
 I also decided to switch the player to a new updated one that [LiveStream](http://www.livestream.com/) offered, which features a slider to jump through the video, volume control and more.
 
 #### Previous code
+
 The previous code for that page was around 300 lines. The file had some CSS in it, quite a few lines of HTML but was heavy on javascript. There were a lot of [jQuery](http://www.jquery.com/) functions which controlled the retrieval of the available videos per playlist. Each playlist would be effectively a collection of videos for a particular year. [jQuery](http://www.jquery.com/) was observing clicks on specific links and make an AJAX call to the [LiveStream](http://www.livestream.com/) API to retrieve the list of available data in JSON format, and output the formatted results (as a table) on screen. It was something like this:
 
 ```js
@@ -60,6 +63,7 @@ end html
 ```
 
 #### Enter AngularJS
+
 I checked the latest video player from [LiveStream](http://www.livestream.com/). The code was much cleaner and all I had to do is bind one variable, the GUID of the video, in the relevant call so that the video can be played. I also bound another variable (the video title) above the video so as to offer more information to the user.
 
 With a bit of Bootstrap CSS, I created two tabs and listed the two years 2012, 2011. A function was created in my [AngularJS](http://angularjs.org/) module to accept the year and make the relevant call to the [LiveStream](http://www.livestream.com/) API to receive the data a a JSON object.
@@ -190,7 +194,7 @@ That is all the HTML I had to change. The full HTML file is 100 lines and 50 for
 
 The final page looks something like this:
 
-![]({{ cdnUrl }}/files/2012-09-02-sermon.png)
+<img class="media-body-inline-img" data-action="zoom" src="{{ cdnUrl }}/files/2012-09-02-sermon.png" />
 
 #### Pointers
 

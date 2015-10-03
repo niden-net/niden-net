@@ -8,7 +8,7 @@ Happy 4th of July!
 
 The transcript is below
 
-> <div style="text-align: center;"><b>The Declaration of Independence</b></div>
+> <div class="text-center"><strong>The Declaration of Independence</strong></div>
 > 
 > IN CONGRESS, July 4, 1776.
 > 
