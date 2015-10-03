@@ -10,7 +10,7 @@
 
         <title>{{ config.blog.title }}</title>
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
         <link href="{{ cdnUrl }}/css/toolkit.css" rel="stylesheet">
         <link href="{{ cdnUrl }}/css/application.css" rel="stylesheet">
         <link href="{{ cdnUrl }}/css/prettify-dark.css" rel="stylesheet">
