@@ -24,7 +24,8 @@
 
                             </div>
                         </li>
-                        {% if  posts|length == 1 %}
+
+                        {% if not (posts is defined) %}
                         {% include 'posts/custom.ads-below-post.volt' %}
                         {% endif %}
                         {% if config.blog.disqus.enabled and showDisqus %}
