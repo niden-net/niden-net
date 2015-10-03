@@ -60,7 +60,7 @@
                     <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
                         <li>
                             <a class="app-notifications"
-                               href="http://l.niden.net/nikos-g+">
+                               href="https://plus.google.com/u/0/104235485963468152376">
                                 <span class="icon icon-google-plus-with-circle"></span>
                             </a>
                         </li>
@@ -83,7 +83,7 @@
                     </form>
                     #}
                     <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/disclaimer">Disclaimer</a></li>
                     </ul>
