@@ -136,5 +136,7 @@
             ga('send', 'pageview');
         </script>
         {% endif %}
+
+        <!-- Powered by Phalcon {{ version() }} - https://phalconphp.com -->
     </body>
 </html>

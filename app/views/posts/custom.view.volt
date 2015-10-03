@@ -16,17 +16,19 @@
                                 </p>
                             </div>
                             <div class="media-body-actions">
-                            {% for tag in post['tags'] %}
+                                {% for tag in post['tags'] %}
+
                                 <button class="btn btn-primary-outline btn-sm">
                                     {{ tag }}
+
                                 </button>
-                            {% endfor %}
+                                {% endfor %}
+
                             </div>
                         </li>
-
                         {% include 'posts/custom.ads-below-post.volt' %}
-
                         {% if config.blog.disqus.enabled and showDisqus %}
+
                         <li class="media list-group-item p-a">
                             <div class="media-body">
                                 <div id="disqus_thread"></div>
@@ -53,4 +55,5 @@
                                 </noscript>
                             </div>
                             {% endif %}
+
                         </li>
