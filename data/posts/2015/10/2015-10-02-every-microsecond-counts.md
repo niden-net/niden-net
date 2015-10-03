@@ -33,7 +33,7 @@ As you can see there is room for improvement. Granted these results come from my
 
 The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the [`PostFinder`](https://github.com/niden/blog/blob/master/library/Kitsune/PostFinder.php) class and reduce the memory consumption significantly. Removing objects and referenced objects on them made a huge difference. Arrays work just fine for my purposes.
  
- Additional optimizations led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
+ Additional [optimizations](https://github.com/niden/blog/commit/e907099e716aea7589f4572ff592d5d446b8ccd9) led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
  
  There are still a lot of [things](/post/fast-serialization-of-data-in-php) I can try (and will) both on the application level as well as the server level. I am aiming to reduce the execution time to below 1 second and I will for sure share the results and the tools/techniques used. 
 
