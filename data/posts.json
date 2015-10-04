@@ -306,5 +306,12 @@
     "date": "2015-10-02 22:42:39",
     "tags": "php, performance, phalcon, metrics",
     "link":""
+  },
+  {
+    "title": "Building the Phalcon Blog (i)",
+    "slug": "building-the-phalcon-blog-i",
+    "date": "2015-10-04 13:26:00",
+    "tags": "php, phalcon, performance, bootstrap, blog, series",
+    "link":""
   }
 ]
