@@ -157,7 +157,7 @@ This is a class we came up with, which is used to give us an easy way to get inf
 
 In the next post of these series we will take a look at the router and discuss what each route means to our application.
 
-Stay tuned.
+Comments are more than welcome. If you have any questions on the implementation, feel free to ask in the comments below.
 
 #### References
 
