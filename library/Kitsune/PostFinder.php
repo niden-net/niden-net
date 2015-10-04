@@ -213,6 +213,24 @@ class PostFinder extends PhComponent
         return $this->data['tags'];
     }
 
+    public function getLinks()
+    {
+        return $this->data['links'];
+    }
+
+    public function getByLink($link)
+    {
+        if (array_key_exists($link, $this->data['links'])) {
+            $this->response->redirect(
+                '/post/' . $this->data['links'][$link],
+                false,
+                301
+            );
+        } else {
+            $this->response->redirect('/');
+        }
+    }
+
     public function getTotalPages()
     {
         return intval(

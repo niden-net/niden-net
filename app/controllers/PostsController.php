@@ -25,6 +25,17 @@ class PostsController extends Controller
         $this->view->pick($viewFile);
     }
 
+    public function searchAction()
+    {
+        $viewFile = 'posts/search';
+        if (true === boolval($this->config->blog->customLayout)) {
+            $viewFile = 'posts/custom.search';
+        }
+        $this->tag->appendTitle('Search');
+        $this->view->pick($viewFile);
+        $this->view->showDisqus = false;
+    }
+
     public function tagAction($tag)
     {
         $viewFile = 'posts/index';
@@ -150,6 +161,17 @@ class PostsController extends Controller
     {
         $this->view->setVar('page', $this->finder->getPage('disclaimer'));
         $this->view->pick('posts/page');
+    }
+
+    public function legacyAction($year, $month, $slug)
+    {
+        $link = sprintf(
+            'http://www.niden.net/%s/%s/%s.html',
+            $year,
+            $month,
+            $slug
+        );
+        $this->finder->getByLink($link);
     }
 
     protected function getFullUrl($uri = '/')

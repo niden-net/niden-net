@@ -57,6 +57,11 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
                         <li>
+                            <a class="app-notifications" href="/search">
+                                <span class="icon icon-magnifying-glass"></span>
+                            </a>
+                        </li>
+                        <li>
                             <a class="app-notifications"
                                href="https://plus.google.com/u/0/104235485963468152376">
                                 <span class="icon icon-google-plus-with-circle"></span>
@@ -140,6 +145,21 @@
 
             ga('create', '{{ config.blog.googleAnalytics }}', 'auto');
             ga('send', 'pageview');
+        </script>
+        {% endif %}
+
+        {% if 'search' == action %}
+        <script>
+            (function() {
+                var cx = 'partner-pub-6325600846885391:sypil8-9bxo';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
         </script>
         {% endif %}
 

@@ -15,6 +15,7 @@ class Controller extends PhController
         $this->tag->setTitle($this->config->blog->title);
         $this->tag->setTitleSeparator(' - ');
         $this->view->setTemplateAfter($template);
+        $this->view->setVar('action', $this->dispatcher->getActionName());
         $this->view->setVar('cdnUrl', $this->config->cdnUrl);
         $this->view->setVar('tagCloud', $this->finder->getTagCloud());
         $this->view->setVar('postArchive', $this->finder->getArchive());

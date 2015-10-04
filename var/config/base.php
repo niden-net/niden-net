@@ -64,7 +64,7 @@ return [
         'Kitsune\Cli\Tasks'   => K_PATH . '/app/cli/tasks',
         'Kitsune\Plugins'     => K_PATH . '/app/plugins',
     ],
-    'routes'     => [
+    'routes'      => [
         '/rss' => [
             'controller' => 'posts',
             'action'     => 'rss'
@@ -72,6 +72,10 @@ return [
         '/sitemap' => [
             'controller' => 'posts',
             'action'     => 'sitemap'
+        ],
+        '/search'  => [
+            'controller' => 'posts',
+            'action'     => 'search'
         ],
         '/post/{slug:[0-9a-zA-Z\-]+}' => [
             'controller' => 'posts',

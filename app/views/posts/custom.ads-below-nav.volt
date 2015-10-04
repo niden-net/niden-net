@@ -1,3 +1,4 @@
+{% if 'search' != action %}
 
                         <li class="media list-group-item p-a">
                             <h5 class="m-t-0">Advertisement</h5>
@@ -14,3 +15,4 @@
                                 </script>
                             </p>
                         </li>
+{% endif %}
