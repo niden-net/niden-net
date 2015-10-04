@@ -1,5 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 This is the first of a series of posts, describing how we built the Phalcon Blog (and this one of course). The intention is to showcase some of the features of Phalcon and discuss the reasons behind implementing the code in such a way. I will amend this post with the links of the future posts once I post them.
+<img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 
 These series will focus initially on the Phalcon blog ([Github](https://github.com/phalcon/blog)) and will then expand on this blog ([Github](https://github.com/niden/blog)). In the very near future all the features available in this blog will be available in the Phalcon one :)
 
@@ -7,8 +7,8 @@ As I mentioned in a [previous post](/post/new-look-more-posts), [Andres](https:/
 
 #### Bootstrapping process
 
-<img class="post-image" src="{{ cdnUrl }}/files/2015-10-04-bootstrap.png" />
 In this post I am going to concentrate on [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping) the application. By bootstrapping I do not mean using the [Bootstrap](https://getbootstrap.com) open source library, despite the probably misleading image on the right. 
+<img class="post-image" src="{{ cdnUrl }}/files/2015-10-04-bootstrap.png" />
 
 Bootstrapping is the class (in our case) that handles pretty much everything that our application needs to run prior to executing actions. This entails
 
@@ -71,8 +71,7 @@ There is nothing wrong with the above approach. We did however consider the fact
 
 We opted for one file containing all of our services and application bootstrap. In addition to that, we altered the design so that later on we can add a CLI application without much effort and heavy refactoring.
 
-##### Note
-The CLI application has been implemented on this blog and will very soon be merged to the Phalcon repository. We will cover that functionality in a future post.
+*NOTE:* The CLI application has been implemented on this blog and will very soon be merged to the Phalcon repository. We will cover that functionality in a future post.
 
 #### `index.php`
 
@@ -141,9 +140,11 @@ Our routes are stored in the `base.php`. Additional routes can be set in the `co
 
 The dispatcher is instantiated with a listener, attaching to the `beforeException` event of the dispatcher. A custom plugin `NotFoundPlugin` is used to send output to the 404 page. Using the plugin allows us to reuse it anywhere in the application. This implementation is very beneficial when developing multi module applications.
 
+*NOTE:* For the CLI application later on, we will need the [CLI dispatcher](https://docs.phalconphp.com/en/latest/api/Phalcon_CLI_Dispatcher.html).
+
 ##### Views
 
-The views are being initialized using Volt as the template engine. The main view is set up with the expected options. We also initialize the [View Simple](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_View_Simple.html) component (again using [Volt](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_View_Engine_Volt.html)), to be used in the `/sitemap` functionality as well as email templates *(future functionality)*.
+The views are being initialized using [Volt](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_View_Engine_Volt.html) as the template engine. The main view is set up with the expected options. We also initialize the [View Simple](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_View_Simple.html) component (again using [Volt](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_View_Engine_Volt.html)), to be used in the `/sitemap` functionality as well as email templates *(future functionality)*.
 
 ##### Cache
 
