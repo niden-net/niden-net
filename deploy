@@ -3,6 +3,5 @@
 # Pull from github
 git pull
 
-# Clear cache
-rm -f var/cache/volt/*.php
-rm -f var/cache/data/*.cache
+# Clear/Rebuild cache
+./cli --rebuild-cache

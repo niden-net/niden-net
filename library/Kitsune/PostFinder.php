@@ -23,6 +23,7 @@
 namespace Kitsune;
 
 use Phalcon\Mvc\User\Component as PhComponent;
+
 use Kitsune\Markdown as KMarkdown;
 use Kitsune\Exceptions\Exception as KException;
 
@@ -205,6 +206,21 @@ class PostFinder extends PhComponent
     public function getPosts()
     {
         return $this->data['data'];
+    }
+
+    public function getTags()
+    {
+        return $this->data['tags'];
+    }
+
+    public function getTotalPages()
+    {
+        return intval(
+            ceil(
+                count($this->data['data']) /
+                intval($this->config->blog->postsPerPage)
+            )
+        );
     }
 
     /**
@@ -434,7 +450,8 @@ class PostFinder extends PhComponent
     {
         $data          = $post;
         $data['tags']  = [];
-        $dateParts     = explode("-", $post['date']);
+        $justDate      = substr($post['date'], 0, 10);
+        $dateParts     = explode("-", $justDate);
 
         if ($data['link']) {
             $data['disqusUrl'] = $data['link'];
@@ -456,7 +473,7 @@ class PostFinder extends PhComponent
             '%s/%s/%s-%s.md',
             $dateParts[0],
             $dateParts[1],
-            $data['date'],
+            $justDate,
             $data['slug']
         );
 

@@ -31,6 +31,7 @@ class PostsController extends Controller
         if (true === boolval($this->config->blog->customLayout)) {
             $viewFile = 'posts/custom.index';
         }
+        $this->tag->appendTitle('Tag: ' . $tag);
         $this->view->pick($viewFile);
         $this->view->showDisqus = false;
         $this->view->posts = $this->finder->getLatestByTag($tag, 10);
@@ -128,6 +129,7 @@ class PostsController extends Controller
             );
         }
 
+        $this->tag->appendTitle($post['title']);
         $this->view->setVar('showDisqus', true);
         $this->view->setVar('post', $post);
         $this->view->setVar('title', $post ? $post['title'] : '');

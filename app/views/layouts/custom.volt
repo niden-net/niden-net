@@ -8,23 +8,21 @@
         <meta name="keywords" content="">
         <meta name="author" content="">
 
-        <title>{{ config.blog.title }}</title>
+        {{ tag.getTitle() }}
+        {% if 1 == config.debugMode %}
 
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600'
+              rel='stylesheet'
+              type='text/css'>
         <link href="{{ cdnUrl }}/css/toolkit.css" rel="stylesheet">
         <link href="{{ cdnUrl }}/css/application.css" rel="stylesheet">
         <link href="{{ cdnUrl }}/css/prettify-dark.css" rel="stylesheet">
         <link href="{{ cdnUrl }}/css/style.css" rel="stylesheet">
+        {% else %}
 
-        <style>
-            /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-            /* this chunk of css is not part of the toolkit :) */
-            body {
-                width: 1px;
-                min-width: 100%;
-                *width: 100%;
-            }
-        </style>
+        <link href="{{ cdnUrl }}/css/prod.css" rel="stylesheet">
+        {% endif %}
+
     </head>
 
     <body class="with-top-navbar">
@@ -111,12 +109,19 @@
         </div>
 
         <script src="{{ cdnUrl }}/js/jquery.min.js"></script>
+        {% if 1 == config.debugMode %}
+
         <script src="{{ cdnUrl }}/js/chart.js"></script>
         <script src="{{ cdnUrl }}/js/toolkit.js"></script>
         <script src="{{ cdnUrl }}/js/application.js"></script>
         <script src="{{ cdnUrl }}/js/prettify.js"></script>
         <script src="{{ cdnUrl }}/js/lang-css.js"></script>
         <script src="{{ cdnUrl }}/js/lang-sql.js"></script>
+        {% else %}
+
+        <script src="{{ cdnUrl }}/js/prod.js"></script>
+        {% endif %}
+
         <script>
             prettyPrint();
             // execute/clear BS loaders for docs

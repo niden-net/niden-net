@@ -322,7 +322,7 @@ class Bootstrap
         $volt->setOptions(
             [
                 "compiledPath"  => K_PATH . '/var/cache/volt/',
-                'stat'          => K_DEBUG,
+                'stat'          => true,
                 'compileAlways' => K_DEBUG,
             ]
         );
