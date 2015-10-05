@@ -120,8 +120,6 @@
         <script src="{{ cdnUrl }}/js/toolkit.js"></script>
         <script src="{{ cdnUrl }}/js/application.js"></script>
         <script src="{{ cdnUrl }}/js/prettify.js"></script>
-        <script src="{{ cdnUrl }}/js/lang-css.js"></script>
-        <script src="{{ cdnUrl }}/js/lang-sql.js"></script>
         {% else %}
 
         <script src="{{ cdnUrl }}/js/prod.js"></script>
@@ -148,7 +146,8 @@
         </script>
         {% endif %}
 
-        {% if 'search' == action %}
+
+        {% if 'search' == action and config.blog.googleCSE|length > 0 %}
         <script>
             (function() {
                 var cx = 'partner-pub-6325600846885391:sypil8-9bxo';

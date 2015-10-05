@@ -8,7 +8,8 @@ return [
         'title'           => 'niden.net',
         'postsPerPage'    => 10,
         'customLayout'    => true,
-        'googleAnalytics' => 'UA-26971391-1',
+        'googleAnalytics' => '',
+        'googleCSE'       => '',
         'disqus'          => [
             'enabled'    => false,
             'url'        => 'https://phalconphp.com',
