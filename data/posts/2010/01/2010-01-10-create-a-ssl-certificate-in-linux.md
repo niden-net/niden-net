@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2010-01-06-design-patterns.png" />
-
 There are times that I want to set up a secure communication with the server I am working on. This might be because I want to run phpMyAdmin over SSL (I do not like unencrypted communications over the Internet), install a certificate for an eShop for a client or just for my personal use.
+<img class="post-image" src="{{ cdnUrl }}/files/2010-01-06-design-patterns.png" />
 
 The first time I did this, I had to research on the Internet and after a bit of a trial and error I managed to get everything working. However if you do not do something on a regular basis you will forget. I am no exception to this rule hence this post to allow me to remember what I did and hopefully help you too.
 

@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2009-11-21-incompetence.png" />
-
 Further to my previous post [Ultimate Incompetence...](/post/ultimate-incompetence), it has been a week or so since we contacted the DMV so as to have the suspension lifted from my wife's non existent (for a year now) VA drivers license. We were promised that the information will be sent in the mail and that we will have to act when we receive it.
+<img class="post-image" src="{{ cdnUrl }}/files/2009-11-21-incompetence.png" />
 
 Luckily we are vigilant about these things - especially deadlines - and we followed up with the DMV yesterday. To our surprise the lady that my wife talked to yesterday was a hundred times more helpful that the previous one. From what my wife tells me, the lady yesterday did not sound bored and was not dragging her words, was very knowledgeable and did indeed help us with our problem.
 

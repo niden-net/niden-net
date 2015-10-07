@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2011-11-11-update.png" />
-
 It has been a very long time since I last blogged.
+<img class="post-image" src="{{ cdnUrl }}/files/2011-11-11-update.png" />
 
 The primary reason is that I have been busy and somewhat lazy. Hopefully that trend (the laziness) will not last that much and I will be able to post in higher frequency.
 

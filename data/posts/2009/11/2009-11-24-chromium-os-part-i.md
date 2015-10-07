@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
-
 A lot of hype has been generated on the Internet a few months back regarding Google's [announcement](http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html) that they are building a new operating system. The announcement was met with skepticism but also enthusiasm/anticipation by a lot of people who are puzzled as to what direction Google is taking and where are they looking themselves positioned in the computer industry.
+<img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
 
 Google has already established themselves in the mobile operating system with [Android](http://www.android.com/) which for many is better than Apple's iPhone. What managed to get Google very high up in user satisfaction with Android was the fact that it is open source. It is backed by Google and they are putting a lot of effort into this but the fact that anyone can download the source code and build the operating system themselves is amazing. Giving people the freedom to choose should be something that every company should do (personal opinion).
 

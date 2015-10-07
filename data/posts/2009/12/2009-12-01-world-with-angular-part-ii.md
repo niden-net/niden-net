@@ -1,5 +1,3 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
-
 Continued from [Part I](/post/world-with-angular-part-i)
 
 #### The Wildlife Rescue League application
@@ -7,6 +5,7 @@ Continued from [Part I](/post/world-with-angular-part-i)
 ##### Design
 
 For those that do not know, the [Wildlife Rescue League](http://www.wildliferescueleague.org/)
+<img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
 
 > is a non-profit organization providing care for sick, injured and orphaned wildlife in order to return them to the wild. Our licensed rehabilitators, located throughout Virginia and suburban Maryland, work with animal shelters, humane societies, wildlife groups, nature centers and veterinary hospitals to provide care to creatures in need. WRL operates a wildlife hotline in the Northern Virginia and surrounding areas to assist the public in obtaining information and assistance in locating a wildlife rehabilitator. WRL is also committed to educating the public about the natural history of native wildlife, coexisting with it and preventing the need for wildlife rehabilitation. We can provide brochures, educational material and educational programs to suit your needs.
 

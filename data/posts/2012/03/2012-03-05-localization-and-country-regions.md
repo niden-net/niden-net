@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2012-03-05-world.png" />
-
 I was recently assigned a task in my current job, to try and standardize address related data.
+<img class="post-image" src="{{ cdnUrl }}/files/2012-03-05-world.png" />
 
 My approach was to use the ISO codes for countries and ISO codes for regions. A region is defined as the geographical split of areas in a country. For instance in the US regions are called states, in Canada provinces etc.
 

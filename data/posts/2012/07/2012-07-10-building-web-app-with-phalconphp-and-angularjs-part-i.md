@@ -1,7 +1,6 @@
+There are ample frameworks on the Internet, most free, that a programmer can use to build a web application. Two of these frameworks are [PhalconPHP](https://phalconphp.com) and [AngularJS](http://angularjs.org).
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
-
-There are ample frameworks on the Internet, most free, that a programmer can use to build a web application. Two of these frameworks are [PhalconPHP](https://phalconphp.com) and [AngularJS](http://angularjs.org).
 
 I decided to use those two frameworks and build a simple application which will keep track of the Game Balls and Kick in the Balls awards of [Harry Hog Football](http://www.harryhogfootball.com/).
 

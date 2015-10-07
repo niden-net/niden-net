@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/php.png" />
-
 In my workplace we have been using [Zend Framework](http://framework.zend.com/) for more than a year primarily as a glue framework. We have managed to integrate a lot of components from the framework to suit our needs and slowly we are moving towards the full MVC pattern.
+<img class="post-image" src="{{ cdnUrl }}/files/php.png" />
 
 In the meantime our own framework, or collection of code if you prefer, is slowly evolving with every new project. New classes are added while others are enhanced more to provide more flexible input/output. Add to that the continuous evolution of [Zend Framework](http://framework.zend.com/) and we are faced with at least one version of our own codebase per project.
 

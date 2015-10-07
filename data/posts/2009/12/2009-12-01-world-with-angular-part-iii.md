@@ -1,10 +1,9 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
-
 Continued from [Part II](/post/world-with-angular-part-ii)
 
 ##### Presentation of Data
 
 Presenting data with `<angular/>` is really easy. All we need to do is to tell `<angular/>` how we want the data to be presented and where.
+<img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
 
 From [Part II](/post/world-with-angular-part-ii) you have seen that I have declared an entity called `Incident`. Also in the `<body>` tag I have initialized the `<angular/>` engine, requested `all()` the `Incident` objects and stored them in the `incidents` variable.
 

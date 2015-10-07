@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
-
 This is my effort to install Gentoo Linux on my *Acer Ferrari LMi 3000*.
+<img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
 
 The first thing I did was to start ssh. The live CD of Gentoo had already identified my network card which is based on the `via-rhine` module.
 

@@ -1,8 +1,7 @@
-<img class="post-image" src="{{ cdnUrl }}/files/php.png" />
-
 #### Preface
 
 The last few years I have been using Quicken to manage the home bank accounts and spending. My wife never had any problems with me doing so and it helps us manage our cash flow better. Of course like every couple we buy things that we need and always provision a small amount of money for personal expenses.
+<img class="post-image" src="{{ cdnUrl }}/files/php.png" />
 
 Some time ago when downloading the transactions from our bank, I noticed a rather odd name coming in for a very small charge (less than 20 dollars). So I asked my wife what that shop is. Her response was *Beautification*. My reply was *What do you mean? You don't need anything - you are gorgeous as is...*. Although this did earn me brownie points it also infuriated my wife since she was thinking I was auditing her. My sole purpose of that question was to assess the category of the expense and move on. I was not interested the least about the particulars of the expense. I got my reply - a detailed one - as to what the item was for (makeup really) and once my wife finished I explained to her that all this explanation was unnecessary and all I needed was *Personal Care*.... The night ended in laughter as you can imagine and since then we always refer as *Beautification* when we pass the makeup area in the grocery store.
 

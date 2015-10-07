@@ -63,7 +63,7 @@
                         </li>
                         <li>
                             <a class="app-notifications"
-                               href="https://plus.google.com/u/0/104235485963468152376">
+                               href="https://google.com/+NikolaosDimopoulos-niden">
                                 <span class="icon icon-google-plus-with-circle"></span>
                             </a>
                         </li>

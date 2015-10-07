@@ -1,7 +1,6 @@
+One of the common "mistakes" that programmers (and have been guilty as charged many a times in the past) is not to use the tools that are available to them to the maximum extent possible.
 <img class="post-image" src="{{ cdnUrl }}/files/2013-09-15-mariadb.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
-
-One of the common "mistakes" that programmers (and have been guilty as charged many a times in the past) is not to use the tools that are available to them to the maximum extent possible.
 
 A common example is using the RDBMS of your choice to only store and retrieve data, without taking advantage of its power and its features to the full extent.
 

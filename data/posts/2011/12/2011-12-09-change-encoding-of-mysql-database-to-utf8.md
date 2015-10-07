@@ -1,7 +1,7 @@
 #### Overview
 
-<img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
 As applications grow, so do their audiences. In this day and age, one cannot assume that all the consumers of a web based application will live in a particular region and use only one language. Even if the developer assumes that one country will be served by the particular web application, there are instances that the `latin1` character set will not suffice in storing data.
+<img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
 
 Therefore, developers and database designers need to implement an encoding on their database that will safely store and retrieve any kind of data, not only latin1 based (i.e. the English alphabet).
 

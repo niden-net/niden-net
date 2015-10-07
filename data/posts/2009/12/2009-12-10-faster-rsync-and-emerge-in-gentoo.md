@@ -1,8 +1,7 @@
-<img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
-
 #### Scenario
 
 Recently I have started setting up a cluster of 7 Gentoo boxes for a project I am working on. The problem with boxes coming right out of the setup process of a hosting company is that they do not contain the packages that you need. Therefore you need to setup your `USE` flags and emerge the packages you require as per the role of every box.
+<img class="post-image" src="{{ cdnUrl }}/files/gentoo.png" />
 
 I have implemented the following procedure many times in my local networks (since I have more than one Gentoo boxes) and have also implemented the same process at work (we run 3 Gentoo boxes).
 

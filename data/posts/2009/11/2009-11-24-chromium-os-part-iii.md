@@ -1,8 +1,7 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
-
 Continued from [Part II](/post/chromium-os-part-ii)
 
 I had to shut the computer down because I had a train to catch. However booting up again the computer on the train and trying to enter the chroot environment produced some errors. It might very well be the fact that I do not have an Internet connection (at least a reliable one).
+<img class="post-image" src="{{ cdnUrl }}/files/2009-11-24-chromium-os.png" />
 
 So this post will have to wait until I get back home so that I can continue the installation. The key point here will be how to add the Chromium OS image over the second partition of my hard drive so that I can keep my dual boot system. I will run Image for DOS and clone my hard drive, in an effort to keep a mirror backup of my notebook at this particular point in time - you never know when you will use it.
 

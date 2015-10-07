@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
-
 Recently I was contacted by an acquaintance through my Google+ circles, who needed some help with a project of hers.
+<img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
 
 Her task was to redesign a church website. Pretty simple stuff, CSS, HTML and content.
 

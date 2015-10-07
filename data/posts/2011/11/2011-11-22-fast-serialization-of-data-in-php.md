@@ -1,7 +1,7 @@
 #### Serializing/Unserializing data
 
-<img class="post-image" src="{{ cdnUrl }}/files/2011-11-22-serialization.png" />
 > Serialization is the process of converting a data structure or object state into a format that can be stored and "resurrected" later in the same or another computer environment. [source](http://en.wikipedia.org/wiki/Serialization)
+<img class="post-image" src="{{ cdnUrl }}/files/2011-11-22-serialization.png" />
 
 There are a lot of areas where one can use serialization. A couple are:
 

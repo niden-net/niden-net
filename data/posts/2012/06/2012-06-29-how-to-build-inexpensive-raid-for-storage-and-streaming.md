@@ -1,7 +1,7 @@
 #### Overview
 
-<img class="post-image" src="{{ cdnUrl }}/files/2012-06-29-remote-backup.png" />
 I have written about this before and it is still my favorite mantra
+<img class="post-image" src="{{ cdnUrl }}/files/2012-06-29-remote-backup.png" />
 
 > *There are people that take backups and there are people that never had a hard drive fail*
 

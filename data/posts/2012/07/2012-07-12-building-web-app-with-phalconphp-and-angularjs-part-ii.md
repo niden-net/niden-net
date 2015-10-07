@@ -2,9 +2,9 @@ This is Part II of a series of posts on building an application using [Phalcon](
 
 #### Preface
 
+I have recently discovered [Phalcon](https://phalconphp.com) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="http://blog.phalconphp.com/post/26524358189/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
 <img class="post-image" src="{{ cdnUrl }}/files/phalcon-green.png" />
 <img class="post-image" src="{{ cdnUrl }}/files/angularjs.png" />
-I have recently discovered [Phalcon](https://phalconphp.com) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="http://blog.phalconphp.com/post/26524358189/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
 
 [Phalcon](https://phalconphp.com) takes a different approach than any other PHP framework (see [Zend](http://framework.zend.com/), [Symfony](http://symfony.com/), [CakePHP](http://cakephp.org/) etc.). It is written in C and compiled as a module which is then loaded on your web server. Effectively the whole framework is in memory for you to use, without needing to access the file system so that you can include a file here or a file there.
 

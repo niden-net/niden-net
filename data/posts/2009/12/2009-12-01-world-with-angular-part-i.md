@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
-
 If you haven't heard about `<angular/>`, this article is intended to give you a brief overview of the features and functionality that it exposes.
+<img class="post-image" src="{{ cdnUrl }}/files/2009-12-01-angular.png" />
 
 `<angular/>` is a [declarative programming language](http://www.britannica.com/EBchecked/topic/130670/computer-programming-language/248126/Declarative-languages#) that provides the programmer with a wealth of tools using a simplistic model. `<angular/>` lives in the HTML file and references all the necessary libraries and tools using a single JavaScript file. This approach removes the need of complex scripts, installations of development/production environments (like AMP, Microsoft equivalent or other) and makes upgrading a breeze since the developer doesn't have to deal with it - it's all managed in the cloud. Development IDEs are rendered obsolete and all the developer needs is Notepad/Textmate/gEdit or a similar text editor.
 

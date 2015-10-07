@@ -1,6 +1,5 @@
-<img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
-
 We all need data to function. Whether this is information regarding what our body craves at the moment - hence go to the local take-away and get it or cook it - or whether this is electronic data to make our tasks easier, makes no difference.
+<img class="post-image" src="{{ cdnUrl }}/files/mysql.gif" />
 
 Storing data in an electronic format is always a challenge. When faced with a new project you always try to out think the project's needs and ensure that you covered all the possible angles of it. Some projects though are plain vanilla since say you only need to enter the customer's name, surname, address and phone. But what happens when you need to enter data that you don't know their type?
 

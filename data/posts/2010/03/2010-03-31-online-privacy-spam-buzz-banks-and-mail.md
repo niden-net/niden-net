@@ -1,5 +1,5 @@
 #### Electronic Presence
-Everyone more or less has some sort of electronic presence. That presence can easily be seen on Twitter, Facebook, [Google Plus](https://plus.google.com/u/0/104235485963468152376/posts), personal blog etc.
+Everyone more or less has some sort of electronic presence. That presence can easily be seen on Twitter, Facebook, [Google Plus](https://google.com/+NikolaosDimopoulos-niden), personal blog etc.
 <img class="post-image" src="{{ cdnUrl }}/files/2010-03-31-privacy.png" />
 
 What most people neglect to realize that this is only the tip of the iceberg. How about the information your bank stores about you? Isn't that an electronic/online presence? Some server contains vital information about you and your bank uses that information to identify you against someone else. If your bank provides online banking, then the Internet becomes the interface that you use to access your own personal information (mainly funds) which again is stored somewhere else.
