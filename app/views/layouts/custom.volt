@@ -96,14 +96,14 @@
 
         <div class="container p-t-md">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <ul class="list-group media-list media-list-stream">
                         {% include 'posts/custom.ads-below-nav.volt' %}
                         {{ content() }}
                     </ul>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     {% include 'posts/custom.profile.volt' %}
                     {% include 'posts/custom.ads-sidebar.volt' %}
                     {% include 'posts/custom.tag-cloud.volt' %}

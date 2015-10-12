@@ -306,7 +306,6 @@ The dispatcher is instantiated with a listener, attaching to the `beforeExceptio
         $di->set(
             'dispatcher',
             function () use ($di) {
-
                 $eventsManager = new EventsManager;
 
                 /**
@@ -332,7 +331,6 @@ The views are being initialized using [Volt](https://docs.phalconphp.com/en/late
         $di->set(
             'view',
             function () use ($config) {
-
                 $view = new View();
                 $view->setViewsDir(K_PATH . '/app/views/');
                 $view->registerEngines([".volt" => 'volt']);
@@ -346,7 +344,6 @@ The views are being initialized using [Volt](https://docs.phalconphp.com/en/late
         $di->set(
             'volt',
             function ($view, $di) {
-
                 $volt = new VoltEngine($view, $di);
                 $volt->setOptions(
                     [
@@ -449,7 +446,6 @@ This is a class we came up with, which is used to give us an easy way to get inf
             true
         );
 ```
-
 
 #### Conclusion
 
