@@ -5,3 +5,7 @@ git pull
 
 # Clear/Rebuild cache
 ./cli --rebuild-cache
+
+# Permissions on cache
+chown -R apache.www-data var/cache/data/
+chown -R apache.www-data var/cache/volt/
