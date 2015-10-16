@@ -231,6 +231,20 @@
     "link":"http:\/\/www.niden.net\/2011\/02\/look-in-past-and-future-update.html"
   },
   {
+    "title": "Keeping your Linux users in sync in a cluster",
+    "slug": "keeping-your-linux-users-in-sync-in-a-cluster",
+    "date": "2011-02-20 13:56:00",
+    "tags": "bash, linux, nfs, rsync, storage, how-to",
+    "link":"http:\/\/www.niden.net\/2011\/02\/keeping-your-linux-users-in-sync-in.html"
+  },
+  {
+    "title": "LibreOffice Auto Update",
+    "slug": "libreoffice-auto-update-how-to-linux",
+    "date": "2011-04-21 14:45:00",
+    "tags": "libreoffice, oracle, openoffice, ubuntu, how-to",
+    "link":"http:\/\/www.niden.net\/2011\/04\/libreoffice-auto-update-how-tolinux.html"
+  },
+  {
     "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11 12:00:00",
