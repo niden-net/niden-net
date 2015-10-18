@@ -376,5 +376,12 @@
     "date": "2015-10-04 13:26:00",
     "tags": "php, phalcon, performance, bootstrap, blog, series",
     "link":""
+  },
+  {
+    "title": "Using Traits to add more functionality to your classes in PHP",
+    "slug": "using-traits-to-add-functionality-in-classes-php",
+    "date": "2015-10-18 13:09:00",
+    "tags": "php, phalcon, traits, how-to",
+    "link": ""
   }
 ]
