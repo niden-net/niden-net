@@ -150,7 +150,7 @@
         {% if 'search' == action and config.blog.googleCSE|length > 0 %}
         <script>
             (function() {
-                var cx = 'partner-pub-6325600846885391:sypil8-9bxo';
+                var cx = '{{ config.blog.googleCSE }}:sypil8-9bxo';
                 var gcse = document.createElement('script');
                 gcse.type = 'text/javascript';
                 gcse.async = true;
