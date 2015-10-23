@@ -245,6 +245,13 @@
     "link":"http:\/\/www.niden.net\/2011\/04\/libreoffice-auto-update-how-tolinux.html"
   },
   {
+    "title": "Using autounmask to Unmask Packages in Gentoo",
+    "slug": "using-autounmask-to-unmask-packages-in-gentoo",
+    "date": "2011-05-18 14:49:00",
+    "tags": "gentoo, portage, linux, how-to",
+    "link":"http:\/\/www.niden.net\/2011\/05\/using-autounmask-to-unmask-packages-in.html"
+  },
+  {
     "title": "New beginnings – sleep(6566400)",
     "slug": "new-beginnings-sleep6566400",
     "date": "2011-11-11 12:00:00",
