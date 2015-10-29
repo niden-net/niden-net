@@ -418,5 +418,12 @@
     "date": "2015-10-18 13:09:00",
     "tags": "php, phalcon, traits, how-to",
     "link": ""
+  },
+  {
+    "title": "Setting up AWS RDS MySQL replication offsite",
+    "slug": "setting-up-aws-rds-replication-offsite",
+    "date": "2015-10-29 21:15:00",
+    "tags": "mysql, mariadb, aurora, aws, rds, replication, how-to",
+    "link": ""
   }
 ]
