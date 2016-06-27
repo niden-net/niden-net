@@ -3,6 +3,7 @@
 namespace Kitsune\Markdown\Github;
 
 use Ciconia\Common\Text;
+use Ciconia\Exception;
 use Ciconia\Extension\ExtensionInterface;
 use Ciconia\Markdown;
 
@@ -11,11 +12,22 @@ use Ciconia\Markdown;
  */
 class PullRequestExtension implements ExtensionInterface
 {
-    private $issueUrl = '[#%s](https://github.com/phalcon/cphalcon/pull/%s)';
+    private $accountName = '';
+    private $issueUrl    = '[#%s](https://github.com/%s/%s/pull/%s)';
+    private $projectName = '';
 
-    public function setIssueUrl($url)
+    public function setAccountName($accountName)
     {
-        $this->issueUrl = $url;
+        $this->accountName = $accountName;
+
+        return $this;
+    }
+
+    public function setProjectName($projectName)
+    {
+        $this->projectName = $projectName;
+
+        return $this;
     }
 
     /**
@@ -30,16 +42,28 @@ class PullRequestExtension implements ExtensionInterface
 
     /**
      * @param Text $text
+     *
+     * @throws \Exception
      */
     public function processPullRequest(Text $text)
     {
+        if (true === empty($this->accountName) || true === empty($this->projectName)) {
+            throw new \Exception('Github account name or project are not set');
+        }
+
         /**
          * Turn the token to a github issue URL
          */
         $text->replace(
             '(\[GPR:(\d+)\])',
             function (Text $w, Text $issue) {
-                return sprintf($this->issueUrl, $issue, $issue);
+                return sprintf(
+                    $this->issueUrl,
+                    $issue,
+                    $this->accountName,
+                    $this->projectName,
+                    $issue
+                );
             }
         );
     }

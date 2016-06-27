@@ -5,17 +5,29 @@ namespace Kitsune\Markdown\Github;
 use Ciconia\Common\Text;
 use Ciconia\Extension\ExtensionInterface;
 use Ciconia\Markdown;
+use Ciconia\Exception;
 
 /**
  * Converts @[GI:9999] to a github issue link
  */
 class IssueExtension implements ExtensionInterface
 {
-    private $issueUrl = '[#%s](https://github.com/phalcon/cphalcon/issues/%s)';
+    private $accountName = '';
+    private $issueUrl    = '[#%s](https://github.com/%s/%s/issues/%s)';
+    private $projectName = '';
 
-    public function setIssueUrl($url)
+    public function setAccountName($accountName)
     {
-        $this->issueUrl = $url;
+        $this->accountName = $accountName;
+
+        return $this;
+    }
+
+    public function setProjectName($projectName)
+    {
+        $this->projectName = $projectName;
+
+        return $this;
     }
 
     /**
@@ -30,16 +42,27 @@ class IssueExtension implements ExtensionInterface
 
     /**
      * @param Text $text
+     *
+     * @throws \Exception
      */
     public function processIssues(Text $text)
     {
+        if (true === empty($this->accountName) || true === empty($this->projectName)) {
+            throw new \Exception('Github account name or project are not set');
+        }
+
         /**
          * Turn the token to a github issue URL
          */
         $text->replace(
             '(\[GI:(\d+)\])',
             function (Text $w, Text $issue) {
-                return sprintf($this->issueUrl, $issue, $issue);
+                return sprintf(
+                    $this->issueUrl,
+                    $issue,
+                    $this->projectId,
+                    $issue
+                );
             }
         );
     }
@@ -49,6 +72,6 @@ class IssueExtension implements ExtensionInterface
      */
     public function getName()
     {
-        return 'mention';
+        return 'githubissue';
     }
 }

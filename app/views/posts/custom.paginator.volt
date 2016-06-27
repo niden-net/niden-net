@@ -1,3 +1,4 @@
+                        {% if pages['previous'] is defined and pages['next'] is defined %}
                         {% if pages['previous'] > 0 or pages['next'] > 0 %}
                         <li class="media list-group-item p-a">
                             <div class="media-body">
@@ -21,4 +22,5 @@
                             {% endif %}
                             </div>
                         </li>
+                        {% endif %}
                         {% endif %}

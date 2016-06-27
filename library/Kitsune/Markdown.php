@@ -9,6 +9,7 @@ use Ciconia\Extension\Gfm\InlineStyleExtension;
 use Ciconia\Extension\Gfm\WhiteSpaceExtension;
 use Ciconia\Extension\Gfm\TableExtension;
 use Ciconia\Extension\Gfm\UrlAutoLinkExtension;
+use Ciconia\Renderer\RendererInterface;
 
 use Kitsune\Markdown\Github\MentionExtension;
 use Kitsune\Markdown\Github\IssueExtension;
@@ -16,7 +17,7 @@ use Kitsune\Markdown\Github\PullRequestExtension;
 
 class Markdown extends Ciconia
 {
-    public function __construct(\Ciconia\Renderer\RendererInterface $renderer = null)
+    public function __construct(RendererInterface $renderer = null)
     {
         parent::__construct($renderer);
 
@@ -29,17 +30,16 @@ class Markdown extends Ciconia
         $this->addExtension(new MentionExtension());
 
         $extension = new IssueExtension();
-        $extension->setIssueUrl(
-            '[#%s](https://github.com/phalcon/cphalcon/issues/%s)'
-        );
+        $extension
+            ->setAccountName('phalcon')
+            ->setProjectName('cphalcon');
         $this->addExtension($extension);
 
         $extension = new PullRequestExtension();
-        $extension->setIssueUrl(
-            '[#%s](https://github.com/phalcon/cphalcon/pull/%s)'
-        );
+        $extension
+            ->setAccountName('phalcon')
+            ->setProjectName('cphalcon');
         $this->addExtension($extension);
-
     }
 }
 
