@@ -1,11 +1,14 @@
-This article is cross posted from the [Phalcon Blog](https://blog.phalconphp.com/post/2016-07-29-phalcon-3-0-0-released)
+This article is cross posted from the [Phalcon Blog](https://blog.phalconphp.com/post/phalcon-3-0-0-released)
 
 Phalcon 3.0.0 final (LTS) released
 ==================================
 
 The Phalcon team is **very excited** to share some news with our community!
 
-The last few months, we have been working hard to push 2.1 out, which contains significant enhancements as well as some API changes that require attention so as not to break compatibility with your application. On top of that we have been working in making Zephir PHP7 compatible so that you can enjoy Phalcon in your PHP7 application. Some news first though:
+The last few months, we have been working hard to push 2.1 out, which contains significant enhancements as well as some API changes 
+that require attention so as not to break compatibility with your application. 
+On top of that we have been working in making Zephir PHP7 compatible so that you can enjoy 
+Phalcon in your PHP7 application. Some news first though:
 
 ### Versioning
 For any future Phalcon releases we are adopting SemVer (http://semver.org). In short:
@@ -16,21 +19,30 @@ For any future Phalcon releases we are adopting SemVer (http://semver.org). In s
 > * PATCH version when you make backwards-compatible bug fixes.
 > * Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-Since 2.1 has many API changes, we decided that it would be best to not release it as is and start using [SemVer](http://semver.org) to better communicate with the community and keep track of our releases.
+Since 2.1 has many API changes, we decided that it would be best to not release it as is and start using [SemVer](http://semver.org) to better 
+communicate with the community and keep track of our releases.
 
 ### 2.1 is dead, all hail 3.0
 As mentioned above, 2.1 will not be fully backwards compatible. As a result, we are changing the version number to 3.0.
 
 ### PHP version support
-The Phalcon team takes security very seriously and thus have decided to provide support to PHP versions that are [supported](http://php.net/supported-versions.php). As of 3.0, PHP 5.3 and 5.4 will be deprecated. We are making a small exception to this rule and will continue to support 5.5 for a little while, but since its support has expired a few days ago, it will too be deprecated in a future release.
+The Phalcon team takes security very seriously and thus have decided to provide support to PHP versions that are 
+[supported](http://php.net/supported-versions.php). As of 3.0, PHP 5.3 and 5.4 will be deprecated. We are making a
+ small exception to this rule and will continue to support 5.5 for a little while, but since its support has expired a 
+ few days ago, it will too be deprecated in a future release.
 
 ### The goodie bag
-So what does 3.0 offer? The [changelog](https://github.com/phalcon/cphalcon/blob/2.1.x/CHANGELOG.md) is extensive as you can see. Below are highlights of the changes as well as areas you need to concentrate.
+So what does 3.0 offer? The [changelog](https://github.com/phalcon/cphalcon/blob/3.0.x/CHANGELOG.md) is extensive as you can see. 
+Below are highlights of the changes as well as areas you need to concentrate.
 
 &bull; PHP 5.3 and 5.4 are fully deprecated.
-You can compile the code on your own, but we will not be able to support it nor can we guarantee that it will work as you expect it to. PHP 5.3 support expired mid 2014 and 5.4 expired mid 2015. We need to ensure our applications have all known vulnerabilities on the PHP side fixed and patched, thus we will not support any unsupported PHP version. This excludes PHP 5.5, whose support expired a few days ago. We will deprecate 5.5 in a future release but will make sure that you all know beforehand so that you can prepare.
+You can compile the code on your own, but we will not be able to support it nor can we guarantee that it will work as you expect it to. 
+PHP 5.3 support expired mid 2014 and 5.4 expired mid 2015. We need to ensure our applications have all known vulnerabilities on the 
+PHP side fixed and patched, thus we will not support any unsupported PHP version. This excludes PHP 5.5, whose support expired a few days ago. 
+We will deprecate 5.5 in a future release but will make sure that you all know beforehand so that you can prepare.
 
-> **INCOMPATIBLE**: You will need to upgrade your PHP installation to 5.6. You can always continue to use the Phalcon version you are using, but in 3.0 support for PHP 5.4 has been deprecated and we cannot guarantee that PHP 5.5 will be fully functional
+> **INCOMPATIBLE**: You will need to upgrade your PHP installation to 5.6. You can always continue to use the Phalcon version you are using, 
+but in 3.0 support for PHP 5.4 has been deprecated and we cannot guarantee that PHP 5.5 will be fully functional.
 
 #### APPLICATION
 &bull; `Phalcon\Cli\Console` and `Phalcon\Mvc\Application` now inherits `Phalcon\Application`. 
@@ -45,12 +57,14 @@ Can delay any new job being reserved for a given time.
 
 &bull; Added `\Phalcon\Queue\Beanstalk::kick()`. 
 It moves jobs into the ready queue. If there are any buried jobs, it will only kick buried jobs. Otherwise it will kick delayed jobs.
+
 ```php
 // Kick the job, it should move to the ready queue again
 if (false !== $job->kick()) {
     $job = $this->client->peekReady();
 }
 ```
+
 &bull; Added `\Phalcon\Queue\Beanstalk::listTubeUsed()`. 
 Returns the tube currently being used by the client.
 
@@ -59,12 +73,15 @@ Returns a list tubes currently being watched by the client.
 
 &bull; Added `\Phalcon\Queue\Beanstalk::peekDelayed()`. 
 Return the delayed job with the shortest delay left.
+
 ```php
 $this->client->put('testPutInTube', ['delay' => 2]);
 $job = $this->client->peekDelayed();
 ```
+
 &bull; Added `\Phalcon\Queue\Beanstalk::jobPeek()`. 
 Returns the next available job.
+
 ```php
 $this->client->choose(self::TUBE_NAME_1);
 $jobId = $this->client->put('testPutInTube');
@@ -74,12 +91,15 @@ $this->assertEquals($jobId, $job->getId());
 
 #### CACHE
 &bull; The cache backend adapters now return boolean when calling `Phalcon\Cache\BackendInterface::save`
+
 ```php
 // Returns true/false
 $result = $backendCache->save('my_key', $content);
 ```
+
 &bull; Added  `Phalcon\Cache\Frontend\Msgpack`. 
 [MsgPack](http://msgpack.org) is a new frontend cache. It is an efficient binary serialization format, which allows exchanging data among multiple languages like JSON. 
+
 ```php
 use Phalcon\Cache\Backend\File;
 use Phalcon\Cache\Frontend\Msgpack;
@@ -119,9 +139,11 @@ foreach ($robots as $robot) {
     echo $robot->name, "\n";
 }
 ```
+
 &bull; Fixed bug of `destroy` method of `Phalcon\Session\Adapter\Libmemcached`
 
 &bull; Added `Phalcon\Cache\Backend\Memcache::addServers` to enable pool of servers for memcache
+
 ```php
 $memcache->addServers('10.4.6.10', 11000, true);
 $memcache->addServers('10.4.6.11', 11000, true);
@@ -143,6 +165,7 @@ Due to the lack of updates for mcrypt for a number of years, its slow performanc
 &bull; `Phalcon\Di` is now bound to services closures allowing use `Phalcon\Di` as `$this` to access services within them. Additionally, closures used as handlers in` Mvc\Micro` are now bound to the `$app` instance
 
 **Old way**:
+
 ```php
 $diContainer->setShared(
     'modelsCache',
@@ -160,7 +183,9 @@ $diContainer->setShared(
     }
 );
 ```
+
 **New way**:
+
 ```php
 $diContainer->setShared(
     'modelsCache',
@@ -178,7 +203,9 @@ $diContainer->setShared(
     }
 );
 ```
+
 Also note the nested DI behavior:
+
 ```php
 $foo = function() {
     get_class($this); // DI
@@ -190,39 +217,23 @@ $foo = function() {
     }
 }
 ```
+
 &bull; If an object is returned after firing the event `beforeServiceResolve` in `Phalcon\Di` it overrides the default service localization process
 
-#### DATABASE
-&bull; Dropped support of Oracle [GI:12008][GPR:12009]
-Support of Oracle has been dropped from the Phalcon Core for the following reasons:
-* The lack of Oracle maintainer
-* The lack of relevant experience among the Phalcon Core Team
-* Weak support or interest from the community
-* Incomplete implementation that creates only the illusion of support for Oracle
-* Some issues hampering for the support of PHP 7 in Phalcon
-
-Oracle components will be ported to the Phalcon Incubator. If the adapter receives support and enhancements from the community, we will consider making it part of the core again.
-
 #### DISPATCHER
-&bull; Added method `getActionSuffix()` in `Phalcon\DispatcherInterface`
-```php
-public function testAction() 
-{
-    $dispatcher = $this->dispatcher;
-    $dispatcher->setActionSuffix('my');
-    var_dump($dispatcher->getActionSuffix()); // my
-}
-```
 &bull; Added `Phalcon\Dispatcher::hasParam()`.
+
 ```php
 public function testAction() 
-{
-    $dispatcher = $this->dispatcher;
-    if (true === $dispatcher->hasParam('foo')) {
+{    
+    if (true === $this->dispatcher->hasParam('foo')) {
         // Parameter exists
     }
 }
 ```
+
+&bull; Added method `getActionSuffix()` in `Phalcon\DispatcherInterface`. This allows you change the 'Action' suffix in controller actions.
+
 &bull; Corrected behavior to fire the `dispatch:beforeException` event when there is any exception during dispatching [GI:11458]
 
 &bull; CLI parameters are now handled consistently.
@@ -230,6 +241,7 @@ public function testAction()
 &bull; Added `Phalcon\Mvc\Controller\BindModelInterface` and associated model type hint loading through dispatcher.
 
 &bull; Added `Phalcon\Mvc\Collection::update`, `Phalcon\Mvc\Collection::create` and `Phalcon\Mvc\Collection::createIfNotExist`
+
 ```php
 public function createAction() 
 {
@@ -273,57 +285,69 @@ public function updateAction()
 > **BACKWARDS INCOMPATIBLE**: Any references to `getCancelable` will stop working. You will need to rename the function to `isCancelable`
 
 **Old way**:
+
 ```php
 public function cancelAction()
 {
-    if (true === $this->di->get('eventsManager')->getCancelable()) {
+    if (true === $this->eventsManager->getCancelable()) {
         // do something here
     }
 }
 ```
+
 **New way**:
+
 ```php
 public function cancelAction()
 {
-    if (true === $this->di->get('eventsManager')->isCancelable()) {
+    if (true === $this->eventsManager->isCancelable()) {
         // do something here
     }
 }
 ```
+
 &bull; Removed `Phalcon\Events\Manager::dettachAll` in favor of `Phalcon\Events\Manager::detachAll`
 > **BACKWARDS INCOMPATIBLE**: Any references to `dettachAll` will stop working. You will need to rename the function to `detachAll`
 
 **Old way**:
+
 ```php
 public function destroyAction()
 {
-    $this->di->get('eventsManager')->dettachAll()
+    $this->eventsManager->dettachAll()
 }
 ```
+
 **New way**:
+
 ```php
 public function destroyAction()
 {
-    $this->di->get('eventsManager')->detachAll()
+    $this->eventsManager->detachAll()
 }
 ```
 
 #### FLASH
 &bull; Added ability to autoescape Flash messages [GI:11448]
+
 ```php
 $flash = new Phalcon\Flash\Session;
 $flash->setEscaperService(new Phalcon\Escaper);
 
-$flash->success("<script>alert('This will execute as JavaScript!')</script>");
+$flash->success("&lt;script&gt;alert('This will execute as JavaScript!')&lt;/script&gt;");
 echo $flash->output();
 // <div class="successMessage">&lt;script&gt;alert(&#039;This will execute as JavaScript!&#039;)&lt;/script&gt;</div>
 ```
+
 &bull; Fixed `Phalcon\Session\Flash::getMessages`. 
 Now it returns an empty array in case of non existent message type request [GI:11941]
 
 **Old result**:
+
 ```php
-$flash = new \Phalcon\Session\Flash();
+use Phalcon\Session\Flash as FlashSession;
+
+$flash = new FlashSession();
 $flash->error('Error Message');
 var_dump($flash->getMessages('success', false));
 
@@ -332,9 +356,13 @@ array (size=1)
     array (size=1)
       0 => string 'Error Message' (length=13)
 ```
+
 **New result**:
+
 ```php
-$flash = new \Phalcon\Session\Flash();
+use Phalcon\Session\Flash as FlashSession;
+
+$flash = new FlashSession();
 $flash->error('Error Message');
 var_dump($flash->getMessages('success', false));
 
@@ -346,6 +374,7 @@ array (size=0)
 &bull; Added default header: `Content-Type: "application/json; charset=UTF-8"` in method `Phalcon\Http\Response::setJsonContent`
 
 **Old way**:
+
 ```php
 use Phalcon\Http\Response;
 
@@ -355,7 +384,9 @@ $response->setContentType('application/json;');
 $response->setJsonContent($data)
 $response->send();
 ```
+
 **New way**:
+
 ```php
 $data     = 'Phlying with Phalcon';
 $response = new Response();
@@ -379,6 +410,7 @@ Left the originals functions as aliases and marked them deprecated.
 > **CAUTION**: Any references to `isSoapRequest` need to be renamed to `isSoap`. Any references to `isSecureRequest` need to be renamed to `isSecure`.
 
 **Old way**:
+
 ```php
 public function testAction()
 {
@@ -391,7 +423,9 @@ public function testAction()
     }
 }
 ```
+
 **New way**:
+
 ```php
 public function testAction()
 {
@@ -406,6 +440,7 @@ public function testAction()
 ```
 
 &bull; Added `Phalcon\Http\Request::setStrictHostCheck` and `Phalcon\Http\Request::isStrictHostCheck` to manage strict validation of the host name.
+
 ```php
 use Phalcon\Http\Request;
 
@@ -430,6 +465,7 @@ Returns the port on which the request is made i.e. 80, 8080, 443 etc.
 
 &bull; Added `setLastModified` method to `Phalcon\Http\Response`
 Sets the `Last-Modified` header
+
 ```php
 public function headerAction()
 {
@@ -439,24 +475,49 @@ public function headerAction()
 
 &bull; Add `setContentLength` method to `Phalcon\Http\Response`
 Sets the response content-length
+
 ```php
 public function headerAction()
 {
     $this->response->setContentLength(2048);
 }
 ```
-	 
+     
 #### LOADER
 &bull; Removed support for prefixes strategy in `Phalcon\Loader`
 > **BACKWARDS INCOMPATIBLE**: In Phalcon 2, you could load classes using a specific prefix. This method was very popular before namespaces were introduced. For instance:
+
 ```php
-setPrefix('Shield_')
-load('Sword'); // will load `Shield_Sword`
+<?php
+
+use Phalcon\Loader;
+
+// Creates the autoloader
+$loader = new Loader();
+
+// Register some prefixes
+$loader->registerPrefixes(
+    array(
+        "Example_Base"    => "vendor/example/base/",
+        "Example_Adapter" => "vendor/example/adapter/",
+        "Example_"        => "vendor/example/"
+    )
+);
+
+// Register autoloader
+$loader->register();
+
+// The required class will automatically include the
+// file vendor/example/adapter/Some.php
+$some = new Example_Adapter_Some();
 ```
+
 > This functionality is no longer supported
 
 &bull; Added `\Phalcon\Loader::registerFiles` and `\Phalcon\Loader::getFiles`. 
-`registerFiles` registers files that are "non-classes" hence need a "require". This is very useful for including files that only have functions. `getFiles` returns the files currently registered in the autoloader
+`registerFiles` registers files that are "non-classes" hence need a "require". This is very useful for including files that only have functions. `getFiles` 
+returns the files currently registered in the autoloader
+
 ```php
 $loader->registerFiles(
     [
@@ -466,8 +527,20 @@ $loader->registerFiles(
 );
 ```
 
+#### DATABASE
+&bull; Dropped support of Oracle [GI:12008][GPR:12009]
+Support of Oracle has been dropped from the Phalcon Core for the following reasons:
+* The lack of Oracle maintainer
+* The lack of relevant experience among the Phalcon Core Team
+* Weak support or interest from the community
+* Incomplete implementation that creates only the illusion of support for Oracle
+* Some issues hampering for the support of PHP 7 in Phalcon
+
+Oracle components will be ported to the Phalcon Incubator. If the adapter receives support and enhancements from the community, we will consider making it part of the core again.
+
 #### MODELS
 &bull; Changed constructor of `Phalcon\Mvc\Model` to allow pass an array of initialization data
+
 ```php
 $customer = new Customer(
     [
@@ -475,13 +548,16 @@ $customer = new Customer(
         'Status' => 'active',
     ]
 );
+$customer->save();
 ```
+
 &bull; `Phalcon\Mvc\Model` now implements `JsonSerializable` making easy serialize model instances
+
 ```php
 $customers = Customers::find();
-
 echo json_encode($customers); // {['id':1,...],['id':2,...], ...}
 ```
+
 &bull; `Phalcon\Mvc\Model\Criteria::getOrder` renamed to `Phalcon\Mvc\Model\Criteria::getOrderBy`
 > **BACKWARDS INCOMPATIBLE**: Any references to `getOrder` will stop working. You will need to rename the function to `getOrderBy`
 
@@ -489,6 +565,7 @@ echo json_encode($customers); // {['id':1,...],['id':2,...], ...}
 Returns an option by the specified name. If the option does not exist null is returned
 
 &bull; Added `OR` operator for `Phalcon\Mvc\Model\Query\Builder` methods: `betweenWhere`, `notBetweenWhere`, `inWhere` and `notInWhere`
+
 ```php
 $builder->betweenWhere('price', 100.25, 200.50);     // Appends a BETWEEN condition
 $builder->notBetweenWhere('price', 100.25, 200.50);  // Appends a NOT BETWEEN condition
@@ -521,6 +598,7 @@ Returns the join parts from query builder
 
 #### ROLES
 &bull; Added `Phalcon\Acl\RoleAware` and `Phalcon\Acl\ResourceAware` Interfaces. Now you can pass objects to `Phalcon\Acl\AdapterInterface::isAllowed` as `roleName` and `resourceName`, also they will be automatically passed to function defined in `Phalcon\Acl\AdapterInterface::allow` or `Phalcon\Acl\AdapterInterface::deny` by type
+
 ```php
 use UserRole;       // Class implementing RoleAware interface
 use ModelResource;  // Class implementing ResourceAware interface
@@ -545,6 +623,7 @@ $acl->isAllowed($anotherGuest, $customer, 'search') // Returns true
 &bull; `Phalcon\Acl\AdapterInterface::allow` and `Phalcon\Acl\AdapterInterface::deny` have 4th argument - function. It will be called when using `Phalcon\Acl\AdapterInterface::isAllowed`
 
 &bull; `Phalcon\Acl\AdapterInterface::isAllowed` have 4th argument - parameters. You can pass arguments for a function defined in `Phalcon\Acl\AdapterInterface:allow` or `Phalcon\Acl\AdapterInterface::deny` as associative array where key is argument name
+
 ```php
 // Set access level for role into resources with custom function
 $acl->allow(
@@ -633,6 +712,7 @@ Mostly these are used internally but can be used to get information about `libre
 
 #### TEXT
 &bull; Added ability to use custom delimiter for `Phalcon\Text::camelize` and `Phalcon\Text::uncamelize` [GI:10396]
+
 ```php
 use Phalcon\Text;
         
@@ -641,6 +721,7 @@ public function displayAction()
     echo Text::camelize('c+a+m+e+l+i+z+e', '+'); // CAMELIZE
 }
 ```
+
 &bull; Fixed `Phalcon\Text:dynamic()` to allow custom separator [GI:11215]
 
 #### VIEW
@@ -650,6 +731,7 @@ You can now use one layout path for all the landing pages of your application fo
 &bull; Now `Phalcon\Mvc\View` supports many views directories at the same time
 
 &bull; Return `false` from an action disables the view component (same as `$this->view->disable()`)
+
 ```php
 public function displayAction()
 {
@@ -662,6 +744,7 @@ public function displayAction()
 &bull; Return a string from an action takes it as the body of the response
 
 &bull; Return a string from an `Mvc\Micro` handler takes it as the body of the response
+
 ```php
 public function displayAction()
 {
@@ -679,6 +762,7 @@ public function displayAction()
 The functionality of both components is merged into one, allowing us to reduce the codebase while offering the same functionality as before.
 
 **Old way**:
+
 ```php
 namespace Invo\Models;
 
@@ -713,7 +797,9 @@ class Users extends Model
     }
 }
 ```
+
 New way:
+
 ```php
 namespace Invo\Models;
 
@@ -752,17 +838,21 @@ class Users extends Model
 > **CAUTION**: Any references to `isSetOption` need to be renamed to `hasOption`
 
 **Old way**:
+
 ```php
 if (true === $validation->isSetOption('my-option')) {
     //
 }
 ```
+
 **New way**:
+
 ```php
 if (true === $validation->hasOption('my-option')) {
     //
 }
 ```
+
 &bull; Added internal check `allowEmpty` before calling a validator. If it option is true and the value of empty, the validator is skipped
 
 &bull; Added option to validate multiple fields with one validator (fix uniqueness validator as well), also removes unnecessary `model => $this` in `Phalcon\Validation\Validator\Uniqueness`.
@@ -772,6 +862,7 @@ if (true === $validation->hasOption('my-option')) {
 &bull; Added `Phalcon\Validation\CombinedFieldsValidator`, validation will pass array of fields to this validator if needed
 
 &bull; `Phalcon\Validation\Validator\Digit` now correctly validates digits [GI:11374]
+
 ```php
 use Phalcon\Validation\Validator\Digit as DigitValidator;
 
@@ -799,7 +890,9 @@ $validator->add(
     )
 );
 ```
+
 &bull; Added `Phalcon\Validation\Validator\Date`
+
 ```php
 use Phalcon\Validation\Validator\Date as DateValidator;
 
@@ -832,9 +925,11 @@ $validator->add(
     )
 );
 ```
+
 &bull; Fixed `Phalcon\Validation::appendMessage` to allow append message to the empty stack [GI:10405]
 
 &bull; Added `convert` option to the `Phalcon\Validation\Validator\Uniqueness` to convert values to the database lookup [GI:12005][GPR:12030]
+
 ```php
 use Phalcon\Validation\Validator\Uniqueness;
 
@@ -851,6 +946,7 @@ $validator->add(
     )
 );
 ```
+
 #### INTERFACES
 &bull; Removed `__construct` from all interfaces [GI:11410][GPR:11441]
 
@@ -887,6 +983,7 @@ Phalcon 3.0 Long Term Support (LTS) version is out, and it’s packed with new f
 ### Acknowledgments
 We want to greatly thank everyone who has contributed to accomplish and achieve the completion of this release. Special thanks to our friends around the world that have made possible this release:
 
+* [Andres Gutierrez](https://github.com/andresgutierrez)
 * [Serghei Iakovlev](https://github.com/sergeyklay)
 * [Nikolaos Dimopoulos](https://github.com/niden)
 * [Sid Roberts](https://github.com/SidRoberts)
@@ -967,6 +1064,7 @@ We want to greatly thank everyone who has contributed to accomplish and achieve 
 * Tecno Soft Consultoría Informática, SL
 * Layer Seven Solutions INC
 * PHP Wisdom Ltd
+* Brainz
 * Dmitri Bazilski
 * Kamil Podkowka
 * Chen Shih Wei
@@ -1017,16 +1115,23 @@ We want to greatly thank everyone who has contributed to accomplish and achieve 
 * Mekan Bashimov
 
 ### Conclusion
-Thank you once more to our wonderful community and users!
+Phalcon 3.0 takes a step forward towards a modern framework for PHP. We'll continue
+working making it more useful and performant for developers. Thank you once more to our 
+wonderful community and users!
 
 ### Installation
 You can install Phalcon 3.0 for either PHP 5.5/5.6/7.0 using the following instructions:
 
 ```sh
-git clone --depth=5 http://github.com/phalcon/cphalcon
+git clone --depth=5 https://github.com/phalcon/cphalcon
 cd cphalcon/build
 sudo ./install
 ```
+
+Windows DLLs are available in the [download page](https://phalconphp.com/en/download/windows).
+
+* [Documentation](https://docs.phalconphp.com)
+* [API](https://api.phalconphp.com/)
 
 As always, many thanks to everyone involved in this release and thanks for choosing Phalcon!
 
