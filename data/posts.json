@@ -425,5 +425,12 @@
     "date": "2015-10-29 21:15:00",
     "tags": "mysql, mariadb, aurora, aws, rds, replication, how-to",
     "link": ""
-  }
+  },
+ {
+  "title": "Phalcon 3.0.0 released",
+  "slug": "phalcon-3-0-0-released",
+  "date": "2016-07-29",
+  "tags": "php, phalcon, 3.0.x, phalcon3, release, rfc, lts",
+  "link": ""
+ }
 ]
