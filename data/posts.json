@@ -426,11 +426,18 @@
     "tags": "mysql, mariadb, aurora, aws, rds, replication, how-to",
     "link": ""
   },
- {
-  "title": "Phalcon 3.0.0 released",
-  "slug": "phalcon-3-0-0-released",
-  "date": "2016-07-29",
-  "tags": "php, phalcon, 3.0.x, phalcon3, release, rfc, lts",
-  "link": ""
- }
+  {
+    "title": "Phalcon 3.0.0 released",
+    "slug": "phalcon-3-0-0-released",
+    "date": "2016-07-29",
+    "tags": "php, phalcon, 3.0.x, phalcon3, release, rfc, lts",
+    "link": ""
+  },
+  {
+    "title": "Migrating a SVN repository to Git (Bitbucket)",
+    "slug": "migrating-a-svn-repository-to-git-bitbucket",
+    "date": "2016-09-29",
+    "tags": "svn, subversion, git, bitbucket, migration, how-to",
+    "link": ""
+  }
 ]
