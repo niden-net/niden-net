@@ -46,22 +46,26 @@ cd source_repo/
 ```
 
 Initialize the Git repository and copy the authors file in it
+
 ```bash
 git svn init https://svn.avengers.org/svn/SVNSOURCE/ --stdlayout 
 cp ../authors.txt .
 ```
 
 Set up the authors mapping file in the config
+
 ```bash
 git config svn.authorsfile authors.txt
 ```
 
 Check the config just in case
+
 ```bash
 git config --local --list
 ```
 
 The output should be something like this:
+
 ```bash
 core.repositoryformatversion=0
 core.filemode=true
@@ -75,17 +79,20 @@ svn.authorsfile=authors.txt
 ```
 
 Get the data from SVN (rerun the command if there is a timeout or proxy error)
+
 ```bash
 git svn fetch
 ```
 
 Check the status of the repository and the branches
+
 ```bash
 git status
 git branch -a
 ```
 
 Create the new bare work folder
+
 ```bash
 cd ..
 mkdir source_bare
@@ -93,18 +100,21 @@ cd source_bare/
 ```
 
 Initialize the bare folder and map the trunk
+
 ```bash
 git init --bare .
 git symbolic-ref HEAD refs/heads/trunk
 ```
 
 Return to the work folder
+
 ```bash
 cd ..
 cd source_repo/
 ```
 
 Add the bare repo as the remote and push the data to it
+
 ```bash
 git remote add bare ../source_bare/
 git config remote.bare.push 'refs/remotes/*:refs/heads/*'
@@ -112,6 +122,7 @@ git push bare
 ```
 
 Return to the bare work folder and check the branches
+
 ```bash
 cd ..
 cd source_bare/
@@ -119,11 +130,13 @@ git branch
 ```
 
 Rename trunk to master
+
 ```bash
 git branch -m trunk master
 ```
 
 Note all the branches that are prefixed `/tags/` and modify the lines below (as many times as necessary) to convert SVN tags to Git tags
+
 ```bash
 git tag 3.0.0 refs/heads/tags/3.0.0
 ...
@@ -132,6 +145,7 @@ git branch -D tags/3.0.0
 ```
 
 Alternatively you can put the following in a script and run it:
+
 ```bash
 git for-each-ref --format='%(refname)' refs/heads/tags | \
 cut -d / -f 4 | \
@@ -143,17 +157,20 @@ done
 ```
 
 Check the branches and the new tags
+
 ```bash
 git br
 git tags
 ```
 
 Check the authors
+
 ```bash
 git log
 ```
 
 Push the repository to BitBucket
+
 ```bash
 git push --mirror git@bitbucket.org:avengers/GITTARGET
 ```
