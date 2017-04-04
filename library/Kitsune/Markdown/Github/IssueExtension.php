@@ -15,6 +15,7 @@ class IssueExtension implements ExtensionInterface
     private $accountName = '';
     private $issueUrl    = '[#%s](https://github.com/%s/%s/issues/%s)';
     private $projectName = '';
+    private $projectId   = '';
 
     public function setAccountName($accountName)
     {
@@ -59,6 +60,7 @@ class IssueExtension implements ExtensionInterface
             function (Text $w, Text $issue) {
                 return sprintf(
                     $this->issueUrl,
+                    $this->accountName,
                     $issue,
                     $this->projectId,
                     $issue
