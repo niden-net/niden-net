@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+                        <li class="media list-group-item p-a">
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <h3>
+                                        <a href="{{ site.baseurl }}{{ page.url }}">
+                                            {{ page.title }}
+                                        </a>
+                                    </h3>
+                                    <small class="pull-right text-muted">
+                                        {{ page.date | date: "%Y-%m-%d" }}
+                                    </small>
+                                </div>
+                                <p>
+                                    {{ page.content }}
+                                </p>
+                            </div>
+                            <div class="media-body-actions">
+                                {% for tag in page.tags %}
+                                <button class="btn btn-primary-outline btn-sm">
+                                    {{ tag }}
+                                </button>
+                                {% endfor %}
+                            </div>
+                        </li>
+                        {% include disqus.html %}

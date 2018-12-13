@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+                        <li class="media list-group-item p-a">
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <h3>
+                                        <a href="{{ site.baseurl }}{{ post.url }}">
+                                            {{ post.title }}
+                                        </a>
+                                    </h3>
+                                    <small class="pull-right text-muted">
+                                        {{ post.date | date: "%Y-%m-%d" }}
+                                    </small>
+                                </div>
+                                <p>
+                                    {{ post.content }}
+                                </p>
+                            </div>
+                        </li>
+{% endfor %}

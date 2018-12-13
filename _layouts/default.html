@@ -1,0 +1,41 @@
+<!doctype html>
+<!--[if IE 8]> <html lang="en-US" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en-US" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en-US" class="no-js">
+<!--<![endif]-->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
+</head>
+
+<body class="with-top-navbar">
+    {% include header.html %}
+
+    <div class="container p-t-md">
+        <div class="row">
+            <div class="col-md-10">
+                <ul class="list-group media-list media-list-stream">
+                    {{ content }}
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                {% include profile.html %}
+                {% include tag-cloud.html %}
+                {% include archive.html %}
+                {% include copyright.html %}
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/chart.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/toolkit.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/application.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/g/highlight.js@9.11.0(highlight.min.js+languages/apache.min.js+languages/bash.min.js+languages/css.min.js+languages/dockerfile.min.js+languages/javascript.min.js+languages/json.min.js+languages/nginx.min.js+languages/php.min.js+languages/sql.min.js+languages/twig.min.js+languages/xml.min.js+languages/yaml.min.js+languages/zephir.min.js)"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    {% include analytics.html %}
+</body>
+</html>
