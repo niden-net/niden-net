@@ -9,7 +9,7 @@ tags: [android, froyo, google, information, nexus one, review]
 The newest version of the Android Operating System has been codenamed Froyo (as in Frozen Yogurt).
 
 Although I have heard of the name, I was not following very closely the development of the said OS, so I did not know what to expect. The <a href="http://youtu.be/IY3U2GXhz44">presentation on Day 2 at Google I/O</a> was more than impressive so I had to get my hands on it :)
-<img class="post-image" src="{{ site.baseurl }}/files/2010-06-21-android.png" />
+<img class="post-image" src="/files/2010-06-21-android.png" />
 
 After the GoogleIO presentation, I was regularly checking *(Settings – About Phone – System Updates)* my phone to see what kind of version I am running and whether the update was waiting for me. Unfortunately I was disappointed every time, therefore I resigned to the idea that it will update when it is pushed to my phone.
 
@@ -20,7 +20,7 @@ Through my regular research on the Internet, I found a few interesting blog post
 #### Upgrade to Froyo
 
 Below is how I upgraded my Nexus One to Froyo. I had a couple of failed attempts, loads of Googling but I finally managed to get it to work. Luckily a couple of days later an [article](http://lifehacker.com/5545347/get-android-22-on-your-nexus-one-without-the-wait) appeared on Lifehacker which confirmed that the steps I took were the correct ones!
-<img class="post-image" src="{{ site.baseurl }}/files/2010-06-21-froyo.png" />
+<img class="post-image" src="/files/2010-06-21-froyo.png" />
 
 I connected my Nexus One to my computer using the USB cable.
 
@@ -36,9 +36,9 @@ The update instructions below are the original work of SimonNWalker and can be r
 
 With the update file uploaded on the Nexus One, all I had to do is shut down the device so that I can reboot it in recovery mode. The steps I took are as follows:
 
-<img class="post-image" src="{{ site.baseurl }}/files/2010-06-21-reboot3.png" />
+<img class="post-image" src="/files/2010-06-21-reboot3.png" />
 I clicked and held the power button until the menu appeared. I selected *Power Off*, confirming that I wish the phone to power off.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-06-21-reboot1.png" />
+<img class="post-image" src="/files/2010-06-21-reboot1.png" />
 
 Once the phone powered off completely, I pressed and held the trackball button down and then pressed the power button. A new screen appeared (which, like myself, you probably have never seen before) with three androids on skateboards at the bottom and several options at the top.
 <img class="post-image" src="{{ site.baseurl }}/files/2010-06-21-recovery2.png" />

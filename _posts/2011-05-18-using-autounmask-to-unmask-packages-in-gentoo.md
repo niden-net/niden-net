@@ -5,7 +5,7 @@ tags: [gentoo, portage, linux, how-to]
 ---
 
 Gentoo is one of my favorite Linux distributions. Although I am comfortable with other distributions, Gentoo has a special place in my heart and whenever I can use it I do :)
-<img class="post-image" src="{{ site.baseurl }}/files/gentoo.png" />
+<img class="post-image" src="/files/gentoo.png" />
 
 There are however some times that I would like to install a package - mostly to test something - and the package is masked. Masked packages are not "production ready" so they are not included in the portage tree i.e. available to be installed.
 

@@ -5,7 +5,7 @@ tags: [php, phalcon, performance, bootstrap, blog, series]
 ---
 
 This is the first of a series of posts, describing how we built the Phalcon Blog (and this one of course). The intention is to showcase some of the features of Phalcon and discuss the reasons behind implementing the code in such a way. I will amend this post with the links of the future posts once I post them.
-<img class="post-image" src="{{ site.baseurl }}/files/phalcon-green.png" />
+<img class="post-image" src="/files/phalcon-green.png" />
 
 These series will focus initially on the Phalcon blog ([Github](https://github.com/phalcon/blog)) and will then expand on this blog ([Github](https://github.com/niden/blog)). In the very near future all the features available in this blog will be available in the Phalcon one :)
 
@@ -14,7 +14,7 @@ As I mentioned in a [previous post](/post/new-look-more-posts), [Andres](https:/
 #### Bootstrapping process
 
 In this post I am going to concentrate on [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping) the application. By bootstrapping I do not mean using the [Bootstrap](https://getbootstrap.com) open source library, despite the probably misleading image on the right. 
-<img class="post-image" src="{{ site.baseurl }}/files/2015-10-04-bootstrap.png" />
+<img class="post-image" src="/files/2015-10-04-bootstrap.png" />
 
 Bootstrapping is the class (in our case) that handles pretty much everything that our application needs to run prior to executing actions. This entails
 

@@ -5,7 +5,7 @@ tags: [design patterns, mysql, php, programming, series, zend framework, how-to,
 ---
 
 A note about these series. It appears that [Giorgio Sironi](http://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Factory](http://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-factory-method.html) design pattern thoroughly in his blog post, which is recommended reading.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-02-02-design-patterns-factory.png" />
+<img class="post-image" src="/files/2010-02-02-design-patterns-factory.png" />
 
 #### The Problem
 

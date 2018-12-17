@@ -7,7 +7,7 @@ tags: [new look, update, phalcon, blog]
 #### The excuse
 
 It has definitely been a very long time since I last blogged. Just like my previous hiatus, a lot of personal issues arose that would not allow me the luxury to devote time for this blog.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-05-18-update.png" />
+<img class="post-image" src="/files/2010-05-18-update.png" />
 
 Things managed to settle down for a bit, so hopefully I can start posting more frequently.
 

@@ -7,7 +7,7 @@ tags: [storage, nas, how-to]
 #### Overview
 
 I have written about this before and it is still my favorite mantra
-<img class="post-image" src="{{ site.baseurl }}/files/2012-06-29-remote-backup.png" />
+<img class="post-image" src="/files/2012-06-29-remote-backup.png" />
 
 > *There are people that take backups and there are people that never had a hard drive fail*
 
@@ -50,13 +50,13 @@ I opted for a solid state drive from Crucial for the OS. Although it was not nec
 
 #### Setup
 
-<img class="post-image" data-action="zoom" src="{{ site.baseurl }}/files/2012-06-29-figure-1.png" title="Figure 1"/>
+<img class="post-image" data-action="zoom" src="/files/2012-06-29-figure-1.png" title="Figure 1"/>
 
 After all the components arrived, I opened the computer and had a look at what I am facing with. One thing I did not realize was the lack of space for the third hard drive (the one that will hold the OS). I was under the impression that it would fit under the DVD ROM drive, but I did not account for the SD card reader that was installed in that space, so I had to be a bit creative (Picture 1).
 
 A couple of good measurements and two holes with the power drill created a perfect mounting point for the solid state hard drive. It is sitting now secure in front of the card reader connections, without interfering in any way.
 
-<img class="post-image" data-action="zoom" src="{{ site.baseurl }}/files/2012-06-29-figure-2.png" title="Figure 2" />
+<img class="post-image" data-action="zoom" src="/files/2012-06-29-figure-2.png" title="Figure 2" />
 
 The second hard drive and the raid card were really easy to install, just a couple of screws and everything was set in place.
 
@@ -66,7 +66,7 @@ I also had a generic nVidia 460 1GRAM card, which I also installed in the system
 
 With everything in place, all I had to do is boot the system up and enter the BIOS screen so as to ensure that the SSD drive had a higher priority than any other drive.
 
-<img class="post-image" data-action="zoom" src="{{ site.baseurl }}/files/2012-06-29-figure-3.png" title="Figure 3" />
+<img class="post-image" data-action="zoom" src="/files/2012-06-29-figure-3.png" title="Figure 3" />
 
 Once that was done, I put the installation disks in the DVD-ROM and restored the system on the SSD drive. 4 DVDs later (around 30 minutes) the system was installed and booted up. It took however another couple of hours until I had everything set up. The myriad of Windows Updates, (plus my slow Internet connection) contributed to this delay. However I have to admit, that the SSD drive was a very good purchase, since I have never seen Windows boot in less than 10 seconds (from power up to the login screen).
 

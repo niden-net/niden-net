@@ -9,7 +9,7 @@ I have recently blogged about [Slicehost vs. Linode](/post/slicehost-vs-linode-h
 #### The Task
 
 Your website must be available - all the time. Why? Because if you have something to say (a blog, a journal, a rant page, a forum etc.) you need your audience to be able to read your material all the time. Discussion forums, websites with custom applications or services, even information based websites need to have as close to 100% uptime as possible.. How can this be achieved? The solution is a High Availability (or HA) cluster.</span>
-<img class="post-image" src="{{ site.baseurl }}/files/2011-04-04-ha.jpg" />
+<img class="post-image" src="/files/2011-04-04-ha.jpg" />
 
 Linux has been used for HA tasks for many years. The [Linux-HA](http://www.linux-ha.org/wiki/Main_Page)'s wiki has a lot of valuable information as well as guides and resources that one can use to increase the redundancy of their websites. In addition to this, Google is your friend. There are numerous bloggers that have shared their experiences with the public on how to create HA resources. Finally, one can check Linode's [Library](http://library.linode.com/) - a set of guides to allow you to create HA clusters with your Linodes.
 

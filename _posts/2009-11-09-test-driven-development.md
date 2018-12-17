@@ -7,7 +7,7 @@ tags: [php, tdd, test driven development, phpunit, how-to]
 #### Preface
 
 I am curious by nature. This is probably one of my best attributes as a person, since I can never rest until I find out 'what this thing is' or 'what is it used for'. This curiosity comes in handy in the programming world.
-<img class="post-image" src="{{ site.baseurl }}/files/2009-11-24-tdd.png" />
+<img class="post-image" src="/files/2009-11-24-tdd.png" />
 
 By being curious, one cannot rest on their laurels and will always explore new ways, learn new things, revise old habits and in short one will become a better programmer. This of course applies to all aspects of life, not just programming.
 

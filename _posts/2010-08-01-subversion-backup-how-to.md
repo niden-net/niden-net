@@ -9,7 +9,7 @@ I will start this post once again with the words of a wise man:
 > There are two kinds of people, those who backup regularly, and those that never had a hard drive fail
 
 So the moral of the story here is **backup often**. If something is to happen, the impact on your operations will be minimal if your backup strategy is in place and operational.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-08-01-online-backup.png" />
+<img class="post-image" src="/files/2010-08-01-online-backup.png" />
 
 There are a lot of backup scenarios and strategies. Most of them suggest a backup once a day, usually at the early hours of the day. This however might not work very well with a fast paced environment where data changes several times per hour. This kind of environment is usually a software development one.
 

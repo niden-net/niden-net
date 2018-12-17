@@ -5,7 +5,7 @@ tags: [personal, information, update]
 ---
 
 It has been months since I last posted a blog post. A lot of things have happened since August and I have a lot of material to post - just not the discipline to sit down and proof all the drafts so that I can post them.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-11-11-update.png" />
+<img class="post-image" src="/files/2011-11-11-update.png" />
 
 #### 2010
 

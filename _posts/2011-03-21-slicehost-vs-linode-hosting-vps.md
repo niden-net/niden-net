@@ -5,7 +5,7 @@ tags: [gentoo, hosting, information, linux, vps]
 ---
 
 Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](http://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](http://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-03-21-vps.png" />
+<img class="post-image" src="/files/2011-03-21-vps.png" />
 
 Since I moved my emails to [Google Apps](https://google.com/a/) I only need the hosting for my personal sites such as my blog, my wife's sites (burntoutmom.com, greekmommy.net) and a few other small sites.
 
@@ -14,7 +14,7 @@ I used to host those sites on one of my company's clusters. The bandwidth consum
 #### Slicehost
 
 Without much thought, I signed up for [Slicehost](http://www.slicehost.com), which is a subsidiary of [Rackspace](http://www.rackspace.com), a very well known and reputable company.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-03-21-slicehost.png" />
+<img class="post-image" src="/files/2011-03-21-slicehost.png" />
 
 I got their 4GB package (250.00 USD per month) and installed <a href="http://www.gentoo.org/">Gentoo</a> on it. Apart from the price which was a bit steep, everything else was fine. I was happy to be able to host my sites in a configuration that I was comfortable with, under the understanding that if the VPS failed, then all my sites would go down. That however is the risk that everyone takes while hosting their sites on a single machine. The higher the availability and redundancy the higher the cost.
 
@@ -40,7 +40,7 @@ After a lot of research I ended up with two winners: [Linode](http://www.linode.
 #### Linode
 
 Setting up an account with Linode was very easy. I didn't have any of the mini-saga I had with Slicehost. The account was created right there and then, my credit card charged and I was up and running in no time. Immediately I could see a difference in price. Linode's package for 4GB or RAM is 90.00 USD cheaper (159.00 USD vs. 250.00 USD for Slicehost). For the same package, the price difference is huge.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-03-21-linode.png" />
+<img class="post-image" src="/files/2011-03-21-linode.png" />
 
 I started testing the network, creating my VPS in the Atlanta, GA datacenter (Linode offers a number of data centers for you to create your own). The functionality that was available to me was identical and in some cases superior to that of Slicehost. There are a lot more distributions to choose from, and you can partition your VPS the way you want it to name a couple.
 

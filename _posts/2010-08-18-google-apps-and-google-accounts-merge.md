@@ -5,7 +5,7 @@ tags: [information, google, google apps, how-to]
 ---
 
 Anyone that has a Google Apps account and wants to access other services like [Google Reader](https://reader.google.com/), [Google Voice](https://voice.google.com/) etc. knows that the username and password of the Google Apps account does not work for these services, since those are not available for Google Apps accounts. To get around this limitation, what you could do (and what I have done in the past) is to sign up for a new Google Account with the same email address as your Google Apps account.  This of course creates confusion at times, duplication of data and disassociation of services. The most obvious example of this is on an Android device. To use my phone, I need to sign in with my Google Apps account. However, to use my Google Voice number, I  have to use sign in again for that service but now using my Google Account (which uses the same email address). This works but I still have to keep two sets of contacts - one for the Google Apps and one in Google Voice.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-08-18-google-apps.png" />
+<img class="post-image" src="/files/2010-08-18-google-apps.png" />
 
 According to Google, [9 of the top 20 requests](http://productideas.appspot.com/#25/e=2199b)> from Google Apps customers are for their accounts to work with more services from Google. To facilitate this, the Google Apps account had to be merged with the Google Account. [This page](http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182174) in Google Apps Help describes the transition.
 
@@ -17,7 +17,7 @@ I am happy to announce that one of my domains has already gone through the merge
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" data-width="790" data-height="754" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-001.png">
+        <img data-action="zoom" data-width="790" data-height="754" src="/files/2010-08-18-google-apps-merge-001.png">
     </div>
 </div>
 
@@ -52,7 +52,7 @@ Resources: [Transition readiness checklist](http://www.google.com/support/a/bin/
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-002.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-002.png">
     </div>
 </div>
 
@@ -64,7 +64,7 @@ Resource: [Google Apps core suite](http://www.google.com/apps/intl/en/business/i
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-003.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-003.png">
     </div>
 </div>
 
@@ -76,7 +76,7 @@ Resource: [Transition readiness checklist](http://www.google.com/support/a/bin/a
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-004.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-004.png">
     </div>
 </div>
 
@@ -86,7 +86,7 @@ Based on the services that are available for your domain user accounts, the scre
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-005.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-005.png">
     </div>
 </div>
 
@@ -96,7 +96,7 @@ Confirming the new services, the wizard will display a new screen, that will all
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-006.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-006.png">
     </div>
 </div>
 
@@ -109,7 +109,7 @@ Resource: [Early adopters](http://www.google.com/support/a/bin/answer.py?answer=
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-007.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-007.png">
     </div>
 </div>
 
@@ -121,7 +121,7 @@ Resources: [Transition readiness checklist](http://www.google.com/support/a/bin/
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-008.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-008.png">
     </div>
 </div>
 
@@ -132,7 +132,7 @@ Navigating back to the dashboard, you will see a message notifying you that ther
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-009.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-009.png">
     </div>
 </div>
 
@@ -144,7 +144,7 @@ Resources: <a href="http://www.google.com/support/accounts/bin/answer.py?answer=
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-010.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-010.png">
     </div>
 </div>
 
@@ -157,7 +157,7 @@ Resources: [List of products](http://www.google.com/options/), [New sign in opti
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="{{ site.baseurl }}/files/2010-08-18-google-apps-merge-011.png">
+        <img data-action="zoom" src="/files/2010-08-18-google-apps-merge-011.png">
     </div>
 </div>
 

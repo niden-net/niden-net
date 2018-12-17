@@ -5,7 +5,7 @@ tags: [design, patterns, design patterns, php, programming, series, how-to]
 ---
 
 A lot of developers – including myself – have at some point in their programming careers found themselves repeating a task that they have completed for a previous project or for a previous part of the same project.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-01-06-design-patterns.png" />
+<img class="post-image" src="/files/2010-01-06-design-patterns.png" />
 
 This problem of repeating code is solved by design patterns. A design pattern is the way that the code must be structured so that the problem at hand can be solved. The characteristics of design patterns are:
 

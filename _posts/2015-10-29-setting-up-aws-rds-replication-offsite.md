@@ -7,7 +7,7 @@ tags: [mysql, mariadb, aurora, aws, rds, replication, how-to]
 #### Preface
 
 Recently I worked on setting up replication between our AWS RDS instance and a server running as a MySQL slave in our location. Although the task was not difficult, there are quite a few areas that one needs to pay attention to. 
-<img class="post-image" src="{{ site.baseurl }}/files/2015-09-29-aws.png" />
+<img class="post-image" src="/files/2015-09-29-aws.png" />
 
 In this blog post, I am going to outline the process step by step, so that others can benefit and not lose time trying to discover what went wrong.
 

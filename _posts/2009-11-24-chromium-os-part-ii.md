@@ -7,7 +7,7 @@ tags: [chromium, chromium os, google, installation, linux, how-to]
 Continued from [Part I](/post/chromium-os-part-i)
 
 The download took quite a while, so I thought it might be a good idea to split this post in parts, so as to ensure good readability.
-<img class="post-image" src="{{ site.baseurl }}/files/2009-11-24-chromium-os.png" />
+<img class="post-image" src="/files/2009-11-24-chromium-os.png" />
 
 I need to create some symlinks. Also a good place to add my repository is /usr/local hence the commands for Chromium OS and Chromium respectively.
 

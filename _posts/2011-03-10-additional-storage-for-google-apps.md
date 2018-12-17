@@ -9,7 +9,7 @@ I have been using Google Apps for a number of years now and I have gotten so use
 #### Limitations
 
 Up until a few months ago, Google Apps had its limitations. The actual Apps was in some sort of a jailshell, isolated from the whole Google suite of applications. For that reason you could not use your Google Apps login to enjoy the service of Google Reader for instance. You had to be sneaky about it. You had to create a Google Account with the same username (and password if you liked) as your Google Apps domain and although the two did not communicate, you could have effectively "one login" for all services.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-03-10-google-apps.png" />
+<img class="post-image" src="/files/2011-03-10-google-apps.png" />
 
 This limitation became more apparent with the increased usage of Android phones (where you need to have a Google Account on your phone) as well as Google Voice. Users have been asking about the "merge" and Google responded with significant infrastructure changes to cater for the transition. In my blog post [Google Apps and Google Accounts Merge](/post/google-apps-and-google-accounts-merge) I present additional information about this, inclusive of a How-To on the transition for administrators of Google Apps. Unfortunately the process is not perfect and there are still some services that are not fully integrated with the new infrastructure (but will be in the future). For instance in my domain, since I use Google Voice with my domain email account, I am still on the "old" system because the account could not be transitioned. It will happen in the end, it just takes time.
 
@@ -21,7 +21,7 @@ I have been very methodical in my filing, utilizing electronic storage as much a
 
 
 I downloaded all my documents back to my computer (gotta love Google's <a href="http://www.dataliberation.org/">Data Liberation</a>) and deleted them from the Google Apps mule accounts and then deleted those accounts - just to keep everything tidy. I then launched my Gmail account and signed into Google Docs. I created one folder which I shared with my Google Apps accounts (my wife's and mine) and then paid $50.00 for a whole year - which provided me with 200GB of space. You can always check how much space you are using by visiting the [Manage Storage](https://www.google.com/accounts/b/0/ManageStorage) page of your Google Account.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-03-10-google-manage-storage.png" />
+<img class="post-image" src="/files/2011-03-10-google-manage-storage.png" />
 
 Once that was done, I started creating my folders (collections now) and uploaded all my documents up there. In addition to that, since my parents live in Greece, they rely on VoIP chat as well as my Picasa to stay in touch with their grandchildren. My wife and I, through the use of our mini camera as well as our Android phones, take a lot of pictures of the kids, documenting the little things that they do on a regular basis. This serves as a good archive for them when they grow up but also as a good way to stay in touch with my parents. Google's additional storage was the solution.
 
@@ -65,7 +65,7 @@ A few days ago, Google announced changes in the pricing of additional storage fo
 ```
 
 As far as the new pricing is concerned, Google brought everything in line with Google Accounts pricing (effectively scrapping the initial - expensive - pricing plan for extra storage). The help page [Google Storage - How it Works](http://picasa.google.com/support/bin/answer.py?answer=39567) offers additional information for those that want to use/upgrade their storage while using a Google Apps account. Effectively it now costs exactly the same to purchase additional space for your Google Apps account (to store documents) as it would if you were using a different Google Account. That probably means that I have to download everything to my computer and  re-upload it to my Google Apps account....
-<img class="post-image" src="{{ site.baseurl }}/files/2011-03-10-google-purchase-storage.png" />
+<img class="post-image" src="/files/2011-03-10-google-purchase-storage.png" />
 
 To take advantage of this feature, you will have to go to the [Purchase additional storage](https://www.google.com/accounts/b/0/PurchaseStorage?hl=en_US) page while logged in with the Google Apps account that you wish to purchase storage for. Note that there is a warning that appears in red (see image) that warns you that you are using a Google Apps account. Google provides this information since your Google Apps account relies on the Google Apps administrator. If you have an account on Google Apps and you purchase storage, that storage will be gone if the administrator deletes or restricts access to your account.
 
