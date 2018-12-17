@@ -15,8 +15,6 @@ social:
 
 disqus:
 google_analytics: UA-26971391-1
-url: https://niden.net
-baseurl: 
 
 paginate: 5
 paginate_path: "/page-:num"
@@ -30,7 +28,7 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
