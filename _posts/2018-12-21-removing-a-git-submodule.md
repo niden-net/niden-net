@@ -36,7 +36,7 @@ I added the submodule using
 ```sh
 $ mkdir 0.11
 $ cd 0.11
-$ git submodule add -b 0.11 git@github.com:niden/docs-app .
+$ git submodule add -b 0.11 git@github.com:niden/zephir-docs.git .
 ```
 Sadly (for me) I fat fingered the command and now I am left with an unusable submodule. 
 
