@@ -59,8 +59,8 @@ also. Save the file and exit the editor.
 
 ##### Stage the file
 ```sh
-git add .gitmodules`
-
+git add .gitmodules
+```
 This is important since the commands below will start issuing warnings if you do not.
 
 ##### `.git/config`
