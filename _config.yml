@@ -14,7 +14,7 @@ social:
   twitter:
 
 disqus:
-google_analytics: UA-26971391-1
+google_analytics: 'UA-26971391-1'
 
 paginate: 5
 paginate_path: "/page-:num"
@@ -37,7 +37,6 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
-
 
 sass:
   style: :compressed # You might prefer to minify using :compressed
