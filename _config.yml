@@ -1,9 +1,9 @@
 name: niden.net
 
-author: "Nikolaos Dimopoulos"
-description: "Personal blog of Nikolaos (Nikos) Dimopoulos. Boldly goes where no other coder has gone before.... and other ramblings"
-keywords: "php, phalcon, phalcon php, php framework, faster php framework"
-generator: "Github Pages"
+author: 'Nikolaos Dimopoulos'
+description: 'Personal blog of Nikolaos (Nikos) Dimopoulos. Boldly goes where no other coder has gone before.... and other ramblings'
+keywords: 'php, phalcon, phalcon php, php framework, faster php framework'
+generator: 'Github Pages'
 avatar: https://avatars3.githubusercontent.com/u/1073784?v=4
 
 social:
@@ -17,26 +17,13 @@ disqus:
 google_analytics: 'UA-26971391-1'
 
 paginate: 5
-paginate_path: "/page-:num"
+paginate_path: '/page-:num'
 permalink: /post/:title/
 version: v1.2.0
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     disable: true
-
-collections:
-  - name: "post"      # Used in routes, e.g., /admin/collections/blog
-    label: "Post"     # Used in the UI
-    folder: "_posts"  # The path to the folder where the documents are stored
-    create: true      # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Body", name: "body", widget: "markdown"}
 
 sass:
   style: :compressed # You might prefer to minify using :compressed
@@ -48,3 +35,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor
