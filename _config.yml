@@ -25,15 +25,6 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
-
-
----
-layout: post
-title: Annoyed
-tags: [personal, rant]
----
-
-
 collections:
   - name: "post"      # Used in routes, e.g., /admin/collections/blog
     label: "Post"     # Used in the UI
