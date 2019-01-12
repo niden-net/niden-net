@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Migrating a SVN repository to Git (Bitbucket)
-tags: [svn, subversion, git, bitbucket, migration, how-to]
----
-
+date: 2016-09-29T23:45:00.000Z
+tags:
+  - svn
+  - subversion
+  - bitbucket
+  - git
+  - migration
+  - how-to
+------
 <img class="post-image" src="/files/2016-09-29-svn.png" />
 <img class="post-image" src="/files/2016-09-29-git.jpg" />
 ### Preface

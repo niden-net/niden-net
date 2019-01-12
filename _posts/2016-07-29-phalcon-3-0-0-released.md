@@ -1,3 +1,14 @@
+---
+layout: post
+title: Phalcon 3.0.0 final (LTS) released
+date: 2016-07-29T23:45:00.000Z
+tags:
+  - phalcon
+  - php
+  - release
+  - lts
+---
+
 This article is cross posted from the [Phalcon Blog](https://blog.phalconphp.com/post/phalcon-3-0-0-released)
 
 ## Phalcon 3.0.0 final (LTS) released

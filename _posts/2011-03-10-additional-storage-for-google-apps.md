@@ -1,9 +1,16 @@
 ---
 layout: post
 title: Additional storage for Google Apps users
-tags: [docs, google, google apps, information, storage, picasa, review]
+date: 2011-03-10T23:45:00.000Z
+tags:
+  - docs
+  - google
+  - google apps
+  - information
+  - storage
+  - picasa
+  - review
 ---
-
 I have been using Google Apps for a number of years now and I have gotten so used to it that I cannot fathom any other way of operating. I am sure that some of you share that sentiment. :)
 
 #### Limitations

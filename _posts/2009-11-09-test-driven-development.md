@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Test Driven Development
-tags: [php, tdd, test driven development, phpunit, how-to]
+date: 2009-11-09T23:45:00.000Z
+tags:
+  - php
+  - tdd
+  - test driven development
+  - phpunit
+  - how-to
 ---
-
 #### Preface
 
 I am curious by nature. This is probably one of my best attributes as a person, since I can never rest until I find out 'what this thing is' or 'what is it used for'. This curiosity comes in handy in the programming world.

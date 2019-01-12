@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Gentoo Stage 1 Installation
-tags: [gentoo, installation, linux, notebook, how-to]
+date: 2009-11-04T23:45:00.000Z
+tags:
+  - gentoo
+  - installation
+  - linux
+  - notebook
+  - how-to
 ---
-
 This is my effort to install Gentoo Linux on my *Acer Ferrari LMi 3000*.
 <img class="post-image" src="{{ site.baseurl }}/files/gentoo.png" />
 

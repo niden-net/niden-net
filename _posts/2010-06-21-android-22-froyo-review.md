@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Android 2.2 (Froyo) Review
-tags: [android, froyo, google, information, nexus one, review]
+date: 2010-06-21T23:45:00.000Z
+tags:
+  - android
+  - froyo
+  - google
+  - information
+  - nexus one
+  - review
 ---
-
 #### Android 2.2 (Froyo)
 
 The newest version of the Android Operating System has been codenamed Froyo (as in Frozen Yogurt).

@@ -1,9 +1,12 @@
 ---
 layout: post
 title: 2010 Memorial Day
-tags: [celebrations, memorial day, personal]
+date: 2010-05-31T23:45:00.000Z
+tags:
+  - celebrations
+  - memorial day
+  - personal
 ---
-
 Today, the Memorial Day is celebrated across the USA. There are similar celebrations in Greece, not the same day as in the US but remembering and honoring the veterans for their sacrifices for the freedoms we and our families enjoy.
 
 I received an email this morning which I thought was too precious to be archived in my mail folders. Since I hate mass mailing and chain emails, I thought I would duplicate the email here for my archiving but also for everyone else to see.

@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Keeping your Linux users in sync in a cluster
-tags: [bash, linux, nfs, rsync, storage, how-to]
+date: 2011-02-20T23:45:00.000Z
+tags:
+  - bash
+  - linux
+  - nfs
+  - rsync
+  - storage
+  - how-to
 ---
-
 As websites become more and more popular, your application might not be able to cope with the demand that your users put on your server. To accommodate that, you will need to move out of the one server solution and create a cluster. The easiest cluster to create would be with two servers, one to handle your web requests (HTTP/PHP etc.) and one to handle your database load (MySQL). Again this setup can only get you so far. If your site is growing, you will need a cluster of servers.
 <img class="post-image" src="/files/2011-02-20-sync.png" />
 

@@ -1,9 +1,12 @@
 ---
 layout: post
 title: How to build an inexpensive RAID for storage and streaming
-tags: [storage, nas, how-to]
+date: 2012-06-29T23:45:00.000Z
+tags:
+  - storage
+  - nas
+  - how-to
 ---
-
 #### Overview
 
 I have written about this before and it is still my favorite mantra

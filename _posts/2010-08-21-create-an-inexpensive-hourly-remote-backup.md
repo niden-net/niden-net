@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Create an inexpensive hourly remote backup
-tags: [backup, gentoo, installation, linux, storage, how-to]
+date: 2010-08-21T23:45:00.000Z
+tags:
+  - backup
+  - gentoo
+  - installation
+  - linux
+  - storage
+  - how-to
 ---
-
 > There are two kinds of people, those who backup regularly, and those that never had a hard drive fail
 
 As you can tell [the above](/post/subversion-backup-how-to) is my favorite quote. It is so true and I believe everyone should evaluate how much their data (emails, documents, files) is worth to them and, based on that value, create a backup strategy that suits them. I know for sure that if I ever lost the pictures and videos of my family I would be devastated since those are irreplaceable.

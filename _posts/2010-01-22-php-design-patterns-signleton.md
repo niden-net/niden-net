@@ -1,9 +1,17 @@
 ---
 layout: post
 title: Design Patterns - Singleton
-tags: [design patterns, mysql, php, programming, series, zend framework, how-to, singleton]
+date: 2010-01-10T23:45:00.000Z
+tags:
+  - design patterns
+  - mysql
+  - php
+  - programming
+  - series
+  - zend framework
+  - how-to
+  - singleton
 ---
-
 A note about these series. It appears that [Giorgio Sironi](http://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Singleton](http://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-singleton.html) design pattern thoroughly in his blog post, which is recommended reading.
 <img class="post-image" src="/files/2010-01-22-design-patterns-singleton.png" />
 

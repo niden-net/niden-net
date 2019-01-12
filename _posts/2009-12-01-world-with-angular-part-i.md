@@ -1,9 +1,16 @@
 ---
 layout: post
 title: The world with Angular - Part I
-tags: [amazon, angularjs, cloud computing, ec2, programming, review, how-to]
+date: 2009-12-01T23:45:00.000Z
+tags:
+  - amazon
+  - angularjs
+  - cloud computing
+  - ec2
+  - programming
+  - review
+  - how-to
 ---
-
 If you haven't heard about `<angular/>`, this article is intended to give you a brief overview of the features and functionality that it exposes.
 <img class="post-image" src="/files/2009-12-01-angular.png" />
 

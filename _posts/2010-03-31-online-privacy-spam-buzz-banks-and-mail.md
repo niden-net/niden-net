@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Online Privacy, Spam, Buzz, Banks and Mail
-tags: [google, buzz, privacy, rant, spam]
+date: 2010-03-31T23:45:00.000Z
+tags:
+  - google
+  - buzz
+  - privacy
+  - rant
+  - spam
 ---
-
 #### Electronic Presence
 Everyone more or less has some sort of electronic presence. That presence can easily be seen on Twitter, Facebook, [Google Plus](https://google.com/+NikolaosDimopoulos-niden), personal blog etc.
 <img class="post-image" src="/files/2010-03-31-privacy.png" />

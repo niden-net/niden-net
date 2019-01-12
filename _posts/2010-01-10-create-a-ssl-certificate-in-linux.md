@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Create a SSL Certificate in Linux
-tags: [gentoo, linux, ssl, how-to]
+date: 2010-01-10T23:45:00.000Z
+tags:
+  - gentoo
+  - linux
+  - ssl
+  - how-to
 ---
-
 There are times that I want to set up a secure communication with the server I am working on. This might be because I want to run phpMyAdmin over SSL (I do not like unencrypted communications over the Internet), install a certificate for an eShop for a client or just for my personal use.
 <img class="post-image" src="/files/2010-01-06-design-patterns.png" />
 

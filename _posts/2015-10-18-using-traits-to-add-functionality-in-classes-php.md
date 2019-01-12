@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Using Traits to add more functionality to your classes in PHP
-tags: [php, phalcon, traits, how-to]
+date: 2015-10-18T23:45:00.000Z
+tags:
+  - php
+  - traits
+  - phalcon
+  - how-to
 ---
-
 > Traits are a mechanism for code reuse in single inheritance languages such as PHP.
 >
 > A Trait is similar to a class, but only intended to group functionality in a fine-grained and consistent way. It is not possible to instantiate a Trait on its own. It is an addition to traditional inheritance and enables horizontal composition of behavior; that is, the application of class members without requiring inheritance. [Source](http://php.net/manual/en/language.oop5.traits.php)

@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Flexible storage in MySQL
-tags: [storage, programming, mysql, how-to]
+date: 2009-11-03T23:45:00.000Z
+tags:
+  - storage
+  - programming
+  - mysql
+  - how-to
 ---
-
 We all need data to function. Whether this is information regarding what our body craves at the moment - hence go to the local take-away and get it or cook it - or whether this is electronic data to make our tasks easier, makes no difference.
 <img class="post-image" src="{{ site.baseurl }}/files/mysql.gif" />
 

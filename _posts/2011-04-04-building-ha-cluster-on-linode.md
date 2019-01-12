@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Building a HA Cluster on Linode
-tags: [ha, hosting, how-to]
+date: 2011-04-04T23:45:00.000Z
+tags:
+  - ha
+  - hosting
+  - how-to
 ---
-
 I have recently blogged about [Slicehost vs. Linode](/post/slicehost-vs-linode-hosting-vps) and my decision to move my sites to the latter. Since then I can safely say that I made the right choice about the move. [Linode](http://www.linode.com)'s support is phenomenal. There has never been a ticket unanswered more than 5 minutes and all the tickets have been resolved. Even when I asked about a configuration issue regarding Heartbeat, which was clearly not in the realm of support, the support engineers did look at my configuration and did identify the error area. That alone saved me hours of troubleshooting and trying to find where the error was.
 
 #### The Task

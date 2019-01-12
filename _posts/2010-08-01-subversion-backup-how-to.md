@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Subversion Backup How-To
-tags: [backup, gentoo, how-to, linux, subversion]
+date: 2010-08-01T23:45:00.000Z
+tags:
+  - backup
+  - gentoo
+  - how-to
+  - linux
+  - subversion
 ---
-
 I will start this post once again with the words of a wise man:
 
 > There are two kinds of people, those who backup regularly, and those that never had a hard drive fail

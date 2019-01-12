@@ -1,9 +1,13 @@
 ---
 layout: post
 title: New Blog (again), new look, hopefully more posts
-tags: [new look, update, phalcon, blog]
+date: 2015-09-28T23:45:00.000Z
+tags:
+  - update
+  - phalcon
+  - blog
+  - new look
 ---
-
 #### The excuse
 
 It has definitely been a very long time since I last blogged. Just like my previous hiatus, a lot of personal issues arose that would not allow me the luxury to devote time for this blog.

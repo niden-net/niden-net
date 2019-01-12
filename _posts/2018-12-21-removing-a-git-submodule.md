@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Removing a git submodule
-tags: [git, submodules, remove]
+date: 2018-12-21T23:45:00.000Z
+tags:
+  - submodules
+  - git
+  - remove
+------
+---
+layout: post
+title: 
+tags: [git, , ]
 ---
 
 #### Preface

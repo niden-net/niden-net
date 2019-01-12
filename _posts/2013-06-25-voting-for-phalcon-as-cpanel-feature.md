@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Voting for Phalcon as a cPanel feature woes
-tags: [php, phalcon, cPanel, rant]
+date: 2013-06-25T23:45:00.000Z
+tags:
+  - php
+  - phalcon
+  - cPanel
+  - rant
 ---
-
 Those that have been following my blog and posts on [Google+](https://google.com/+NikolaosDimopoulos-niden) know that for the last year or so I have been involved heavily in [PhalconPHP](http://www.phalconphp.com/), a C based PHP framework, which delivers its functionality as an extension loaded on the web server.
 <img class="post-image" src="/files/phalcon-green.png" />
 

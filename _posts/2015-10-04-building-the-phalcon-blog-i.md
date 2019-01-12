@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Building the Phalcon Blog (i)
-tags: [php, phalcon, performance, bootstrap, blog, series]
+date: 2015-10-04T23:45:00.000Z
+tags:
+  - php
+  - performance
+  - phalcon
+  - bootstrap
+  - blog
+  - series
 ---
-
 This is the first of a series of posts, describing how we built the Phalcon Blog (and this one of course). The intention is to showcase some of the features of Phalcon and discuss the reasons behind implementing the code in such a way. I will amend this post with the links of the future posts once I post them.
 <img class="post-image" src="/files/phalcon-green.png" />
 

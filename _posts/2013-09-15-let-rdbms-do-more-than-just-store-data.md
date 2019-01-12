@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Let the RDBMS do more than just store data
-tags: [mysql, rdbms, phalcon, how-to, php]
+date: 2013-09-15T23:45:00.000Z
+tags:
+  - mysql
+  - rdbms
+  - phalcon
+  - php
+  - how-to
 ---
-
 One of the common "mistakes" that programmers (and have been guilty as charged many a times in the past) is not to use the tools that are available to them to the maximum extent possible.
 <img class="post-image" src="{{ site.baseurl }}/files/2013-09-15-mariadb.png" />
 <img class="post-image" src="{{ site.baseurl }}/files/phalcon-green.png" />

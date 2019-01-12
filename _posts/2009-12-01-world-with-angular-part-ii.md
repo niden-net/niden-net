@@ -1,9 +1,16 @@
 ---
 layout: post
 title: The world with Angular - Part II
-tags: [amazon, angularjs, cloud computing, ec2, programming, review, how-to]
+date: 2009-12-01T23:45:00.000Z
+tags:
+  - amazon
+  - angularjs
+  - cloud computing
+  - ec2
+  - programming
+  - review
+  - how-to
 ---
-
 Continued from [Part I](/post/world-with-angular-part-i)
 
 #### The Wildlife Rescue League application

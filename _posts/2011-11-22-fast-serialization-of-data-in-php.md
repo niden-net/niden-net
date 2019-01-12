@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Fast serialization of data in PHP
-tags: [php, performance, igbinary, serialize, json, how-to]
+date: 2011-11-22T23:45:00.000Z
+tags:
+  - php
+  - performance
+  - igbinary
+  - serialize
+  - json
+  - how-to
 ---
-
 #### Serializing/Unserializing data
 
 > Serialization is the process of converting a data structure or object state into a format that can be stored and "resurrected" later in the same or another computer environment. [source](http://en.wikipedia.org/wiki/Serialization)

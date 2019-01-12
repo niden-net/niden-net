@@ -1,9 +1,16 @@
 ---
 layout: post
-title: Design Patterns in PHP Series
-tags: [design, patterns, design patterns, php, programming, series, how-to]
+title: Design Patterns in PHP [Series]
+date: 2010-01-06T23:45:00.000Z
+tags:
+  - design
+  - patterns
+  - design patterns
+  - php
+  - programming
+  - series
+  - how-to
 ---
-
 A lot of developers – including myself – have at some point in their programming careers found themselves repeating a task that they have completed for a previous project or for a previous part of the same project.
 <img class="post-image" src="/files/2010-01-06-design-patterns.png" />
 

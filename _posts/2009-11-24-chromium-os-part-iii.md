@@ -1,9 +1,15 @@
 ---
 layout: post
-title: Chromium OS - Part III
-tags: [chromium, chromium os, google, installation, linux, how-to]
+title: Chromium OS Part III
+date: 2009-11-24T23:45:00.000Z
+tags:
+  - chromium
+  - chromium os
+  - google
+  - installation
+  - linux
+  - how-to
 ---
-
 Continued from [Part II](/post/chromium-os-part-ii)
 
 I had to shut the computer down because I had a train to catch. However booting up again the computer on the train and trying to enter the chroot environment produced some errors. It might very well be the fact that I do not have an Internet connection (at least a reliable one).

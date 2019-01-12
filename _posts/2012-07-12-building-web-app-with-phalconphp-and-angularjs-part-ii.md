@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Building a web app with PhalconPHP and AngularJS Part II
-tags: [php, phalcon, angularjs, how-to]
+date: 2012-07-12T23:45:00.000Z
+tags:
+  - php
+  - phalcon
+  - angularjs
+  - how-to
 ---
-
 This is Part II of a series of posts on building an application using [Phalcon](https://phalconphp.com) and [AngularJS](http://angularjs.org). Part I is located [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i).
 
 #### Preface

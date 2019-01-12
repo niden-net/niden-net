@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Every microsecond counts!
-tags: [php, performance, phalcon, metrics]
+date: 2015-10-02T23:45:00.000Z
+tags:
+  - php
+  - performance
+  - phalcon
+  - metrics
 ---
-
 #### Preface
 
 One of the primary factors that always needs to be taken into consideration when designing and implementing an application is performance. In this day and age of information overload, everything is about speed. If your website is slow (more than a second or two) to appear on the browser, most likely your visitors will leave and go elsewhere. If the application you designed/implemented is slow, it will use more resources (memory/cpu) and thus cost more money to run. Time is money.

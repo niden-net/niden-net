@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Localization and Country Regions
-tags: [localization, github, json]
+date: 2012-03-05T23:45:00.000Z
+tags:
+  - localization
+  - github
+  - json
 ---
-
 I was recently assigned a task in my current job, to try and standardize address related data.
 <img class="post-image" src="/files/2012-03-05-world.png" />
 

@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Variables in php.ini
-tags: [php, programming, zend framework, how-to]
+date: 2009-12-11T23:45:00.000Z
+tags:
+  - php
+  - programming
+  - zend framework
+  - how-to
 ---
-
 In my workplace we have been using [Zend Framework](http://framework.zend.com/) for more than a year primarily as a glue framework. We have managed to integrate a lot of components from the framework to suit our needs and slowly we are moving towards the full MVC pattern.
 <img class="post-image" src="{{ site.baseurl }}/files/php.png" />
 

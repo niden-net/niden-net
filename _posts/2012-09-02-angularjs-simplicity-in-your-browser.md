@@ -1,9 +1,11 @@
 ---
 layout: post
 title: AngularJS - Simplicity in your browser
-tags: [angularjs, how-to]
+date: 2012-09-02T23:45:00.000Z
+tags:
+  - angularjs
+  - how-to
 ---
-
 Recently I was contacted by an acquaintance through my Google+ circles, who needed some help with a project of hers.
 <img class="post-image" src="{{ site.baseurl }}/files/angularjs.png" />
 

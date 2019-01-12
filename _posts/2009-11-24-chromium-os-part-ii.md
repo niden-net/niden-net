@@ -1,9 +1,15 @@
 ---
 layout: post
-title: Chromium OS - Part II
-tags: [chromium, chromium os, google, installation, linux, how-to]
+title: Chromium OS Part II
+date: 2009-11-24T23:45:00.000Z
+tags:
+  - chromium
+  - chromium os
+  - google
+  - installation
+  - linux
+  - how-to
 ---
-
 Continued from [Part I](/post/chromium-os-part-i)
 
 The download took quite a while, so I thought it might be a good idea to split this post in parts, so as to ensure good readability.

@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Downgrading PHPUnit from 3.6 to 3.5
-tags: [phpunit, linux, how-to]
+date: 2012-01-15T23:45:00.000Z
+tags:
+  - phpunit
+  - linux
+  - how-to
 ---
-
 Recently I had to rebuild my computer, and decided to install [Linux Mint](http://www.linuxmint.com/) 12 (Lisa), which is a very lean installation - for my taste that is.
 <img class="post-image" src="/files/2012-01-15-phpunit.png" />
 

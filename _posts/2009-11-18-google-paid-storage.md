@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Google Paid Storage
-tags: [google, online storage, storage, picasa, review]
+date: 2009-11-18T23:45:00.000Z
+tags:
+  - google
+  - online storage
+  - storage
+  - picasa
+  - review
 ---
-
 A week or so ago I read a blog post in my Google Reader about Google providing now [more storage for less](http://googleblog.blogspot.com/2009/11/twice-storage-for-quarter-of-price.html) money.
 <img class="post-image" src="/files/google.png" />
 

@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Chromium OS Part I
-tags: [chromium, chromium os, google, installation, linux, how-to]
+date: 2009-11-24T23:45:00.000Z
+tags:
+  - chromium
+  - chromium os
+  - google
+  - installation
+  - linux
+  - how-to
 ---
-
 A lot of hype has been generated on the Internet a few months back regarding Google's [announcement](http://googleblog.blogspot.com/2009/07/introducing-google-chrome-os.html) that they are building a new operating system. The announcement was met with skepticism but also enthusiasm/anticipation by a lot of people who are puzzled as to what direction Google is taking and where are they looking themselves positioned in the computer industry.
 <img class="post-image" src="/files/2009-11-24-chromium-os.png" />
 

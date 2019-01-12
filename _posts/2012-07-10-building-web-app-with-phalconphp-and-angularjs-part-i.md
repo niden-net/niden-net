@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Building a web app with PhalconPHP and AngularJS Part I
-tags: [php, phalcon, angularjs, how-to]
+date: 2012-07-10T23:45:00.000Z
+tags:
+  - php
+  - phalcon
+  - angularjs
+  - how-to
 ---
-
 There are ample frameworks on the Internet, most free, that a programmer can use to build a web application. Two of these frameworks are [PhalconPHP](https://phalconphp.com) and [AngularJS](http://angularjs.org).
 <img class="post-image" src="{{ site.baseurl }}/files/phalcon-green.png" />
 <img class="post-image" src="{{ site.baseurl }}/files/angularjs.png" />

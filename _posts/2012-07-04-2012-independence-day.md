@@ -1,9 +1,11 @@
 ---
 layout: post
 title: 2012 4th of July - Independence Day
-tags: [usa, celebrations]
+date: 2012-07-04T23:45:00.000Z
+tags:
+  - ua
+  - celebrations
 ---
-
 Today we celebrate the Declaration of Independence in the United States, also known widely as the 4th of July.
 <img class="post-image" src="/files/2012-07-04-independence-day.png" />
 

@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Change the encoding of a MySQL database to UTF8
-tags: [php, mysql, encoding, utf8, how-to]
+date: 2011-12-09T23:45:00.000Z
+tags:
+  - php
+  - mysql
+  - encoding
+  - utf8
+  - how-to
 ---
-
 #### Overview
 
 As applications grow, so do their audiences. In this day and age, one cannot assume that all the consumers of a web based application will live in a particular region and use only one language. Even if the developer assumes that one country will be served by the particular web application, there are instances that the `latin1` character set will not suffice in storing data.

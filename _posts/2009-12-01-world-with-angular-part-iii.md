@@ -1,9 +1,16 @@
 ---
 layout: post
 title: The world with Angular - Part III
-tags: [amazon, angularjs, cloud computing, ec2, programming, review, how-to]
+date: 2009-12-01T23:45:00.000Z
+tags:
+  - amazon
+  - angularjs
+  - cloud computing
+  - ec2
+  - programming
+  - review
+  - how-to
 ---
-
 Continued from [Part II](/post/world-with-angular-part-ii)
 
 ##### Presentation of Data

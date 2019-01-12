@@ -1,9 +1,13 @@
 ---
 layout: post
 title: From iPhone to Nexus One
-tags: [google, iphone, nexus one, review]
+date: 2010-02-28T23:45:00.000Z
+tags:
+  - google
+  - iphone
+  - nexus one
+  - review
 ---
-
 References: [Leaving the iPhone](http://www.mattcutts.com/blog/switch-iphone-to-android/) by Matt Cutts, [Android Equivalency Table](https://docs.google.com/View?id=ajmh7zht8f5f_3dbdpf6xv) and [Good Things: Ubuntu and Android](http://al3x.net/2010/02/15/ubuntu-android.html) by Alex Payne. I am pretty sure that there are other reviews and how-to's on the Internet, outlining that one of the above (or none) is the killer of the other. I am just posting what I did to switch effortlessly.
 <img class="post-image" src="/files/2010-02-28-iphone-nexus-one.png" />
 

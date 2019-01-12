@@ -1,9 +1,14 @@
 ---
 layout: post
 title: LibreOffice Auto Update
-tags: [libreoffice, oracle, openoffice, ubuntu, how-to]
+date: 2011-04-21T23:45:00.000Z
+tags:
+  - libreoffice
+  - oracle
+  - openoffice
+  - ubuntu
+  - how-to
 ---
-
 We all knew it was coming. Ever since [Oracle](http://www.oracle.com/) took a really surprising turn towards the non-community orientation of [OpenOffice](http://www.openoffice.org/), a lot of users on the Internet were curious (and concerned) as to what will happen with the whole OpenOffice saga.
 <img class="post-image" src="{{ site.baseurl }}/files/2011-04-21-libreoffice.png" />
 

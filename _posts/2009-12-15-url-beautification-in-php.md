@@ -1,9 +1,15 @@
 ---
 layout: post
 title: URL beautification in PHP
-tags: [php, programming, zend framework, input, mod_rewrite, how-to]
+date: 2009-12-15T23:45:00.000Z
+tags:
+  - php
+  - programming
+  - zend framework
+  - input
+  - mod_rewrite
+  - how-to
 ---
-
 #### Preface
 
 The last few years I have been using Quicken to manage the home bank accounts and spending. My wife never had any problems with me doing so and it helps us manage our cash flow better. Of course like every couple we buy things that we need and always provision a small amount of money for personal expenses.

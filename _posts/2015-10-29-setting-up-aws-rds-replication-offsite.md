@@ -1,9 +1,16 @@
 ---
 layout: post
 title: Setting up AWS RDS MySQL replication offsite
-tags: [mysql, mariadb, aurora, aws, rds, replication, how-to]
+date: 2015-10-29T23:45:00.000Z
+tags:
+  - mysql
+  - mariadb
+  - aurora
+  - aws
+  - rds
+  - replication
+  - how-to
 ---
-
 #### Preface
 
 Recently I worked on setting up replication between our AWS RDS instance and a server running as a MySQL slave in our location. Although the task was not difficult, there are quite a few areas that one needs to pay attention to. 

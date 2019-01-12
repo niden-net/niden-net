@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Using autounmask to Unmask Packages in Gentoo
-tags: [gentoo, portage, linux, how-to]
+date: 2011-05-18T23:45:00.000Z
+tags:
+  - gentoo
+  - portage
+  - linux
+  - how-to
 ---
-
 Gentoo is one of my favorite Linux distributions. Although I am comfortable with other distributions, Gentoo has a special place in my heart and whenever I can use it I do :)
 <img class="post-image" src="/files/gentoo.png" />
 

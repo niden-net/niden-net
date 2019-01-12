@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Ultimate Incompetence
-tags: [personal, rant]
+date: 2009-11-06T23:45:00.000Z
+tags:
+  - personal
+  - rant
 ---
-
 This post has nothing to do with programming or the world of computers.
 <img class="post-image" src="/files/2009-11-21-incompetence.png" />
 

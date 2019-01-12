@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Slicehost vs. Linode
-tags: [gentoo, hosting, information, linux, vps]
+date: 2011-03-21T23:45:00.000Z
+tags:
+  - gentoo
+  - hosting
+  - information
+  - linux
+  - vps
 ---
-
 Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](http://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](http://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
 <img class="post-image" src="/files/2011-03-21-vps.png" />
 

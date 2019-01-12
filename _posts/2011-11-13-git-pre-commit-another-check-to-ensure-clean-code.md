@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Git pre-commit - Another check to ensure clean code
-tags: [git, how-to]
+date: 2011-11-13T23:45:00.000Z
+tags:
+  - git
+  - how-to
 ---
-
 Throughout my career I have been using various [revision control systems](http://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.
 <img class="post-image" src="/files/git-logo.png" />
 

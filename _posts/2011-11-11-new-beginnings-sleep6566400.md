@@ -1,9 +1,11 @@
 ---
 layout: post
 title: New beginnings – sleep(6566400)
-tags: [personal, update]
+date: 2011-11-11T23:45:00.000Z
+tags:
+  - personal
+  - update
 ---
-
 It has been a very long time since I last blogged.
 <img class="post-image" src="/files/2011-11-11-update.png" />
 
