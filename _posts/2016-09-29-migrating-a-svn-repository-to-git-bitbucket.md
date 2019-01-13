@@ -9,7 +9,8 @@ tags:
   - git
   - migration
   - how-to
-------
+---
+
 <img class="post-image" src="/files/2016-09-29-svn.png" />
 <img class="post-image" src="/files/2016-09-29-git.jpg" />
 ### Preface
