@@ -6,7 +6,7 @@ tags:
   - submodules
   - git
   - remove
-------
+---
 #### Preface
 
 I have been using git for quite a while now and am very comfortable with the `bread and butter` 
