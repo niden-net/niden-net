@@ -22,7 +22,7 @@ Based on the the application, serializing and unserializing data can be a very i
 
 #### Options
 
-The most obvious option for serializing and unserializing data are the [serialize](https://php.net/manual/en/function.serialize.php) and [unserialize](https://php.net/manual/en/function.unserialize.php) PHP functions. A bit less popular are [json_encode](https://us3.php.net/manual/en/function.json-encode.php) and [json_decode](https://us3.php.net/manual/en/function.json-decode.php). There is also a third option, using a third party module that one can easily install on their server. This module is called [igbinary](https://opensource.dynamoid.com/).
+The most obvious option for serializing and unserializing data are the [serialize](https://php.net/manual/en/function.serialize.php) and [unserialize](https://php.net/manual/en/function.unserialize.php) PHP functions. A bit less popular are [json_encode](https://secure.php.net/manual/en/function.json-encode.php) and [json_decode](https://secure.php.net/manual/en/function.json-decode.php). There is also a third option, using a third party module that one can easily install on their server. This module is called [igbinary](https://opensource.dynamoid.com/).
 
 In this blog post I am comparing the three options, in the hope that it will aid you with your selection of the best option for you so as to increase the performance of your application.
 

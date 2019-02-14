@@ -15,11 +15,11 @@ A lot of hype has been generated on the Internet a few months back regarding Goo
 
 Google has already established themselves in the mobile operating system with [Android](https://www.android.com/) which for many is better than Apple's iPhone. What managed to get Google very high up in user satisfaction with Android was the fact that it is open source. It is backed by Google and they are putting a lot of effort into this but the fact that anyone can download the source code and build the operating system themselves is amazing. Giving people the freedom to choose should be something that every company should do (personal opinion).
 
-On Friday I watched the [Chromium OS Webcast](https://investor.shareholder.com/googpr/eventdetail.cfm?eventid=75092). A lot of people have been waiting for a presentation from Google of the new operating system. Google provided just that but with a small twist. The presenters outlined the features of the new operating system: Fast, Fast, Fast.
+On Friday I watched the Chromium OS Webcast. A lot of people have been waiting for a presentation from Google of the new operating system. Google provided just that but with a small twist. The presenters outlined the features of the new operating system: Fast, Fast, Fast.
 
 Although the presenters clearly stated that they will not provide any links to hardware, what is supported, where Chromium OS runs etc. they made sure to address one of the core features of Chromium OS. **It is Open Sourced**! That alone gives people again freedom. Freedom to choose what they want to have as their operating system in their computer.
 
-The website for the new operating system is [located here](https://www.chromium.org/chromium-os) and there are instructions on how you can [build](https://www.chromium.org/chromium-os/building-chromium-os) this new OS even in its current state - which is not production ready.
+The website for the new operating system is [located here](https://sites.google.com/a/chromium.org/dev/chromium-os) and there are instructions on how you can [build](https://www.chromium.org/chromium-os/building-chromium-os) this new OS even in its current state - which is not production ready.
 
 Curious (as usual) I tried installing the Chromium OS on a virtual machine. My experience installing the new OS and other comments is outlined below:
 

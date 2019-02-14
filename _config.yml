@@ -61,6 +61,7 @@ jekyll-archives:
 
 include:
   - _pages
+  - _redirects
 
 sass:
   style: :compressed # You might prefer to minify using :compressed

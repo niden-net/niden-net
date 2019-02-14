@@ -552,7 +552,7 @@ The Episodes view became
 
 The beauty of [AngularJS](https://angularjs.org/)! I only have to pass a JSON array with my results. `ng-repeat` with the `orderBy` filter allows me to present the data to the user and offer sorting capabilities per column. This is all done at the browser level **without** any database hits! Pretty awesome feature!
 
-For those that have used [AngularJS](<a href="https://angularjs.org/) in the past, you will note that I had to change the interpolate provider (i.e. the characters that wrap a string or a piece of code that [AngularJS](<a href="https://angularjs.org/) understands). Usually these characters are the curly brackets `{% raw %}{{ }}{% endraw %}` but I changed them to `[[ ]]` to avoid collisions with [Volt](https://docs.phalconphp.com/en/latest/volt).
+For those that have used [AngularJS](https://angularjs.org/) in the past, you will note that I had to change the interpolate provider (i.e. the characters that wrap a string or a piece of code that [AngularJS](<a href="https://angularjs.org/) understands). Usually these characters are the curly brackets `{% raw %}{{ }}{% endraw %}` but I changed them to `[[ ]]` to avoid collisions with [Volt](https://docs.phalconphp.com/en/latest/volt).
 
 This was done with a couple of lines of code in my definition of my [AngularJS](https://angularjs.org/) model:
 
