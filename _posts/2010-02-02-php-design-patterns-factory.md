@@ -334,7 +334,7 @@ Again since both underlying classes implement the `iDatabase` interface, I know 
 
 The Factory Design Pattern is one of the most powerful design patterns. It provides 'decoupling' i.e. breaks the inherited dependency of a class and its subclasses. It also allows for great flexibility while keeping the same interface for your clients.
 
-[Zend Framework](https://framework.zend.com/) uses the Factory Pattern in [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html). Specifically the example on the site shows:
+[Zend Framework](https://framework.zend.com/) uses the Factory Pattern in [Zend_Db](https://framework.zend.com/manual/1.12/en/zend.db.adapter.html). Specifically the example on the site shows:
 
 ```php
 // We don't need the following statement because the
@@ -355,4 +355,4 @@ $db = Zend_Db::factory(
     )
 );
 ```
-The [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html) factory accepts the name of the adapter used for the database connection as the first parameter while the second parameter is an array with connection specific information. With the use of the Factory Pattern, [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html) exposes a common interface which allows programmers to connect to a number of databases using the same methods. Should in the future the application needs to access a different database, the impact to the developer is minimal - in most cases a change to the adapter name (first parameter of the factory class) is all it takes.
+The [Zend_Db](https://framework.zend.com/manual/1.12/en/zend.db.adapter.html) factory accepts the name of the adapter used for the database connection as the first parameter while the second parameter is an array with connection specific information. With the use of the Factory Pattern, [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html) exposes a common interface which allows programmers to connect to a number of databases using the same methods. Should in the future the application needs to access a different database, the impact to the developer is minimal - in most cases a change to the adapter name (first parameter of the factory class) is all it takes.

@@ -30,7 +30,7 @@ The merge process works as follows:
 
 - If your Google Apps account email address **has never been used** to access Google products such as Google Reader, Google Voice, Google Code etc. then your Google Apps account will be converted to a Google Account.
 
-- If your Google Apps account email address **has been used** to access Google products such as Google Reader, Google Voice, Google Code etc. then your Google Apps account is conflicting with your Google Account. This [page](https://www.google.com/support/a/bin/answer.py?answer=184937) in Google Apps Administrator Help provides an overview of conflicting accounts. In short both of your accounts will merge and the data will be associated with your Google Apps account, which will now be the same as your Google Account.
+- If your Google Apps account email address **has been used** to access Google products such as Google Reader, Google Voice, Google Code etc. then your Google Apps account is conflicting with your Google Account. This page in Google Apps Administrator Help provides an overview of conflicting accounts. In short both of your accounts will merge and the data will be associated with your Google Apps account, which will now be the same as your Google Account.
 
 There are certain limitations to this merge (as one would expect :)). These are as follows:
 
@@ -48,7 +48,7 @@ There are certain limitations to this merge (as one would expect :)). These are 
 - Delegating email only works with the same account type (i.e. Google Apps)
 - Any Picasa Web Album, Profile, or Wave usernames cannot be moved from an existing account to your Google Apps account.
 
-Resources: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), [Conflicting accounts](https://www.google.com/support/a/bin/answer.py?answer=184937), [Early adopters](https://www.google.com/support/a/bin/answer.py?answer=181872), [Additional storage for Google Apps](https://www.google.com/support/a/bin/answer.py?answer=172732), [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
+Resources: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Conflicting accounts, Early adopters, [Additional storage for Google Apps](https://www.google.com/support/a/bin/answer.py?answer=172732), [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
 
 #### The process
 
@@ -106,7 +106,7 @@ Confirming the new services, the wizard will display a new screen, that will all
 
 Clicking **Continue**, brings up the User Selection screen. Here the administrator can select whose account will be transitioned for now. You can choose to pilot test this transition with a small set of users or everyone. The difference is that if you choose a small set of users to pilot test this transition, you can revert their accounts back to what they were prior to this step. If you choose "<em>Everyone</em>" from this screen, the change will be across the organization and cannot be undone. Reminder here that the transition will happen either way by the end of September, 2010. Finally you have the option to inform the users when their account transition is complete. This generates an email (in English) to the user with relevant information. You can see the email in section "<em>Google Apps - Email to User</em>" below.
 
-Resource: [Early adopters](https://www.google.com/support/a/bin/answer.py?answer=181872)
+Resource: Early adopters
 
 
 ##### Google Apps - Confirmation

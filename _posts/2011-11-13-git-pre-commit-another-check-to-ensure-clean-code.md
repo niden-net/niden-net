@@ -113,4 +113,4 @@ The `*.l` file is the one that runs the PHP syntax check, while the `*.output` o
 
 #### Update
 * [For Windows](https://plutov.by/post/git_pre_commit_windows) by Alexander Plutov
-* [For Drupal](https://github.com/geraldvillorente/drupal-pre-commit) by [Gerald Vilorente](https://plus.google.com/u/0/wm/1/116699538730408531860/posts) 
+* [For Drupal](https://github.com/geraldvillorente/drupal-pre-commit) by Gerald Vilorente 
