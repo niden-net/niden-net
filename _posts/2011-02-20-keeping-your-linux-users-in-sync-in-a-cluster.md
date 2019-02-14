@@ -84,7 +84,7 @@ First of all you will need to add groups. You can of course keep all users in on
 
 I chose to assign each group a unique id (you can override this behavior by using the -o switch in the command below, thus allowing a gid to be used in more than one group). The arbitrary number that I chose was 2000.
 
-As an example, I will set `niden` as the user/group for accessing this site and <em>beauty</em> as the user/group that accesses [BeautyAndTheGeek.IT](https://www.beautyandthegeek.it/). Note that this is only an example.
+As an example, I will set `niden` as the user/group for accessing this site and <em>beauty</em> as the user/group that accesses BeautyAndTheGeek.IT. Note that this is only an example.
 
 ```sh
 groupadd --gid 2000 niden

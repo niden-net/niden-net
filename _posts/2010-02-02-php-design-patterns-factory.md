@@ -11,7 +11,7 @@ tags:
   - zend framework
   - how-to
   - factory
-image: '/assets/files/2010-02-02-design-patterns-factory.png'
+image: '/assets/files/2010-02-02-design-patterns.png'
 ---
 A note about these series. It appears that [Giorgio Sironi](https://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Factory](https://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-factory-method.html) design pattern thoroughly in his blog post, which is recommended reading.
 

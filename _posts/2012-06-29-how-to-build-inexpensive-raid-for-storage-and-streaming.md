@@ -20,7 +20,7 @@ Services like [Google Drive](https://drive.google.com/), [iCloud](https://www.ic
 
 #### Background
 
-My current setup at home consists of a few notebooks, a mac-mini and a Shuttle computer with a 1TB hard drive, where I store all my pictures, some movies and my songs. I use [Google Music Manager](https://music.google.com/) for my songs so that they are available at any time on my android phone, [Picasa](https://picasaweb.google.com/)> to be able to share my photos with my family and friends and [Google Drive](https://drive.google.com/) so as to keep every folder I have in sync. I also use [RocksBox](https://www.roksbox.com/) to stream some of that content (especially the movies) upstairs on either of our TVs through the [Roku](https://www.roku.com/) boxes we have.
+My current setup at home consists of a few notebooks, a mac-mini and a Shuttle computer with a 1TB hard drive, where I store all my pictures, some movies and my songs. I use [Google Music Manager](https://music.google.com/) for my songs so that they are available at any time on my android phone, [Picasa](https://picasaweb.google.com/)> to be able to share my photos with my family and friends and [Google Drive](https://drive.google.com/) so as to keep every folder I have in sync. I also use RocksBox to stream some of that content (especially the movies) upstairs on either of our TVs through the [Roku](https://www.roku.com/) boxes we have.
 
 Recently I went downstairs and noticed that the Shuttle computer (which run Windows XP at the time) was stuck in the POST screen. I rebooted the machine but it refused to load Windows, getting stuck either in the computer's POST screen or in the *Starting Windows*.
 
@@ -47,7 +47,7 @@ I opted for a solid state drive from Crucial for the OS. Although it was not nec
 * [Crucial 128 GB m4 2.5-Inch Solid State Drive SATA 6Gb/s CT128M4SSD2](https://www.amazon.com/gp/product/B004W2JKZI/ref=oh_details_o00_s00_i01) ($122.49) The OS drive
 * [HITACHI 0F10383 1TB SATA 3.0Gb/s 3.0 7200 RPM 32MB Buffer Hard Drive](https://www.amazon.com/gp/product/B0035WQBOY/ref=oh_details_o01_s00_i00) ($106.99) RAID array drive (the only reason I bought this particular drive is because it is identical to the one that came with the Lenovo system)
 
-**NOTE** : For those that are not interested in having a solid state drive for the OS, one can always go with other, much cheaper drives such as [this one](https://www.amazon.com/Seagate-Momentus-7200RPM-Internal-ST9160412AS-Bare/dp/B0027P9BOC/ref=sr_1_1?s=pc&amp;ie=UTF8&amp;qid=1339943115&amp;sr=1-1&amp;keywords=hybrid+hard+drive).
+**NOTE** : For those that are not interested in having a solid state drive for the OS, one can always go with other, much cheaper drives such as this one.
 
 #### Setup
 
@@ -77,7 +77,7 @@ The installation disk provided that driver, alongside with a web based configura
 
 Entering the Disk Manager, I initialized and formatted the drive and from then on, I started copying all my files in there.
 
-As a last minute change, I decided not to install [RocksBox](https://www.roksbox.com/) and instead go with [Plex Media Server](https://www.plexapp.com/). After playing around with Plex, I found out that it was a lot easier to setup than RocksBox (RocksBox requires a web server to be installed on the server machine, whereas Plex automatically discovers servers). Installing the relevant channel on my Roku boxes was really easy and everything was ready to work right out of the box so to speak.
+As a last minute change, I decided not to install RocksBox and instead go with [Plex Media Server](https://www.plexapp.com/). After playing around with Plex, I found out that it was a lot easier to setup than RocksBox (RocksBox requires a web server to be installed on the server machine, whereas Plex automatically discovers servers). Installing the relevant channel on my Roku boxes was really easy and everything was ready to work right out of the box so to speak.
 
 #### Problems
 

@@ -12,7 +12,7 @@ image: '/assets/files/2011-03-21-vps.png'
 ---
 Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](http://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](http://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
 
-Since I moved my emails to [Google Apps](https://google.com/a/) I only need the hosting for my personal sites such as my blog, my wife's sites (burntoutmom.com, greekmommy.net) and a few other small sites.
+Since I moved my emails to [Google Apps](https://gsuite.google.com) I only need the hosting for my personal sites such as my blog, my wife's sites (burntoutmom.com, greekmommy.net) and a few other small sites.
 
 I used to host those sites on one of my company's clusters. The bandwidth consumed was nothing to write home about (I think in total it was a couple of GB per month ~ 1.00 USD) so it didn't matter that I had them there. However, recent events forced me to move them out of that cluster. I was on the market for good and relatively cheap hosting. I did not want to purchase my own server or co-locate with someone else. My solution was going to be a VPS since I would be in control of what I install and what I need.
 
@@ -50,7 +50,7 @@ Setting up an account with Linode was very easy. I didn't have any of the mini-s
 I started testing the network, creating my VPS in the Atlanta, GA datacenter (Linode offers a number of data centers for you to create your own). The functionality that was available to me was identical and in some cases superior to that of Slicehost. There are a lot more distributions to choose from, and you can partition your VPS the way you want it to name a couple.
 
 
-Shifting through the [documentation](https://library.linode.com/), I saw a few topics regarding high availability websites. The articles described using [DRDB](https://www.drbd.org/), [nginX](https://nginx.org/), [heartbeat](https://www.linux-ha.org/wiki/Main_Page) and pacemaker etc. to keep your sites highly available. I was intrigued by the information and set off to create a load balancer using two VPSs and nginX. I have documented the process and this is another blog post that will come later on this week.
+Shifting through the [documentation](https://library.linode.com/), I saw a few topics regarding high availability websites. The articles described using [DRDB](https://www.linbit.com/en/drbd-community/drbd-download/), [nginX](https://nginx.org/), [heartbeat](http://www.linux-ha.org/wiki/Main_Page) and pacemaker etc. to keep your sites highly available. I was intrigued by the information and set off to create a load balancer using two VPSs and nginX. I have documented the process and this is another blog post that will come later on this week.
 
 While experimenting with the load balancer (and it was Saturday evening) I had to add a new IP address to one of the VPS instances. At the time my account would not allow such a change and I had to contact support. I did and got a reply in less than 5 minutes. I was really impressed by this. Subsequent tickets were answered within the 5 minute time frame. Kudos to Linode support for their speed and professionalism.
 

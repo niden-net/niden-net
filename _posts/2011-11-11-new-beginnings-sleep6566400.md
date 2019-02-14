@@ -13,7 +13,7 @@ The primary reason is that I have been busy and somewhat lazy. Hopefully that tr
 
 The biggest update for me came this July. I was actively searching for a new employment opportunity for quite some time, but due to the current market situation, it has been a really difficult task.
 
-In July I received (and accepted) an offer from [Avectra Inc.](https://www.avectra.com/) I am now a PHP developer for [MemberFuse&trade;](https://www.memberfuse.com/), a professional networking application that integrates with the client's association management software and builds an online community for that client.
+In July I received (and accepted) an offer from Avectra Inc. I am now a PHP developer for MemberFuse&trade;, a professional networking application that integrates with the client's association management software and builds an online community for that client.
 
 My colleagues and I are programming in PHP using a frameworks such as [Doctrine](https://www.doctrine-project.org/), [Zend Framework](https://framework.zend.com/), [Smarty](https://www.smarty.net/] and [jQuery](https://jquery.com/) on the client side. The application we produce is offered as SAAS (Software As A Service) and we have well over 1 million users.
 

@@ -5,7 +5,7 @@ date: 2012-09-02T23:45:00.000Z
 tags:
   - angularjs
   - how-to
-image: '/assets/files/amgularjs.png'
+image: '/assets/files/angularjs.png'
 ---
 Recently I was contacted by an acquaintance through my Google+ circles, who needed some help with a project of hers.
 

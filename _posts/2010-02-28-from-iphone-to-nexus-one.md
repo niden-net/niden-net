@@ -9,7 +9,7 @@ tags:
   - review
 image: '/assets/files/2010-02-28-iphone-nexus-one.png'
 ---
-References: [Leaving the iPhone](https://www.mattcutts.com/blog/switch-iphone-to-android/) by Matt Cutts, [Android Equivalency Table](https://docs.google.com/View?id=ajmh7zht8f5f_3dbdpf6xv) and [Good Things: Ubuntu and Android](https://al3x.net/2010/02/15/ubuntu-android.html) by Alex Payne. I am pretty sure that there are other reviews and how-to's on the Internet, outlining that one of the above (or none) is the killer of the other. I am just posting what I did to switch effortlessly.
+References: [Leaving the iPhone](https://www.mattcutts.com/blog/switch-iphone-to-android/) by Matt Cutts, Android Equivalency Table and [Good Things: Ubuntu and Android](https://al3x.net/2010/02/15/ubuntu-android.html) by Alex Payne. I am pretty sure that there are other reviews and how-to's on the Internet, outlining that one of the above (or none) is the killer of the other. I am just posting what I did to switch effortlessly.
 
 #### Homework
 

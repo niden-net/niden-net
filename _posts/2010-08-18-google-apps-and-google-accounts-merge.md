@@ -48,7 +48,7 @@ There are certain limitations to this merge (as one would expect :)). These are 
 - Delegating email only works with the same account type (i.e. Google Apps)
 - Any Picasa Web Album, Profile, or Wave usernames cannot be moved from an existing account to your Google Apps account.
 
-Resources: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Conflicting accounts, Early adopters, [Additional storage for Google Apps](https://www.google.com/support/a/bin/answer.py?answer=172732), [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
+Resources: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Conflicting accounts, Early adopters, [Additional storage for Google Apps](https://www.google.com/support/a/bin/answer.py?answer=172732), Google Apps Administrator Help Center
 
 #### The process
 
@@ -74,7 +74,7 @@ Resource: [Google Apps core suite](https://www.google.com/apps/intl/en/business/
 
 Clicking the **"Get Started"** button at the bottom of the notice will start a wizard that helps with the transition of the domain's accounts to Google accounts of your users (some or all). The first screen contains information that aids in understanding the transition and what is involved.   Moving to the new infrastructure will update your control panel and give you control over which Google services your users can access with their accounts.
 
-Resource: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
+Resource: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Google Apps Administrator Help Center
 
 ##### Google Apps - New Services
 
@@ -142,7 +142,7 @@ Navigating back to the dashboard, you will see a message notifying you that ther
 
 If you (the administrator) chose to notify your users of this transition (see step *Select Users* above), they will receive an email like the one shown above. If you chose to notify your users with a different message then that message should have been sent to the temporary email address that Google has provided (see step *Notifying Conflicting Accounts* above)
 
-Resources: <a href="https://www.google.com/support/accounts/bin/answer.py?answer=181692">Data ownership</a>, <a href="https://www.google.com/support/a/bin/answer.py?answer=182034">Transition readiness checklist</a>, <a href="https://www.google.com/support/a/bin/topic.py?topic=28917">Google Apps Administrator Help Center</a>
+Resources: [Data ownership](https://www.google.com/support/accounts/bin/answer.py?answer=181692), [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Google Apps Administrator Help Center
 
 ##### Google Apps - Email to User after Transition
 
@@ -154,7 +154,7 @@ Resources: <a href="https://www.google.com/support/accounts/bin/answer.py?answer
 
 Finally another email will be sent to the user summarizing what has happened with their account. This email contains links to additional resources.
 
-Resources: [List of products](https://www.google.com/options/), [New sign in option](https://www.google.com/support/accounts/bin/answer.py?answer=181703),  Data ownership, What is a browser?, [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), [Help Center for Admins](https://www.google.com/support/a/bin/topic.py?topic=28917), [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
+Resources: [List of products](https://www.google.com/options/), [New sign in option](https://www.google.com/support/accounts/bin/answer.py?answer=181703),  Data ownership, What is a browser?, [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), Help Center for Admins, [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
 
 
 ##### Google Apps - User Login message for Account Merge
@@ -168,7 +168,7 @@ Resources: [List of products](https://www.google.com/options/), [New sign in opt
 Once the transition operation is completed, the next time the user logs in their account, they will see the screen above. In short this screen informs the user of what has happened and provides links to online resources for help. The user must click **I accept. Continue to my account** for them to have access to their account. This is  a one off process.
 
 
-Resources: [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917), [Google Security and Privacy](https://www.google.com/support/a/bin/answer.py?hl=en&amp;answer=60762), [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), [Terms of Service](https://www.google.com/apps/intl/en/terms/user_terms.html)
+Resources: Google Apps Administrator Help Center, [Google Security and Privacy](https://www.google.com/support/a/bin/answer.py?hl=en&amp;answer=60762), [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), [Terms of Service](https://www.google.com/apps/intl/en/terms/user_terms.html)
 
 #### Conclusion
 Without a doubt this is a huge step forward for Google and for us as admins or users. The ability to have a single sign on to use their products not only helps them but us by simplifying everything. That also means that if a hacker guesses that my password is **password1** they have access to all my Google related services... but oh well :)

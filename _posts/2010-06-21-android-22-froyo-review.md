@@ -114,7 +114,7 @@ I spend every day 3 hours on the train, where I mostly work on my notebook. Havi
 
 When I got my Nexus One, I bought [PDA Net](http://www.junefabrics.com/android/) to achieve the same result. It worked too but again in a very basic mode but it was draining the battery very fast and was running the phone very hot.
 
-After I upgraded to Froyo, I uninstalled [PDA Net](https://www.junefabrics.com/android/) and have been working with the built in functionality ever since.
+After I upgraded to Froyo, I uninstalled [PDA Net](http://www.junefabrics.com/android/) and have been working with the built in functionality ever since.
 <img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-configure-hotspot.png" />
 
 To access the Tethering options, you will need to go to *Settings - Wireless & Networks - Tethering & portable hotspot*. The options shown on Figure 6 appear, which allow you to switch the Wi-Fi hotspot on or off. A USB tethering option also exists for those that want to keep their phone charged with the power that comes from their notebook or attached device. Once the hotspot is enabled, a blue icon appears at the top notification bar. The configuration of the hotspot is really easy and can be seen in figures 7 and 8. For those wondering why I chose the SSID of my hotspot to be one of the most infectious (Windows) viruses ever, it is exactly for that reason. Apart from the WPA2 encryption, the name itself is a deterrent for anyone that might get ideas in stealing bandwidth.
@@ -223,7 +223,7 @@ I had some problems with this feature from time to time primarily due to my acce
 
 The voice search will probably never be able to detect everything that everyone is saying due to the different accents and voices of people but it is getting pretty close to perfect in my case.
 
-One thing that I love about voice search is the voice navigation. I have purchased the [car dock](https://www.google.com/support/android/bin/answer.py?hl=en&answer=178146) for my Nexus One and I use the voice navigation almost everywhere I go. Understanding that I want to go to Rockville, MD instead of Rock Creek is awesome!
+One thing that I love about voice search is the voice navigation. I have purchased the car dock for my Nexus One and I use the voice navigation almost everywhere I go. Understanding that I want to go to Rockville, MD instead of Rock Creek is awesome!
 
 ##### Marketplace – Update all, autoupdate for each application
 
