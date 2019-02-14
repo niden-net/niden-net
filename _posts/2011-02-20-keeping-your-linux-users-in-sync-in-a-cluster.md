@@ -9,9 +9,9 @@ tags:
   - rsync
   - storage
   - how-to
+image: '/assets/files/2011-02-20-sync.png'
 ---
 As websites become more and more popular, your application might not be able to cope with the demand that your users put on your server. To accommodate that, you will need to move out of the one server solution and create a cluster. The easiest cluster to create would be with two servers, one to handle your web requests (HTTP/PHP etc.) and one to handle your database load (MySQL). Again this setup can only get you so far. If your site is growing, you will need a cluster of servers.
-<img class="post-image" src="/files/2011-02-20-sync.png" />
 
 #### Database
 
@@ -27,13 +27,13 @@ By changing directives in `my.cnf` you can store the binary logs in a different 
 expire_logs_days = 5
 ```
 
-I set mine to 5 days which is extremely generous. If your replication is broken you must have the means to know about it within minutes (see [nagios](http://www.nagios.org/) for a good monitoring service). In most cases 2 days is more than enough.
+I set mine to 5 days which is extremely generous. If your replication is broken you must have the means to know about it within minutes (see [nagios](https://www.nagios.org/) for a good monitoring service). In most cases 2 days is more than enough.
 
 #### Files
 
-There are numerous ways of keeping your cluster in sync. A really good tool that I have used when playing around with a cluster is [csync2](http://oss.linbit.com). Installation is really easy and and all you will need is to run a cron task every X minutes (up to you) to synchronize the new files. Imagine it as a two way [rsync](http://samba.anu.edu.au/rsync/). Another tool that can do this is [unison](http://www.cis.upenn.edu/~bcpierce/unison/) but I found it to be slow and difficult to implement - that's just me though.
+There are numerous ways of keeping your cluster in sync. A really good tool that I have used when playing around with a cluster is [csync2](https://oss.linbit.com). Installation is really easy and and all you will need is to run a cron task every X minutes (up to you) to synchronize the new files. Imagine it as a two way [rsync](https://samba.anu.edu.au/rsync/). Another tool that can do this is [unison](https://www.cis.upenn.edu/~bcpierce/unison/) but I found it to be slow and difficult to implement - that's just me though.
 
-Assume an implementation of a website being served by two (or more) servers behind a load balancer. If your users upload files, you don't know where those files are uploaded, which server that is. As a result if user A uploads the file <em>abc.txt</em> to server A, user B might be served the content from server B and would not be able to access the file. [csync2](http://oss.linbit.com) would synchronize the file across the number of servers, thus providing access to the content and keeping multiple copies of the content (additional backup if you like).
+Assume an implementation of a website being served by two (or more) servers behind a load balancer. If your users upload files, you don't know where those files are uploaded, which server that is. As a result if user A uploads the file <em>abc.txt</em> to server A, user B might be served the content from server B and would not be able to access the file. [csync2](https://oss.linbit.com) would synchronize the file across the number of servers, thus providing access to the content and keeping multiple copies of the content (additional backup if you like).
 
 #### NFS
 
@@ -48,9 +48,9 @@ An alternative to keeping everything synchronized is to use a NFS. This approach
 
 * The NFS does not rely on the individual web servers for content.
 * The web servers can be low to medium spec boxes without the need to have really fast and large hard drives
-* A well designed NFS with <a href="http://oss.linbit.com/">DRDB</a> provides a raid-1 over a network. Using gigabit Network Interface Cards you can keep performance at really high levels.
+* A well designed NFS with <a href="https://oss.linbit.com/">DRDB</a> provides a raid-1 over a network. Using gigabit Network Interface Cards you can keep performance at really high levels.
 
-I know that my friend [Floren](http://www.axivo.com/) does not agree with my approach on the NFS and would definitely have gone with the [csync2](http://oss.linbit.com) approach. Your implementation depends on your needs.
+I know that my friend [Floren](https://www.axivo.com/) does not agree with my approach on the NFS and would definitely have gone with the [csync2](https://oss.linbit.com) approach. Your implementation depends on your needs.
 
 #### Users and Groups
 
@@ -74,7 +74,7 @@ drwxr-xr-x  7 510    511    4096 Nov 21 17:42 www.beautyandthegeek.it
 
 The problem here is the uid and gid of the users and groups of each user respectively. Somehow (and this is really easy to happen) server A had one or more users added to it, thus the internal counter of the user IDs has been increased by one or more and is not identical to that one of server B. So adding a new user in server A will get the uid 510 while on server B the same process will produce a user with a uid of 508.
 
-To have all users setup on all servers the same way, we need to use two commands: [groupadd](http://man.he.net/man8/groupadd) and [useradd](http://man.he.net/man8/useradd) (in some Linux distributions you might find them as addgroup and adduser).
+To have all users setup on all servers the same way, we need to use two commands: [groupadd](https://man.he.net/man8/groupadd) and [useradd](https://man.he.net/man8/useradd) (in some Linux distributions you might find them as addgroup and adduser).
 
 ##### groupadd
 
@@ -84,7 +84,7 @@ First of all you will need to add groups. You can of course keep all users in on
 
 I chose to assign each group a unique id (you can override this behavior by using the -o switch in the command below, thus allowing a gid to be used in more than one group). The arbitrary number that I chose was 2000.
 
-As an example, I will set `niden` as the user/group for accessing this site and <em>beauty</em> as the user/group that accesses [BeautyAndTheGeek.IT](http://www.beautyandthegeek.it/). Note that this is only an example.
+As an example, I will set `niden` as the user/group for accessing this site and <em>beauty</em> as the user/group that accesses [BeautyAndTheGeek.IT](https://www.beautyandthegeek.it/). Note that this is only an example.
 
 ```sh
 groupadd --gid 2000 niden
@@ -117,7 +117,7 @@ useradd --uid 2000 --gid 2001 --create-home beauty
 
 Again, repeat the process as many times as needed for your setup and to as many servers as needed.
 
-In the example above I issued the --create-home switch (or -m) so as a home folder to be created under /home for each user. Your setup might not need this step. Check the references at the bottom of this blog post for the manual pages for [groupadd](http://man.he.net/man8/groupadd) and [useradd](http://man.he.net/man8/useradd).
+In the example above I issued the --create-home switch (or -m) so as a home folder to be created under /home for each user. Your setup might not need this step. Check the references at the bottom of this blog post for the manual pages for [groupadd](https://man.he.net/man8/groupadd) and [useradd](https://man.he.net/man8/useradd).
 
 
 I would suggest that you keep a log of which user/group has which uid/gid. It helps in the long run, plus it is a good habit to keep proper documentation on projects :)
@@ -151,12 +151,12 @@ The above might not be the best way of keeping users in sync in a cluster but it
 
 ### References
 
-* [MySQL System Variables](http://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html)
-* [Nagios](http://www.nagios.org/)
-* [csync2](http://oss.linbit.com)
-* [rsync](http://samba.anu.edu.au/rsync/)
-* [Unison File Synchronizer](http://www.cis.upenn.edu/~bcpierce/unison/)
-* [DRDB](http://oss.linbit.com/)
-* [Axivo Inc.](http://www.axivo.com/)
-* [groupadd](http://man.he.net/man8/groupadd)
-* [useradd](http://man.he.net/man8/useradd)
+* [MySQL System Variables](https://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html)
+* [Nagios](https://www.nagios.org/)
+* [csync2](https://oss.linbit.com)
+* [rsync](https://samba.anu.edu.au/rsync/)
+* [Unison File Synchronizer](https://www.cis.upenn.edu/~bcpierce/unison/)
+* [DRDB](https://oss.linbit.com/)
+* [Axivo Inc.](https://www.axivo.com/)
+* [groupadd](https://man.he.net/man8/groupadd)
+* [useradd](https://man.he.net/man8/useradd)

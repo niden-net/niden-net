@@ -8,11 +8,9 @@ tags:
   - rsync
   - installation
   - how-to
+image: '/assets/files/gentoo.png'
 ---
-#### Scenario
-
 Recently I have started setting up a cluster of 7 Gentoo boxes for a project I am working on. The problem with boxes coming right out of the setup process of a hosting company is that they do not contain the packages that you need. Therefore you need to setup your `USE` flags and emerge the packages you require as per the role of every box.
-<img class="post-image" src="{{ site.baseurl }}/files/gentoo.png" />
 
 I have implemented the following procedure many times in my local networks (since I have more than one Gentoo boxes) and have also implemented the same process at work (we run 3 Gentoo boxes).
 
@@ -38,7 +36,7 @@ Modify the above to your specific setup needs.
 
 ##### Server setup (ws1)
 
-There is a really good tutorial can be found in the [Gentoo Documentation](http://www.gentoo.org/doc/en/rsync.xml) but here is the short version:
+There is a really good tutorial can be found in the [Gentoo Documentation](https://www.gentoo.org/doc/en/rsync.xml) but here is the short version:
 
 The `ws1` box already has the `rsync` package in there. All I need to do is start the daemon. Some configuration is necessary before I start the service:
 
@@ -197,7 +195,7 @@ to clear the distfiles folder. I have added those in a bash script and I run it 
 In my clients I need to edit the /etc/make.conf and change the SYNC directive to:
 
 ```sh
-http_proxy="http://ws1:8080"
+http_proxy="https://ws1:8080"
 RESUMECOMMAND=" /usr/bin/wget -t 5 --passive-ftp  \${URI} -O \${DISTDIR}/\${FILE}"</pre>
 ```
 
@@ -220,8 +218,8 @@ Calculating dependencies... done!
 >>> Verifying ebuild manifests
 
 >>> Emerging (1 of 1) app-admin/logrotate-3.7.8
->>> Downloading 'http://distfiles.gentoo.org/distfiles/logrotate-3.7.8.tar.gz'
---2009-12-10 06:46:47--  http://distfiles.gentoo.org/distfiles/logrotate-3.7.8.tar.gz
+>>> Downloading 'https://distfiles.gentoo.org/distfiles/logrotate-3.7.8.tar.gz'
+--2009-12-10 06:46:47--  https://distfiles.gentoo.org/distfiles/logrotate-3.7.8.tar.gz
 Resolving ws1... 10.13.18.101
 Connecting to ws1|10.13.18.101|:8080... connected.
 Proxy request sent, awaiting response... 200 OK

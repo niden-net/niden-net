@@ -9,11 +9,9 @@ tags:
   - serialize
   - json
   - how-to
+image: '/assets/files/2011-11-22-serialization.png'
 ---
-#### Serializing/Unserializing data
-
-> Serialization is the process of converting a data structure or object state into a format that can be stored and "resurrected" later in the same or another computer environment. [source](http://en.wikipedia.org/wiki/Serialization)
-<img class="post-image" src="{{ site.baseurl }}/files/2011-11-22-serialization.png" />
+> Serialization is the process of converting a data structure or object state into a format that can be stored and "resurrected" later in the same or another computer environment. [source](https://en.wikipedia.org/wiki/Serialization)
 
 There are a lot of areas where one can use serialization. A couple are:
 
@@ -24,7 +22,7 @@ Based on the the application, serializing and unserializing data can be a very i
 
 #### Options
 
-The most obvious option for serializing and unserializing data are the [serialize](http://php.net/manual/en/function.serialize.php) and [unserialize](http://php.net/manual/en/function.unserialize.php) PHP functions. A bit less popular are [json_encode](http://us3.php.net/manual/en/function.json-encode.php) and [json_decode](http://us3.php.net/manual/en/function.json-decode.php). There is also a third option, using a third party module that one can easily install on their server. This module is called [igbinary](http://opensource.dynamoid.com/).
+The most obvious option for serializing and unserializing data are the [serialize](https://php.net/manual/en/function.serialize.php) and [unserialize](https://php.net/manual/en/function.unserialize.php) PHP functions. A bit less popular are [json_encode](https://us3.php.net/manual/en/function.json-encode.php) and [json_decode](https://us3.php.net/manual/en/function.json-decode.php). There is also a third option, using a third party module that one can easily install on their server. This module is called [igbinary](https://opensource.dynamoid.com/).
 
 In this blog post I am comparing the three options, in the hope that it will aid you with your selection of the best option for you so as to increase the performance of your application.
 
@@ -266,7 +264,7 @@ As far as size is concerned, `json_encode` seems to be producing the smallest re
 
 ##### Size comparison
 
-![]({{ site.baseurl }}/files/2011-11-22-figure-1.png)
+![]({{ site.baseurl }}/assets/files/2011-11-22-figure-1.png)
 
 **Strings**
 
@@ -326,7 +324,7 @@ igbinary_serialize() [all]: Size: 478 bytes, 18.053789138794 time to encode
 
 ##### Speed comparison
 
-![]({{ site.baseurl }}/files/2011-11-22-figure-2.png)
+![]({{ site.baseurl }}/assets/files/2011-11-22-figure-2.png)
 
 Analyzing the time it took for each test to be completed, we see again that json_encode is the clear winner (highlighted in bold the shortest time for the function).
 
@@ -404,7 +402,7 @@ In the tests below once can easily see that `igbinary` is the clear winner. At t
 
 ##### Speed comparison
 
-![]({{ site.baseurl }}/files/2011-11-22-figure-3.png)
+![]({{ site.baseurl }}/assets/files/2011-11-22-figure-3.png)
 
 **Strings**
 

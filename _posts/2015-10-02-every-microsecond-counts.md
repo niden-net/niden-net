@@ -7,11 +7,9 @@ tags:
   - performance
   - phalcon
   - metrics
+image: '/assets/files/2015-10-02-clock.png'
 ---
-#### Preface
-
 One of the primary factors that always needs to be taken into consideration when designing and implementing an application is performance. In this day and age of information overload, everything is about speed. If your website is slow (more than a second or two) to appear on the browser, most likely your visitors will leave and go elsewhere. If the application you designed/implemented is slow, it will use more resources (memory/cpu) and thus cost more money to run. Time is money.
-<img class="post-image" src="{{ site.baseurl }}/files/2015-10-02-clock.png" />
 
 #### The Nanosecond
 
@@ -40,7 +38,7 @@ As I wrote in a previous [post](/post/new-look-more-posts), a new version of thi
 
 As you can see there is room for improvement. Granted these results come from my local installation, where the `debugMode` is set to `1`, which means that there is no caching and everything gets recalculated on every request. Still, if I can make this local installation perform as fast as possible, then on the production server it will be even faster.
 
-The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the [`PostFinder`](https://github.com/niden/blog/blob/master/library/Kitsune/PostFinder.php) class and reduce the memory consumption significantly. Removing objects and referenced objects in them made a huge difference. Arrays work just fine for my purposes.
+The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the [`PostFinder`](https://github.com/niden/niden-net/blob/0e0279a4f244d38a78a499401c2e33ad3396fa75/library/Kitsune/PostFinder.php) class and reduce the memory consumption significantly. Removing objects and referenced objects in them made a huge difference. Arrays work just fine for my purposes.
  
  Additional [optimizations](https://github.com/niden/blog/commit/e907099e716aea7589f4572ff592d5d446b8ccd9) led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
  

@@ -5,9 +5,9 @@ date: 2012-07-04T23:45:00.000Z
 tags:
   - ua
   - celebrations
+image: '/assets/files/2012-07-04-independence-day.png'
 ---
 Today we celebrate the Declaration of Independence in the United States, also known widely as the 4th of July.
-<img class="post-image" src="/files/2012-07-04-independence-day.png" />
 
 During this day in 1776, delegates of 13 states signed a document which serves as the foundation of the Constitutional Republic, the United States of America.
 

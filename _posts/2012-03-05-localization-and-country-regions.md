@@ -6,15 +6,15 @@ tags:
   - localization
   - github
   - json
+image: '/assets/files/2012-03-05-world.png'
 ---
 I was recently assigned a task in my current job, to try and standardize address related data.
-<img class="post-image" src="/files/2012-03-05-world.png" />
 
 My approach was to use the ISO codes for countries and ISO codes for regions. A region is defined as the geographical split of areas in a country. For instance in the US regions are called states, in Canada provinces etc.
 
-I have used several sources on the internet but my main source was [Wikipedia](http://en.wikipedia.org/wiki/ISO_3166-2).
+I have used several sources on the internet but my main source was [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-2).
 
-In order to complete this task I used [Zend Locale](http://framework.zend.com/manual/en/zend.locale.html) to retrieve the available countries and using the ISO codes (keys of the returned data).
+In order to complete this task I used [Zend Locale](https://framework.zend.com/manual/1.12/en/zend.locale.html) to retrieve the available countries and using the ISO codes (keys of the returned data).
 
 My method is:
 

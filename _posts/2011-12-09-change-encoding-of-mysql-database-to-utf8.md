@@ -8,11 +8,9 @@ tags:
   - encoding
   - utf8
   - how-to
+image: '/assets/files/mysql.gif'
 ---
-#### Overview
-
 As applications grow, so do their audiences. In this day and age, one cannot assume that all the consumers of a web based application will live in a particular region and use only one language. Even if the developer assumes that one country will be served by the particular web application, there are instances that the `latin1` character set will not suffice in storing data.
-<img class="post-image" src="{{ site.baseurl }}/files/mysql.gif" />
 
 Therefore, developers and database designers need to implement an encoding on their database that will safely store and retrieve any kind of data, not only latin1 based (i.e. the English alphabet).
 
@@ -270,7 +268,7 @@ done < $SOURCE
 exit 0
 ```
 
-The script above will start reading the source file (<host>.sql) and execute each statement in turn, using [time](http://en.wikipedia.org/wiki/Time_(Unix)) to measure the time taken to execute that command. The output ends up in a log file which can easily be tailed to view the progress and used later on for analysis. The results of the processing are also sent to the screen. You can change the parameters for the time command to match your needs.
+The script above will start reading the source file (<host>.sql) and execute each statement in turn, using [time](https://en.wikipedia.org/wiki/Time_(Unix)) to measure the time taken to execute that command. The output ends up in a log file which can easily be tailed to view the progress and used later on for analysis. The results of the processing are also sent to the screen. You can change the parameters for the time command to match your needs.
 
 The output will look something like the block below:
 

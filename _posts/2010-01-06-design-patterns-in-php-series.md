@@ -10,9 +10,9 @@ tags:
   - programming
   - series
   - how-to
+image: '/assets/files/2010-01-06-design-patterns.png'
 ---
 A lot of developers – including myself – have at some point in their programming careers found themselves repeating a task that they have completed for a previous project or for a previous part of the same project.
-<img class="post-image" src="/files/2010-01-06-design-patterns.png" />
 
 This problem of repeating code is solved by design patterns. A design pattern is the way that the code must be structured so that the problem at hand can be solved. The characteristics of design patterns are:
 
@@ -26,8 +26,8 @@ As usual comments are more than welcome.
 
 The design patterns I will discuss in posts of these series are as:
 
-* <a href="http://www.niden.net/2010/01/design-patterns-singleton-series-how-to/">Singleton Pattern</a>
-* <a href="http://www.niden.net/2010/01/design-patterns-factory-series-how-to/">Factory Pattern</a>
+* <a href="https://www.niden.net/2010/01/design-patterns-singleton-series-how-to/">Singleton Pattern</a>
+* <a href="https://www.niden.net/2010/01/design-patterns-factory-series-how-to/">Factory Pattern</a>
 * Registry Pattern
 * Decorator Pattern
 * Adapter Pattern
@@ -42,4 +42,4 @@ The design patterns I will discuss in posts of these series are as:
 * Table Data Gateway Pattern
 * Data Mapper Pattern
 
-You can check this blog every week, <a href="http://feeds.feedburner.com/nikosdimopoulos">subscribe to the RSS feed</a>, <a href="http://twitter.com/nikosdimopoulos">follow me on Twitter</a> or <a href="https://profiles.google.com/104235485963468152376">follow my Google Reader</a> (or all of the above).
+You can check this blog every week, <a href="https://feeds.feedburner.com/nikosdimopoulos">subscribe to the RSS feed</a>, <a href="https://twitter.com/nikosdimopoulos">follow me on Twitter</a> or <a href="https://profiles.google.com/104235485963468152376">follow my Google Reader</a> (or all of the above).

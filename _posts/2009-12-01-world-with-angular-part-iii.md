@@ -10,13 +10,13 @@ tags:
   - programming
   - review
   - how-to
+image: '/assets/files/2009-12-01-angular.png'
 ---
 Continued from [Part II](/post/world-with-angular-part-ii)
 
 ##### Presentation of Data
 
 Presenting data with `<angular/>` is really easy. All we need to do is to tell `<angular/>` how we want the data to be presented and where.
-<img class="post-image" src="{{ site.baseurl }}/files/2009-12-01-angular.png" />
 
 From [Part II](/post/world-with-angular-part-ii) you have seen that I have declared an entity called `Incident`. Also in the `<body>` tag I have initialized the `<angular/>` engine, requested `all()` the `Incident` objects and stored them in the `incidents` variable.
 
@@ -252,4 +252,4 @@ The example above is not the final product for the WRL. There are some things mi
 
 `<angular/>` is definitely a new way of looking at web programming. It is fast, agile and easy to learn. `<angular/>` provides the hobbyist a tool that they can use to create an online application that will suit their needs without complex installations, expensive hosting companies, RDBMS management etc. I can also see experienced programmers using it to address a quick fix or a very urgent requirement that demands RAD.
 
-I encourage you to visit [getangular.com](http://www.getangular.com\) and give `<angular/>` a try. I am sure you will not be disappointed.
+I encourage you to visit [angularjs.org](https://angularjs.org) and give `<angular/>` a try. I am sure you will not be disappointed.

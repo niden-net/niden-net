@@ -9,11 +9,11 @@ tags:
   - installation
   - linux
   - how-to
+image: '/assets/files/2009-11-24-chromium-os.png'
 ---
 Continued from [Part I](/post/chromium-os-part-i)
 
 The download took quite a while, so I thought it might be a good idea to split this post in parts, so as to ensure good readability.
-<img class="post-image" src="/files/2009-11-24-chromium-os.png" />
 
 I need to create some symlinks. Also a good place to add my repository is /usr/local hence the commands for Chromium OS and Chromium respectively.
 
@@ -67,7 +67,7 @@ The script will check if all the dependencies are satisfied, and if something is
 
 
 ```sh
-./make_chroot.sh --mirror=http://build.chromium.org/buildbot/packages --suite=chromeos_dev
+./make_chroot.sh --mirror=https://build.chromium.org/buildbot/packages --suite=chromeos_dev
 ```
 
 #### Building Chromium OS
@@ -112,14 +112,14 @@ Unfortunately I hit a snag :( The `build_platform_packages` script produced an e
 
 ```sh
 Checking for latest build of Chrome
-Downloading http://chrome-web/buildbot/snapshots/chromium-rel-linux-chromiumos/LATEST
---2009-11-24 19:44:49--  http://chrome-web/buildbot/snapshots/chromium-rel-linux-chromiumos/LATEST
+Downloading https://chrome-web/buildbot/snapshots/chromium-rel-linux-chromiumos/LATEST
+--2009-11-24 19:44:49--  https://chrome-web/buildbot/snapshots/chromium-rel-linux-chromiumos/LATEST
 Resolving chrome-web... failed: Name or service not known.
 wget: unable to resolve host address `chrome-web'
 make: *** [build-stamp] Error 1
 ```
 
-I quickly found what I need to do (Google is your friend :)). It appears that this is [known bug](http://codereview.chromium.org/414029/show) and it is easily fixable. All I had to do is edit the `copy_chrome_zip.sh` file. I tried using nano in the chroot environment but it was not there. For that I exited the chroot and edited the file.
+I quickly found what I need to do (Google is your friend :)). It appears that this is [known bug](https://codereview.chromium.org/414029/show) and it is easily fixable. All I had to do is edit the `copy_chrome_zip.sh` file. I tried using nano in the chroot environment but it was not there. For that I exited the chroot and edited the file.
 
 ```sh
 exit

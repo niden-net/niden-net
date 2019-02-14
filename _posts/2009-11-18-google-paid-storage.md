@@ -8,9 +8,9 @@ tags:
   - storage
   - picasa
   - review
+image: '/assets/files/google.png'
 ---
-A week or so ago I read a blog post in my Google Reader about Google providing now [more storage for less](http://googleblog.blogspot.com/2009/11/twice-storage-for-quarter-of-price.html) money.
-<img class="post-image" src="/files/google.png" />
+A week or so ago I read a blog post in my Google Reader about Google providing now [more storage for less](https://googleblog.blogspot.com/2009/11/twice-storage-for-quarter-of-price.html) money.
 
 To be quite frank I did not read the whole post but I did get the message. Google was offering 10GB for $20.00 and now they are offering 20GB for $5.00. This extra storage is mostly for Picasa and web albums but it can be used for other products like GMail (if you ever get above the 7.5GB that you already have there).
 

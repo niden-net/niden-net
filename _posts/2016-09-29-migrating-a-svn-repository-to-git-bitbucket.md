@@ -9,11 +9,8 @@ tags:
   - git
   - migration
   - how-to
+image: '/assets/files/git-logo.jpg'
 ---
-
-<img class="post-image" src="/files/2016-09-29-svn.png" />
-<img class="post-image" src="/files/2016-09-29-git.jpg" />
-### Preface
 This article explains how to migrate a SVN repository to Git. Although this guide uses [BitBucket](https://bitbucket.org) as the Git repository, you can easily adjust the steps to migrate to a different Git repository provider.
 
 I was recently tasked to migrate a repository from SVN to Git ([BitBucket](https://bitbucket.org)). I have tried the the importer from BitBucket but it failed due to corruption in our SVN repository.

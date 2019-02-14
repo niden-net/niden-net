@@ -10,6 +10,7 @@ tags:
   - programming
   - review
   - how-to
+image: '/assets/files/2009-12-01-angular.png'
 ---
 Continued from [Part I](/post/world-with-angular-part-i)
 
@@ -17,8 +18,7 @@ Continued from [Part I](/post/world-with-angular-part-i)
 
 ##### Design
 
-For those that do not know, the [Wildlife Rescue League](http://www.wildliferescueleague.org/)
-<img class="post-image" src="/files/2009-12-01-angular.png" />
+For those that do not know, the [Wildlife Rescue League](https://www.wildliferescueleague.org/)
 
 > is a non-profit organization providing care for sick, injured and orphaned wildlife in order to return them to the wild. Our licensed rehabilitators, located throughout Virginia and suburban Maryland, work with animal shelters, humane societies, wildlife groups, nature centers and veterinary hospitals to provide care to creatures in need. WRL operates a wildlife hotline in the Northern Virginia and surrounding areas to assist the public in obtaining information and assistance in locating a wildlife rehabilitator. WRL is also committed to educating the public about the natural history of native wildlife, coexisting with it and preventing the need for wildlife rehabilitation. We can provide brochures, educational material and educational programs to suit your needs.
 
@@ -52,8 +52,8 @@ My HTML file is very simple.
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+                      "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type"
       content="text/html; charset=utf-8" />
@@ -89,7 +89,7 @@ img {
 }
 </style>
 <script type="text/javascript"
-        src="http://testwrl.getangular.com/angular-1.0a.js#database=testwrl"></script>
+        src="https://testwrl.getangular.com/angular-1.0a.js#database=testwrl"></script>
 </head>
 <body>
 </body>
@@ -132,8 +132,8 @@ The HTML script as is right now is below:
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+               "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type"
          content="text/html; charset=utf-8" />
@@ -176,11 +176,11 @@ img {
 }
 </style>
 <script type="text/javascript"
-  src="http://testwrl.getangular.com/angular-1.0a.js#database=testwrl"></script>
+  src="https://testwrl.getangular.com/angular-1.0a.js#database=testwrl"></script>
 </head>
 <body ng-entity="incident=Incident" ng-init="incidents=Incident.all()">
   <span style='float:right;font-size:10px;'>
-    Powered by <a href='http://www.getangular.com'>`<angular/>`</a>
+    Powered by <a href='https://www.getangular.com'>`<angular/>`</a>
   </span>
   <br />
   <div class="incident">

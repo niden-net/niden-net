@@ -9,11 +9,9 @@ tags:
   - input
   - mod_rewrite
   - how-to
+image: '/assets/files/php.png'
 ---
-#### Preface
-
 The last few years I have been using Quicken to manage the home bank accounts and spending. My wife never had any problems with me doing so and it helps us manage our cash flow better. Of course like every couple we buy things that we need and always provision a small amount of money for personal expenses.
-<img class="post-image" src="{{ site.baseurl }}/files/php.png" />
 
 Some time ago when downloading the transactions from our bank, I noticed a rather odd name coming in for a very small charge (less than 20 dollars). So I asked my wife what that shop is. Her response was *Beautification*. My reply was *What do you mean? You don't need anything - you are gorgeous as is...*. Although this did earn me brownie points it also infuriated my wife since she was thinking I was auditing her. My sole purpose of that question was to assess the category of the expense and move on. I was not interested the least about the particulars of the expense. I got my reply - a detailed one - as to what the item was for (makeup really) and once my wife finished I explained to her that all this explanation was unnecessary and all I needed was *Personal Care*.... The night ended in laughter as you can imagine and since then we always refer as *Beautification* when we pass the makeup area in the grocery store.
 
@@ -67,7 +65,7 @@ In order to make the URL look a lot more *beautified*, I need to remove the scri
 ..../page/about</pre>
 ```
 
-To achieve this, I need (in Apache) [mod_rewrite](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html) enabled and a couple of directives in `httpd.conf`
+To achieve this, I need (in Apache) [mod_rewrite](https://httpd.apache.org/docs/2.0/mod/mod_rewrite.html) enabled and a couple of directives in `httpd.conf`
 
 ```html
 Options +FollowSymLinks
@@ -141,9 +139,9 @@ RewriteRule   ^post-([0-9]+)+\.html$ /showpost.php?p=$1 [NC,L]</pre>
 
 ##### Zend Framework
 
-If I want to push the envelope further I will need to use [Zend Framework](http://framework.zend.com/) to do all this effortlessly. Zend Framework's [front controller](http://framework.zend.com/manual/en/zend.controller.html) provides amazing flexibility in terms of how my application URLs can be displayed on the web.
+If I want to push the envelope further I will need to use [Zend Framework](https://framework.zend.com/) to do all this effortlessly. Zend Framework's [front controller](https://framework.zend.com/manual/en/zend.controller.html) provides amazing flexibility in terms of how my application URLs can be displayed on the web.
 
-[`Zend_Controller_Router_Route`](http://framework.zend.com/manual/en/zend.controller.router.html#zend.controller.router.routes.standard), [`Zend_Controller_Router_Route_Static`](http://framework.zend.com/manual/en/zend.controller.router.html#zend.controller.router.routes.static) and [`Zend_Controller_Router_Rewrite`](http://framework.zend.com/manual/en/zend.controller.router.html#zend.controller.router.default-routes) are some of the types of routes available in the front controller. Using a configuration file or issuing relevant directives in the bootstrap file are options that I can use to manipulate my application's URLs.
+[`Zend_Controller_Router_Route`](https://framework.zend.com/manual/en/zend.controller.router.html#zend.controller.router.routes.standard), [`Zend_Controller_Router_Route_Static`](https://framework.zend.com/manual/en/zend.controller.router.html#zend.controller.router.routes.static) and [`Zend_Controller_Router_Rewrite`](https://framework.zend.com/manual/en/zend.controller.router.html#zend.controller.router.default-routes) are some of the types of routes available in the front controller. Using a configuration file or issuing relevant directives in the bootstrap file are options that I can use to manipulate my application's URLs.
 
 By default the front controller uses the controller/action scheme but I can easily change this using a router and adding that router to my controller.
 
@@ -165,4 +163,4 @@ This is a small example on how a simple controller/action sequence can still wor
 
 Having easy to remember URLs in an application is a must. It will not only help search engines crawl your site easier - thus making your site more easily discoverable - but it will also help your users remember key areas of your site.
 
-[Zend Framework](http://framework.zend.com/) is by far one of the best solutions available, since it introduces a small learning curve in terms of routing and `mod_rewrite` while providing pretty URLs. However, for more a complicated rewriting scheme your application might need a very sophisticated [.htaccess](http://httpd.apache.org/docs/2.0/howto/htaccess.html) file.
+[Zend Framework](https://framework.zend.com/) is by far one of the best solutions available, since it introduces a small learning curve in terms of routing and `mod_rewrite` while providing pretty URLs. However, for more a complicated rewriting scheme your application might need a very sophisticated [.htaccess](https://httpd.apache.org/docs/2.0/howto/htaccess.html) file.

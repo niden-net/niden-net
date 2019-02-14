@@ -8,9 +8,9 @@ tags:
   - linux
   - notebook
   - how-to
+image: '/assets/files/gentoo.png'
 ---
 This is my effort to install Gentoo Linux on my *Acer Ferrari LMi 3000*.
-<img class="post-image" src="{{ site.baseurl }}/files/gentoo.png" />
 
 The first thing I did was to start ssh. The live CD of Gentoo had already identified my network card which is based on the `via-rhine` module.
 
@@ -148,7 +148,7 @@ Now it is time to fetch the tarball. First I change the directory to `/mnt/gento
 and then I use the `links2` program (I like it better) to navigate through the mirrors and pick one which is closer to me (Austria)
 
 ```sh
-# links2 http://www.gentoo.org/main/en/mirrors.xml
+# links2 https://www.gentoo.org/main/en/mirrors.xml
 ```
 
 I chose the Inode network and then navigated to `/releases/x86/2004.2/stages/x86` and downloaded the `stage1-x86-2004.2.tar.bz2`. Following that I unpacked the stage:
@@ -200,7 +200,7 @@ PKGDIR=${PORTDIR}/packages
 PORT_LOGDIR=/var/log/portage
 PORTDIR_OVERLAY=/usr/local/portage
 
-http_proxy="http://taurus.niden.net:8080"
+http_proxy="https://taurus.niden.net:8080"
     RESUMECOMMAND="
         /usr/bin/wget 
         -t 5 
@@ -208,9 +208,9 @@ http_proxy="http://taurus.niden.net:8080"
         -O \${DISTDIR}/\${FILE}"
 
 GENTOO_MIRRORS="
-    http://gentoo.inode.at/ 
-    http://gentoo.osuosl.org 
-    http://gentoo.oregonstate.edu"
+    https://gentoo.inode.at/ 
+    https://gentoo.osuosl.org 
+    https://gentoo.oregonstate.edu"
 SYNC="rsync://taurus.niden.net/portage"
 
 MAKEOPTS="-j2"
@@ -221,7 +221,7 @@ FEATURES="sandbox"
 You will notice that I use
 
 ```sh
-http_proxy="http://taurus.niden.net:8080" \
+http_proxy="https://taurus.niden.net:8080" \
     RESUMECOMMAND="
         /usr/bin/wget 
             -t 5 

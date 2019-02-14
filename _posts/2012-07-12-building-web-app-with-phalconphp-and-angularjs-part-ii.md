@@ -7,16 +7,13 @@ tags:
   - phalcon
   - angularjs
   - how-to
+image: '/assets/files/phalcon-logo.png'
 ---
-This is Part II of a series of posts on building an application using [Phalcon](https://phalconphp.com) and [AngularJS](http://angularjs.org). Part I is located [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i).
+This is Part II of a series of posts on building an application using [Phalcon](https://phalconphp.com) and [AngularJS](https://angularjs.org). Part I is located [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i).
 
-#### Preface
+I have recently discovered [Phalcon](https://phalconphp.com) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="https://blog.phalconphp.com/post/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
 
-I have recently discovered [Phalcon](https://phalconphp.com) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="http://blog.phalconphp.com/post/26524358189/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
-<img class="post-image" src="{{ site.baseurl }}/files/phalcon-green.png" />
-<img class="post-image" src="{{ site.baseurl }}/files/angularjs.png" />
-
-[Phalcon](https://phalconphp.com) takes a different approach than any other PHP framework (see [Zend](http://framework.zend.com/), [Symfony](http://symfony.com/), [CakePHP](http://cakephp.org/) etc.). It is written in C and compiled as a module which is then loaded on your web server. Effectively the whole framework is in memory for you to use, without needing to access the file system so that you can include a file here or a file there.
+[Phalcon](https://phalconphp.com) takes a different approach than any other PHP framework (see [Zend](https://framework.zend.com/), [Symfony](https://symfony.com/), [CakePHP](https://cakephp.org/) etc.). It is written in C and compiled as a module which is then loaded on your web server. Effectively the whole framework is in memory for you to use, without needing to access the file system so that you can include a file here or a file there.
 
 ##### Advantages
 
@@ -38,9 +35,9 @@ Since the framework is a module on your web server, you will need to be careful 
 
 ##### Implementation
 
-<img class="media-body-inline-img" data-action="zoom" src="{{ site.baseurl }}/files/2012-07-12-db-diagram.png" />
+<img class="media-body-inline-img" data-action="zoom" src="{{ site.baseurl }}/assets/files/2012-07-12-db-diagram.png" />
 
-I downloaded the [INVO](https://github.com/phalcon/invo) sample application and set it up on my web browser. Using that as a starting point, I started modifying it to fit my needs. I also set up the PhalconPHP [developer tools](http://vimeo.com/39035250) and [PHPStorm support](http://vimeo.com/43455647).
+I downloaded the [INVO](https://github.com/phalcon/invo) sample application and set it up on my web browser. Using that as a starting point, I started modifying it to fit my needs. I also set up the PhalconPHP [developer tools](https://vimeo.com/39035250) and [PHPStorm support](https://vimeo.com/43455647).
 
 For this application, I needed a table to store information about every podcast episode, a table to store all players and a table to store the users (namely Aaron, Josh and John). The Awards table would be the one that would store all the information regarding the game balls and kick in the balls awards.
 
@@ -135,10 +132,10 @@ class NDN_Session extends Phalcon_Session
 ```
 
 ##### Breadcrumbs
-I wanted to show breadcrumbs to the user, as a way to easily navigate throughout the application. To do so, I created my own Breadcrumbs class which holds an array of areas that the user is in. The class has a generate function, which returns back a JSON string. This is to be parsed by [AngularJS](http://angularjs.org) so as to display the breadcrumbs.
+I wanted to show breadcrumbs to the user, as a way to easily navigate throughout the application. To do so, I created my own Breadcrumbs class which holds an array of areas that the user is in. The class has a generate function, which returns back a JSON string. This is to be parsed by [AngularJS](https://angularjs.org) so as to display the breadcrumbs.
 
 ##### Controllers
-I created my controllers using the [Phalcon Developer Tools](https://github.com/phalcon/phalcon-devtools). Whether you use the [webtools](http://vimeo.com/42367665) or the command line makes no difference. The skeleton of the controller is generated for you to use.
+I created my controllers using the [Phalcon Developer Tools](https://github.com/phalcon/phalcon-devtools). Whether you use the [webtools](https://vimeo.com/42367665) or the command line makes no difference. The skeleton of the controller is generated for you to use.
 
 Based on the flash messenger and `_redirect` that I mentioned in the previous section, I had to extend the base controller, so as to add functionality that would allow me to show messages on screen after a redirect. Other reasons for this new class were to allow for a prefix on each page title, generate breadcrumbs and menus.
 
@@ -217,25 +214,25 @@ Each controller would extend my base controller. In the `initialize` function:
 
 * the page title is set,
 * the breadcrumbs are added (and generated later on in the `beforeDispatch` of the base controller),
-* the menu is generated and passed to the view for [AngularJS](http://angularjs.org) to process,
+* the menu is generated and passed to the view for [AngularJS](https://angularjs.org) to process,
 * additional variables would be generated for displaying elements based on whether a user is logged in or not.
 
 ##### Views
-Creating the views was really easy. I already had the structure ready from the sample application ([INVO](https://github.com/phalcon/invo)) and with the help of [Bootstrap CSS](http://twitter.github.com/bootstrap/), I was done in no time. The views inherit from a base view (`index.phtml`) located at the root of the views folder. That view holds the skeleton of the web page and content is injected accordingly based on each controller (and its view).
+Creating the views was really easy. I already had the structure ready from the sample application ([INVO](https://github.com/phalcon/invo)) and with the help of [Bootstrap CSS](https://twitter.github.com/bootstrap/), I was done in no time. The views inherit from a base view (`index.phtml`) located at the root of the views folder. That view holds the skeleton of the web page and content is injected accordingly based on each controller (and its view).
 
-In that file I added the relevant variables that will be used by [AngularJS](http://angularjs.org) as well as variables that hold conditional elements (i.e. elements that appear when a user is logged in).
+In that file I added the relevant variables that will be used by [AngularJS](https://angularjs.org) as well as variables that hold conditional elements (i.e. elements that appear when a user is logged in).
 
 More on the views in the next installment of these series.
 
 #### Conclusion
-With all that the application was ready as far as the main structure was concerned. Tying everything  with [AngularJS](http://angularjs.org) was the next step, which will be covered in part III of this How-To.
+With all that the application was ready as far as the main structure was concerned. Tying everything  with [AngularJS](https://angularjs.org) was the next step, which will be covered in part III of this How-To.
 
 The whole application, from start to finish, took less than 4 hours to develop. This included breaks, reading the manual and making design decisions based on my ever changing requirements.
 
 #### References
 
-* [AngularJS main site](http://angularjs.org/)
-* [AngularJS documentation](http://docs.angularjs.org/api)
+* [AngularJS main site](https://angularjs.org/)
+* [AngularJS documentation](https://docs.angularjs.org/api)
 * [AngularJS group](https://groups.google.com/forum/#!forum/angular)
 * [AngularJS Github](https://github.com/angular)
 

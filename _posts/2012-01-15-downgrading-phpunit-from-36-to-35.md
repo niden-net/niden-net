@@ -6,11 +6,11 @@ tags:
   - phpunit
   - linux
   - how-to
+image: '/assets/files/2012-01-15-phpunit.png'
 ---
-Recently I had to rebuild my computer, and decided to install [Linux Mint](http://www.linuxmint.com/) 12 (Lisa), which is a very lean installation - for my taste that is.
-<img class="post-image" src="/files/2012-01-15-phpunit.png" />
+Recently I had to rebuild my computer, and decided to install [Linux Mint](https://www.linuxmint.com/) 12 (Lisa), which is a very lean installation - for my taste that is.
 
-Going through the whole process of reinstalling all the packages that I need or had, [PHPUnit](http://www.phpunit.de/) was one of them. Easy enough a couple commands did the trick
+Going through the whole process of reinstalling all the packages that I need or had, [PHPUnit](https://www.phpunit.de/) was one of them. Easy enough a couple commands did the trick
 
 ```sh
 sudo apt-get install php-pear

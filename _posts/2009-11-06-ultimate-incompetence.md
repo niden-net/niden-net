@@ -5,9 +5,9 @@ date: 2009-11-06T23:45:00.000Z
 tags:
   - personal
   - rant
+image: '/assets/files/2009-11-21-incompetence.png'
 ---
 This post has nothing to do with programming or the world of computers.
-<img class="post-image" src="/files/2009-11-21-incompetence.png" />
 
 Despite the fact that I was really happy today to receive two new books that I ordered in the mail regarding **eXtreme Programming and Test Driven Development (TDD)** the day was not short of frustration.
 

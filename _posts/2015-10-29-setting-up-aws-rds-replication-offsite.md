@@ -10,15 +10,13 @@ tags:
   - rds
   - replication
   - how-to
+image: '/assets/files/2015-09-29-aws.png'
 ---
-#### Preface
-
 Recently I worked on setting up replication between our AWS RDS instance and a server running as a MySQL slave in our location. Although the task was not difficult, there are quite a few areas that one needs to pay attention to. 
-<img class="post-image" src="/files/2015-09-29-aws.png" />
 
 In this blog post, I am going to outline the process step by step, so that others can benefit and not lose time trying to discover what went wrong.
 
-**Disclaimer**: [Google](https://google.com), [DuckDuckGo](https://duckduckgo.com), the [AWS forums](https://forums.aws.amazon.com/) and [this](http://www.ruempler.eu/2013/07/07/replicating-aws-rds-mysql-databases-to-external-slaves/) blog post have been invaluable guides to help me do what I needed to do.
+**Disclaimer**: [Google](https://google.com), [DuckDuckGo](https://duckduckgo.com), the AWS forums and this blog post have been invaluable guides to help me do what I needed to do.
 
 #### Setup
 
@@ -94,7 +92,7 @@ In your slave server, navigate to `/etc/mysql` and download the `rds-combined-ca
 
 ```sh
 cd /etc/mysql
-wget http://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
+wget https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
 ```
 
 **NOTE** You can put the `rds-combined-ca-bundle.pem` anywhere on your slave. If you change the path, you will have to modify the command to connect the slave to the master (shown further below) to specify the exact location of the key.
@@ -234,7 +232,7 @@ MySQL [my_db]> source my_db.sql;
 ```
 Repeat the process of creating the database, using it and sourcing the dump file until all your databases have been imported.
 
-**NOTE** There are other ways of doing the above, piping the results directly to the database or even using RDS to get the data straight from it without a `mysqldump`. Whichever way you choose is up to you. In my experience, the direct import worked for a bit until our database grew to a point that it was timing out or breaking while importing, so I opted for the multi step approach. Have a look at [this section](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html) in the AWS RDS documentation for more options.
+**NOTE** There are other ways of doing the above, piping the results directly to the database or even using RDS to get the data straight from it without a `mysqldump`. Whichever way you choose is up to you. In my experience, the direct import worked for a bit until our database grew to a point that it was timing out or breaking while importing, so I opted for the multi step approach. Have a look at [this section](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html) in the AWS RDS documentation for more options.
 
 ##### Connecting to the master
 
@@ -315,8 +313,8 @@ I hope you find this post helpful :)
 
 #### References
 
-* [RDS Using SSL with a MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.SSLSupport)
-* [RDS SSL Public Key](http://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem)
-* [RDS Importing/Exporting Data](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
-* [MySQL Time Zone Support](http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html)
+* [RDS Using SSL with a MySQL DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.SSLSupport)
+* [RDS SSL Public Key](https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem)
+* [RDS Importing/Exporting Data](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
+* [MySQL Time Zone Support](https://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html)
 * [mysqldump](https://dev.mysql.com/doc/refman/5.5/en/mysqldump.html)

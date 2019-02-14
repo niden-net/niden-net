@@ -7,8 +7,8 @@ tags:
   - php
   - release
   - lts
+image: '/assets/files/phalcon-logo.png'
 ---
-
 This article is cross posted from the [Phalcon Blog](https://blog.phalconphp.com/post/phalcon-3-0-0-released)
 
 ## Phalcon 3.0.0 final (LTS) released
@@ -19,7 +19,7 @@ The last few months, we have been working hard to push 2.1 out, which contains s
 On top of that we have been working in making Zephir PHP7 compatible so that you can enjoy  Phalcon in your PHP7 application. Some news first though:
 
 ### Versioning
-For any future Phalcon releases we are adopting SemVer (http://semver.org). In short:
+For any future Phalcon releases we are adopting SemVer (https://semver.org). In short:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 > * MAJOR version when you make incompatible API changes,
@@ -27,13 +27,13 @@ For any future Phalcon releases we are adopting SemVer (http://semver.org). In s
 > * PATCH version when you make backwards-compatible bug fixes.
 > * Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-Since 2.1 has many API changes, we decided that it would be best to not release it as is and start using [SemVer](http://semver.org) to better communicate with the community and keep track of our releases.
+Since 2.1 has many API changes, we decided that it would be best to not release it as is and start using [SemVer](https://semver.org) to better communicate with the community and keep track of our releases.
 
 ### 2.1 is dead, all hail 3.0
 As mentioned above, 2.1 will not be fully backwards compatible. As a result, we are changing the version number to 3.0.
 
 ### PHP version support
-The Phalcon team takes security very seriously and thus have decided to provide support to PHP versions that are [supported](http://php.net/supported-versions.php). As of 3.0, PHP 5.3 and 5.4 will be deprecated. We are making a small exception to this rule and will continue to support 5.5 for a little while, but since its support has expired a few days ago, it will too be deprecated in a future release.
+The Phalcon team takes security very seriously and thus have decided to provide support to PHP versions that are [supported](https://php.net/supported-versions.php). As of 3.0, PHP 5.3 and 5.4 will be deprecated. We are making a small exception to this rule and will continue to support 5.5 for a little while, but since its support has expired a few days ago, it will too be deprecated in a future release.
 
 ### The goodie bag
 So what does 3.0 offer? The [changelog](https://github.com/phalcon/cphalcon/blob/3.0.x/CHANGELOG.md) is extensive as you can see. Below are highlights of the changes as well as areas you need to concentrate.
@@ -97,7 +97,7 @@ $result = $backendCache->save('my_key', $content);
 ```
 
 &bull; Added  `Phalcon\Cache\Frontend\Msgpack`. 
-[MsgPack](http://msgpack.org) is a new frontend cache. It is an efficient binary serialization format, which allows exchanging data among multiple languages like JSON. 
+[MsgPack](https://msgpack.org) is a new frontend cache. It is an efficient binary serialization format, which allows exchanging data among multiple languages like JSON. 
 
 ```php
 use Phalcon\Cache\Backend\File;
@@ -1003,7 +1003,7 @@ We want to greatly thank everyone who has contributed to accomplish and achieve 
 * [JIM](https://github.com/tembem)
 * [Mariusz Łączak](https://github.com/mruz)
 * [Dylan Anderson](https://github.com/quasipickle)
-* [Jj](https://github.com/jdrmar)
+* Jj
 * [Rahul Datta Roy](https://github.com/rahuldroy)
 * [Cameron Hall](https://github.com/CameronHall)
 * [Clément Hallet](https://github.com/challet)
@@ -1016,7 +1016,7 @@ We want to greatly thank everyone who has contributed to accomplish and achieve 
 * [Alex Komrakov](https://github.com/AlexKomrakov)
 * [Dan](https://github.com/googlle)
 * [Marcin Butlak](https://github.com/makerlabs)
-* [Aaron Imming](https://github.com/aaronimming)
+* Aaron Imming
 * [Ragnis Armus](https://github.com/Ragnis)
 * [Studentsov](https://github.com/Studentsov)
 * [Bellardia](https://github.com/Bellardia)

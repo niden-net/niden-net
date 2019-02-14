@@ -8,17 +8,17 @@ tags:
   - openoffice
   - ubuntu
   - how-to
+image: '/assets/files/2011-04-21-libreoffice.png'
 ---
-We all knew it was coming. Ever since [Oracle](http://www.oracle.com/) took a really surprising turn towards the non-community orientation of [OpenOffice](http://www.openoffice.org/), a lot of users on the Internet were curious (and concerned) as to what will happen with the whole OpenOffice saga.
-<img class="post-image" src="{{ site.baseurl }}/files/2011-04-21-libreoffice.png" />
+We all knew it was coming. Ever since [Oracle](https://www.oracle.com/) took a really surprising turn towards the non-community orientation of [OpenOffice](https://www.openoffice.org/), a lot of users on the Internet were curious (and concerned) as to what will happen with the whole OpenOffice saga.
 
-Thankfully the project was forked and [LibreOffice](http://www.libreoffice.org/) was born. Within a few months the same (and better) quality product was released for the community. As the project entered its alpha stage, then the beta stage and then the RC stages, I was waiting anxiously to install it on my notebook (which is running [Ubuntu](http://www.ubuntu.com/) 10.10 at the moment).
+Thankfully the project was forked and [LibreOffice](https://www.libreoffice.org/) was born. Within a few months the same (and better) quality product was released for the community. As the project entered its alpha stage, then the beta stage and then the RC stages, I was waiting anxiously to install it on my notebook (which is running [Ubuntu](https://www.ubuntu.com/) 10.10 at the moment).
 
 A couple of months ago, I was finally happy with the package and the release, so I downloaded it on my notebook and started the installation. I don't have a problem with getting my hands dirty and working with the command prompt, but I am lazy - so I want my packages to update easily (say though the package manager). At the time I could not use the package manager, so it was all terminal work :)
 
 The installation was pretty easy using the `dpkg` command. I run literally two commands and the application was installed :)
 
-There was a recent announcement about OpenOffice from Oracle. I posted a link at [HackerNews](http://news.ycombinator.com/item?id=2451079) for an article I read in MarketWire, regarding this *"Oracle to move OpenOffice.org to a Community-Based Project"*. Unfortunately the link does not work any more but you might be able to read a bit about the subject [here](http://www.pcworld.com/businesscenter/article/225459/oracles_openoffice_move_may_be_too_little_too_late.html). In short:
+There was a recent announcement about OpenOffice from Oracle. I posted a link at [HackerNews](https://news.ycombinator.com/item?id=2451079) for an article I read in MarketWire, regarding this *"Oracle to move OpenOffice.org to a Community-Based Project"*. Unfortunately the link does not work any more but you might be able to read a bit about the subject [here](https://www.pcworld.com/businesscenter/article/225459/oracles_openoffice_move_may_be_too_little_too_late.html). In short:
 
 > OpenOffice is dead, long live LibreOffice
 

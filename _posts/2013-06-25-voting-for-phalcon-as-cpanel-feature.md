@@ -7,27 +7,27 @@ tags:
   - phalcon
   - cPanel
   - rant
+image: '/assets/files/phalcon-logo.png'
 ---
-Those that have been following my blog and posts on [Google+](https://google.com/+NikolaosDimopoulos-niden) know that for the last year or so I have been involved heavily in [PhalconPHP](http://www.phalconphp.com/), a C based PHP framework, which delivers its functionality as an extension loaded on the web server.
-<img class="post-image" src="/files/phalcon-green.png" />
+Those that have been following my blog and posts on Google+ know that for the last year or so I have been involved heavily in [PhalconPHP](https://phalconphp.com/), a C based PHP framework, which delivers its functionality as an extension loaded on the web server.
 
-I was honored a few months ago when I became a member of the Phalcon [Team](http://www.phalconphp.com/team) and have since tried my best to evangelize Phalcon and to help as much as possible with scheduling NFRs for development, helping in the forum, unit tests, blog posts etc.
+I was honored a few months ago when I became a member of the Phalcon [Team](https://phalconphp.com/team) and have since tried my best to evangelize Phalcon and to help as much as possible with scheduling NFRs for development, helping in the forum, unit tests, blog posts etc.
 
 One of the most difficult issues that Phalcon is facing is helping developers installing it on their machines. This of course does not mean that it is really difficult to install. The installation is basically three commands (or if you are on a Windows box you just download the DLL, add the relevant directive in the php.ini and restart the web server).
 
 However since a lot of people are using shared hosting, they do not have access to the command line where `sudo` or `su` are available so that that Phalcon can be installed. This is left to the hosting company and some are very reluctant to install anything at all. I used to own a hosting company and I can assure you that it is indeed a hassle if a handful of clients ask for a library or an installation that is not part of the "norm". You have to maintain it, you have to ensure that it will not interfere with other packages on the server or hinder other clients that reside on the same hosting box.
 
-A few months ago I approached [cPanel](http://www.cpanel.net/) through their ticketing system, in an effort to make Phalcon an option for the extensions that can be installed and loaded through their EasyApache application. 
+A few months ago I approached [cPanel](https://www.cpanel.net/) through their ticketing system, in an effort to make Phalcon an option for the extensions that can be installed and loaded through their EasyApache application. 
 
-At the time I was granted a development account for the software so that I can try and create an installation script and also was prompted to go to [http://features.cpanel.net/](http://features.cpanel.net/) and open a new feature request regarding this (the request is [here](http://features.cpanel.net/responses/add-support-for-phalconphp-extension-apache-php)). The purpose of this exercise is for cPanel to get a feel of what features the community needs and address them. In my communications with them I received the following (emphasis mine):
+At the time I was granted a development account for the software so that I can try and create an installation script and also was prompted to go to [https://features.cpanel.net/](https://features.cpanel.net/) and open a new feature request regarding this (the request is [here](https://features.cpanel.net/responses/add-support-for-phalconphp-extension-apache-php)). The purpose of this exercise is for cPanel to get a feel of what features the community needs and address them. In my communications with them I received the following (emphasis mine):
 
 > Our EasyApache has multiple locations to add includes, or post hooks to compile third party libraries/software during a build, or after a build has completed. That being said, the extensions that we ship to be configured are maintained by the PHP & PECL groups. To answer the question as far as integration on all servers running cPanel, **I would recommend creating a feature request for this, and allowing the community to vote for this**:
 >
-> [http://features.cpanel.net/](http://features.cpanel.net/)
+> [https://features.cpanel.net/](https://features.cpanel.net/)
 
 And so I did. I created the feature request and we also advertised this in our community via our [forum](https://forum.phalconphp.com) and our [blog post](https://blog.phalconphp.com/post/help-the-community-to-make-phalcon-available-on-cpanel).
 
-The [feature](http://features.cpanel.net/responses/add-support-for-phalconphp-extension-apache-php) received well over 180 votes, making it the third most requested feature in cPanel. Also if you follow the link, one of the engineers of cPanel requested additional information which was provided by myself and others.
+The [feature](https://features.cpanel.net/responses/add-support-for-phalconphp-extension-apache-php) received well over 180 votes, making it the third most requested feature in cPanel. Also if you follow the link, one of the engineers of cPanel requested additional information which was provided by myself and others.
 
 As time went by, I visited the feature and requested an update but never got a reply back. More and more votes kept on coming in so it was really a waiting game at that time.
 
@@ -72,4 +72,4 @@ I totally respect cPanel's decisions - I don't agree with them but I do respect 
 
 Concluding, if anyone has a cPanel hosting account and wants to see Phalcon available as an extension, feel free to contact your host and request it to be included as an available extension.
 
-**2013-07-25 Update**: A great analogy and reply has been posted by [Andres](https://phalconphp.com/team) in the Phalcon [Forum](http://forum.phalconphp.com/discussion/488/what-happened-to-our-votes-for-including-phalcon-in-cpanel#C1988).
+**2013-07-25 Update**: A great analogy and reply has been posted by [Andres](https://phalconphp.com/team) in the Phalcon [Forum](https://forum.phalconphp.com/discussion/488/what-happened-to-our-votes-for-including-phalcon-in-cpanel#C1988).

@@ -7,12 +7,11 @@ tags:
   - traits
   - phalcon
   - how-to
+image: '/assets/files/phalcon-logo.png'
 ---
 > Traits are a mechanism for code reuse in single inheritance languages such as PHP.
 >
-> A Trait is similar to a class, but only intended to group functionality in a fine-grained and consistent way. It is not possible to instantiate a Trait on its own. It is an addition to traditional inheritance and enables horizontal composition of behavior; that is, the application of class members without requiring inheritance. [Source](http://php.net/manual/en/language.oop5.traits.php)
-<img class="post-image" src="/files/phalcon-green.png" />
-<img class="post-image" src="/files/php.png" />
+> A Trait is similar to a class, but only intended to group functionality in a fine-grained and consistent way. It is not possible to instantiate a Trait on its own. It is an addition to traditional inheritance and enables horizontal composition of behavior; that is, the application of class members without requiring inheritance. [Source](https://php.net/manual/en/language.oop5.traits.php)
 
 Traits have been introduced in PHP 5.4.0. However, a lot of developers have not yet embraced them and taken advantage of the power that they offer.
 
@@ -27,7 +26,7 @@ With Phalcon, we have model classes which represent pretty much a table in our d
 #### Scenario
 
 We have an application where we need to store information about Companies. Each Company can have one or more Customers as well as one or more Employees. We chose to store that information in three different tables.
-<img class="post-image" src="/files/2015-10-18-model.png" />
+<img class="post-image" src="/assets/files/2015-10-18-model.png" />
 
 For each Employee or Customer, we need to store their first name, middle name and last name. However we also need to be able to show the full name in this format:
 

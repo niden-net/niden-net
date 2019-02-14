@@ -7,11 +7,9 @@ tags:
   - phalcon
   - blog
   - new look
+image: '/assets/files/update.png'
 ---
-#### The excuse
-
 It has definitely been a very long time since I last blogged. Just like my previous hiatus, a lot of personal issues arose that would not allow me the luxury to devote time for this blog.
-<img class="post-image" src="/files/2010-05-18-update.png" />
 
 Things managed to settle down for a bit, so hopefully I can start posting more frequently.
 
@@ -19,13 +17,13 @@ Things managed to settle down for a bit, so hopefully I can start posting more f
 
 For those that have been following this blog (all 3 of you), you will notice that the look and feel has changed significantly. I decided that I needed a fresh look so after evaluating many platforms and blog related software, I opted for the *in house* version.
   
-Many of you know that I have been heavily involved in the [Phalcon Framework](https://phalconphp.com), where I serve as a member of the core team. For the blogging needs of the project, we were using [Tumblr](http://tumblr.com) but were not 100% satisfied. So a couple months back we decided to write our own blogging software based on [Phalcon](https://phalconphp.com)!
+Many of you know that I have been heavily involved in the [Phalcon Framework](https://phalconphp.com), where I serve as a member of the core team. For the blogging needs of the project, we were using [Tumblr](https://tumblr.com) but were not 100% satisfied. So a couple months back we decided to write our own blogging software based on [Phalcon](https://phalconphp.com)!
 
 The results can be seen on our [blog](https://blog.phalconphp.com), which is also open sourced on [Github](https://github.com/phalcon/blog). 
 
 For my own purposes I modified the codebase, adding new functionality and modifying it somewhat for my needs. The changes are also on [Github](https://github.com/niden/blog) and will soon be propagated to the Phalcon repository for everyone to use. This software requires some libraries loaded by composer and of course Phalcon loaded on your web server. The content is served using Markdown.
 
-As far as the look is concerned, I tried (really did) but nothing came close to what I wanted. Since I am not a CSS developer by any means, I purchased this template by the guys that created [Bootstrap](http://getbootstrap.com). The result IMHO is really nice, responsive and clean. I hope you like it too!
+As far as the look is concerned, I tried (really did) but nothing came close to what I wanted. Since I am not a CSS developer by any means, I purchased this template by the guys that created [Bootstrap](https://getbootstrap.com). The result IMHO is really nice, responsive and clean. I hope you like it too!
 
 #### Future
 

@@ -8,17 +8,15 @@ tags:
   - test driven development
   - phpunit
   - how-to
+image: '/assets/files/2009-11-24-tdd.png'
 ---
-#### Preface
-
 I am curious by nature. This is probably one of my best attributes as a person, since I can never rest until I find out 'what this thing is' or 'what is it used for'. This curiosity comes in handy in the programming world.
-<img class="post-image" src="/files/2009-11-24-tdd.png" />
 
 By being curious, one cannot rest on their laurels and will always explore new ways, learn new things, revise old habits and in short one will become a better programmer. This of course applies to all aspects of life, not just programming.
 
-One day while I was reading some of my favorite blogs, I stumbled upon a *radical* post by [Miško Hevery](http://misko.hevery.com/). His site seemed really interesting but it was only when I saw his talks on YouTube that I started looking into this in more detail. I watched some of Miško's presentations ([The Clean Code Talks: Unit Testing](http://www.youtube.com/watch?v=wEhu57pih5w&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=1), [The Clean Code Talks: Don't Look for Things](http://www.youtube.com/watch?v=RlfLCWKxHJ0&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=2"), [The Clean Code Talks: Inheritance, Polymorphism and Testing](http://www.youtube.com/watch?v=4F72VULWFvc&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=0), [The Clean Code Talks: Clean State and Singletons](http://www.youtube.com/watch?v=-FRm3VPhseI&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=3)) and I think everyone should take the time to watch them.
+One day while I was reading some of my favorite blogs, I stumbled upon a *radical* post by [Miško Hevery](https://misko.hevery.com/). His site seemed really interesting but it was only when I saw his talks on YouTube that I started looking into this in more detail. I watched some of Miško's presentations ([The Clean Code Talks: Unit Testing](https://www.youtube.com/watch?v=wEhu57pih5w&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=1), [The Clean Code Talks: Don't Look for Things](https://www.youtube.com/watch?v=RlfLCWKxHJ0&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=2"), [The Clean Code Talks: Inheritance, Polymorphism and Testing](https://www.youtube.com/watch?v=4F72VULWFvc&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=0), [The Clean Code Talks: Clean State and Singletons](https://www.youtube.com/watch?v=-FRm3VPhseI&amp;feature=PlayList&amp;p=ED6CA927B41FF5BD&amp;index=3)) and I think everyone should take the time to watch them.
 
-In his presentations, Miško announces that Singletons are pathological liars and that we should approach programming with a Test Driven Development approach. I also followed the links to his site and there I found excellent articles that changed the way I approach programming. [When to use Dependency Injection](http://misko.hevery.com/2009/01/14/when-to-use-dependency-injection/), [Guide to Writing Testable Code](http://misko.hevery.com/2008/11/24/guide-to-writing-testable-code/) and [Dependency Injection Myth: Reference Passing](http://misko.hevery.com/2008/10/21/dependency-injection-myth-reference-passing/) are some of the blog posts that I would definitely recommend reading.
+In his presentations, Miško announces that Singletons are pathological liars and that we should approach programming with a Test Driven Development approach. I also followed the links to his site and there I found excellent articles that changed the way I approach programming. [When to use Dependency Injection](https://misko.hevery.com/2009/01/14/when-to-use-dependency-injection/), [Guide to Writing Testable Code](https://misko.hevery.com/2008/11/24/guide-to-writing-testable-code/) and [Dependency Injection Myth: Reference Passing](https://misko.hevery.com/2008/10/21/dependency-injection-myth-reference-passing/) are some of the blog posts that I would definitely recommend reading.
 
 Reading more and more about Test Driven Development as well as Dependency Injection, I wanted to get as much information as possible prior to diving into coding. I had some questions so I emailed Miško who replied promptly and pointed me to the right direction. Kudos!
 
@@ -511,8 +509,8 @@ I would encourage everyone to at least give TDD a try. Don't despair when the te
 
 Some resources that I have used following recommendations from Miško Hevery:
 
-* Dave Astels: [Test Driven Development: A Practical Guide](http://www.amazon.com/Test-Driven-Development-Practical-Guide-Coad/dp/0131016490/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1217181313&amp;sr=1-1)
-* Dave Astels: [A Practical guide to eXtreme Programming](http://www.amazon.com/Practical-Guide-eXtreme-Programming-Coad/dp/0130674826/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1217181313&amp;sr=1-2)
+* Dave Astels: [Test Driven Development: A Practical Guide](https://www.amazon.com/Test-Driven-Development-Practical-Guide-Coad/dp/0131016490/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1217181313&amp;sr=1-1)
+* Dave Astels: [A Practical guide to eXtreme Programming](https://www.amazon.com/Practical-Guide-eXtreme-Programming-Coad/dp/0130674826/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1217181313&amp;sr=1-2)
 
 Miško writes in his blog:
  

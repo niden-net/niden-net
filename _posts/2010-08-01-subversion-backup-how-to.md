@@ -8,17 +8,17 @@ tags:
   - how-to
   - linux
   - subversion
+image: '/assets/files/2010-08-01-online-backup.png'
 ---
 I will start this post once again with the words of a wise man:
 
 > There are two kinds of people, those who backup regularly, and those that never had a hard drive fail
 
 So the moral of the story here is **backup often**. If something is to happen, the impact on your operations will be minimal if your backup strategy is in place and operational.
-<img class="post-image" src="/files/2010-08-01-online-backup.png" />
 
 There are a lot of backup scenarios and strategies. Most of them suggest a backup once a day, usually at the early hours of the day. This however might not work very well with a fast paced environment where data changes several times per hour. This kind of environment is usually a software development one.
 
-If you have chosen [Subversion](http://subversion.tigris.org/) to be your software version control software then you will need a backup strategy for your repositories. Since the code changes very often, this strategy cannot rely on the daily backup schedule. The reason being is that, in software, a day's worth of work usually costs a lot more than the actual daily rate of the programmers.
+If you have chosen [Subversion](https://subversion.tigris.org/) to be your software version control software then you will need a backup strategy for your repositories. Since the code changes very often, this strategy cannot rely on the daily backup schedule. The reason being is that, in software, a day's worth of work usually costs a lot more than the actual daily rate of the programmers.
 
 Below are some of the scripts I have used over the years for my incremental backups, that I hope will help you too. You are more than welcome to copy and paste the scripts and use them &nbsp;or modify them to suit your needs. Please note though that the scripts are provided as is and that you must check your backup strategy with a full backup/restore cycle. I cannot assume responsibility of something that might happen in your system.
 
@@ -26,7 +26,7 @@ Now that the 'legal' stuff are out of the way, here are the different strategies
 
 #### `svn-hot-backup`
 
-This is a script that is provided with [Subversion](http://subversion.tigris.org/). It copies (and compresses if requested) the whole repository to a specified location. This technique allows for a full copy of the repository to be moved to a different location. The target location can be a resource on the local machine or a network resource. You can also backup on the local drive and then as a next step transfer the target files to an offsite location with [FTP](http://en.wikipedia.org/wiki/File_Transfer_Protocol), [SCP](http://en.wikipedia.org/wiki/Secure_copy), [RSync](http://www.samba.org/rsync/) or any other mechanism you prefer.
+This is a script that is provided with [Subversion](https://subversion.tigris.org/). It copies (and compresses if requested) the whole repository to a specified location. This technique allows for a full copy of the repository to be moved to a different location. The target location can be a resource on the local machine or a network resource. You can also backup on the local drive and then as a next step transfer the target files to an offsite location with [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol), [SCP](https://en.wikipedia.org/wiki/Secure_copy), [RSync](https://www.samba.org/rsync/) or any other mechanism you prefer.
 
 ```sh
 #!/bin/bash

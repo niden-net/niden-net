@@ -5,9 +5,9 @@ date: 2011-11-13T23:45:00.000Z
 tags:
   - git
   - how-to
+image: '/assets/files/git-logo.jpg'
 ---
-Throughout my career I have been using various [revision control systems](http://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.
-<img class="post-image" src="/files/git-logo.png" />
+Throughout my career I have been using various [revision control systems](https://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.
 
 Later on I switched to SVN which is a great version control system and it fulfilled all my needs for proper version control.
 
@@ -23,13 +23,13 @@ One very popular `pre-commit` hook is the one [here](https://github.com/ReekenX/
 
 I have downloaded that code and easily added it to my repository so everything is being checked prior to any of my commits.
 
-In our [MemberFuse&trade;](http://www.memberfuse.com/) platform, we have - like any other developer - many helper functions that are used solely for development. One of the mostly used one is the `vdd($message);`. What this function does is a `var_dump` of the `$message` variable, echoes out the file that it was called as well as the line it is in, and dies. It is great for quick and dirty debugging and inspecting a variable as it passes through the code. Granted it is not very TDD but I am sure that all developers have little things like these to aid them with their daily programming and debugging.
+In our MemberFuse&trade; platform, we have - like any other developer - many helper functions that are used solely for development. One of the mostly used one is the `vdd($message);`. What this function does is a `var_dump` of the `$message` variable, echoes out the file that it was called as well as the line it is in, and dies. It is great for quick and dirty debugging and inspecting a variable as it passes through the code. Granted it is not very TDD but I am sure that all developers have little things like these to aid them with their daily programming and debugging.
 
 From time to time, as we fix bugs and explore certain behaviors that sometimes it is difficult to assess, we use this function and we output the data on the browser. However this is just a development/debugging function and **must never** be used (or enabled) in the production environment.
 
 I have been the culprit of using the function, forgot that I had it in a certain part of the code, and committed that code in our development branch. That caused some colleagues to experience inconsistent behavior with errors showing up on the screen and time was wasted.
 
-To combat this scenario, I wrote a `pre-commit` hook that will allow you to check for the existence of certain functions in the code and ensure that those functions (or strings for that matter since I am using [grep])http://en.wikipedia.org/wiki/Grep)) do not exist in what is to be committed.
+To combat this scenario, I wrote a `pre-commit` hook that will allow you to check for the existence of certain functions in the code and ensure that those functions (or strings for that matter since I am using [grep])https://en.wikipedia.org/wiki/Grep)) do not exist in what is to be committed.
 
 The `pre-commit hook` that I wrote is listed below and the code has been heavily based on Remigijus Jarmalavičius's [pre-commit syntax checker](https://github.com/ReekenX/git-php-syntax-checker).
 
@@ -112,5 +112,5 @@ $DIR/pre-commit.output
 The `*.l` file is the one that runs the PHP syntax check, while the `*.output` one is the one mentioned in this blog post. You can extend the list to your liking and usage.
 
 #### Update
-* [For Windows](http://plutov.by/post/git_pre_commit_windows) by [Alexander Plutov](https://plus.google.com/u/0/wm/1/117725263297625002725/posts)
+* [For Windows](https://plutov.by/post/git_pre_commit_windows) by [Alexander Plutov](https://plus.google.com/u/0/wm/1/117725263297625002725/posts)
 * [For Drupal](https://github.com/geraldvillorente/drupal-pre-commit) by [Gerald Vilorente](https://plus.google.com/u/0/wm/1/116699538730408531860/posts) 

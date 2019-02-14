@@ -9,18 +9,18 @@ tags:
   - bootstrap
   - blog
   - series
+image: '/assets/files/phalcon-logo.png'
 ---
 This is the first of a series of posts, describing how we built the Phalcon Blog (and this one of course). The intention is to showcase some of the features of Phalcon and discuss the reasons behind implementing the code in such a way. I will amend this post with the links of the future posts once I post them.
-<img class="post-image" src="/files/phalcon-green.png" />
 
 These series will focus initially on the Phalcon blog ([Github](https://github.com/phalcon/blog)) and will then expand on this blog ([Github](https://github.com/niden/blog)). In the very near future all the features available in this blog will be available in the Phalcon one :)
 
-As I mentioned in a [previous post](/post/new-look-more-posts), [Andres](https://phalconphp.com/en/team) and I were not 100% satisfied with [Tumblr](http://tumblr.com), the blogging platform that we have used for a few years for the purposes of the [Phalcon blog](https://blog.phalconphp.com). So we decided that it would not only be beneficial for us to build something of our own, but also for the community, since the software is [open sourced](https://github.com/phalcon/blog) and available for everyone to use.
+As I mentioned in a [previous post](/post/new-look-more-posts), [Andres](https://phalconphp.com/en/team) and I were not 100% satisfied with [Tumblr](https://tumblr.com), the blogging platform that we have used for a few years for the purposes of the [Phalcon blog](https://blog.phalconphp.com). So we decided that it would not only be beneficial for us to build something of our own, but also for the community, since the software is [open sourced](https://github.com/phalcon/blog) and available for everyone to use.
 
 #### Bootstrapping process
 
 In this post I am going to concentrate on [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping) the application. By bootstrapping I do not mean using the [Bootstrap](https://getbootstrap.com) open source library, despite the probably misleading image on the right. 
-<img class="post-image" src="/files/2015-10-04-bootstrap.png" />
+<img class="post-image" src="/assets/files/2015-10-04-bootstrap.png" />
 
 Bootstrapping is the class (in our case) that handles pretty much everything that our application needs to run prior to executing actions. This entails
 
@@ -117,7 +117,7 @@ We create a new bootstrap application and pass in it a DI container. For this pa
 
 #### `Bootstrap.php`
 
-Our [bootstrap class](https://github.com/phalcon/blog/blob/master/library/Kitsune/Bootstrap.php) contains all the code we need to run the application. It is a bit shy of 400 lines which according to [PHP Mess Detector](http://phpmd.org/) is not something we want to be doing because it increases complexity and if we are not careful it will create a *mess* :). We opted to ignore that rule and left the file as is because once we had everything working as we wanted, we were not going to be messing with that file again.
+Our [bootstrap class]https://github.com/phalcon/blog/blob/v3.0.4p/app/library/AbstractBootstrap.php) contains all the code we need to run the application. It is a bit shy of 400 lines which according to [PHP Mess Detector](https://phpmd.org/) is not something we want to be doing because it increases complexity and if we are not careful it will create a *mess* :). We opted to ignore that rule and left the file as is because once we had everything working as we wanted, we were not going to be messing with that file again.
 
 ##### Constants
  
@@ -400,7 +400,7 @@ The cache component is configured using the `config.php`. We can define the para
 
 ##### Markdown Renderer
 
-We use [Ciconia](http://ciconia.kzykhys.com/) for the rendering of markdown with several plugins, existing and user defined. The registration is pretty straight forward.
+We use Ciconia for the rendering of markdown with several plugins, existing and user defined. The registration is pretty straight forward.
 
 ```php
         /**

@@ -11,9 +11,9 @@ tags:
   - zend framework
   - how-to
   - factory
+image: '/assets/files/2010-02-02-design-patterns-factory.png'
 ---
-A note about these series. It appears that [Giorgio Sironi](http://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Factory](http://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-factory-method.html) design pattern thoroughly in his blog post, which is recommended reading.
-<img class="post-image" src="/files/2010-02-02-design-patterns-factory.png" />
+A note about these series. It appears that [Giorgio Sironi](https://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Factory](https://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-factory-method.html) design pattern thoroughly in his blog post, which is recommended reading.
 
 #### The Problem
 
@@ -141,15 +141,15 @@ class DbMySQL
 }
 ```
 
-You can easily see the problem here. There is a lot of repetition in the code, not so much as the actual method properties but the methods themselves. Both classes have `connect()`, `disconnect()`, `selectdb()` and `query()` as methods. In reality the code changes only slightly since the call for an operation against Microsoft SQL Server is `mssql_*` while for MySQL is `mysql_*`. During the transition week I was in programming hell. At some point I mixed the class names, I was trying to read and update the wrong server etc. (see [Jani Hartikainen's](http://codeutopia.net/) post about [6 programming project mistakes you should avoid](http://codeutopia.net/blog/2010/01/28/6-programming-project-mistakes-you-should-avoid/) - I did all that!).
+You can easily see the problem here. There is a lot of repetition in the code, not so much as the actual method properties but the methods themselves. Both classes have `connect()`, `disconnect()`, `selectdb()` and `query()` as methods. In reality the code changes only slightly since the call for an operation against Microsoft SQL Server is `mssql_*` while for MySQL is `mysql_*`. During the transition week I was in programming hell. At some point I mixed the class names, I was trying to read and update the wrong server etc. (see [Jani Hartikainen's](https://codeutopia.net/) post about [6 programming project mistakes you should avoid](https://codeutopia.net/blog/2010/01/28/6-programming-project-mistakes-you-should-avoid/) - I did all that!).
 
 That week though taught me that I need to pay more attention in designing rather than going full speed ahead with programming and later on paying the consequences.
 
-After thorough research, I discovered a library that would support both platforms. The library that I found was [ADOdb](http://adodb.sourceforge.net/) which is a perfect example of the Factory Pattern. I used that library later on for a different project, but just looking at the code and understanding the flow of operations as well as the implementation of the pattern itself was invaluable to me.
+After thorough research, I discovered a library that would support both platforms. The library that I found was [ADOdb](https://adodb.sourceforge.net/) which is a perfect example of the Factory Pattern. I used that library later on for a different project, but just looking at the code and understanding the flow of operations as well as the implementation of the pattern itself was invaluable to me.
 
 #### Interfaces
 
-First of all I need to explain what an interface is and why we need them. According to [PHP.net](http://php.net/manual/en/language.oop5.interfaces.php):
+First of all I need to explain what an interface is and why we need them. According to [PHP.net](https://php.net/manual/en/language.oop5.interfaces.php):
 
 > Object interfaces allow you to create code which specifies which methods a class must implement, without having to define how these methods are handled.
 
@@ -334,7 +334,7 @@ Again since both underlying classes implement the `iDatabase` interface, I know 
 
 The Factory Design Pattern is one of the most powerful design patterns. It provides 'decoupling' i.e. breaks the inherited dependency of a class and its subclasses. It also allows for great flexibility while keeping the same interface for your clients.
 
-[Zend Framework](http://framework.zend.com/) uses the Factory Pattern in [Zend_Db](http://framework.zend.com/manual/en/zend.db.adapter.html). Specifically the example on the site shows:
+[Zend Framework](https://framework.zend.com/) uses the Factory Pattern in [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html). Specifically the example on the site shows:
 
 ```php
 // We don't need the following statement because the
@@ -355,4 +355,4 @@ $db = Zend_Db::factory(
     )
 );
 ```
-The [Zend_Db](http://framework.zend.com/manual/en/zend.db.adapter.html) factory accepts the name of the adapter used for the database connection as the first parameter while the second parameter is an array with connection specific information. With the use of the Factory Pattern, [Zend_Db](http://framework.zend.com/manual/en/zend.db.adapter.html) exposes a common interface which allows programmers to connect to a number of databases using the same methods. Should in the future the application needs to access a different database, the impact to the developer is minimal - in most cases a change to the adapter name (first parameter of the factory class) is all it takes.
+The [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html) factory accepts the name of the adapter used for the database connection as the first parameter while the second parameter is an array with connection specific information. With the use of the Factory Pattern, [Zend_Db](https://framework.zend.com/manual/en/zend.db.adapter.html) exposes a common interface which allows programmers to connect to a number of databases using the same methods. Should in the future the application needs to access a different database, the impact to the developer is minimal - in most cases a change to the adapter name (first parameter of the factory class) is all it takes.

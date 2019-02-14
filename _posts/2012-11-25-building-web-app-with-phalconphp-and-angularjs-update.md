@@ -7,10 +7,9 @@ tags:
   - phalcon
   - angularjs
   - how-to
+image: '/assets/files/phalcon-logo.png'
 ---
-It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](http://www.harryhogfootball.com/) using [PhalconPHP](https://phalconphp.com/) and [AngularJS](http://angularjs.org/)
-<img class="post-image" src="{{ site.baseurl }}/files/phalcon-green.png" />
-<img class="post-image" src="{{ site.baseurl }}/files/angularjs.png" />
+It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](https://www.harryhogfootball.com/) using [PhalconPHP](https://phalconphp.com/) and [AngularJS](https://angularjs.org/)
 
 If you haven't read it, the first two blog posts were [here]({{ site.baseurl }}/post/building-web-app-with-phalconphp-and-angularjs-part-i) and [here]({{ site.baseurl }}/post/building-web-app-with-phalconphp-and-angularjs-part-ii).
 
@@ -314,7 +313,7 @@ The loader is what does all the discovery of classes for me. As you can see I st
     }
 ```
 
-This is an interesting one. Registering the view and Volt. [Volt](https://docs.phalconphp.com/en/latest/volt) is the template engine that comes with [Phalcon](https://phalconphp.com/). It is inspired by [Twig](http://twig.sensiolabs.org/) and written in C, thus offering maximum performance. I set the compiled path, extension and separator for the template files and also I have a variable (set in the config of course) to allow the application to always create template files or not. In a production environment that variable (stat) will be set to false since templates do not change.
+This is an interesting one. Registering the view and Volt. [Volt](https://docs.phalconphp.com/en/latest/volt) is the template engine that comes with [Phalcon](https://phalconphp.com/). It is inspired by [Twig](https://twig.sensiolabs.org/) and written in C, thus offering maximum performance. I set the compiled path, extension and separator for the template files and also I have a variable (set in the config of course) to allow the application to always create template files or not. In a production environment that variable (stat) will be set to false since templates do not change.
 
 ```php
     /**
@@ -448,7 +447,7 @@ class Episodes extends \NDN\Model
 
 #### Controllers
 
-Very little has changed in the controller logic, so that was the easiest part of the upgrade. Of course I tweaked a few things but the code works as is. I still extended my custom `NDN\Controller` class which takes care of my breadcrumbs (`NDN\Breadcrumbs`) as well as the construction of the top menu. The biggest difference with the previous version is that I stopped using [AngularJS](http://angularjs.org/) to populate the menu (so I am no longer sending a JSON array in the view) and used [Volt](https://docs.phalconphp.com/en/latest/volt) instead. It was a matter of preference and nothing more.
+Very little has changed in the controller logic, so that was the easiest part of the upgrade. Of course I tweaked a few things but the code works as is. I still extended my custom `NDN\Controller` class which takes care of my breadcrumbs (`NDN\Breadcrumbs`) as well as the construction of the top menu. The biggest difference with the previous version is that I stopped using [AngularJS](https://angularjs.org/) to populate the menu (so I am no longer sending a JSON array in the view) and used [Volt](https://docs.phalconphp.com/en/latest/volt) instead. It was a matter of preference and nothing more.
 
 #### Views
 
@@ -508,7 +507,7 @@ I started using the built in [Volt](https://docs.phalconphp.com/en/latest/volt) 
 
 The above is the `index.volt`. As you can see I call on the `partials/header.volt`, then the `partials/navbar.volt` (where the menu is generated) and then I construct the breadcrumbs (note the `{% raw %}{% for bc in breadcrumbs %}{% endraw %}` block). After that the flash messenger comes into play, the main content displayed, the footer and finally the javascript includes that I need.
 
-I am still using [AngularJS](http://angularjs.org/) to make the necessary AJAX calls so that the relevant controller to retrieve the data but also to display this data on screen (which is cached to avoid unnecessary database hits).
+I am still using [AngularJS](https://angularjs.org/) to make the necessary AJAX calls so that the relevant controller to retrieve the data but also to display this data on screen (which is cached to avoid unnecessary database hits).
 
 The Episodes view became
 
@@ -551,11 +550,11 @@ The Episodes view became
 {% endraw %}
 ```
 
-The beauty of [AngularJS](http://angularjs.org/)! I only have to pass a JSON array with my results. `ng-repeat` with the `orderBy` filter allows me to present the data to the user and offer sorting capabilities per column. This is all done at the browser level **without** any database hits! Pretty awesome feature!
+The beauty of [AngularJS](https://angularjs.org/)! I only have to pass a JSON array with my results. `ng-repeat` with the `orderBy` filter allows me to present the data to the user and offer sorting capabilities per column. This is all done at the browser level **without** any database hits! Pretty awesome feature!
 
-For those that have used [AngularJS](<a href="http://angularjs.org/) in the past, you will note that I had to change the interpolate provider (i.e. the characters that wrap a string or a piece of code that [AngularJS](<a href="http://angularjs.org/) understands). Usually these characters are the curly brackets `{% raw %}{{ }}{% endraw %}` but I changed them to `[[ ]]` to avoid collisions with [Volt](https://docs.phalconphp.com/en/latest/volt).
+For those that have used [AngularJS](<a href="https://angularjs.org/) in the past, you will note that I had to change the interpolate provider (i.e. the characters that wrap a string or a piece of code that [AngularJS](<a href="https://angularjs.org/) understands). Usually these characters are the curly brackets `{% raw %}{{ }}{% endraw %}` but I changed them to `[[ ]]` to avoid collisions with [Volt](https://docs.phalconphp.com/en/latest/volt).
 
-This was done with a couple of lines of code in my definition of my [AngularJS](http://angularjs.org/) model:
+This was done with a couple of lines of code in my definition of my [AngularJS](https://angularjs.org/) model:
 
 ```js
 {% raw %}
@@ -576,14 +575,14 @@ var ngModule = angular.module(
 
 I spent at most a day working on this mostly because I wanted to try various things and see how it works. The actual time to convert the application (because let's face it, it is a small application) was a couple of hours inclusive of the time it took me to rename certain fields, restructure the folder structure, compile the new extension on my server and upload the data upstream.
 
-I am very satisfied with both [AngularJS](http://angularjs.org/), which helps tremendously in my presentation layer, as well as with [Phalcon](https://phalconphp.com/). Phalcon's new design makes implementation a breeze, while [AngularJS](http://angularjs.org/) offers a lot of flexibility on the view layer.
+I am very satisfied with both [AngularJS](https://angularjs.org/), which helps tremendously in my presentation layer, as well as with [Phalcon](https://phalconphp.com/). Phalcon's new design makes implementation a breeze, while [AngularJS](https://angularjs.org/) offers a lot of flexibility on the view layer.
 
 As written before, you are more than welcome to download the [source code](https://github.com/niden/phalcon-angular-harryhogfootball) of this application here and use it for your own needs. Some resources are:
 
 #### References
 
-* [AngularJS main site](http://angularjs.org/)
-* [AngularJS documentation](http://docs.angularjs.org/api)
+* [AngularJS main site](https://angularjs.org/)
+* [AngularJS documentation](https://docs.angularjs.org/api)
 * [AngularJS group](https://groups.google.com/forum/#!forum/angular)
 * [AngularJS Github](https://github.com/angular)
 

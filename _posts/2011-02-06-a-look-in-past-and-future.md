@@ -6,9 +6,9 @@ tags:
   - personal
   - information
   - update
+image: '/assets/files/update.png'
 ---
 It has been months since I last posted a blog post. A lot of things have happened since August and I have a lot of material to post - just not the discipline to sit down and proof all the drafts so that I can post them.
-<img class="post-image" src="/files/2011-11-11-update.png" />
 
 #### 2010
 
@@ -56,7 +56,7 @@ Not that bad for a first year.
 
 #### 2011
 
-When I started blogging my main focus was to mostly address coding issues. However due to the plethora of solutions on the Internet, the content that I wanted to relay was not that interesting or had been covered a hundred times or more. For instance I did start posting about design patterns [here](/post/design-patterns-singleton) and [here](/post/design-patterns-factory), but at the same time [Giorgio Sironi](http://giorgiosironi.blogspot.com/) started blogging about design patterns and did an excellent job at it, so that topic was scrapped. My posts then started covering a much broader scope, mostly that of technology with a small personal flare.
+When I started blogging my main focus was to mostly address coding issues. However due to the plethora of solutions on the Internet, the content that I wanted to relay was not that interesting or had been covered a hundred times or more. For instance I did start posting about design patterns [here](/post/design-patterns-singleton) and [here](/post/design-patterns-factory), but at the same time [Giorgio Sironi](https://giorgiosironi.blogspot.com/) started blogging about design patterns and did an excellent job at it, so that topic was scrapped. My posts then started covering a much broader scope, mostly that of technology with a small personal flare.
 
 For 2011 I will continue on the same scope. I intend on blogging about interesting things technologically, how-to's and topics that I want to share with the community.
 

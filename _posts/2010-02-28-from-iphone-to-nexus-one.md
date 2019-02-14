@@ -7,9 +7,9 @@ tags:
   - iphone
   - nexus one
   - review
+image: '/assets/files/2010-02-28-iphone-nexus-one.png'
 ---
-References: [Leaving the iPhone](http://www.mattcutts.com/blog/switch-iphone-to-android/) by Matt Cutts, [Android Equivalency Table](https://docs.google.com/View?id=ajmh7zht8f5f_3dbdpf6xv) and [Good Things: Ubuntu and Android](http://al3x.net/2010/02/15/ubuntu-android.html) by Alex Payne. I am pretty sure that there are other reviews and how-to's on the Internet, outlining that one of the above (or none) is the killer of the other. I am just posting what I did to switch effortlessly.
-<img class="post-image" src="/files/2010-02-28-iphone-nexus-one.png" />
+References: [Leaving the iPhone](https://www.mattcutts.com/blog/switch-iphone-to-android/) by Matt Cutts, [Android Equivalency Table](https://docs.google.com/View?id=ajmh7zht8f5f_3dbdpf6xv) and [Good Things: Ubuntu and Android](https://al3x.net/2010/02/15/ubuntu-android.html) by Alex Payne. I am pretty sure that there are other reviews and how-to's on the Internet, outlining that one of the above (or none) is the killer of the other. I am just posting what I did to switch effortlessly.
 
 #### Homework
 
@@ -269,7 +269,7 @@ Of the applications currently installed on my iPhone, some are really very essen
 
 I knew I wanted to buy the Nexus One the minute it was presented to the world :) There were however a lot of factors to take into account, the applications that I had and what their replacements will be (see table above), whether it would work reliably with AT&T's network or whether I would have to switch to T-Mobile etc.
 
-I have been following closely web posts regarding experiences with the Nexus One and I must admit, it was one of the main factors that helped me make the decision to switch. The icing on the cake was Matt Cutts's post regarding the same issue: [Leaving the iPhone](http://www.mattcutts.com/blog/switch-iphone-to-android/). I decided that I would get the phone and if it works satisfactory on AT& T I will stay with them, otherwise I will switch to T-Mobile.
+I have been following closely web posts regarding experiences with the Nexus One and I must admit, it was one of the main factors that helped me make the decision to switch. The icing on the cake was Matt Cutts's post regarding the same issue: [Leaving the iPhone](https://www.mattcutts.com/blog/switch-iphone-to-android/). I decided that I would get the phone and if it works satisfactory on AT& T I will stay with them, otherwise I will switch to T-Mobile.
 
 I discussed the issue with the boss (my wife who else :)) and the purchase was approved. As a matter of fact she was disappointed when I told her that I am going to order it because she had plans to buy it for me for my birthday in April. My eagerness to get the new phone spoiled the surprise but we both agreed that I got my birthday present two months in advance :)
 
@@ -277,17 +277,17 @@ The purchase was really trouble free. I also purchased the dock and the really n
 
 #### First experience
 
-<img class="post-image" src="/files/2010-02-28-001.png" />
-<img class="post-image" src="/files/2010-02-28-002.png" />
-<img class="post-image" src="/files/2010-02-28-003.png" />
-<img class="post-image" src="/files/2010-02-28-004.png" />
-<img class="post-image" src="/files/2010-02-28-005.png" />
-<img class="post-image" src="/files/2010-02-28-006.png" />
-<img class="post-image" src="/files/2010-02-28-007.png" />
-<img class="post-image" src="/files/2010-02-28-008.png" />
-<img class="post-image" src="/files/2010-02-28-009.png" />
-<img class="post-image" src="/files/2010-02-28-010.png" />
-<img class="post-image" src="/files/2010-02-28-011.png" />
+<img class="post-image" src="/assets/files/2010-02-28-001.png" />
+<img class="post-image" src="/assets/files/2010-02-28-002.png" />
+<img class="post-image" src="/assets/files/2010-02-28-003.png" />
+<img class="post-image" src="/assets/files/2010-02-28-004.png" />
+<img class="post-image" src="/assets/files/2010-02-28-005.png" />
+<img class="post-image" src="/assets/files/2010-02-28-006.png" />
+<img class="post-image" src="/assets/files/2010-02-28-007.png" />
+<img class="post-image" src="/assets/files/2010-02-28-008.png" />
+<img class="post-image" src="/assets/files/2010-02-28-009.png" />
+<img class="post-image" src="/assets/files/2010-02-28-010.png" />
+<img class="post-image" src="/assets/files/2010-02-28-011.png" />
 
 The phone arrived while I was at work. When I came back home, two really nice boxes were waiting for me. As you can see the packaging is really nice and the Google colors appear subtly on it.
 
@@ -321,6 +321,6 @@ There are other areas that I could discuss here but they are mostly focused on p
 
 #### Conclusion
 
-Overall I am really glad that I made the switch. The screen and camera are amazing, the phone is really responsive and apart from a couple of times that I didn't know how to do something and I had to Google it, I am using it as if I had it for a long time. I have **no restrictions**, I don't have to jailbreak the device so that I can get some applications that Apple deemed that they *ruin the user experience* (according to [their reply to the FCC](http://www.apple.com/hotnews/apple-answers-fcc-questions) regarding Google Voice), my data is synchronized with the cloud and [I can get it out of there at will](http://www.dataliberation.org/). I can even develop my own application and install it if I wish to. This is something that the iPhone does not provide and notable is the fact that I had to retype all my store cards that I used Cardscan for in the Key Card scanner and there is no way for me to get the data that FuelGauge has stored in it and potentially transfer it to aCar.
+Overall I am really glad that I made the switch. The screen and camera are amazing, the phone is really responsive and apart from a couple of times that I didn't know how to do something and I had to Google it, I am using it as if I had it for a long time. I have **no restrictions**, I don't have to jailbreak the device so that I can get some applications that Apple deemed that they *ruin the user experience* (according to [their reply to the FCC](https://www.apple.com/hotnews/apple-answers-fcc-questions) regarding Google Voice), my data is synchronized with the cloud and [I can get it out of there at will](https://www.dataliberation.org/). I can even develop my own application and install it if I wish to. This is something that the iPhone does not provide and notable is the fact that I had to retype all my store cards that I used Cardscan for in the Key Card scanner and there is no way for me to get the data that FuelGauge has stored in it and potentially transfer it to aCar.
 
 I would say that the iPhone would suit someone that is not that tech savvy and is not impressed by the technical abilities of the phone, rather is focused on the amount of applications that exist for that phone (iPhone is superior there). The Nexus One though raised the bar way high and it will take a long time for the iPhone to even come close to it. Once the Apple introduces the ability to allow multiple applications to run at the same time, provide the liberty to get your data out of it if you wish to, stop trying to police people by restricting applications, then the gap would have been bridged but until then... in my humble opinion the Nexus One is king!

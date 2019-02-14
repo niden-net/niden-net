@@ -5,28 +5,28 @@ date: 2012-09-02T23:45:00.000Z
 tags:
   - angularjs
   - how-to
+image: '/assets/files/amgularjs.png'
 ---
 Recently I was contacted by an acquaintance through my Google+ circles, who needed some help with a project of hers.
-<img class="post-image" src="{{ site.baseurl }}/files/angularjs.png" />
 
 Her task was to redesign a church website. Pretty simple stuff, CSS, HTML and content.
 
 #### Scope
 
-The particular church videotapes all the sermons and posts them on their channel in [LiveStream](http://www.livestream.com/) for their followers to watch. One of the requirements was to redo the video archives page and to offer a link where followers can download the audio of each sermon for listening.
+The particular church videotapes all the sermons and posts them on their channel in [LiveStream](https://www.livestream.com/) for their followers to watch. One of the requirements was to redo the video archives page and to offer a link where followers can download the audio of each sermon for listening.
 
 #### Design (kinda)
 
-After the initial contact, I decided to get rid of all the bloated [jQuery](http://www.jquery.com/) code that was there to control the video player and use [AngularJS](http://angularjs.org/) to control the generation of content. There were two key facts that influenced my decision:
+After the initial contact, I decided to get rid of all the bloated [jQuery](https://www.jquery.com/) code that was there to control the video player and use [AngularJS](https://angularjs.org/) to control the generation of content. There were two key facts that influenced my decision:
 
 * the use of `ng-repeat` to generate the table that will list all the available sermons and
-* the variable binding that [AngularJS](http://angularjs.org/) offers to play the video in the available player.
+* the variable binding that [AngularJS](https://angularjs.org/) offers to play the video in the available player.
 
-I also decided to switch the player to a new updated one that [LiveStream](http://www.livestream.com/) offered, which features a slider to jump through the video, volume control and more.
+I also decided to switch the player to a new updated one that [LiveStream](https://www.livestream.com/) offered, which features a slider to jump through the video, volume control and more.
 
 #### Previous code
 
-The previous code for that page was around 300 lines. The file had some CSS in it, quite a few lines of HTML but was heavy on javascript. There were a lot of [jQuery](http://www.jquery.com/) functions which controlled the retrieval of the available videos per playlist. Each playlist would be effectively a collection of videos for a particular year. [jQuery](http://www.jquery.com/) was observing clicks on specific links and make an AJAX call to the [LiveStream](http://www.livestream.com/) API to retrieve the list of available data in JSON format, and output the formatted results (as a table) on screen. It was something like this:
+The previous code for that page was around 300 lines. The file had some CSS in it, quite a few lines of HTML but was heavy on javascript. There were a lot of [jQuery](https://www.jquery.com/) functions which controlled the retrieval of the available videos per playlist. Each playlist would be effectively a collection of videos for a particular year. [jQuery](https://www.jquery.com/) was observing clicks on specific links and make an AJAX call to the [LiveStream](https://www.livestream.com/) API to retrieve the list of available data in JSON format, and output the formatted results (as a table) on screen. It was something like this:
 
 ```js
 head
@@ -71,9 +71,9 @@ end html
 
 #### Enter AngularJS
 
-I checked the latest video player from [LiveStream](http://www.livestream.com/). The code was much cleaner and all I had to do is bind one variable, the GUID of the video, in the relevant call so that the video can be played. I also bound another variable (the video title) above the video so as to offer more information to the user.
+I checked the latest video player from [LiveStream](https://www.livestream.com/). The code was much cleaner and all I had to do is bind one variable, the GUID of the video, in the relevant call so that the video can be played. I also bound another variable (the video title) above the video so as to offer more information to the user.
 
-With a bit of Bootstrap CSS, I created two tabs and listed the two years 2012, 2011. A function was created in my [AngularJS](http://angularjs.org/) module to accept the year and make the relevant call to the [LiveStream](http://www.livestream.com/) API to receive the data a a JSON object.
+With a bit of Bootstrap CSS, I created two tabs and listed the two years 2012, 2011. A function was created in my [AngularJS](https://angularjs.org/) module to accept the year and make the relevant call to the [LiveStream](https://www.livestream.com/) API to receive the data a a JSON object.
 
 `ng-repeat` (with `>ng-cloak`) was used to "print" the data on screen and the application was ready.
 
@@ -126,7 +126,7 @@ ngModule.controller("MainCtrl", function ($scope, $resource) {
         if (objData.guid)
         {
             var reqData = $resource(
-                "http://livestream_url/2.0/:action",
+                "https://livestream_url/2.0/:action",
                 {
                     action:'listclips.json', 
                     id:objData.guid,
@@ -159,7 +159,7 @@ Now moving into the HTML side of things:
     <iframe 
         width="560" 
         height="340" 
-        src="http://ls_url?clip={{currentVideo}}&amp;params" 
+        src="https://ls_url?clip={{currentVideo}}&amp;params" 
         style="border:0;outline:0" 
         frameborder="0" 
         scrolling="no">
@@ -197,11 +197,11 @@ Now moving into the HTML side of things:
 </div>
 ```
 
-That is all the HTML I had to change. The full HTML file is 100 lines and 50 for the [AngularJS](http://angularjs.org/) related javascript, I can safely say that I had a 50% reduction in code offering the same functionality - and if I might say so, it is much much cleaner.
+That is all the HTML I had to change. The full HTML file is 100 lines and 50 for the [AngularJS](https://angularjs.org/) related javascript, I can safely say that I had a 50% reduction in code offering the same functionality - and if I might say so, it is much much cleaner.
 
 The final page looks something like this:
 
-<img class="media-body-inline-img" data-action="zoom" src="{{ site.baseurl }}/files/2012-09-02-sermon.png" />
+<img class="media-body-inline-img" data-action="zoom" src="{{ site.baseurl }}/assets/files/2012-09-02-sermon.png" />
 
 #### Pointers
 
@@ -213,7 +213,7 @@ The final page looks something like this:
     <iframe 
         width="560" 
         height="340" 
-        src="http://ls_url?clip={{currentVideo}}&amp;params" 
+        src="https://ls_url?clip={{currentVideo}}&amp;params" 
         style="border:0;outline:0" 
         frameborder="0" 
         scrolling="no">
@@ -255,13 +255,13 @@ Finally the data is displayed on screen. `ng-cloak` makes sure that the content 
 The description of the video is used as a storage for the URL that will point to the MP3 audio file so as the users can download it. Therefore I use `ng-show` to show the link, if it exists.
 
 #### Conclusion
-This whole project was no more than 30 minutes, which included the time I had to research and experiment a bit with the [LiveStream](http://www.livestream.com/) API. This is a flexible design, with much much cleaner code (and a lot less of it). When the admin needs to add a new playlist (aka year), all they have to do is open the JS file and type a new element in the `$scope.playlists` array. The application will take care of the rest automatically.
+This whole project was no more than 30 minutes, which included the time I had to research and experiment a bit with the [LiveStream](https://www.livestream.com/) API. This is a flexible design, with much much cleaner code (and a lot less of it). When the admin needs to add a new playlist (aka year), all they have to do is open the JS file and type a new element in the `$scope.playlists` array. The application will take care of the rest automatically.
 
 I cannot think of doing this with less lines of code than this.
 
-If you haven't heard of [AngularJS](http://angularjs.org/) or used it, I would highly encourage you to give it a shot. Great project, awesome support and a very very responsive, helpful and polite community.
+If you haven't heard of [AngularJS](https://angularjs.org/) or used it, I would highly encourage you to give it a shot. Great project, awesome support and a very very responsive, helpful and polite community.
 
-* [AngularJS](http://angularjs.org/)
-* [AngularJS documentation](http://docs.angularjs.org/api)
+* [AngularJS](https://angularjs.org/)
+* [AngularJS documentation](https://docs.angularjs.org/api)
 * [AngularJS group](https://groups.google.com/forum/#!forum/angular)
 * [AngularJS Github](https://github.com/angular)

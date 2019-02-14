@@ -5,17 +5,17 @@ date: 2011-11-11T23:45:00.000Z
 tags:
   - personal
   - update
+image: '/assets/files/update.png'
 ---
 It has been a very long time since I last blogged.
-<img class="post-image" src="/files/2011-11-11-update.png" />
 
 The primary reason is that I have been busy and somewhat lazy. Hopefully that trend (the laziness) will not last that much and I will be able to post in higher frequency.
 
 The biggest update for me came this July. I was actively searching for a new employment opportunity for quite some time, but due to the current market situation, it has been a really difficult task.
 
-In July I received (and accepted) an offer from [Avectra Inc.](http://www.avectra.com/) I am now a PHP developer for [MemberFuse&trade;](http://www.memberfuse.com/), a professional networking application that integrates with the client's association management software and builds an online community for that client.
+In July I received (and accepted) an offer from [Avectra Inc.](https://www.avectra.com/) I am now a PHP developer for [MemberFuse&trade;](https://www.memberfuse.com/), a professional networking application that integrates with the client's association management software and builds an online community for that client.
 
-My colleagues and I are programming in PHP using a frameworks such as [Doctrine](http://www.doctrine-project.org/), [Zend Framework](http://framework.zend.com/), [Smarty](http://www.smarty.net/] and [jQuery](http://jquery.com/) on the client side. The application we produce is offered as SAAS (Software As A Service) and we have well over 1 million users.
+My colleagues and I are programming in PHP using a frameworks such as [Doctrine](https://www.doctrine-project.org/), [Zend Framework](https://framework.zend.com/), [Smarty](https://www.smarty.net/] and [jQuery](https://jquery.com/) on the client side. The application we produce is offered as SAAS (Software As A Service) and we have well over 1 million users.
 
 Although adjusting to the new environment was rough and the learning curve was steep (it didn't help that one colleague decided to resign and I inherited his workload from week 2), I managed to *survive* and I am more and more confident every day.
 

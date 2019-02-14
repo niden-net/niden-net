@@ -7,11 +7,11 @@ tags:
   - programming
   - zend framework
   - how-to
+image: '/assets/files/php.png'
 ---
-In my workplace we have been using [Zend Framework](http://framework.zend.com/) for more than a year primarily as a glue framework. We have managed to integrate a lot of components from the framework to suit our needs and slowly we are moving towards the full MVC pattern.
-<img class="post-image" src="{{ site.baseurl }}/files/php.png" />
+In my workplace we have been using [Zend Framework](https://framework.zend.com/) for more than a year primarily as a glue framework. We have managed to integrate a lot of components from the framework to suit our needs and slowly we are moving towards the full MVC pattern.
 
-In the meantime our own framework, or collection of code if you prefer, is slowly evolving with every new project. New classes are added while others are enhanced more to provide more flexible input/output. Add to that the continuous evolution of [Zend Framework](http://framework.zend.com/) and we are faced with at least one version of our own codebase per project.
+In the meantime our own framework, or collection of code if you prefer, is slowly evolving with every new project. New classes are added while others are enhanced more to provide more flexible input/output. Add to that the continuous evolution of [Zend Framework](https://framework.zend.com/) and we are faced with at least one version of our own codebase per project.
 
 Lately we have been following a more [Test Driven Development](/post/test-driven-development) approach, where we create tests for every component we create or alter. After all this is the purpose of [TDDevelopment](/post/test-driven-development) - to make sure that your code has 100% coverage and that it works!
 
@@ -72,4 +72,4 @@ This approach allows us to keep our `include_path` free from any Zend Framework 
 
 We opted out from using constants inside `.htaccess` files, due to the fact that we have many projects and this would have meant that we had to change every `.htaccess` file, should we wanted to change the version of Zend Framework used.
 
-[php.ini](http://php.net/manual/en/ini.core.php) has a lot of directives that can prove useful for the PHP developer. Extending those directives to each project or collection of projects can save you time and headaches.
+[php.ini](https://php.net/manual/en/ini.core.php) has a lot of directives that can prove useful for the PHP developer. Extending those directives to each project or collection of projects can save you time and headaches.

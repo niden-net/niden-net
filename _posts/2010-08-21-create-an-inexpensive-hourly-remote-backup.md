@@ -9,15 +9,15 @@ tags:
   - linux
   - storage
   - how-to
+image: '/assets/files/2010-08-21-remote-backup.png'
 ---
 > There are two kinds of people, those who backup regularly, and those that never had a hard drive fail
 
 As you can tell [the above](/post/subversion-backup-how-to) is my favorite quote. It is so true and I believe everyone should evaluate how much their data (emails, documents, files) is worth to them and, based on that value, create a backup strategy that suits them. I know for sure that if I ever lost the pictures and videos of my family I would be devastated since those are irreplaceable.
-<img class="post-image" src="{{ site.baseurl }}/files/2010-08-21-remote-backup.png" />
 
 So the question is how can I have an inexpensive backup solution? All my documents and emails are stored in Google, since my domain is on [Google Apps](https://www.google.com/a/). What happens to the live/development servers though that host all my work? I program on a daily basis and the code has to be backed up regularly so as to avoid any hard drive failures and thus result in loss of time and money.
 
-So here is my solution. I have an old computer (IBM Thincentre) which I decided to beef up a bit. I bought 4Gb of RAM from eBay for less than $100 for it. Although this is was not necessary since my solution would be based on Linux ([Gentoo](http://www.gentoo.org) in particular), I wanted to have faster compilation times for packages.
+So here is my solution. I have an old computer (IBM Thincentre) which I decided to beef up a bit. I bought 4Gb of RAM from eBay for less than $100 for it. Although this is was not necessary since my solution would be based on Linux ([Gentoo](https://www.gentoo.org) in particular), I wanted to have faster compilation times for packages.
 
 I bought two external drives (750Gb and 500Gb respectively) and one 750Gb internal drive. I already have a 120Gb hard drive in the computer. The two external ones are connected to the computer using USB while the internal ones are connected using SATA.
 
@@ -226,4 +226,4 @@ That's it.
 
 The backup script can be found in my GitHub [here](https://github.com/niden/Hourly_Backup_Linux).
 
-Update: The metric units for the drives were GB not MB. Thanks to [Jani Hartikainen](http://www.codeutopia.net/) for pointing it out.
+Update: The metric units for the drives were GB not MB. Thanks to [Jani Hartikainen](https://www.codeutopia.net/) for pointing it out.

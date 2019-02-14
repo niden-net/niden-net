@@ -11,9 +11,9 @@ tags:
   - zend framework
   - how-to
   - singleton
+image: '/assets/files/2010-01-22-design-patterns-singleton.png'
 ---
-A note about these series. It appears that [Giorgio Sironi](http://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Singleton](http://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-singleton.html) design pattern thoroughly in his blog post, which is recommended reading.
-<img class="post-image" src="/files/2010-01-22-design-patterns-singleton.png" />
+A note about these series. It appears that [Giorgio Sironi](https://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Singleton](https://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-singleton.html) design pattern thoroughly in his blog post, which is recommended reading.
 
 #### The Problem
 
@@ -227,4 +227,4 @@ The Singleton Design Pattern is a blessing in disguise. If the ground work has n
 
 A word of caution: If you choose to use this pattern in your application, make sure that everything you do is thoroughly documented and tested. This will make your life a lot easier in the long run and will aid in maintenance.
 
-**Update**: Thanks to [Jani Hartikainen](http://codeutopia.net/) for pointing out an error in the code.
+**Update**: Thanks to [Jani Hartikainen](https://codeutopia.net/) for pointing out an error in the code.
