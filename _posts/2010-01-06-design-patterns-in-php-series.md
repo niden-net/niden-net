@@ -26,8 +26,8 @@ As usual comments are more than welcome.
 
 The design patterns I will discuss in posts of these series are as:
 
-* [Singleton Pattern](/post/design-patterns-singleton-series-how-to)
-* [Factory Pattern](/postdesign-patterns-factory-series-how-to)
+* [Singleton Pattern](/post/design-patterns-singleton-series)
+* [Factory Pattern](/post/design-patterns-factory-series)
 * Registry Pattern
 * Decorator Pattern
 * Adapter Pattern
