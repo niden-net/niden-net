@@ -3,7 +3,6 @@ name: niden.net
 author: 'Nikolaos Dimopoulos'
 description: 'Personal blog of Nikolaos (Nikos) Dimopoulos. Boldly goes where no other coder has gone before.... and other ramblings'
 keywords: 'php, phalcon, phalcon php, php framework, faster php framework'
-generator: 'Github Pages'
 avatar: https://avatars3.githubusercontent.com/u/1073784?v=4
 
 social:
@@ -19,11 +18,49 @@ google_analytics: 'UA-26971391-1'
 paginate: 5
 paginate_path: '/page-:num'
 permalink: /post/:title/
-version: v1.2.0
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
 kramdown:
   input: GFM
-  syntax_highlighter_opts:
-    disable: true
+  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [ 'all' ]
+  layout: archive
+#  layouts:
+#    year: year-archive
+#    month: month-archive
+#    day: day-archive
+#    category: category-archive
+#    tag: tag-archive
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/:month/'
+    day: '/archive/:year/:month/:day/'
+    tag: '/archive/tag/:name/'
+    category: '/archive/category/:name/'
+
+include:
+  - _pages
 
 sass:
   style: :compressed # You might prefer to minify using :compressed

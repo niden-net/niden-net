@@ -3,21 +3,73 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-                        <li class="media list-group-item p-a">
-                            <div class="media-body">
-                                <div class="media-heading">
-                                    <h3>
-                                        <a href="{{ site.baseurl }}{{ post.url }}">
-                                            {{ post.title }}
+{% assign num_words = post.content | strip_html | number_of_words %}
+{% assign minutes   = num_words    | divided_by: 200 %}
+{% assign minutes   = num_words    | divided_by: 200.0 %}
+{% assign minutes_f = num_words    | divided_by: 200.0 %}
+{% assign minutes_i = num_words    | divided_by: 200 %}
+{% assign diff      = minutes_f    | minus: minutes_i %}
+{% if diff >= 0.5 %}
+{% assign minutes = minutes_i | plus: 1 %}
+{% else %}
+{% assign minutes = minutes_i %}
+{% endif %}
+
+{% if minutes <= 1 %}
+{% assign reading_time = '1' | append: ' minute' %}
+{% else %}
+{% assign reading_time = minutes | append: ' minutes' %}
+{% endif %}
+                        <ul class="list-group media-list media-list-stream mb-4">
+                            <li class="media list-group-item p-4">
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        <small class="float-right text-muted">
+                                            {{ reading_time }} &bull; {{ post.date | date: "%Y-%m-%d" }}
+                                        </small>
+                                        <h6>
+                                            <a href="{{ post.url }}">{{ post.title | strip }}</a>
+                                        </h6>
+                                    </div>
+                                    <p>
+                                        {{ post.excerpt }}
+                                    </p>
+                                    <div class="media-body-actions">
+                                        {% for tag in post.tags %}
+                                        <a href="/tags#{{ tag | slugify }}">
+                                            <button class="btn btn-primary-outline btn-sm">
+                                                {{ tag }}
+                                            </button>
                                         </a>
-                                    </h3>
-                                    <small class="pull-right text-muted">
-                                        {{ post.date | date: "%Y-%m-%d" }}
-                                    </small>
+                                        {% endfor %}
+                                    </div>
                                 </div>
-                                <p>
-                                    {{ post.content }}
-                                </p>
-                            </div>
-                        </li>
+                            </li>
+                        </ul>
 {% endfor %}
+                        <ul class="list-group media-list media-list-stream mb-4">
+                            <li class="media list-group-item p-4">
+                                <div class="media-body">
+                                    <div class="media-body-actions">
+                                        <span class="float-left">
+                                            {% if paginator.previous_page %}
+                                            <a href="{{ paginator.previous_page_path }}">
+                                                <i class="icon icon-arrow-with-circle-left"></i>
+                                            </a>
+                                            {% else %}
+                                            &nbsp;
+                                            {% endif %}
+                                        </span>
+                                        <span class="float-right">
+                                            {% if paginator.next_page %}
+                                            <a href="{{ paginator.next_page_path }}">
+                                                <i class="icon icon-arrow-with-circle-right"></i>
+                                            </a>
+                                            {% else %}
+                                            &nbsp;
+                                            {% endif %}
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
