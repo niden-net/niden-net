@@ -11,7 +11,7 @@ image: '/assets/files/phalcon-logo.png'
 ---
 It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](http://www.harryhogfootball.com/) using [PhalconPHP](https://phalconphp.com/) and [AngularJS](https://angularjs.org/)
 
-If you haven't read it, the first two blog posts were [here]({{ site.baseurl }}/post/building-web-app-with-phalconphp-and-angularjs-part-i) and [here]({{ site.baseurl }}/post/building-web-app-with-phalconphp-and-angularjs-part-ii).
+If you haven't read it, the first two blog posts were [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i) and [here](/post/building-web-app-with-phalconphp-and-angularjs-part-ii).
 
 The application was written using the 0.4.5 version of [PhalconPHP](https://phalconphp.com/). Since then there have been significant changes to the framework, such as the introduction of a DI container, injectable objects and lately interfaces (in 0.7.0, to be released in a couple of days), I had to make some changes.
 

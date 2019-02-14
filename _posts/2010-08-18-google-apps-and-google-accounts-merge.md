@@ -154,7 +154,7 @@ Resources: [Data ownership](https://www.google.com/support/accounts/bin/answer.p
 
 Finally another email will be sent to the user summarizing what has happened with their account. This email contains links to additional resources.
 
-Resources: [List of products](https://www.google.com/options/), [New sign in option](https://www.google.com/support/accounts/bin/answer.py?answer=181703),  Data ownership, What is a browser?, [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), Help Center for Admins, [Google Apps Administrator Help Center](https://www.google.com/support/a/bin/topic.py?topic=28917)
+Resources: [List of products](https://www.google.com/options/), [New sign in option](https://www.google.com/support/accounts/bin/answer.py?answer=181703),  Data ownership, What is a browser?, [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), Help Center for Admins, Google Apps Administrator Help Center
 
 
 ##### Google Apps - User Login message for Account Merge
@@ -168,7 +168,7 @@ Resources: [List of products](https://www.google.com/options/), [New sign in opt
 Once the transition operation is completed, the next time the user logs in their account, they will see the screen above. In short this screen informs the user of what has happened and provides links to online resources for help. The user must click **I accept. Continue to my account** for them to have access to their account. This is  a one off process.
 
 
-Resources: Google Apps Administrator Help Center, [Google Security and Privacy](https://www.google.com/support/a/bin/answer.py?hl=en&amp;answer=60762), [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), [Terms of Service](https://www.google.com/apps/intl/en/terms/user_terms.html)
+Resources: Google Apps Administrator Help Center, [Google Security and Privacy](https://www.google.com/support/a/bin/answer.py?hl=en&amp;answer=60762), [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), [Terms of Service](https://www.google.com/intl/en/policies/terms/)
 
 #### Conclusion
 Without a doubt this is a huge step forward for Google and for us as admins or users. The ability to have a single sign on to use their products not only helps them but us by simplifying everything. That also means that if a hacker guesses that my password is **password1** they have access to all my Google related services... but oh well :)

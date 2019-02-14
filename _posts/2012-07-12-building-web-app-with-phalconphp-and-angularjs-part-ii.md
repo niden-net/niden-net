@@ -35,7 +35,7 @@ Since the framework is a module on your web server, you will need to be careful 
 
 ##### Implementation
 
-<img class="media-body-inline-img" data-action="zoom" src="{{ site.baseurl }}/assets/files/2012-07-12-db-diagram.png" />
+<img class="media-body-inline-img" data-action="zoom" src="/assets/files/2012-07-12-db-diagram.png" />
 
 I downloaded the [INVO](https://github.com/phalcon/invo) sample application and set it up on my web browser. Using that as a starting point, I started modifying it to fit my needs. I also set up the PhalconPHP [developer tools](https://vimeo.com/39035250) and [PHPStorm support](https://vimeo.com/43455647).
 

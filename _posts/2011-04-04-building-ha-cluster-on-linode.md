@@ -28,7 +28,7 @@ We will also build a web server. This again is a CentOS box running PHP and ngin
 
 The next set of boxes form the database cluster. The setup is two servers with Heartbeat, Pacemaker and MySQL setup with a Master/Master replication. Again a "floating" IP address is used to move from one server to another in the case of failure.
 
-The NFS is also a 2 box setup. Again a "floating" IP address is used to connect to the file system. [DRBD](https://www.drbd.org/) is installed on them to cater for the replication.
+The NFS is also a 2 box setup. Again a "floating" IP address is used to connect to the file system. [DRBD](https://www.linbit.com/en/drbd-community/drbd-download/) is installed on them to cater for the replication.
 
 #### Administration
 

@@ -19,7 +19,7 @@ On Friday I watched the Chromium OS Webcast. A lot of people have been waiting f
 
 Although the presenters clearly stated that they will not provide any links to hardware, what is supported, where Chromium OS runs etc. they made sure to address one of the core features of Chromium OS. **It is Open Sourced**! That alone gives people again freedom. Freedom to choose what they want to have as their operating system in their computer.
 
-The website for the new operating system is [located here](https://sites.gsuite.google.com/chromium.org/dev/chromium-os) and there are instructions on how you can [build](https://www.chromium.org/chromium-os/building-chromium-os) this new OS even in its current state - which is not production ready.
+The website for the new operating system is [located here](https://dev.chromium.org/chromium-os) and there are instructions on how you can [build](https://www.chromium.org/chromium-os/building-chromium-os) this new OS even in its current state - which is not production ready.
 
 Curious (as usual) I tried installing the Chromium OS on a virtual machine. My experience installing the new OS and other comments is outlined below:
 
@@ -78,7 +78,7 @@ Now that all the prerequisites have been satisfied. I need to get the code!
 
 Navigating to [this link](https://sites.google.com/a/chromium.org/dev/chromium-os/building-chromium-os/getting-the-chromium-os-source-code) in the chromium.org wiki, I get all the instructions on how to get the code. There are some prerequisites there (i.e. your system needs to be able to uncompress tar files) but nothing out of the ordinary.
 
-I installed the [depot_tools](https://dev.chromium.org/developers/how-tos/install-gclient) which was really a two step process - svn checkout the tools and add the tools path in the current path. After that I installed the `git-core`:
+I installed the [depot_tools](https://dev.chromium.org/chromium-os) which was really a two step process - svn checkout the tools and add the tools path in the current path. After that I installed the `git-core`:
 
 ```sh
 sudo apt-get install git-core

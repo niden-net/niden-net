@@ -45,7 +45,7 @@ I clicked and held the power button until the menu appeared. I selected *Power O
 <img class="post-image" src="/assets/files/2010-06-21-reboot1.png" />
 
 Once the phone powered off completely, I pressed and held the trackball button down and then pressed the power button. A new screen appeared (which, like myself, you probably have never seen before) with three androids on skateboards at the bottom and several options at the top.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-recovery2.png" />
+<img class="post-image" src="/assets/files/2010-06-21-recovery2.png" />
 
 I navigated using the power and the volume buttons. I selected the first option (**Bootloader**) using the volume buttons and pressed the power button to activate it.
 
@@ -68,7 +68,7 @@ The familiar Nexus One X appeared on the screen. A few seconds later, a little a
 The next step I took was to press simultaneously the power button and the volume up button.
 
 This brought a new menu at the top.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-recovery2.png" />
+<img class="post-image" src="/assets/files/2010-06-21-recovery2.png" />
 
 The options available were:
 
@@ -88,8 +88,8 @@ At this point the update started and some information was flashing on the screen
 ##### Phone search (Search throughout the phone itself)
 
 This is one of the updates that I just love. Froyo allows you to search a lot of content that is stored on your phone. The content includes your contacts, sms messages, applications, twitter feeds and many more. With all this power it is very easy to find the information you are looking for with the press of a few keys on the virtual keyboard (Figure 4).
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-search-phone.png" />
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-search-areas.png" />
+<img class="post-image" src="/assets/files/2010-06-21-search-phone.png" />
+<img class="post-image" src="/assets/files/2010-06-21-search-areas.png" />
 
 Since *with great power comes great responsibility*, Froyo allows you to select what can be searched. Go to *Settings - Search - Searchable Items* and you will find the following options:
 
@@ -108,19 +108,19 @@ I am sure that the search extends to other applications. Your results might vary
 ##### Tethering - Wi-Fi Hotspot
 
 When I first heard about this feature during the [presentation of Froyo at Google I/O](https://youtu.be/IY3U2GXhz44)>, I was really excited.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-hotspot-on.png" />
+<img class="post-image" src="/assets/files/2010-06-21-hotspot-on.png" />
 
 I spend every day 3 hours on the train, where I mostly work on my notebook. Having the ability to tether my phone and work online is essential. A couple of years back when I bought my first iPhone, I managed to jailbreak it and installed [iPhoneModem](http://www.iphonemodem.com/) on it to achieve the functionality that I wanted (tethering). It wasn't fancy (after all don't expect miracles with AT&T's EDGE network) but it worked. I could get my emails reply quickly and disconnect.
 
 When I got my Nexus One, I bought [PDA Net](http://www.junefabrics.com/android/) to achieve the same result. It worked too but again in a very basic mode but it was draining the battery very fast and was running the phone very hot.
 
 After I upgraded to Froyo, I uninstalled [PDA Net](http://www.junefabrics.com/android/) and have been working with the built in functionality ever since.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-configure-hotspot.png" />
+<img class="post-image" src="/assets/files/2010-06-21-configure-hotspot.png" />
 
 To access the Tethering options, you will need to go to *Settings - Wireless & Networks - Tethering & portable hotspot*. The options shown on Figure 6 appear, which allow you to switch the Wi-Fi hotspot on or off. A USB tethering option also exists for those that want to keep their phone charged with the power that comes from their notebook or attached device. Once the hotspot is enabled, a blue icon appears at the top notification bar. The configuration of the hotspot is really easy and can be seen in figures 7 and 8. For those wondering why I chose the SSID of my hotspot to be one of the most infectious (Windows) viruses ever, it is exactly for that reason. Apart from the WPA2 encryption, the name itself is a deterrent for anyone that might get ideas in stealing bandwidth.
 
 Everything works perfectly apart from AT&T's EDGE network, which is really slow. The Nexus One I have can support T-Mobile's 3G network. I haven't switched to T-Mobile yet since there was no need. I fear though that I will not be able to escape the inevitable.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-hotspot-settings.png" />
+<img class="post-image" src="/assets/files/2010-06-21-hotspot-settings.png" />
 
 On June 2nd AT&T issued [press release](https://www.att.com/gen/press-room?pid=4800&cdvn=news&newsarticleid=30854) where they showed us once again that they don't give a damn about their customers since they lie, deceive and overcharge for a mediocre (at best) service. You can read the press release and draw your own conclusions but to me it seemed once again a slap in the face.
 
@@ -135,7 +135,7 @@ I do not know how this will evolve but I will definitely continue using the Wi-F
 This was something that was needed in my opinion (Figure 9). I was pressing way too many buttons to get to the phone, especially if I was not on the main screen. This little shortcut is very well received and thought of. I do not think that there is enough space for an additional 2 buttons (for the future release of Android) but you never know.
 
 Perhaps a future version will allow you to customize those buttons.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-mainscreen.png" />
+<img class="post-image" src="/assets/files/2010-06-21-mainscreen.png" />
 
 
 Android development though has to be very cautious when releasing functionality. I am sure that Apple is checking everything that Android does with a microscope. With their enormous patent book near by, they will not hesitate to sue Android (or Google for that matter) for patent infringement (see [Apple sues HTC](https://www.engadget.com/2010/03/02/apple-sues-htc-for-infringing-20-iphone-patents/)).
@@ -143,7 +143,7 @@ Android development though has to be very cautious when releasing functionality.
 ##### More accounts to sync with
 
 This area can be accessed via *Settings - Accounts & sync settings<*.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-syncaccounts.png" />
+<img class="post-image" src="/assets/files/2010-06-21-syncaccounts.png" />
 
 I noticed that not only my regular GMail and Google Apps accounts appear but also YouTube as well as Twitter. I have installed the official Twitter application so I am pretty sure that this synchronization appears because of that application.
 
@@ -155,7 +155,7 @@ I would also be very interested to know which other applications offer synchroni
 ##### Easy account switch (Email)
 
 When I [switched](/post/from-iphone-to-nexus-one) from an iPhone to an Android based phone, certain things were just "not right", not because there was something wrong with them - it was how I was used to things being done. One of those areas was the email. With the iPhone I was used to a traditional listing of accounts and then once something was selected I would go into the folders and then emails. If I wanted to change accounts I would have to go back two steps and then enter the account that I wanted.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-emailaccountselection1.png" />
+<img class="post-image" src="/assets/files/2010-06-21-emailaccountselection1.png" />
 
 This seems a very logical approach and it is easy to get used to. Although the Android has a better email management interface, it lacked the ability to quickly switch accounts and thus not spend time tapping away going back or forth. In that area the iPhone <em>was </em>better. Note the was. It was not because the user will tap less times, but because you would tap the back button twice which was located in the same area of the screen at all times. For the Android you had to press the menu button and then select Accounts. This was again the same amount of steps but the iPhone approach felt more natural.
 
@@ -200,7 +200,7 @@ Clearly with the above I am using now half of the screen taps than I used to wit
 ##### Colored labels in your email (like GMail)
 
 If you are like me and use Google Apps or GMail, you are by now accustomed to the colored labels on your emails, that you don't know what you have been doing without them all this time.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-coloredlabels.png" />
+<img class="post-image" src="/assets/files/2010-06-21-coloredlabels.png" />
 
 With Froyo, this functionality is now available in my mobile device allowing me to visually identify emails of high interest.
 
@@ -211,7 +211,7 @@ Having this functionality on my mobile device is invaluable!
 **Easier navigation between emails - New < > buttons appear on the phone to get you from email to email**
 
 Another huge improvement in the navigation part as far as emails are concerned came in the screen where I read a specific email.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-emailleftrightbuttons.png" />
+<img class="post-image" src="/assets/files/2010-06-21-emailleftrightbuttons.png" />
 
 There are two extra buttons at the bottom of that screen which allow navigation to the previous or next message.
 
@@ -228,7 +228,7 @@ One thing that I love about voice search is the voice navigation. I have purchas
 ##### Marketplace – Update all, autoupdate for each application
 
 This feature was missing and was probably one of the ones that were mostly requested by the users. The **Update All** to the installed applications.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-uploadall.png" />
+<img class="post-image" src="/assets/files/2010-06-21-uploadall.png" />
 
 Luckily the Android developers have heard our pleas and Froyo now features an **Update All** button at the bottom of the *Downloads* section in the *Marketplace* application.
 
@@ -247,9 +247,9 @@ I have sent a text message to my AT&T number and did see the trackball glowing b
 ##### New icons for USB Connect/Disconnect and USB debugging
 
 These ones I loved them the first time I saw them. If  USB debugging is enabled  (<em>Settings - Applications - Development - USB Debugging</em>), the minute the phone is connected to the computer using the USB cable, a new icon will appear in the notification area (Figure 15). It appears that it is an android bug of sorts :)
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-usbdebuggingicon.png" />
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-usbon.png" />
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-usboff.png" />
+<img class="post-image" src="/assets/files/2010-06-21-usbdebuggingicon.png" />
+<img class="post-image" src="/assets/files/2010-06-21-usbon.png" />
+<img class="post-image" src="/assets/files/2010-06-21-usboff.png" />
 
 When the phone is connected to the computer via the USB cable, the user has the ability to use the SD card as a storage device. Once the relevant entry in the notification bar is tapped, the screen with the "Turn on USB storage" will appear. If I switch the USB storage on, the screen changes slightly.
 
@@ -258,7 +258,7 @@ These were two really cool (in my view) new screens that engage the user even mo
 ##### Camera control
 
 A new enhancement appeared in the Camera application (Figure 18).
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-camera-controls.png" />
+<img class="post-image" src="/assets/files/2010-06-21-camera-controls.png" />
 
 The new menu that changes position based on the orientation of your phone (horizontal or vertical) allow for zooming, flash control, white balance control, geolocation and exposure.
 
@@ -276,7 +276,7 @@ Unfortunately these controls only appear when taking photos and not when shootin
 ##### Select text
 
 This is an area where the iPhone was far better than the Eclair and unfortunately still is with Froyo. The gap though has decreased significantly.
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-selecttext.png" />
+<img class="post-image" src="/assets/files/2010-06-21-selecttext.png" />
 
 With Froyo I can now select text from say an email and paste it somewhere else - even a different application. The **Select Text** option is hidden under the **More** menu button and once selected, it creates a small mouse pointer. That is the start of where it will start selecting (Figure 20).
 
@@ -284,14 +284,14 @@ With Froyo I can now select text from say an email and paste it somewhere else -
 I simply point to the top left area I want to copy from and drag my finger diagonally to end up at the bottom right of the area I want to select. This will select the text in a very appealing pink color and as soon as I lift my finger from the screen it will copy the text on the keyboard (Figure 21).
 
 The technique on the iPhone is better but not by much - as I wrote the gap has decreased significantly. On the iPhone you have a magnifying glass where you can pinpoint exactly where you want to start copying (or inserting text - same functionality).
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-select-text-1.png" />
+<img class="post-image" src="/assets/files/2010-06-21-select-text-1.png" />
 
 Again unfortunately this functionality (the one with the magnifying glass for selecting text) is patented by Apple Inc. and will not be seen on an Android based phone but I am sure that the Android developers will come up with something that will give us the same if not better user experience.
 
 ##### FLASH Support
 
 Steve Jobs [never kept secret](https://www.apple.com/hotnews/thoughts-on-flash/) his thoughts about Flash support on an iPhone. Although many people were hopeful that something will be worked out with Adobe in the end, Mr. Jobs shut the door on Adobe. Adobe then invested time and resources to work something out and right before they were able to release their solution Apple changed the iPhone Developer License Agreement to allow only applications written in Objective-C, C, C++ or Javascript and executed by the OS Webkit engine. Adobe [had enough](https://mashable.com/2010/04/09/apple-adobe-flash-ban/) and issued a '[screw you apple](https://theflashblog.com/?p=1888)' (not officially of course).
-<img class="post-image" src="{{ site.baseurl }}/assets/files/2010-06-21-pacman.png" />
+<img class="post-image" src="/assets/files/2010-06-21-pacman.png" />
 
 The [presentation on Day 2 at Google I/O](https://youtu.be/IY3U2GXhz44) included the news that Flash will be allowed and supported on Android based phones that run Froyo (or newer versions).
 

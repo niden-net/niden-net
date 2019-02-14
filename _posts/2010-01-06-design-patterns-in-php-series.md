@@ -26,8 +26,8 @@ As usual comments are more than welcome.
 
 The design patterns I will discuss in posts of these series are as:
 
-* <a href="https://www.niden.net/2010/01/design-patterns-singleton-series-how-to/">Singleton Pattern</a>
-* <a href="https://www.niden.net/2010/01/design-patterns-factory-series-how-to/">Factory Pattern</a>
+* [Singleton Pattern](/post/design-patterns-singleton-series-how-to)
+* [Factory Pattern](/postdesign-patterns-factory-series-how-to)
 * Registry Pattern
 * Decorator Pattern
 * Adapter Pattern

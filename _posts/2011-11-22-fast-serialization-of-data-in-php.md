@@ -263,7 +263,7 @@ As far as size is concerned, `json_encode` seems to be producing the smallest re
 
 ##### Size comparison
 
-![]({{ site.baseurl }}/assets/files/2011-11-22-figure-1.png)
+![](/assets/files/2011-11-22-figure-1.png)
 
 **Strings**
 
@@ -323,7 +323,7 @@ igbinary_serialize() [all]: Size: 478 bytes, 18.053789138794 time to encode
 
 ##### Speed comparison
 
-![]({{ site.baseurl }}/assets/files/2011-11-22-figure-2.png)
+![](/assets/files/2011-11-22-figure-2.png)
 
 Analyzing the time it took for each test to be completed, we see again that json_encode is the clear winner (highlighted in bold the shortest time for the function).
 
@@ -401,7 +401,7 @@ In the tests below once can easily see that `igbinary` is the clear winner. At t
 
 ##### Speed comparison
 
-![]({{ site.baseurl }}/assets/files/2011-11-22-figure-3.png)
+![](/assets/files/2011-11-22-figure-3.png)
 
 **Strings**
 
