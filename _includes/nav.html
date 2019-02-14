@@ -1,49 +1,43 @@
-<nav class="navbar navbar-inverse navbar-fixed-top app-navbar">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button"
-                    class="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target="#navbar-collapse-main">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <strong>{{ site.name }}</strong>
-            </a>
-        </div>
-        <div class="navbar-collapse collapse"
-             id="navbar-collapse-main">
-            <ul class="nav navbar-nav hidden-xs">
-                <li class="active">
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/tags">Tags</a>
-                </li>
-                <li>
-                    <a href="/about">About</a>
-                </li>
-                <li>
-                    <a href="/disclaimer">Disclaimer</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
-                <li>
-                    <a class="app-notifications"
-                       href="https://github.com/niden">
-                        <span class="icon icon-github-with-circle"></span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg">
-                <li><a href="/">Home</a></li>
-                <li><a href="/tags">Tags</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/disclaimer">Disclaimer</a></li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary app-navbar">
+    <a class="navbar-brand" href="/">
+        <strong>niden.net</strong>
+    </a>
+
+    <button
+            class="navbar-toggler navbar-toggler-right d-md-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item{% if '/' == page.url %} active{% endif %}">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item{% if '/tags' == page.url %} active{% endif %}">
+                <a class="nav-link" href="/tags">Tags</a>
+            </li>
+            <li class="nav-item{% if '/archives' == page.url %} active{% endif %}">
+                <a class="nav-link" href="/archives">Archives</a>
+            </li>
+            <li class="nav-item{% if '/about' == page.url %} active{% endif %}">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item{% if '/disclaimer' == page.url %} active{% endif %}">
+                <a class="nav-link" href="/disclaimer">Disclaimer</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav float-right mr-0 d-none d-md-flex">
+            <li class="nav-item">
+                <a class="app-notifications nav-link" href="https://github.com/niden">
+                    <span class="icon icon-github"></span>
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>

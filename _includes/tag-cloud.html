@@ -1,13 +1,13 @@
-                    <div class="panel panel-default panel-link-list">
-                        <div class="panel-body">
-                            <h5 class="m-t-0">Tag Cloud</h5>
+                    <div class="card card-default card-link-list">
+                        <div class="card-body">
+                            <h5 class="mb-3">Tag Cloud</h5>
                             {% assign tags = site.tags | sort %}
-                            {% for tag in tags %}
+                            {% for tag in tags %}{% unless forloop.index > 12 %}
                             <span style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
                                 <a href="/tags#{{ tag | first | slugify }}">
                                     {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
                                 </a>
                             </span>
-                            {% endfor %}
+                            {% endunless %}{% endfor %}
                         </div>
                     </div>

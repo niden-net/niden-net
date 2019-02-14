@@ -18,9 +18,9 @@ my client portfolio includes:
 * AllNaturalSoapStore.com
 * BabyPartner.com
 * BurntOutMom.com
-* [DigitalWeddingForum.com](http://DigitalWeddingForum.com)
-* [DrugBuyers.com](http://DrugBuyers.com)
-* [Edenspace.com](http://Edenspace.com)
+* DigitalWeddingForum.com
+* DrugBuyers.com
+* Edenspace.com
 * [FourFriends.com](http://FourFriends.com)
 * FusionBB.com
 * FusionBBDev.com
@@ -42,16 +42,16 @@ my client portfolio includes:
 
 Some of my Google Apps clients include:
 
-* [Advallett.com](http://Advallett.com)
-* [AllNaturalSoapStore.com](http://AllNaturalSoapStore.com)
-* [BeautyAndTheGeek.IT](http://BeautyAndTheGeek.IT)
+* Advallett.com
+* AllNaturalSoapStore.com
+* BeautyAndTheGeek.IT
 * [BillingYourWay.com](http://BillingYourWay.com)
-* [BurntOutMom.com](http://BurntOutMom.com)
+* BurntOutMom.com
 * Chelco.com.cy
 * [DNM.gr](http://DNM.gr)
 * DuplantisGroup.com
-* [EdenSpace.com](http://EdenSpace.com)
-* [Kalogiros.com](http://Kalogiros.com)
+* EdenSpace.com
+* Kalogiros.com
 * [LongHairCareForum.com](http://LongHairCareForum.com)
 * PassPrepaid.com
 * Prepaid-Sites.com
