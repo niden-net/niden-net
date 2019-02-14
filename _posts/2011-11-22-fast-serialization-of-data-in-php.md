@@ -467,7 +467,7 @@ If your application is mostly focused on reads rather than writes, `igbinary` is
 #### Updates
 
 **2013-03-07**: memcached was not used with igbinary. PHP version for tests was 5.3.1 on a Linux Mint machine with 6GB RAM
-**2013-06-14**: Reader [Dennis](https://plus.google.com/108631471182890836450/posts) has been kind enough to run the same script on his server and share the results with me. He run the scripts on a i7-3930K, 64GB, Debian Squeeze with the latest version of PHP (5.4.16) and igbinary.
+**2013-06-14**: Reader Dennis has been kind enough to run the same script on his server and share the results with me. He run the scripts on a i7-3930K, 64GB, Debian Squeeze with the latest version of PHP (5.4.16) and igbinary.
 
 ##### Serialize
 

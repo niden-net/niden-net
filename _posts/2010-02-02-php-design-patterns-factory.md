@@ -145,7 +145,7 @@ You can easily see the problem here. There is a lot of repetition in the code, n
 
 That week though taught me that I need to pay more attention in designing rather than going full speed ahead with programming and later on paying the consequences.
 
-After thorough research, I discovered a library that would support both platforms. The library that I found was [ADOdb](https://adodb.sourceforge.net/) which is a perfect example of the Factory Pattern. I used that library later on for a different project, but just looking at the code and understanding the flow of operations as well as the implementation of the pattern itself was invaluable to me.
+After thorough research, I discovered a library that would support both platforms. The library that I found was [ADOdb](https://adodb.org) which is a perfect example of the Factory Pattern. I used that library later on for a different project, but just looking at the code and understanding the flow of operations as well as the implementation of the pattern itself was invaluable to me.
 
 #### Interfaces
 

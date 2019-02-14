@@ -72,4 +72,4 @@ Please note that I am not the original author of the email and I do not know if 
 
 No matter what the country of your origin, there are always some people that step up in difficult situations. Those men and women gladly give their lives for the better good, so that others can enjoy a better future. Those people are the Veterans that we must always remember and honor.
 
-There is plenty of material regarding Memorial Day on the Internet. A site worth visiting is [https://www.usmemorialday.org/](https://www.usmemorialday.org/) and two videos worth watching on YouTube are [https://youtu.be/afd_sDNYbpY](https://youtu.be/afd_sDNYbpY) and [https://youtu.be/wK0T4pVHP28](https://youtu.be/wK0T4pVHP28)
+There is plenty of material regarding Memorial Day on the Internet. A site worth visiting is https://www.usmemorialday.org and two videos worth watching on YouTube are [https://youtu.be/afd_sDNYbpY](https://youtu.be/afd_sDNYbpY) and [https://youtu.be/wK0T4pVHP28](https://youtu.be/wK0T4pVHP28)

@@ -9,7 +9,7 @@ tags:
   - how-to
 image: '/assets/files/phalcon-logo.png'
 ---
-It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](https://www.harryhogfootball.com/) using [PhalconPHP](https://phalconphp.com/) and [AngularJS](https://angularjs.org/)
+It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](http://www.harryhogfootball.com/) using [PhalconPHP](https://phalconphp.com/) and [AngularJS](https://angularjs.org/)
 
 If you haven't read it, the first two blog posts were [here]({{ site.baseurl }}/post/building-web-app-with-phalconphp-and-angularjs-part-i) and [here]({{ site.baseurl }}/post/building-web-app-with-phalconphp-and-angularjs-part-ii).
 

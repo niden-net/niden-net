@@ -10,7 +10,7 @@ tags:
   - vps
 image: '/assets/files/2011-03-21-vps.png'
 ---
-Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](https://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](https://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
+Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](http://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](http://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
 
 Since I moved my emails to [Google Apps](https://google.com/a/) I only need the hosting for my personal sites such as my blog, my wife's sites (burntoutmom.com, greekmommy.net) and a few other small sites.
 
@@ -62,7 +62,7 @@ I have been using Linode for a week and so far so good. The support is superb an
 
 #### Resources
 
-* [Vertexhost](https://www.vertexhost.com/)
+* [Vertexhost](http://www.vertexhost.com/)
 * [Slicehost](https://www.slicehost.com)
 * [Rackspace](https://www.rackspace.com)
 * [Gentoo](https://www.gentoo.org/)
