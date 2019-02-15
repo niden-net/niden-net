@@ -42,4 +42,4 @@ The design patterns I will discuss in posts of these series are as:
 * Table Data Gateway Pattern
 * Data Mapper Pattern
 
-You can check this blog every week, <a href="https://feeds.feedburner.com/nikosdimopoulos">subscribe to the RSS feed</a>, <a href="https://twitter.com/nikosdimopoulos">follow me on Twitter</a> or <a href="https://profiles.google.com/104235485963468152376">follow my Google Reader</a> (or all of the above).
+You can check this blog every week, [subscribe to the RSS feed](/feed.xml) or follow me on [GitHub](https://github.com/niden) (or all of the above).
