@@ -26,7 +26,7 @@ Go to your Discord server and click the gear icon next to the channel you wish t
 
 Click Webhooks and add a new one, modifying the name to whatever you want. You can also change the channel for the hook.
 
-![Discord Webhook](/files/hook-01.png "Discord Webhook")
+![Discord Webhook](/assets/files/hook-01.png "Discord Webhook")
 
 Once you created the webhook, copy its URL.
 
@@ -34,14 +34,14 @@ Once you created the webhook, copy its URL.
 
 Go to your application in Netlify and click the **Deploy** link. Click the **Notifications** button.
 
-![Notifications in Netlify](/files/notification.png "Notifications in Netlify")
+![Notifications in Netlify](/assets/files/notification.png "Notifications in Netlify")
 
 Click the **Add Notification** button and click **Slack Integration** from the dropdown.
-![Slack Integration](/files/hook-02.png "Slack Integration")
+![Slack Integration](/assets/files/hook-02.png "Slack Integration")
 
 A popup window will appear. You can then choose the hook you want (deploy started, deploy successful, deploy failed etc.). You will need then to paste the webhook URL (that you copied from Discord) in the _Slack Incoming Webhook URL_ field, suffixed with `/slack`.
 
-![Adding the hook](/files/hook-03.png "Adding the hook")
+![Adding the hook](/assets/files/hook-03.png "Adding the hook")
 
 **IMPORTANT**:  For the hook to work, you **must** append at the end `/slack`. So if your webhook URL is:
 
@@ -57,7 +57,7 @@ https://example.org/blahblah/slack
 
 That's it. After that, any successful build will show a message similar to the one below in your Discord channel.
 
-![Successful build on Discord](/files/discord.png "Successful build on Discord")
+![Successful build on Discord](/assets/files/discord.png "Successful build on Discord")
 
 If you wish to see the integration in action, you can stop by our [Discord](https://phalcon.link/discord) server and say hi!
 
