@@ -13,8 +13,6 @@ But should we be talking about titles, experience or knowledge? What gauges sala
 
 It is a common mistake that companies make, that equate title with experience and thus salary. There have been some trends lately from Software companies to reward mostly experience than titles but this trend is not moving fast enough.
 
-![](/assets/files/accounting-balance-bank-notes-2068975.jpg)
-
 ### Scenario 1
 
 You have a guy that started as a Junior Software Developer. He was moved to technical support with little access to code and stayed there. For whatever reason, he was happy where he was. Time passed, he got a raise every year and fast forward 10 years later he is making 100K and has the title of Intermediate Software Developer.
