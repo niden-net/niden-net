@@ -12,52 +12,9 @@ My expertise includes but is not limited to PHP, MySQL, MSSQL, AJAX, distributed
 
 I am also working in educating anyone who wants to listen :) on the benefits of Open Source applications and the benefits of using the Internet/Cloud versus the traditional server/desktop approach.
 
-To that effect I have implemented Google Apps in numerous domains. Some of
-my client portfolio includes:
+I am a core member of [Phalcon](https://phalconphp.com), a PHP framework delivered as a C extension and written in [Zephir](https://zephir-lang.com).
 
-* AllNaturalSoapStore.com
-* BabyPartner.com
-* BurntOutMom.com
-* DigitalWeddingForum.com
-* DrugBuyers.com
-* Edenspace.com
-* [FourFriends.com](http://FourFriends.com)
-* FusionBB.com
-* FusionBBDev.com
-* HuntAndFishFinders.com
-* InPiega.com
-* IowaWhiteTail.com
-* [KOHUnlimited.com](http://KOHUnlimited.com)
-* [LongHairCareForum.com](http://LongHairCareForum.com)
-* MMA2OM.com
-* [Neopets.com](http://Neopets.com)
-* [Omogenia.com](http://Omogenia.com)
-* PavementPro.com
-* [Scrapbook.com](http://Scrapbook.com)
-* [StepTogether.org](http://StepTogether.org)
-* ThreadsDev.NET
-* [UltimateNurse.com](http://UltimateNurse.com)
-* [VertexHost.com](http://VertexHost.com)
-* [VespaForumHellas.gr](http://VespaForumHellas.gr)
-
-Some of my Google Apps clients include:
-
-* Advallett.com
-* AllNaturalSoapStore.com
-* BeautyAndTheGeek.IT
-* [BillingYourWay.com](http://BillingYourWay.com)
-* BurntOutMom.com
-* Chelco.com.cy
-* [DNM.gr](http://DNM.gr)
-* DuplantisGroup.com
-* EdenSpace.com
-* Kalogiros.com
-* [LongHairCareForum.com](http://LongHairCareForum.com)
-* PassPrepaid.com
-* Prepaid-Sites.com
-* TheIgnitionPoint.com
-* TIPoint.com
-* [Tsielepis.com.cy](http://Tsielepis.com.cy)
+I am a [Zend Certified Engineer](https://www.zend.com/en/yellow-pages/ZEND006669) and a [Professional Sum Developer](https://www.scrum.org/user/504482).
 
 Thanks for visiting. Should you have any queries, feel free to contact me.
 
