@@ -1,7 +1,7 @@
 comments:
   allowedFields: ["name", "email", "message"]
   branch: "master"
-  commitMessage: "Add comment"
+  commitMessage: "add [comment]: by {fields.author} <Staticman>\n\n{fields.permalink}#comment-{@id}"
   filename: "entry{@timestamp}"
   format: "yaml"
   generatedFields:
