@@ -28,7 +28,7 @@ comments:
     # Mailgun domain (encrypted)
   #domain: "4r3e2w1q"
 
-  path: "_data/comments/{options.slug}"
+  path: "comments/{options.slug}"
   requiredFields: ["name", "email", "message"]
   transforms:
     email: md5
