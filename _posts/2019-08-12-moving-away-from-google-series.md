@@ -8,7 +8,7 @@ tags:
   - series
 ---
 This is a series of posts, regarding my efforts to _remove_ as much as possible myself as well as my family from using Google services. 
-
+<!--more-->
 Why you may ask? What has Google done to you?
 
 In case you have been living under a rock or something, Google is not the company that it started to be. Somewhere down the line the motto:
