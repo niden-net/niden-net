@@ -27,7 +27,7 @@ Nothing wrong with that you might say. I agree. However, if that data is used fo
 
 Freedom of speech in the US is exactly that. The freedom to speak and say whatever you like. So long as you don't incite violence anything is fair game. If your speech is not popular, you will end up talking to yourself in the mirror because nobody would want to talk to you. That however does not mean that you must not speak.
 
-The latest [whistle blowers](https://www.bitchute.com/video/ricI5t66cj8/) from Google showcased the bias the company holds and the manipulation of data that happens on their services.
+The [latest](https://www.bitchute.com/video/g1VeElBAeas) [whistle blowers](https://www.bitchute.com/video/ricI5t66cj8/) from Google showcased the bias the company holds and the manipulation of data that happens on their services.
 
 As a result, I choose to not voluntarily give them my data any more. It is extremely worrisome to see how much data Google gathers and has gathered throughout the years for myself and my family.
 
