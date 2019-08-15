@@ -43,5 +43,6 @@ This series of posts will try and address what alternatives there are out there,
 * Google Photos
 * Google Books
 * Google Music
+* Google Voice
 
 I will update this list with more products as I post on these series.
