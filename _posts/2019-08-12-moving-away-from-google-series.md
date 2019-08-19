@@ -14,10 +14,12 @@ Why you may ask? What has Google done to you?
 In case you have been living under a rock or something, Google is not the company that it started to be. Somewhere down the line the motto:
 
 > Don't be evil
+{: .alert .alert-info}
 
 changed to something like:
 
 > Don't be evil to the ones that follow our ideology
+{: .alert .alert-danger}
 
 which is is somewhat problematic. Once you are not following _their_ ideology and values, then you are a target.
 
