@@ -14,12 +14,10 @@ Why you may ask? What has Google done to you?
 In case you have been living under a rock or something, Google is not the company that it started to be. Somewhere down the line the motto:
 
 > Don't be evil
-{: .alert .alert-info}
 
 changed to something like:
 
 > Don't be evil to the ones that follow our ideology
-{: .alert .alert-danger}
 
 which is is somewhat problematic. Once you are not following _their_ ideology and values, then you are a target.
 
@@ -35,16 +33,16 @@ As a result, I choose to not voluntarily give them my data any more. It is extre
 
 This series of posts will try and address what alternatives there are out there, to replace the Google suite of tools
 
+* Google Mail (GMail)
+* Google Maps
+* Google Photos
+* Google Books
+* Google Music
+* Google Voice
 * Android Phone
 * Android Account
 * Contacts
 * Calendar
 * Google Play Store (Android)
-* Google Maps
-* Google Mail (GMail)
-* Google Photos
-* Google Books
-* Google Music
-* Google Voice
 
 I will update this list with more products as I post on these series.
