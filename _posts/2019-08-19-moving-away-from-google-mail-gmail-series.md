@@ -13,7 +13,7 @@ tags:
 
 Leaving Gmail is difficult. In some cases impossible. Google with their thousands of employees and years of experience in the field, have created an excellent product that definitely helps people throughout the world. The features offered are excellent, mature and time saving. 
 
-The problem starts with what Google does with your data. The fact that some Artificial Intelligence (AI) algorithm scans your emails as they come in or go out and creates more metadata for your own social profile is the problem. What is that data used for? One of the explanations is targeted advertising. However, with the recent revelations on the bias that exists in Google, especially against voices that they do not agree with, it is difficult to at least not be skeptical. 
+The problem starts with what Google does with your data. The fact that some Artificial Intelligence (AI) algorithm scans your emails as they come in or go out and creates more metadata for your own social profile is the problem. What is that data used for? One of the explanations is targeted advertising. However, with the recent revelations on the bias that exists in Google, especially against voices that they do not agree with, it is difficult to not be skeptical and concerned. 
 
 I have researched a lot in terms of finding a suitable home for my and my family's emails. There are three factors that I took into account:
 
@@ -21,4 +21,16 @@ I have researched a lot in terms of finding a suitable home for my and my family
 - Ease of use
 - Price
 
-If you look at all three factors, Gmail is pretty much at the top of the list. For the alternatives though I found 
+If you look at all three factors, Gmail is pretty much at the top of the list. As alternatives (and this is just my personal opinion) the following services made my top list:
+- [Zoho Mail](https://mail.zoho.com)
+- [Librem One](https://librem.one)
+- [Tutanota](https://tutanotal.com)
+- [Kolab Now](https://kolabnow.com)
+- [ProtonMail](https://protonmail.com)
+
+### Zoho Mail
+
+### Librem One
+### Tutanota
+### Kolab Now
+### ProtonMail
