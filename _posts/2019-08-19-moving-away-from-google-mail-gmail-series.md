@@ -70,3 +70,4 @@ One thing to note is that ProtonMail offers a free mail service. You don't get t
 If you embark on a similar journey to remove _don't be evil_ from your online life, an encrypted email service will serve you well. Yes of course you will have to pay for it, but remember:
 
 > if you don't pay for a product, you are the product
+{: .alert .alert-danger }
