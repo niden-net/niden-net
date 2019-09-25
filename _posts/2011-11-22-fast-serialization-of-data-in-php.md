@@ -30,67 +30,74 @@ I created a test script that used several arrays of data (strings, integers, flo
 The script that I have used is listed below:
 
 ```php
-$_testStrings = array(
-    'AK' => 'Alaska',   'AZ' => 'Arizona', 'VT' => 'Vermont',
-    'VA' => 'Virginia', 'AZ' => 'West Virginia',
-);
+$testStrings = [
+    'AK' => 'Alaska',   
+    'AZ' => 'Arizona', 
+    'VT' => 'Vermont',
+    'VA' => 'Virginia', 
+    'WV' => 'West Virginia',
+];
  
-$_testIntegers = array(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 84, 144,);
+$testIntegers = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 84, 144,];
 
-$_testBooleans = array(TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE,);
+$testBooleans = [true, true, true, true, false, true, true,];
  
-$_testFloats = array(
+$testFloats = [
     0, 1.1, 1.1, 2.22, 3.33, 5.55, 8.88, 13.13, 21.2121, 34.3434, 
     55.5555, 84.8484, 144.144,
+];
+ 
+$testMixed = [
+    'one', 
+    13     => 'two', 
+    0      => 25.46, 
+    'four' => 0.007, 
+    'five' => true, 
+    true   => 42,
 );
  
-$_testMixed = array(
-    'one', 13 => 'two', 0 => 25.46, 'four' => 0.007, 
-    'five' => TRUE, TRUE => 42,
-);
+$objectOne             = new \stdClass();
+$objectOne->firstname  = 'Leroy';
+$objectOne->lastname   = 'Jenkins';
+$objectOne->profession = 'Gamer';
+$objectOne->status     = 'Legend';
  
-$_objectOne            = new stdClass();
-$_objectOne->firstname  = 'Leroy';
-$_objectOne->lastname   = 'Jenkins';
-$_objectOne->profession = 'Gamer';
-$_objectOne->status     = 'Legend';
+$objectTwo         = new \stdClass();
+$objectTwo->series = 'Fibonacci';
+$objectTwo->data   = $testIntegers;
  
-$_objectTwo        = new stdClass();
-$_objectTwo->series = 'Fibonacci';
-$_objectTwo->data   = $_testIntegers;
- 
-$_testObjects = array($_objectOne, $_objectTwo,);
+$testObjects = [$objectOne, $objectTwo,];
 
-$_maxLoop = 1000000;
+$maxLoop = 1000000;
 
-$_templateEncode = "%s [%s]: Size: %s bytes, %s time to encode\r\n";
-$_templateDecode = "%s [%s]: %s time to decode\r\n";
+$templateEncode = "%s [%s]: Size: %s bytes, %s time to encode\r\n";
+$templateDecode = "%s [%s]: %s time to decode\r\n";
 
 set_time_limit(0);
 
-$_output = '';
+$output = '';
 
 /**
  * Set the source arrays
  */
-$_allTestData = array(
-    'str' => $_testStrings,
-    'int' => $_testIntegers,
-    'bln' => $_testBooleans,
-    'flt' => $_testFloats,
-    'mix' => $_testMixed,
-    'obj' => $_testObjects,
-);
+$allTestData = [
+    'str' => $testStrings,
+    'int' => $testIntegers,
+    'bln' => $testBooleans,
+    'flt' => $testFloats,
+    'mix' => $testMixed,
+    'obj' => $testObjects,
+];
 
-$_testSources = array(
-    'strings'  => $_testStrings,
-    'integers' => $_testIntegers,
-    'booleans' => $_testBooleans,
-    'floats'   => $_testFloats,
-    'mixed'    => $_testMixed,
-    'objects'  => $_testObjects,
-    'all'      => $_allTestData,
-);
+$testSources = [
+    'strings'  => $testStrings,
+    'integers' => $testIntegers,
+    'booleans' => $testBooleans,
+    'floats'   => $testFloats,
+    'mixed'    => $testMixed,
+    'objects'  => $testObjects,
+    'all'      => $allTestData,
+];
  
 /**
  * ENCODE DATA
@@ -99,78 +106,78 @@ $_testSources = array(
 /**
  * Start each test
  */
-foreach ($_testSources as $_area => $_source)
+foreach ($testSources as $area => $source)
 {
     /**
      * Start the timer
      */
-    $_serializeStart = microtime(TRUE);
+    $serializeStart = microtime(true);
 
-    for ($_counter = 0; $_counter < $_maxLoop; $_counter++)
+    for ($counter = 0; $counter < $maxLoop; $counter++)
     {
-        serialize($_source);
+        serialize($source);
     }
 
-    $_serializeEnd = microtime(TRUE);
+    $serializeEnd = microtime(true);
 
-    $_serializeOutput = serialize($_source);
+    $serializeOutput = serialize($source);
 
-    $_output .= sprintf(
-        $_templateEncode,
+    $output .= sprintf(
+        $templateEncode,
         'serialize()', 
-        $_area, 
-        strlen($_serializeOutput), 
-        $_serializeEnd - $_serializeStart
+        $area, 
+        strlen($serializeOutput), 
+        $serializeEnd - $serializeStart
     );
  
     /**
      * JSON
      */
-    $_jsonStart = microtime(TRUE);
+    $jsonStart = microtime(true);
 
-    for ($_counter = 0; $_counter < $_maxLoop; $_counter++)
+    for ($counter = 0; $counter < $maxLoop; $counter++)
     {
-        json_encode($_source);
+        json_encode($source);
     }
 
-    $_jsonEnd = microtime(TRUE);
+    $jsonEnd = microtime(true);
 
-    $_jsonOutput = json_encode($_source);
+    $jsonOutput = json_encode($source);
 
-    $_output .= sprintf(
-        $_templateEncode,
+    $output .= sprintf(
+        $templateEncode,
         'json_encode()', 
-        $_area, 
-        strlen($_jsonOutput), 
-        $_jsonEnd - $_jsonStart
+        $area, 
+        strlen($jsonOutput), 
+        $jsonEnd - $jsonStart
     );
  
     /**
      * igbinary
      */
-    $_igbinaryStart = microtime(TRUE);
+    $igbinaryStart = microtime(true);
 
-    for ($_counter = 0; $_counter < $_maxLoop; $_counter++)
+    for ($counter = 0; $counter < $maxLoop; $counter++)
     {
-        igbinary_serialize($_source);
+        igbinary_serialize($source);
     }
 
-    $_igbinaryEnd = microtime(TRUE);
+    $igbinaryEnd = microtime(true);
 
-    $_igbinaryOutput = igbinary_serialize($_source);
+    $igbinaryOutput = igbinary_serialize($source);
 
-    $_output .= sprintf(
-        $_templateEncode,
+    $output .= sprintf(
+        $templateEncode,
         'igbinary_serialize()', 
-        $_area, 
-        strlen($_igbinaryOutput), 
-        $_igbinaryEnd - $_igbinaryStart
+        $area, 
+        strlen($igbinaryOutput), 
+        $igbinaryEnd - $igbinaryStart
     );
 
-    $_output .= str_repeat('=', 20) . "\r\n";
+    $output .= str_repeat('=', 20) . "\r\n";
 }
 
-$_output .= str_repeat('=:=', 20) . "\r\n";
+$output .= str_repeat('=:=', 20) . "\r\n";
 
 
 /**
@@ -180,79 +187,79 @@ $_output .= str_repeat('=:=', 20) . "\r\n";
 /**
  * Start each test
  */
-foreach ($_testSources as $_area => $_source)
+foreach ($testSources as $area => $source)
 {
     /**
      * Start the timer
      */
-    $_data = serialize($_source);
+    $data = serialize($source);
 
-    $_serializeStart = microtime(TRUE);
+    $serializeStart = microtime(true);
 
-    for ($_counter = 0; $_counter < $_maxLoop; $_counter++)
+    for ($counter = 0; $counter < $maxLoop; $counter++)
     {
-        unserialize($_data);
+        unserialize($data);
     }
 
-    $_serializeEnd = microtime(TRUE);
+    $serializeEnd = microtime(true);
 
-    $_output .= sprintf(
-        $_templateDecode,
+    $output .= sprintf(
+        $templateDecode,
         'unserialize()', 
-        $_area, 
-        $_serializeEnd - $_serializeStart
+        $area, 
+        $serializeEnd - $serializeStart
     );
 
     /**
      * JSON
      */
-    $_data = json_encode($_source);
+    $data = json_encode($source);
 
-    $_jsonStart = microtime(TRUE);
+    $jsonStart = microtime(true);
 
-    for ($_counter = 0; $_counter < $_maxLoop; $_counter++)
+    for ($counter = 0; $counter < $maxLoop; $counter++)
     {
-        json_decode($_data, TRUE);
+        json_decode($data, true);
     }
 
-    $_jsonEnd = microtime(TRUE);
+    $jsonEnd = microtime(true);
 
-    $_jsonOutput = json_encode($_source);
+    $jsonOutput = json_encode($source);
 
-    $_output .= sprintf(
-        $_templateDecode,
+    $output .= sprintf(
+        $templateDecode,
         'json_decode()', 
-        $_area, 
-        $_jsonEnd - $_jsonStart
+        $area, 
+        $jsonEnd - $jsonStart
     );
 
     /**
      * igbinary
      */
-    $_data = igbinary_serialize($_source);
+    $data = igbinary_serialize($source);
 
-    $_igbinaryStart = microtime(TRUE);
+    $igbinaryStart = microtime(true);
 
-    for ($_counter = 0; $_counter < $_maxLoop; $_counter++)
+    for ($counter = 0; $counter < $maxLoop; $counter++)
     {
-        igbinary_unserialize($_data);
+        igbinary_unserialize($data);
     }
 
-    $_igbinaryEnd = microtime(TRUE);
+    $igbinaryEnd = microtime(true);
 
-    $_igbinaryOutput = igbinary_serialize($_source);
+    $igbinaryOutput = igbinary_serialize($source);
 
-    $_output .= sprintf(
-        $_templateDecode,
+    $output .= sprintf(
+        $templateDecode,
         'igbinary_unserialize()', 
-        $_area, 
-        $_igbinaryEnd - $_igbinaryStart
+        $area, 
+        $igbinaryEnd - $igbinaryStart
     );
 
-    $_output .= str_repeat('=', 20) . "\r\n";
+    $output .= str_repeat('=', 20) . "\r\n";
 }
  
-echo '' . $_output . '</pre>';
+echo '' . $output . '</pre>';
 ```
 
 #### Serializing results
@@ -267,7 +274,7 @@ As far as size is concerned, `json_encode` seems to be producing the smallest re
 
 **Strings**
 
-```html
+```bash
 serialize() [strings]: Size: 105 bytes, 1.8710339069366 time to encode
 json_encode() [strings]: Size: 67 bytes, 1.5691390037537 time to encode
 igbinary_serialize() [strings]: Size: 64 bytes, 3.2276048660278 time to encode <==
@@ -275,7 +282,7 @@ igbinary_serialize() [strings]: Size: 64 bytes, 3.2276048660278 time to encode <
 
 **Integers**
 
-```php
+```bash
 serialize() [integers]: Size: 121 bytes, 3.0198090076447 time to encode
 json_encode() [integers]: Size: 34 bytes, 1.2248229980469 time to encode <==
 igbinary_serialize() [integers]: Size: 58 bytes, 2.2877519130707 time to encode
@@ -283,7 +290,7 @@ igbinary_serialize() [integers]: Size: 58 bytes, 2.2877519130707 time to encode
 
 **Booleans**
 
-```php
+```bash
 serialize() [booleans]: Size: 62 bytes, 2.0834550857544 time to encode
 json_encode() [booleans]: Size: 39 bytes, 1.0889070034027 time to encode
 igbinary_serialize() [booleans]: Size: 27 bytes, 1.8252439498901 time to encode <==
@@ -291,7 +298,7 @@ igbinary_serialize() [booleans]: Size: 27 bytes, 1.8252439498901 time to encode 
 
 **Floats**
 
-```php
+```bash
 serialize() [floats]: Size: 709 bytes, 27.496570825577 time to encode
 json_encode() [floats]: Size: 77 bytes, 5.0476500988007 time to encode <==
 igbinary_serialize() [floats]: Size: 142 bytes, 2.4856028556824 time to encode
@@ -299,7 +306,7 @@ igbinary_serialize() [floats]: Size: 142 bytes, 2.4856028556824 time to encode
 
 **Mixed**
 
-```php
+```bash
 serialize() [mixed]: Size: 178 bytes, 6.301619052887 time to encode
 json_encode() [mixed]: Size: 54 bytes, 2.0463008880615 time to encode
 igbinary_serialize() [mixed]: Size: 50 bytes, 2.3894169330597 time to encode <==
@@ -307,7 +314,7 @@ igbinary_serialize() [mixed]: Size: 50 bytes, 2.3894169330597 time to encode <==
 
 **Objects**
 
-```php
+```bash
 serialize() [objects]: Size: 326 bytes, 4.8698291778564 time to encode
 json_encode() [objects]: Size: 148 bytes, 2.4744520187378 time to encode <==
 igbinary_serialize() [objects]: Size: 177 bytes, 6.472992181778 time to encode
@@ -315,7 +322,7 @@ igbinary_serialize() [objects]: Size: 177 bytes, 6.472992181778 time to encode
 
 **All data types**
 
-```php
+```bash
 serialize() [all]: Size: 1567 bytes, 42.437592029572 time to encode
 json_encode() [all]: Size: 462 bytes, 9.9569129943848 time to encode <==
 igbinary_serialize() [all]: Size: 478 bytes, 18.053789138794 time to encode
@@ -329,7 +336,7 @@ Analyzing the time it took for each test to be completed, we see again that json
 
 **Strings**
 
-```php
+```bash
 serialize() [strings]: Size: 105 bytes, 1.8710339069366 time to encode
 json_encode() [strings]: Size: 67 bytes, 1.5691390037537 time to encode <==
 igbinary_serialize() [strings]: Size: 64 bytes, 3.2276048660278 time to encode
@@ -337,7 +344,7 @@ igbinary_serialize() [strings]: Size: 64 bytes, 3.2276048660278 time to encode
 
 **Integers**
 
-```php
+```bash
 serialize() [integers]: Size: 121 bytes, 3.0198090076447 time to encode
 json_encode() [integers]: Size: 34 bytes, 1.2248229980469 time to encode <==
 igbinary_serialize() [integers]: Size: 58 bytes, 2.2877519130707 time to encode
@@ -345,7 +352,7 @@ igbinary_serialize() [integers]: Size: 58 bytes, 2.2877519130707 time to encode
 
 **Booleans**
 
-```php
+```bash
 serialize() [booleans]: Size: 62 bytes, 2.0834550857544 time to encode
 json_encode() [booleans]: Size: 39 bytes, 1.0889070034027 time to encode <==
 igbinary_serialize() [booleans]: Size: 27 bytes, 1.8252439498901 time to encode
@@ -353,7 +360,7 @@ igbinary_serialize() [booleans]: Size: 27 bytes, 1.8252439498901 time to encode
 
 **Floats**
 
-```php
+```bash
 serialize() [floats]: Size: 709 bytes, 27.496570825577 time to encode
 json_encode() [floats]: Size: 77 bytes, 5.0476500988007 time to encode
 igbinary_serialize() [floats]: Size: 142 bytes, 2.4856028556824 time to encode <==
@@ -361,7 +368,7 @@ igbinary_serialize() [floats]: Size: 142 bytes, 2.4856028556824 time to encode <
 
 **Mixed**
 
-```php
+```bash
 serialize() [mixed]: Size: 178 bytes, 6.301619052887 time to encode
 json_encode() [mixed]: Size: 54 bytes, 2.0463008880615 time to encode <==
 igbinary_serialize() [mixed]: Size: 50 bytes, 2.3894169330597 time to encode
@@ -369,7 +376,7 @@ igbinary_serialize() [mixed]: Size: 50 bytes, 2.3894169330597 time to encode
 
 **Objects**
 
-```php
+```bash
 serialize() [objects]: Size: 326 bytes, 4.8698291778564 time to encode
 json_encode() [objects]: Size: 148 bytes, 2.4744520187378 time to encode <==
 igbinary_serialize() [objects]: Size: 177 bytes, 6.472992181778 time to encode
@@ -377,7 +384,7 @@ igbinary_serialize() [objects]: Size: 177 bytes, 6.472992181778 time to encode
 
 **All data types**
 
-```php
+```bash
 serialize() [all]: Size: 1567 bytes, 42.437592029572 time to encode
 json_encode() [all]: Size: 462 bytes, 9.9569129943848 time to encode <==
 igbinary_serialize() [all]: Size: 478 bytes, 18.053789138794 time to encode
@@ -405,7 +412,7 @@ In the tests below once can easily see that `igbinary` is the clear winner. At t
 
 **Strings**
 
-```php
+```bash
 unserialize() [strings]: 1.8259189128876 time to decode <==
 json_decode() [strings]: 2.6482670307159 time to decode
 igbinary_unserialize() [strings]: 1.8359968662262 time to decode
@@ -413,7 +420,7 @@ igbinary_unserialize() [strings]: 1.8359968662262 time to decode
 
 **Integers**
 
-```php
+```bash
 unserialize() [integers]: 2.3886890411377 time to decode <==
 json_decode() [integers]: 2.8659090995789 time to decode
 igbinary_unserialize() [integers]: 2.4441809654236 time to decode
@@ -421,7 +428,7 @@ igbinary_unserialize() [integers]: 2.4441809654236 time to decode
 
 **Booleans**
 
-```php
+```bash
 unserialize() [booleans]: 1.8097970485687 time to decode
 json_decode() [booleans]: 2.4416139125824 time to decode
 igbinary_unserialize() [booleans]: 1.7585029602051 time to decode <==
@@ -429,7 +436,7 @@ igbinary_unserialize() [booleans]: 1.7585029602051 time to decode <==
 
 **Floats**
 
-```php
+```bash
 unserialize() [floats]: 18.512004137039 time to decode
 json_decode() [floats]: 3.7896130084991 time to decode
 igbinary_unserialize() [floats]: 2.6730649471283 time to decode <==
@@ -437,7 +444,7 @@ igbinary_unserialize() [floats]: 2.6730649471283 time to decode <==
 
 **Mixed**
 
-```php
+```bash
 unserialize() [mixed]: 4.6794769763947 time to decode
 json_decode() [mixed]: 2.7775249481201 time to decode
 igbinary_unserialize() [mixed]: 1.9598047733307 time to decode <==
@@ -445,7 +452,7 @@ igbinary_unserialize() [mixed]: 1.9598047733307 time to decode <==
 
 **Objects**
 
-```php
+```bash
 unserialize() [objects]: 5.5468521118164 time to decode
 json_decode() [objects]: 5.7660481929779 time to decode
 igbinary_unserialize() [objects]: 5.2672090530396 time to decode <==
@@ -453,7 +460,7 @@ igbinary_unserialize() [objects]: 5.2672090530396 time to decode <==
 
 **All data types**
 
-```php
+```bash
 unserialize() [all]: 31.01339006424 time to decode
 json_decode() [all]: 14.574991941452 time to decode
 igbinary_unserialize() [all]: 10.734386920929 time to decode <==
@@ -472,7 +479,7 @@ If your application is mostly focused on reads rather than writes, `igbinary` is
 
 **Strings**
 
-```php
+```bash
 serialize() [strings]: Size: 105 bytes, 0.63280701637268 time to encode <== Time
 json_encode() [strings]: Size: 67 bytes, 0.78271317481995 time to encode
 igbinary_serialize() [strings]: Size: 64 bytes, 0.97228002548218 time to encode <== Size
@@ -480,7 +487,7 @@ igbinary_serialize() [strings]: Size: 64 bytes, 0.97228002548218 time to encode 
 
 **Integers**
         
-```php
+```bash
 serialize() [integers]: Size: 121 bytes, 1.3659980297089 time to encode
 json_encode() [integers]: Size: 34 bytes, 0.46304202079773 time to encode <== Time/Size
 igbinary_serialize() [integers]: Size: 58 bytes, 0.65074491500854 time to encode
@@ -488,7 +495,7 @@ igbinary_serialize() [integers]: Size: 58 bytes, 0.65074491500854 time to encode
 
 **Booleans**
         
-```php
+```bash
 serialize() [booleans]: Size: 62 bytes, 0.80747985839844 time to encode
 json_encode() [booleans]: Size: 39 bytes, 0.27534413337708 time to encode <== Time
 igbinary_serialize() [booleans]: Size: 27 bytes, 0.52206611633301 time to encode <== Size
@@ -496,7 +503,7 @@ igbinary_serialize() [booleans]: Size: 27 bytes, 0.52206611633301 time to encode
 
 **Floats**
         
-```php
+```bash
 serialize() [floats]: Size: 307 bytes, 6.3345258235931 time to encode
 json_encode() [floats]: Size: 77 bytes, 3.3697159290314 time to encode <== Time/Size
 igbinary_serialize() [floats]: Size: 142 bytes, 0.70451712608337 time to encode
@@ -504,7 +511,7 @@ igbinary_serialize() [floats]: Size: 142 bytes, 0.70451712608337 time to encode
 
 **Mixed**
         
-```php
+```bash
 serialize() [mixed]: Size: 105 bytes, 1.4573359489441 time to encode
 json_encode() [mixed]: Size: 54 bytes, 0.98674011230469 time to encode
 igbinary_serialize() [mixed]: Size: 50 bytes, 0.71359205245972 time to encode <== Time/Size
@@ -512,7 +519,7 @@ igbinary_serialize() [mixed]: Size: 50 bytes, 0.71359205245972 time to encode <=
 
 **Objects**
         
-```php
+```bash
 serialize() [objects]: Size: 326 bytes, 2.4085388183594 time to encode
 json_encode() [objects]: Size: 148 bytes, 1.6553950309753 time to encode <== Time/Size
 igbinary_serialize() [objects]: Size: 177 bytes, 2.1983618736267 time to encode
@@ -520,7 +527,7 @@ igbinary_serialize() [objects]: Size: 177 bytes, 2.1983618736267 time to encode
 
 **All**
         
-```php
+```bash
 serialize() [all]: Size: 1092 bytes, 13.614814043045 time to encode
 json_encode() [all]: Size: 462 bytes, 7.7341570854187 time to encode <== Size
 igbinary_serialize() [all]: Size: 478 bytes, 5.6470530033112 time to encode <== Time
@@ -530,7 +537,7 @@ igbinary_serialize() [all]: Size: 478 bytes, 5.6470530033112 time to encode <== 
 
 **Strings**
         
-```php
+```bash
 unserialize() [strings]: 0.69071316719055 time to decode
 json_decode() [strings]: 1.381010055542 time to decode
 igbinary_unserialize() [strings]: 0.52063202857971 time to decode <==
@@ -538,7 +545,7 @@ igbinary_unserialize() [strings]: 0.52063202857971 time to decode <==
 
 **Integers**
         
-```php
+```bash
 unserialize() [integers]: 1.0607678890228 time to decode
 json_decode() [integers]: 1.4053201675415 time to decode
 igbinary_unserialize() [integers]: 0.70937013626099 time to decode <==
@@ -546,7 +553,7 @@ igbinary_unserialize() [integers]: 0.70937013626099 time to decode <==
 
 **Booleans**
         
-```php
+```bash
 unserialize() [booleans]: 0.65101194381714 time to decode
 json_decode() [booleans]: 1.0951101779938 time to decode
 igbinary_unserialize() [booleans]: 0.49839997291565 time to decode <==
@@ -554,7 +561,7 @@ igbinary_unserialize() [booleans]: 0.49839997291565 time to decode <==
 
 **Floats**
         
-```php
+```bash
 unserialize() [floats]: 5.3973641395569 time to decode
 json_decode() [floats]: 2.0127139091492 time to decode
 igbinary_unserialize() [floats]: 0.75269412994385 time to decode <==
@@ -562,7 +569,7 @@ igbinary_unserialize() [floats]: 0.75269412994385 time to decode <==
 
 **Mixed**
         
-```php
+```bash
 unserialize() [mixed]: 1.5048658847809 time to decode
 json_decode() [mixed]: 1.2782678604126 time to decode
 igbinary_unserialize() [mixed]: 0.55352306365967 time to decode <==
@@ -570,7 +577,7 @@ igbinary_unserialize() [mixed]: 0.55352306365967 time to decode <==
 
 **Objects**
         
-```php
+```bash
 unserialize() [objects]: 2.6635551452637 time to decode
 json_decode() [objects]: 3.3167290687561 time to decode
 igbinary_unserialize() [objects]: 1.9917018413544 time to decode <==
@@ -578,7 +585,7 @@ igbinary_unserialize() [objects]: 1.9917018413544 time to decode <==
 
 **All**
         
-```php
+```bash
 unserialize() [all]: 11.949328899384 time to decode
 json_decode() [all]: 9.9836950302124 time to decode
 igbinary_unserialize() [all]: 4.4029591083527 time to decode <==
