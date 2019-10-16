@@ -14,7 +14,7 @@ I am also working in educating anyone who wants to listen :) on the benefits of 
 
 I am a core member of [Phalcon](https://phalconphp.com), a PHP framework delivered as a C extension and written in [Zephir](https://zephir-lang.com).
 
-I am a [Zend Certified Engineer](https://www.zend.com/en/yellow-pages/ZEND006669) and a [Professional Sum Developer](https://www.scrum.org/user/504482).
+I am a [Zend Certified Engineer](https://www.zend.com/en/yellow-pages/ZEND006669) and a [Professional Scrum Developer](https://www.scrum.org/user/504482).
 
 Thanks for visiting. Should you have any queries, feel free to contact me.
 
