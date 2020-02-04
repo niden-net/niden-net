@@ -72,7 +72,7 @@ PHP 7.4 introduced [weakrefs](https://wiki.php.net/rfc/weakrefs).
 > Weak References allow the programmer to retain a reference to an object which does not prevent the object from being destroyed; They are useful for implementing cache like structures.
 {: .alert .alert-info }
 
-[WeakMaps](https://wiki.php.net/rfc/weak_maps) epand on that:
+[WeakMaps](https://wiki.php.net/rfc/weak_maps) expand on that:
 
 > Weak maps allow creating a map from objects to arbitrary values (similar to SplObjectStorage) without preventing the objects that are used as keys from being garbage collected. If an object key is garbage collected, it will simply be removed from the map.
 {: .alert .alert-info }
