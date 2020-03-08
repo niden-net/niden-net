@@ -28,7 +28,7 @@ The format has been with us forever. Very easy to use but difficult to create (a
 This is a more convenient format for books and has been around for quite a long time also. It works with a lot of readers and offers features such as zooming, changing fonts, bookmarks and more (provided that the reader supports it - which most do).
 
 ### Storage
-I opted to keep my books in [pCloud](https://www.pcloud.com/welcome-to-pcloud/?discountcode=SmTD6Ka3d2yH0h1g86u1P4ZV) as I mentioned in a [previous post](/post/moving-away-from-google-photos-series/), in the same storage that I store my photos. 
+I opted to keep my books in [pCloud](https://www.pcloud.com/welcome-to-pcloud/?discountcode=SmTD6Ka3d2yH0h1g86u1P4ZV) (affiliate link) as I mentioned in a [previous post](/post/moving-away-from-google-photos-series/), in the same storage that I store my photos. 
 
 For home, I run a sync between pCloud and my NAS so all of my content is stored and accessed locally. For on the road, I can use the pCloud application to access my books, download them to my device and access them from there or access them directly from pCloud. I usually opt for the first option since I can read books even when there is no signal for my device (or no WiFi).
 
