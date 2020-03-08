@@ -36,9 +36,10 @@ As a result, I choose to not voluntarily give them my data any more. It is extre
 This series of posts will try and address what alternatives there are out there, to replace the Google suite of tools
 
 * [Google Mail (GMail)](/post/moving-away-from-google-mail-gmail-series)
-* [Google Maps](https://niden.net/post/moving-away-from-google-maps-series/)
-* [Google Photos](https://niden.net/post/moving-away-from-google-photos-series/)
-* Google Books
+* [Google Maps](/post/moving-away-from-google-maps-series/)
+* [Google Photos](/post/moving-away-from-google-photos-series/)
+* [Google Books](/post/moving-away-from-google-books-series/)
+* Google Drive
 * Google Music
 * Google Voice
 * Android Phone
