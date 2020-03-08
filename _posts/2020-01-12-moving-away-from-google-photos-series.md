@@ -44,7 +44,7 @@ I have not investigated whether there is an automatic upload of photos to Crypt.
 Still, I have really high hopes for this platform and monitoring its development closely.
 
 ### pCloud
-[pCloud](https://pcloud.com) is the replacement I chose for our photos (but also for our documents). They are a Swiss based company, offering full encryption for your data. Their pricing plans are very affordable and there are options for lifetime plans (the one that I have) where you pay only once and that is it. There is also a desktop client that offers direct access to your _drive_ or store if you like.
+[pCloud](https://www.pcloud.com/welcome-to-pcloud/?discountcode=SmTD6Ka3d2yH0h1g86u1P4ZV) (affiliate link) is the replacement I chose for our photos (but also for our documents). They are a Swiss based company, offering full encryption for your data. Their pricing plans are very affordable and there are options for lifetime plans (the one that I have) where you pay only once and that is it. There is also a desktop client that offers direct access to your _drive_ or store if you like.
 
 The Android app is good and will automatically upload your photos to pCloud, offering an extra backup in case something happens to your device. There is a lack of the _gallery_ look and feel for photos but then again it is a data store, just like Dropbox, Box or others like it.
 
