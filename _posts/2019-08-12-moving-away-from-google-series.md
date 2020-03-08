@@ -37,7 +37,7 @@ This series of posts will try and address what alternatives there are out there,
 
 * [Google Mail (GMail)](/post/moving-away-from-google-mail-gmail-series)
 * [Google Maps](https://niden.net/post/moving-away-from-google-maps-series/)
-* Google Photos
+* [Google Photos](https://niden.net/post/moving-away-from-google-photos-series/)
 * Google Books
 * Google Music
 * Google Voice
