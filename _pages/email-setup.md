@@ -37,16 +37,16 @@ If you have mailboxes set up already, go to **File** tab **>> Info >> Account In
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="1019" 
+       data-height="154" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-10.png">
 </div>
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="1020" 
+       data-height="494" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-11.png">
 </div>
@@ -55,8 +55,8 @@ If you have mailboxes set up already, go to **File** tab **>> Info >> Account In
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="472" 
+       data-height="531" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-12.png">
 </div>
@@ -67,8 +67,8 @@ Disregard any warnings that may appear, and proceed to the next step.
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="469" 
+       data-height="528" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-13.png">
 </div>
@@ -79,8 +79,8 @@ If you are not able to proceed, you may need to repeat the process using the man
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="468" 
+       data-height="531" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-14.png">
 </div>
@@ -103,8 +103,8 @@ If you are not able to proceed, you may need to repeat the process using the man
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="473" 
+       data-height="529" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-15.png">
 </div>
@@ -123,8 +123,8 @@ If you are not able to proceed, you may need to repeat the process using the man
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="471" 
+       data-height="530" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-16.png">
 </div>
@@ -135,8 +135,8 @@ If you are not able to proceed, you may need to repeat the process using the man
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="469" 
+       data-height="528" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-17.png">
 </div>
@@ -145,8 +145,8 @@ If you are not able to proceed, you may need to repeat the process using the man
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="472" 
+       data-height="532" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-18.png">
 </div>
@@ -163,8 +163,8 @@ In order to check or update the configuration of an existing email account, foll
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="1017" 
+       data-height="528" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-19.png">
 </div>
@@ -173,8 +173,8 @@ In order to check or update the configuration of an existing email account, foll
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="615" 
+       data-height="502" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-20.png">
 </div>
@@ -183,8 +183,8 @@ In order to check or update the configuration of an existing email account, foll
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="467" 
+       data-height="530" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-21.png">
 </div>
@@ -194,8 +194,8 @@ Make sure all of them are set properly. If any information is set incorrectly, u
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="472" 
+       data-height="536" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-22.png">
 </div>
@@ -204,8 +204,8 @@ Make sure all of them are set properly. If any information is set incorrectly, u
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="471" 
+       data-height="531" 
        data-action="zoom" 
        src="/assets/files/email/pm-outlook-2019-23.png">
 </div>
@@ -218,8 +218,8 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="391" 
+       data-height="417" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-01.png">
 </div>
@@ -234,8 +234,8 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="505" 
+       data-height="469" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-02.png">
 </div>
@@ -245,8 +245,8 @@ Make sure that your Incoming and Outgoing configuration was detected properly an
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="503" 
+       data-height="468" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-03.png">
 </div>
@@ -259,8 +259,8 @@ If you do not see **Configuration found at email provider message** or if config
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="498" 
+       data-height="465" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-04.png">
 </div>
@@ -278,8 +278,8 @@ For **IMAP** protocol use the following settings:
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="755" 
+       data-height="466" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-05.png">
 </div>
@@ -295,8 +295,8 @@ For **POP3** protocol use the following settings:
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="455" 
+       data-height="466" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-06.png">
 </div>
@@ -325,8 +325,8 @@ Once your account has been created, you will be able to choose additional settin
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="432" 
+       data-height="398" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-07.png">
 </div>
@@ -335,8 +335,8 @@ Once your account has been created, you will be able to choose additional settin
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="627" 
+       data-height="617" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-08.png">
 </div>
@@ -345,8 +345,8 @@ Once your account has been created, you will be able to choose additional settin
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="626" 
+       data-height="611" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-09.png">
 </div>
@@ -355,8 +355,8 @@ Here you can find your current settings for accounts you have and click on **Edi
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
-       data-width="640" 
-       data-height="640" 
+       data-width="392" 
+       data-height="318" 
        data-action="zoom" 
        src="/assets/files/email/pm-thunderbird-10.png">
 </div>
