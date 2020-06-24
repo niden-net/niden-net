@@ -35,25 +35,25 @@ Outgoing server authentication should be switched on, SPA (secure password authe
 2. If you don't have any mailboxes added yet, you will see the **Account Information page**. Click the **+ Add Account** button there.
 If you have mailboxes set up already, go to **File** tab **>> Info >> Account Information** and click the **+ Add Account** button:
 
-![](/assets/files/email/pm-outlook-2019-10)
+![](/assets/files/email/pm-outlook-2019-10.png)
 
-![](/assets/files/email/pm-outlook-2019-11)
+![](/assets/files/email/pm-outlook-2019-11.png)
 
 3. Type in your full Private Email address and click Connect:
 
-![](/assets/files/email/pm-outlook-2019-12)
+![](/assets/files/email/pm-outlook-2019-12.png)
 
 Disregard any warnings that may appear, and proceed to the next step.
 
 4. Type in the password you are using for this email address and click Connect:
 
-![](/assets/files/email/pm-outlook-2019-13)
+![](/assets/files/email/pm-outlook-2019-13.png)
 
 If you are not able to proceed, you may need to repeat the process using the manual setup. The detailed instructions can be found below.
 
 5. Select the Change account settings option and click Next. On the next page, select the POP or IMAP option:
 
-![](/assets/files/email/pm-outlook-2019-14)
+![](/assets/files/email/pm-outlook-2019-14.png)
 
 **POP3** stands for Post Office Protocol, and was designed as a simple way to access a remote email server. POP works by downloading your emails from your provider's mail server and then marking them for deletion there. This means you can only ever read those email messages in that email client, on that computer. You will not be able to access any previously downloaded emails from any other device, or with any other email client, or through webmail.
 
@@ -71,7 +71,7 @@ If you are not able to proceed, you may need to repeat the process using the man
 * **Encryption method**: SSL/TLS (or STARTTLS if 587 port is used)
 * **Require logon using Secure Password Authentication (SPA)**: should be unchecked
 
-![](/assets/files/email/pm-outlook-2019-15)
+![](/assets/files/email/pm-outlook-2019-15.png)
 
 7. If you choose POP account setup, enter the following server details:
 
@@ -85,17 +85,17 @@ If you are not able to proceed, you may need to repeat the process using the man
 * **Encryption method**: SSL/TLS (or STARTTLS if 587 port is used)
 * **Require logon using Secure Password Authentication (SPA)**: should be unchecked
 
-![](/assets/files/email/pm-outlook-2019-16)
+![](/assets/files/email/pm-outlook-2019-16.png)
 
 8. Once all the details are filled, click **Next**.
 
 9. After that, type in your password for this Private Email account and click **Connect**:
 
-![](/assets/files/email/pm-outlook-2019-17)
+![](/assets/files/email/pm-outlook-2019-17.png)
 
 10. If all the settings are correct, you will receive the following message.
 
-![](/assets/files/email/pm-outlook-2019-18)
+![](/assets/files/email/pm-outlook-2019-18.png)
 
 Click **Done** to complete the setup.
 
@@ -107,24 +107,24 @@ In order to check or update the configuration of an existing email account, foll
 
 2. Go to the **File** tab **>> Info >> Account Information** page and click on **Account Settings**:
 
-![](/assets/files/email/pm-outlook-2019-19)
+![](/assets/files/email/pm-outlook-2019-19.png)
 
 3. Select the mailbox in question and click Repair:
 
-![](/assets/files/email/pm-outlook-2019-20)
+![](/assets/files/email/pm-outlook-2019-20.png)
 
 4. In the next window, click on Advanced options, check Let me repair my account manually and click on Repair:
 
-![](/assets/files/email/pm-outlook-2019-21)
+![](/assets/files/email/pm-outlook-2019-21.png)
 
 5. On the next page, you will see incoming and outgoing server settings.
 Make sure all of them are set properly. If any information is set incorrectly, update it for both Incoming mail and Outgoing mail configurations:
 
-![](/assets/files/email/pm-outlook-2019-22)
+![](/assets/files/email/pm-outlook-2019-22.png)
 
 6. Once all details for the outgoing connection are updated, click Repair:
 
-![](/assets/files/email/pm-outlook-2019-23)
+![](/assets/files/email/pm-outlook-2019-23.png)
 
 
 ## Thunderbird
@@ -133,7 +133,7 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
 
 1. Go to **File > New > Existing Mail Account**:
 
-![](/assets/files/email/pm-outlook-2019-30)
+![](/assets/files/email/pm-outlook-2019-30.png)
 
 
 2. In **Mail Account Setup** window enter the following details:
@@ -144,12 +144,12 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
 
 3. Once all the fields are filled, click **Continue**:
 
-![](/assets/files/email/pm-outlook-2019-31)
+![](/assets/files/email/pm-outlook-2019-31.png)
 
 4. You will see **Configuration found at email provider** message.
 Make sure that your Incoming and Outgoing configuration was detected properly and matches the one you can see on the screenshot below:
 
-![](/assets/files/email/pm-outlook-2019-32)
+![](/assets/files/email/pm-outlook-2019-32.png)
 
 Click **Done** if it is the same.
 
@@ -157,7 +157,7 @@ If you do not see **Configuration found at email provider message** or if config
 
 1. After the first two steps are completed you will either see manual config window (in case Thunderbird fails to detect configuration automatically) or will need to click on **Manual Config** to see that window:
 
-![](/assets/files/email/pm-outlook-2019-33)
+![](/assets/files/email/pm-outlook-2019-33.png)
 
 2. In the next screen, select **POP3** or **IMAP** from the Account Type list, and enter your details as follows:
 
@@ -170,7 +170,7 @@ For **IMAP** protocol use the following settings:
 | IMAP     | 993  | SSL/TLS | Normal Password |
 | SMTP     | 465  | SSL/TLS | Normal Password |
 
-![](/assets/files/email/pm-outlook-2019-34)
+![](/assets/files/email/pm-outlook-2019-34.png)
 
 For **POP3** protocol use the following settings:
 
@@ -181,7 +181,7 @@ For **POP3** protocol use the following settings:
 | POP3     | 995  | SSL/TLS | Normal Password |
 | SMTP     | 465  | SSL/TLS | Normal Password |
 
-![](/assets/files/email/pm-outlook-2019-35)
+![](/assets/files/email/pm-outlook-2019-35.png)
 
 Alternatively, you can use following settings for **IMAP** protocol:
 
@@ -205,17 +205,17 @@ Once your account has been created, you will be able to choose additional settin
 
 1. Right-Click on your account in the list of accounts:
 
-![](/assets/files/email/pm-outlook-2019-36)
+![](/assets/files/email/pm-outlook-2019-36.png)
 
 2. To manage incoming server, go to **Server Settings**:
 
-![](/assets/files/email/pm-outlook-2019-37)
+![](/assets/files/email/pm-outlook-2019-37.png)
 
 3. If you need to change settings for outgoing server, select **Outgoing Server (SMTP)**:
 
-![](/assets/files/email/pm-outlook-2019-38)
+![](/assets/files/email/pm-outlook-2019-38.png)
 
 Here you can find your current settings for accounts you have and click on **Edit...** to make changes in the next window:
 
-![](/assets/files/email/pm-outlook-2019-39)
+![](/assets/files/email/pm-outlook-2019-39.png)
 
