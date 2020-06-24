@@ -35,25 +35,55 @@ Outgoing server authentication should be switched on, SPA (secure password authe
 2. If you don't have any mailboxes added yet, you will see the **Account Information page**. Click the **+ Add Account** button there.
 If you have mailboxes set up already, go to **File** tab **>> Info >> Account Information** and click the **+ Add Account** button:
 
-![](/assets/files/email/pm-outlook-2019-10.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-10.png">
+</div>
 
-![](/assets/files/email/pm-outlook-2019-11.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-11.png">
+</div>
 
 3. Type in your full Private Email address and click Connect:
 
-![](/assets/files/email/pm-outlook-2019-12.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-12.png">
+</div>
 
 Disregard any warnings that may appear, and proceed to the next step.
 
 4. Type in the password you are using for this email address and click Connect:
 
-![](/assets/files/email/pm-outlook-2019-13.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-13.png">
+</div>
 
 If you are not able to proceed, you may need to repeat the process using the manual setup. The detailed instructions can be found below.
 
 5. Select the Change account settings option and click Next. On the next page, select the POP or IMAP option:
 
-![](/assets/files/email/pm-outlook-2019-14.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-14.png">
+</div>
 
 **POP3** stands for Post Office Protocol, and was designed as a simple way to access a remote email server. POP works by downloading your emails from your provider's mail server and then marking them for deletion there. This means you can only ever read those email messages in that email client, on that computer. You will not be able to access any previously downloaded emails from any other device, or with any other email client, or through webmail.
 
