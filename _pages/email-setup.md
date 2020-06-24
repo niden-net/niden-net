@@ -101,7 +101,13 @@ If you are not able to proceed, you may need to repeat the process using the man
 * **Encryption method**: SSL/TLS (or STARTTLS if 587 port is used)
 * **Require logon using Secure Password Authentication (SPA)**: should be unchecked
 
-![](/assets/files/email/pm-outlook-2019-15.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-15.png">
+</div>
 
 7. If you choose POP account setup, enter the following server details:
 
@@ -115,17 +121,35 @@ If you are not able to proceed, you may need to repeat the process using the man
 * **Encryption method**: SSL/TLS (or STARTTLS if 587 port is used)
 * **Require logon using Secure Password Authentication (SPA)**: should be unchecked
 
-![](/assets/files/email/pm-outlook-2019-16.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-16.png">
+</div>
 
 8. Once all the details are filled, click **Next**.
 
 9. After that, type in your password for this Private Email account and click **Connect**:
 
-![](/assets/files/email/pm-outlook-2019-17.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-17.png">
+</div>
 
 10. If all the settings are correct, you will receive the following message.
 
-![](/assets/files/email/pm-outlook-2019-18.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-18.png">
+</div>
 
 Click **Done** to complete the setup.
 
@@ -137,25 +161,54 @@ In order to check or update the configuration of an existing email account, foll
 
 2. Go to the **File** tab **>> Info >> Account Information** page and click on **Account Settings**:
 
-![](/assets/files/email/pm-outlook-2019-19.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-19.png">
+</div>
 
 3. Select the mailbox in question and click Repair:
 
-![](/assets/files/email/pm-outlook-2019-20.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-20.png">
+</div>
 
 4. In the next window, click on Advanced options, check Let me repair my account manually and click on Repair:
 
-![](/assets/files/email/pm-outlook-2019-21.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-21.png">
+</div>
 
 5. On the next page, you will see incoming and outgoing server settings.
 Make sure all of them are set properly. If any information is set incorrectly, update it for both Incoming mail and Outgoing mail configurations:
 
-![](/assets/files/email/pm-outlook-2019-22.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-22.png">
+</div>
 
 6. Once all details for the outgoing connection are updated, click Repair:
 
-![](/assets/files/email/pm-outlook-2019-23.png)
-
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-outlook-2019-23.png">
+</div>
 
 ## Thunderbird
 
@@ -163,8 +216,13 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
 
 1. Go to **File > New > Existing Mail Account**:
 
-![](/assets/files/email/pm-outlook-2019-30.png)
-
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-01.png">
+</div>
 
 2. In **Mail Account Setup** window enter the following details:
 
@@ -174,12 +232,24 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
 
 3. Once all the fields are filled, click **Continue**:
 
-![](/assets/files/email/pm-outlook-2019-31.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-02.png">
+</div>
 
 4. You will see **Configuration found at email provider** message.
 Make sure that your Incoming and Outgoing configuration was detected properly and matches the one you can see on the screenshot below:
 
-![](/assets/files/email/pm-outlook-2019-32.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-03.png">
+</div>
 
 Click **Done** if it is the same.
 
@@ -187,7 +257,13 @@ If you do not see **Configuration found at email provider message** or if config
 
 1. After the first two steps are completed you will either see manual config window (in case Thunderbird fails to detect configuration automatically) or will need to click on **Manual Config** to see that window:
 
-![](/assets/files/email/pm-outlook-2019-33.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-04.png">
+</div>
 
 2. In the next screen, select **POP3** or **IMAP** from the Account Type list, and enter your details as follows:
 
@@ -200,7 +276,13 @@ For **IMAP** protocol use the following settings:
 | IMAP     | 993  | SSL/TLS | Normal Password |
 | SMTP     | 465  | SSL/TLS | Normal Password |
 
-![](/assets/files/email/pm-outlook-2019-34.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-05.png">
+</div>
 
 For **POP3** protocol use the following settings:
 
@@ -211,7 +293,13 @@ For **POP3** protocol use the following settings:
 | POP3     | 995  | SSL/TLS | Normal Password |
 | SMTP     | 465  | SSL/TLS | Normal Password |
 
-![](/assets/files/email/pm-outlook-2019-35.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-06.png">
+</div>
 
 Alternatively, you can use following settings for **IMAP** protocol:
 
@@ -235,17 +323,41 @@ Once your account has been created, you will be able to choose additional settin
 
 1. Right-Click on your account in the list of accounts:
 
-![](/assets/files/email/pm-outlook-2019-36.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-07.png">
+</div>
 
 2. To manage incoming server, go to **Server Settings**:
 
-![](/assets/files/email/pm-outlook-2019-37.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-08.png">
+</div>
 
 3. If you need to change settings for outgoing server, select **Outgoing Server (SMTP)**:
 
-![](/assets/files/email/pm-outlook-2019-38.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-09.png">
+</div>
 
 Here you can find your current settings for accounts you have and click on **Edit...** to make changes in the next window:
 
-![](/assets/files/email/pm-outlook-2019-39.png)
+<div class="media-body-inline-grid" data-grid="images">
+  <img style="display: none" 
+       data-width="640" 
+       data-height="640" 
+       data-action="zoom" 
+       src="/assets/files/email/pm-thunderbird-10.png">
+</div>
 
