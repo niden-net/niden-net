@@ -3,9 +3,16 @@ layout: page
 title: Email Setup
 permalink: /email-setup
 ---
+- [Overview](#overview)
+- [General](#general)
+- [Outlook 2019](#outlook-2019)
+  - [New Account](#new-account)
+  - [Existing Account](#existing-account)
+- [Thunderbird](#thunderbird)
 
 ## Overview
 You can use the guide below to set up your email clients with [PrivateEmail](https://privateemail.com).
+
 
 ## General
 PrivateEmail supports only encrypted connections. The connection information is:
