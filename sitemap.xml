@@ -31,7 +31,7 @@ sitemap:
     {% endunless %}
     {% endfor %}
     {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.name == "/feed.xml"  or page.name == "/admin/"  or page.name == "/assets/files/" %}
+    {% unless page.sitemap.exclude == "yes" or page.name == "/feed.xml" %}
     <url>
         <loc>{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
         {% if page.sitemap.lastmod %}
