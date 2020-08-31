@@ -38,7 +38,6 @@ kramdown:
   enable_coderay: false
 
 plugins:
-  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
   - jekyll-archives
