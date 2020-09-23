@@ -33,12 +33,12 @@ I intend on posting more content in the next few weeks. The goal is to post one 
 
 This blog software is still under construction. I have a few things that I need to address such as:
 
-* Pagination
-* RSS feeds
-* Posts by tag
-* Posts by archive
-* Comments - disqus integration
-* Tests!!!!
+- Pagination
+- RSS feeds
+- Posts by tag
+- Posts by archive
+- Comments - disqus integration
+- Tests!!!!
 
 Some of those are already in place but I need to make sure that they work as expected
 

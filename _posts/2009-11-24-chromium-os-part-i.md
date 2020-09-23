@@ -31,32 +31,32 @@ I applied all the relevant updates (just to be on the safe side) and a couple of
 
 Building on Linux requires the following software.
 
-* Python >= 2.4
-* Perl >= 5.x
-* gcc/g++ >= 4.2
-* g++-multilib >=4.2
-* bison >= 2.3
-* flex >= 2.5.34
-* gperf >= 3.0.4
-* pkg-config >= 0.20
-* libnss3-dev >= 3.12
-* libasound2-dev
-* libgconf2-dev
-* libglib2.0-dev
-* libgtk2.0-dev
-* libnspr4-0d >= 4.7.1+1.9-0ubuntu0.8.04.5 (ubuntu0.8.04.1 causes duplicate dtoa references)
-* libnspr4-dev >= 4.7.1+1.9-0ubuntu0.8.04.5
-* msttcorefonts (Microsoft fonts)
-* freetype-dev
-* libcairo2-dev
-* libdbus-1-dev
+- Python >= 2.4
+- Perl >= 5.x
+- gcc/g++ >= 4.2
+- g++-multilib >=4.2
+- bison >= 2.3
+- flex >= 2.5.34
+- gperf >= 3.0.4
+- pkg-config >= 0.20
+- libnss3-dev >= 3.12
+- libasound2-dev
+- libgconf2-dev
+- libglib2.0-dev
+- libgtk2.0-dev
+- libnspr4-0d >= 4.7.1+1.9-0ubuntu0.8.04.5 (ubuntu0.8.04.1 causes duplicate dtoa references)
+- libnspr4-dev >= 4.7.1+1.9-0ubuntu0.8.04.5
+- msttcorefonts (Microsoft fonts)
+- freetype-dev
+- libcairo2-dev
+- libdbus-1-dev
 
 Optional (currently, all of these are only used by layout tests):
 
-* wdiff
-* lighttpd
-* php5-cgi
-* sun-java6-fonts (needed for Lucida)
+- wdiff
+- lighttpd
+- php5-cgi
+- sun-java6-fonts (needed for Lucida)
 
 Because I didn't want to go and check the version of every package mentioned above I run the following command (mentioned also in the [documentation](https://code.google.com/p/chromium/wiki/LinuxBuildInstructionsPrerequisites))
 

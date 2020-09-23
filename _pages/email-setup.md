@@ -17,16 +17,16 @@ You can use the guide below to set up your email clients with [PrivateEmail](htt
 ## General
 PrivateEmail supports only encrypted connections. The connection information is:
 
-* **Username**: your email address
-* **Password**: password for this email account
-* **Incoming/outgoing servers name**: mail.privateemail.com
-
-* **Incoming server type**: IMAP or POP3
-* **Incoming server (IMAP)**: 993 port for SSL, 143 for TLS/STARTTLS
-* **Incoming server (POP3)**: 995 port for SSL
-
-* **Outgoing server (SMTP)**: 465 port for SSL, 587 for TLS/STARTTLS
-* Outgoing server authentication should be switched on, SPA (secure password authentication) must be disabled.
+- **Username**: your email address
+- **Password**: password for this email account
+- **Incoming/outgoing servers name**: mail.privateemail.com
+ 
+- **Incoming server type**: IMAP or POP3
+- **Incoming server (IMAP)**: 993 port for SSL, 143 for TLS/STARTTLS
+- **Incoming server (POP3)**: 995 port for SSL
+ 
+- **Outgoing server (SMTP)**: 465 port for SSL, 587 for TLS/STARTTLS
+- Outgoing server authentication should be switched on, SPA (secure password authentication) must be disabled.
 
 ## Outlook 2019
 ### New Account

@@ -29,5 +29,5 @@ I have mentioned in this post that the DMV has incompetent people and hinted tha
 
 Anyhow, the venting is off. Lessons learned?
 
-* Read always carefully what people give you
-* Don't try to get a license in Virginia :)
+- Read always carefully what people give you
+- Don't try to get a license in Virginia :)
