@@ -147,7 +147,6 @@ Another easy task in `<angular/>` is sorting. Since I already have a table that 
 
 In general sorting is done by the `$orderBy()`, `$orderByToggle()` and `$orderByDirection()` methods. The + or - prefixing the name of a field passed defines ascending or descending order. To create a compound sorting key with multiple fields I need to enclose the field names in quotes and separate them with commas.
 
-
 First of all I need to initialize the sorting mechanism. The best place for that is the table that displays the data. Therefore I get:
 
 ```html

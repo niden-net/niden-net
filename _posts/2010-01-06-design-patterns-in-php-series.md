@@ -5,7 +5,7 @@ date: 2010-01-06T23:45:00.000Z
 tags:
   - design
   - patterns
-  - "design patterns"
+  - 'design patterns'
   - php
   - programming
   - series

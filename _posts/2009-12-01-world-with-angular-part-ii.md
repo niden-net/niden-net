@@ -5,7 +5,7 @@ date: 2009-12-01T23:45:00.000Z
 tags:
   - amazon
   - angularjs
-  - cloud computing
+  - 'cloud computing'
   - ec2
   - programming
   - review

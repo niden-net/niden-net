@@ -6,7 +6,7 @@ tags:
   - update
   - phalcon
   - blog
-  - new look
+  - 'new look'
 image: '/assets/files/update.png'
 ---
 It has definitely been a very long time since I last blogged. Just like my previous hiatus, a lot of personal issues arose that would not allow me the luxury to devote time for this blog.

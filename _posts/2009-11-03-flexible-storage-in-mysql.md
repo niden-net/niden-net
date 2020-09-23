@@ -51,13 +51,10 @@ So what does this table do for us. We need to store the information of Mr. John 
 
 We first add the necessary fields we need to store in our data_types table. These fields for our example are as follows:
 
-**1 - Title**
-
-**2 - Country**
-
-**3 - Favorite animal**
-
-**4 - Car**
+##### 1 - Title
+##### 2 - Country
+##### 3 - Favorite animal
+##### 4 - Car
 
 The numbers in front are the IDs that I got when entering the data in the table.
 

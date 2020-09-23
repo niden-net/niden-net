@@ -4,7 +4,7 @@ title: Google Apps review
 date: 2009-11-05T23:45:00.000Z
 tags:
   - google
-  - google apps
+  - 'google apps'
   - review
   - gmail
   - docs
