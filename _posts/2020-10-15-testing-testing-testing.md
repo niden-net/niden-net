@@ -419,8 +419,8 @@ The implementations above come at a cost. You should always be wary of the perfo
 ⅀T: 104.665μs μSD/r 0.032μs μRSD/r: 9.385%
 ```
 
-The benchmark above shoes that of course the direct `str_replace` will be faster and the `call_user_func_array` will be around 200 μs slower.
+The benchmark above shows as expected, that `str_replace` will be the fastest implementation and the `call_user_func_array` will be around 200 μs slower.
 
-If the area of your code that you use such proxy methods is not very "busy", then you can afford the few extra milliseconds. However, if the area of the code you will use these proxy methods is a main component with numerous executions per request, you might want to run some benchmarks and decide whether you want 100% code coverage or the few extra milliseconds.
+If the area of your code that you use such proxy methods is not very "busy", then you can afford the few extra microseconds. However, if the area of the code you will use these proxy methods is a main component with numerous executions per request, you might want to run some benchmarks and decide whether you want 100% code coverage or the few extra microseconds.
 
 Personally I lean towards the 100% code coverage.
