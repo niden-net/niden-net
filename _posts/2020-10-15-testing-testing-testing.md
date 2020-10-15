@@ -80,7 +80,7 @@ So what is the solution to this? `file_get_contents` is just one method and we c
 There are two approaches that I found:
 
 ### Runkit
-The [Runkit](https://www.php.net/manual/en/book.runkit7.php) extension is very promising as seen by the PHP manual link. It does however require the installation of another extension, just to run our tests. This is not always desirable.
+The [Runkit](https://www.php.net/manual/en/book.runkit7.php) extension is very promising as seen by the link to the PHP manual. It does however require the installation of another extension, just to run our tests. This is not always desirable.
 
 ### Proxy method
 In this approach, we use a method to wrap the PHP function we want to proxy. The method contains the same parameters as the native PHP function and returns the same data. The benefit is by declaring this new proxy method as `protected` we can now stub it and make it return whatever we want it to return, thus having control of the flow of operation. Reminder: [Codeception](https://codeception.com) offers the `Stub` class, offering easy mocking of objects and methods.
