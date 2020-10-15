@@ -8,10 +8,8 @@ tags:
   - proxy
   - testability
 ---
-### Testing Testing Testing
-
 I have been advocating for testable code for more than a decade now. Admittedly, I have - in numerous cases - ignored tests and proceeded with rapid application development due to time constraints. However, the best code I ever produced was the one that was fully tested or very close to 100% covered by tests. You should always try your best to have your code covered by tests as much as possible.
-
+<!--more-->
 Recently, for the [Phalcon](https://phalcon.io) Framework, we decided to move away from [Zephir](https://zephir-lang.com) and rewrite the framework in PHP. [This](https://blog.phalcon.io/post/the-future-of-phalcon) blog post offers more information regarding this decision.
 
 So we started rewriting every component/namespace in PHP, translating Zephir code. It is a fairly easy task to do and you can have a set of PHP files ready in no time. The fact that Phalcon has some tests already in its testing suite, makes things a lot easier, since all one does is copy the tests from one repository to another and _in theory_ they should run just fine.
