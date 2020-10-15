@@ -9,6 +9,7 @@ tags:
   - testability
 ---
 I have been advocating for testable code for more than a decade now. Admittedly, I have - in numerous cases - ignored tests and proceeded with rapid application development due to time constraints. However, the best code I ever produced was the one that was fully tested or very close to 100% covered by tests. You should always try your best to have your code covered by tests as much as possible.
+
 <!--more-->
 Recently, for the [Phalcon](https://phalcon.io) Framework, we decided to move away from [Zephir](https://zephir-lang.com) and rewrite the framework in PHP. [This](https://blog.phalcon.io/post/the-future-of-phalcon) blog post offers more information regarding this decision.
 
