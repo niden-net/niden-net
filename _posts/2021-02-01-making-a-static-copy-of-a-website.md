@@ -20,7 +20,7 @@ By replacing the forum with GitHub Discussions, we were also faced with the fact
 
 Although the current server is more than capable of serving the content as long as we need to, we needed to remove that dependency and potential maintenance of it from out task list. 
 
-The solution? Netlify and Jekyll again. 
+The solution? [Netlify](https://netlify.com) and [Jekyll](https://jekyll.org) again.
 
 By creating a static website of the current forum, we will not only stop maintaining a web server, database etc. but we will keep what we have active for as long as we need to.
 
