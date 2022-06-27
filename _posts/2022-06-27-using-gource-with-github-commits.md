@@ -9,13 +9,13 @@ tags:
 ---
 Quite some time ago, I had the _brilliant_ idea to visualize the commits in the [Phalcon](https://github.com/phalcon/cphalcon) repository.
 
-I watched the resulting video years ago when a colleague visualized the commits of the whole team for the project at the time. It was fascinating to see peoples names jump around here and there and making the whole code increase and progress.
+Years ago, a colleague visualized the commits of the whole team for the project at the time and the result was really good. It was fascinating to see peoples names jump around here and there and making the whole code increase and progress.
 
 The application to create a video of all (or some) of the commits in a repository is called [Gource](https://gource.io/).
 
 After quite a bit of experimentation, I managed to get the perfect combination of parameters to make the videos. You can watch any of these videos in Phalcon's [Visualizations playlist](https://www.youtube.com/playlist?list=PLgJ0OtNTm8n89dPPpVgvnkgYN3lhRRDE2).
 
-To create such a video you will need a few items. First and foremost, you need `gource` to be installed on your machine. Then (and this is my preference) you will need an image file (appearing at the bottom corner of the video). I have used the [logo--tablet](https://github.com/phalcon/assets/blob/master/phalcon/images/svg/logo--tablet.svg) from our [assets](https://github.com/phalcon/assets) repository.
+To create such a video you will need couple of applications. First and foremost, you need `gource` as well as `ffmpeg` to be installed on your machine. Then (and this is my preference) you will need an image file (appearing at the bottom corner of the video). I have used the [logo--tablet](https://github.com/phalcon/assets/blob/master/phalcon/images/svg/logo--tablet.svg) from our [assets](https://github.com/phalcon/assets) repository.
 
 The visualization is a two step process. First, I parse the repository and create a PPM file with all the data and then convert that to a MP4 file using `ffmpeg`
 
