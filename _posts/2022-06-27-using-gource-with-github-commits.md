@@ -37,7 +37,7 @@ gource -1920x1080 \
     --dir-name-depth 1 \
     -r 60 \
     --logo ~/Downloads/logo--tablet.svg \
-    --title "Visualizing commits for Phalcon PHP in 2019" \
+    --title "Visualizing commits for Phalcon PHP in 2021" \
     --start-date "2021-01-01 00:00:00" \
     --stop-date "2021-12-30 23:59:59" \
     -o ../2021.ppm 
