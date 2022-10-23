@@ -12,12 +12,10 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - '2.4.x'
-          - '2.5.x'
           - '2.6.x'
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       - uses: actions/setup-ruby@v1
         with:
