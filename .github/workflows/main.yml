@@ -29,4 +29,7 @@ jobs:
         run: bundle exec jekyll build -d _site
 
       - name: Test
-        run: bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+        run: bundle exec htmlproofer ./_site --check_external_hash --check_favicon --check_html
+        
+        
+        
