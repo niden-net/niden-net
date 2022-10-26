@@ -40,7 +40,8 @@ If you have mailboxes set up already, go to **File** tab **>> Info >> Account In
        data-width="1019" 
        data-height="154" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-10.png">
+       src="/assets/files/email/pm-outlook-2019-10.png"
+       alt="Outlook File">
 </div>
 
 <div class="media-body-inline-grid" data-grid="images">
@@ -48,7 +49,8 @@ If you have mailboxes set up already, go to **File** tab **>> Info >> Account In
        data-width="1020" 
        data-height="494" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-11.png">
+       src="/assets/files/email/pm-outlook-2019-11.png"
+       alt="Outlook Add Account">
 </div>
 
 3. Type in your full Private Email address and click Connect:
@@ -58,7 +60,8 @@ If you have mailboxes set up already, go to **File** tab **>> Info >> Account In
        data-width="472" 
        data-height="531" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-12.png">
+       src="/assets/files/email/pm-outlook-2019-12.png"
+       alt="Enter Email">
 </div>
 
 Disregard any warnings that may appear, and proceed to the next step.
@@ -70,7 +73,8 @@ Disregard any warnings that may appear, and proceed to the next step.
        data-width="469" 
        data-height="528" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-13.png">
+       src="/assets/files/email/pm-outlook-2019-13.png"
+       alt="Enter Password">
 </div>
 
 If you are not able to proceed, you may need to repeat the process using the manual setup. The detailed instructions can be found below.
@@ -82,7 +86,8 @@ If you are not able to proceed, you may need to repeat the process using the man
        data-width="468" 
        data-height="531" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-14.png">
+       src="/assets/files/email/pm-outlook-2019-14.png"
+       alt="POP - IMAP">
 </div>
 
 **POP3** stands for Post Office Protocol, and was designed as a simple way to access a remote email server. POP works by downloading your emails from your provider's mail server and then marking them for deletion there. This means you can only ever read those email messages in that email client, on that computer. You will not be able to access any previously downloaded emails from any other device, or with any other email client, or through webmail.
@@ -106,7 +111,8 @@ If you are not able to proceed, you may need to repeat the process using the man
        data-width="473" 
        data-height="529" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-15.png">
+       src="/assets/files/email/pm-outlook-2019-15.png"
+       alt="IMAP Credentials">
 </div>
 
 7. If you choose POP account setup, enter the following server details:
@@ -126,7 +132,8 @@ If you are not able to proceed, you may need to repeat the process using the man
        data-width="471" 
        data-height="530" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-16.png">
+       src="/assets/files/email/pm-outlook-2019-16.png"
+       alt="POP Credentials">
 </div>
 
 8. Once all the details are filled, click **Next**.
@@ -138,7 +145,8 @@ If you are not able to proceed, you may need to repeat the process using the man
        data-width="469" 
        data-height="528" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-17.png">
+       src="/assets/files/email/pm-outlook-2019-17.png"
+       alt="IMAP Password">
 </div>
 
 10. If all the settings are correct, you will receive the following message.
@@ -148,7 +156,8 @@ If you are not able to proceed, you may need to repeat the process using the man
        data-width="472" 
        data-height="532" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-18.png">
+       src="/assets/files/email/pm-outlook-2019-18.png"
+       alt="IMAP Success">
 </div>
 
 Click **Done** to complete the setup.
@@ -166,7 +175,8 @@ In order to check or update the configuration of an existing email account, foll
        data-width="1017" 
        data-height="528" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-19.png">
+       src="/assets/files/email/pm-outlook-2019-19.png"
+       alt="Add Account">
 </div>
 
 3. Select the mailbox in question and click Repair:
@@ -176,17 +186,19 @@ In order to check or update the configuration of an existing email account, foll
        data-width="615" 
        data-height="502" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-20.png">
+       src="/assets/files/email/pm-outlook-2019-20.png"
+       alt="Repair Mailbox">
 </div>
 
-4. In the next window, click on Advanced options, check Let me repair my account manually and click on Repair:
+4. In the next window, click on Advanced options, check _Let me repair my account manually_ and click on _Repair_:
 
 <div class="media-body-inline-grid" data-grid="images">
   <img style="display: none" 
        data-width="467" 
        data-height="530" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-21.png">
+       src="/assets/files/email/pm-outlook-2019-21.png"
+       alt="Manual Repair">
 </div>
 
 5. On the next page, you will see incoming and outgoing server settings.
@@ -197,7 +209,8 @@ Make sure all of them are set properly. If any information is set incorrectly, u
        data-width="472" 
        data-height="536" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-22.png">
+       src="/assets/files/email/pm-outlook-2019-22.png"
+       alt="IMAP Settings">
 </div>
 
 6. Once all details for the outgoing connection are updated, click Repair:
@@ -207,7 +220,8 @@ Make sure all of them are set properly. If any information is set incorrectly, u
        data-width="471" 
        data-height="531" 
        data-action="zoom" 
-       src="/assets/files/email/pm-outlook-2019-23.png">
+       src="/assets/files/email/pm-outlook-2019-23.png"
+       alt="Click Repair">
 </div>
 
 ## Thunderbird
@@ -221,7 +235,8 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
        data-width="391" 
        data-height="417" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-01.png">
+       src="/assets/files/email/pm-thunderbird-01.png"
+       alt="Existing Email Account">
 </div>
 
 2. In **Mail Account Setup** window enter the following details:
@@ -237,7 +252,8 @@ PrivateEmail service supports autoconfig feature, which allows to set up email a
        data-width="505" 
        data-height="469" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-02.png">
+       src="/assets/files/email/pm-thunderbird-02.png"
+       alt="Click Continue">
 </div>
 
 4. You will see **Configuration found at email provider** message.
@@ -248,7 +264,8 @@ Make sure that your Incoming and Outgoing configuration was detected properly an
        data-width="503" 
        data-height="468" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-03.png">
+       src="/assets/files/email/pm-thunderbird-03.png"
+       alt="Incoming Outgoing configuration">
 </div>
 
 Click **Done** if it is the same.
@@ -262,7 +279,8 @@ If you do not see **Configuration found at email provider message** or if config
        data-width="498" 
        data-height="465" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-04.png">
+       src="/assets/files/email/pm-thunderbird-04.png"
+       alt="Manual Config">
 </div>
 
 2. In the next screen, select **POP3** or **IMAP** from the Account Type list, and enter your details as follows:
@@ -281,7 +299,8 @@ For **IMAP** protocol use the following settings:
        data-width="755" 
        data-height="466" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-05.png">
+       src="/assets/files/email/pm-thunderbird-05.png"
+       alt="Click Done">
 </div>
 
 For **POP3** protocol use the following settings:
@@ -298,7 +317,8 @@ For **POP3** protocol use the following settings:
        data-width="455" 
        data-height="466" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-06.png">
+       src="/assets/files/email/pm-thunderbird-06.png"
+       alt="Click Done">
 </div>
 
 Alternatively, you can use following settings for **IMAP** protocol:
@@ -328,7 +348,8 @@ Once your account has been created, you will be able to choose additional settin
        data-width="432" 
        data-height="398" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-07.png">
+       src="/assets/files/email/pm-thunderbird-07.png"
+       alt="Thunderbird Settings">
 </div>
 
 2. To manage incoming server, go to **Server Settings**:
@@ -338,7 +359,8 @@ Once your account has been created, you will be able to choose additional settin
        data-width="627" 
        data-height="617" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-08.png">
+       src="/assets/files/email/pm-thunderbird-08.png"
+       alt="Incoming Server Settings">
 </div>
 
 3. If you need to change settings for outgoing server, select **Outgoing Server (SMTP)**:
@@ -348,7 +370,8 @@ Once your account has been created, you will be able to choose additional settin
        data-width="626" 
        data-height="611" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-09.png">
+       src="/assets/files/email/pm-thunderbird-09.png"
+       alt="Outgoing Server Settings">
 </div>
 
 Here you can find your current settings for accounts you have and click on **Edit...** to make changes in the next window:
@@ -358,6 +381,6 @@ Here you can find your current settings for accounts you have and click on **Edi
        data-width="392" 
        data-height="318" 
        data-action="zoom" 
-       src="/assets/files/email/pm-thunderbird-10.png">
+       src="/assets/files/email/pm-thunderbird-10.png"
+       alt="Account settings">
 </div>
-

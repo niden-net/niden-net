@@ -22,7 +22,9 @@ layout: default
                         <ul class="list-group media-list media-list-stream mb-4">
                             <li class="media list-group-item p-4">
                                 {% if page.image %}
-                                <img class="media-object d-flex align-self-start mr-3" src="{{ page.image }}">
+                                <img class="media-object d-flex align-self-start mr-3"
+                                     src="{{ page.image }}"
+                                     alt="{{ page.image-alt | default: '' }}" />
                                 {% endif %}
                                 <div class="media-body">
                                     <div class="media-heading">

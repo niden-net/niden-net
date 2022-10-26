@@ -35,7 +35,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
 plugins:
   - jekyll-paginate
@@ -63,17 +62,21 @@ include:
   - _redirects
 
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: compressed # You might prefer to minify using :compressed
 
 # Exclude these files from your production _site
 exclude:
+  - .github
+  - .jekyll-cache
+  - .gitignore
+  - .jekyll-metadata
+  - .ruby-version
+  - _config.yml
+  - _redirects
   - vendor
+  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - serve
-  - boxfile.yml
-
-
-
