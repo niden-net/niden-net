@@ -9,6 +9,7 @@ tags:
   - utf8
   - how-to
 image: '/assets/files/mysql.gif'
+image-alt: MySql
 ---
 As applications grow, so do their audiences. In this day and age, one cannot assume that all the consumers of a web based application will live in a particular region and use only one language. Even if the developer assumes that one country will be served by the particular web application, there are instances that the `latin1` character set will not suffice in storing data.
 
@@ -491,4 +492,3 @@ echo "<pre>$db_host $bytes \r\n$output</pre>";
 #### Downloads
 
 You can use these scripts at your own risk. Also feel free to distribute them freely - a mention would be nice. Both scripts can be found in my [GitHub](https://github.com/niden).
-

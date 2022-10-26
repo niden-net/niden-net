@@ -12,6 +12,7 @@ tags:
   - how-to
   - singleton
 image: '/assets/files/2010-01-22-design-patterns-singleton.png'
+image-alt: Design Patterns
 ---
 A note about these series. It appears that [Giorgio Sironi](https://giorgiosironi.blogspot.com/) and I had the same idea regarding Design Patterns and blogging about them. He covers the [Singleton](https://giorgiosironi.blogspot.com/2010/01/practical-php-patterns-singleton.html) design pattern thoroughly in his blog post, which is recommended reading.
 

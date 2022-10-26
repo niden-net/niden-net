@@ -11,6 +11,7 @@ tags:
   - picasa
   - review
 image: '/assets/files/2011-03-10-google-apps.png'
+image-alt: Google Apps
 ---
 I have been using Google Apps for a number of years now and I have gotten so used to it that I cannot fathom any other way of operating. I am sure that some of you share that sentiment. :)
 

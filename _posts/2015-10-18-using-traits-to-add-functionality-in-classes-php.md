@@ -8,6 +8,7 @@ tags:
   - phalcon
   - how-to
 image: '/assets/files/phalcon-logo.png'
+image-alt: Phalcon
 ---
 > Traits are a mechanism for code reuse in single inheritance languages such as PHP.
 >

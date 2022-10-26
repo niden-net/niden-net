@@ -10,7 +10,6 @@ tags:
 ---
 Sometimes, it is necessary to retrieve a full static copy of a website (hopefully one you own). There are tools that help you do this such as [httrack](https://www.httrack.com/).
 
-<!--more-->
 However, for Linux systems primarily, using the [wget](https://www.gnu.org/software/wget/manual/wget.html) command can achieve the same result.
 
 Assuming I want to mirror the `https://forum.phalcon.io` site, the `wget` command used is:

@@ -7,6 +7,8 @@ tags:
   - google
   - series
   - books
+image: '/assets/files/google.png'
+image-alt: Google
 ---
 Google Books is probably a not very well known and used service by Google. It offers a storage of your books allowing you to access them digitally from any device. Replacing it is not that difficult. 
 <!--more-->

@@ -8,6 +8,7 @@ tags:
   - zend framework
   - how-to
 image: '/assets/files/php.png'
+image-alt: PHP
 ---
 In my workplace we have been using [Zend Framework](https://framework.zend.com/) for more than a year primarily as a glue framework. We have managed to integrate a lot of components from the framework to suit our needs and slowly we are moving towards the full MVC pattern.
 

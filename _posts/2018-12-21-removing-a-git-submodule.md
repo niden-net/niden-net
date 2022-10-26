@@ -7,6 +7,7 @@ tags:
   - git
   - remove
 image: '/assets/files/git-logo.jpg'
+image-alt: Git
 ---
 I have been using git for quite a while now and am very comfortable with the `bread and butter` commands such as `git clone`, `git commit`. `git pull`, etc. I love the command line so using some aliases cuts down on typing and speeds up my commit workflow. My motto is commit often and commit small :)
 

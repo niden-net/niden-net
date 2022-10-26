@@ -7,6 +7,7 @@ tags:
   - nas
   - how-to
 image: '/assets/files/2012-06-29-remote-backup.png'
+image-alt: Backup
 ---
 I have written about this before and it is still my favorite mantra
 

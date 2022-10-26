@@ -6,6 +6,7 @@ tags:
   - git
   - how-to
 image: '/assets/files/git-logo.jpg'
+image-alt: Git
 ---
 Throughout my career I have been using various [revision control systems](https://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.
 

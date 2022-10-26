@@ -10,6 +10,7 @@ tags:
   - mod_rewrite
   - how-to
 image: '/assets/files/php.png'
+image-alt: PHP
 ---
 The last few years I have been using Quicken to manage the home bank accounts and spending. My wife never had any problems with me doing so and it helps us manage our cash flow better. Of course like every couple we buy things that we need and always provision a small amount of money for personal expenses.
 

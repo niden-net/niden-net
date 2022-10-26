@@ -7,6 +7,8 @@ tags:
   - google
   - degoogle
   - gmail
+image: '/assets/files/google.png'
+image-alt: Google
 ---
 Leaving Gmail is difficult. In some cases impossible. Google with their thousands of employees and years of experience in the field, have created an excellent product that definitely helps people throughout the world. The features offered are excellent, mature and time saving. 
 <!--more-->

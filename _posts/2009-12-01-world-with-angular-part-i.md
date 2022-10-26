@@ -11,6 +11,7 @@ tags:
   - review
   - how-to
 image: '/assets/files/2009-12-01-angular.png'
+image-alt: AngularJS
 ---
 If you haven't heard about `<angular/>`, this article is intended to give you a brief overview of the features and functionality that it exposes.
 

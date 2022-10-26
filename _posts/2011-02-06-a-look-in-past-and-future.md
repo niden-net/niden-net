@@ -7,14 +7,15 @@ tags:
   - information
   - update
 image: '/assets/files/update.png'
+image-alt: Update
 ---
 It has been months since I last posted a blog post. A lot of things have happened since August and I have a lot of material to post - just not the discipline to sit down and proof all the drafts so that I can post them.
 
 #### 2010
 
-2010 has been a rough year mostly on a personal level. I [lost my brother in law](/post/update) in March, [my daughter was born](/post/update) in May, there was great uncertainty at work during the summer, an upgrade went bad for [Long Hair Care Forum](https://www.longhaircareforum.com) to name a few of the highlights.
+2010 has been a rough year mostly on a personal level. I [lost my brother-in-law](/post/update) in March, [my daughter was born](/post/update) in May, there was great uncertainty at work during the summer, an upgrade went bad for [Long Hair Care Forum](https://www.longhaircareforum.com) to name a few of the highlights.
 
-Since this is officially my first year of blogging, I was happy to see some of the statistics for that year (well 8 months to be exact since I haven't posted since August).
+Since this is officially my first year of blogging, I was happy to see some statistics for that year (well 8 months to be exact since I haven't posted since August).
 
 <table class="table table-responsive">
     <tbody>

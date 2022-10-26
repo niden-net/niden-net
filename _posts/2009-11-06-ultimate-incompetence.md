@@ -6,6 +6,7 @@ tags:
   - personal
   - rant
 image: '/assets/files/2009-11-21-incompetence.png'
+image-alt: Incompetence
 ---
 This post has nothing to do with programming or the world of computers.
 

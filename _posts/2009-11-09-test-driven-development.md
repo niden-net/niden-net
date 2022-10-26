@@ -9,6 +9,7 @@ tags:
   - phpunit
   - how-to
 image: '/assets/files/2009-11-24-tdd.png'
+image-alt: Test Driven Development
 ---
 I am curious by nature. This is probably one of my best attributes as a person, since I can never rest until I find out 'what this thing is' or 'what is it used for'. This curiosity comes in handy in the programming world.
 
@@ -517,4 +518,3 @@ Miško writes in his blog:
 > *My big aha moment in software development came when I learned to do Test Driven Development. The subjective and objective quality of my code has gone through the roof, and I was hooked.*
 
 I think I am at that stage too!!! :)
-

@@ -8,14 +8,15 @@ tags:
   - angularjs
   - how-to
 image: '/assets/files/phalcon-logo.png'
+image-alt: Phalcon
 ---
-It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](http://www.harryhogfootball.com/) using [PhalconPHP](https://phalconphp.com/) and [AngularJS](https://angularjs.org/)
+It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](http://www.harryhogfootball.com/) using [PhalconPHP](https://phalcon.io/) and [AngularJS](https://angularjs.org/)
 
 If you haven't read it, the first two blog posts were [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i) and [here](/post/building-web-app-with-phalconphp-and-angularjs-part-ii).
 
-The application was written using the 0.4.5 version of [PhalconPHP](https://phalconphp.com/). Since then there have been significant changes to the framework, such as the introduction of a DI container, injectable objects and lately interfaces (in 0.7.0, to be released in a couple of days), I had to make some changes.
+The application was written using the 0.4.5 version of [PhalconPHP](https://phalcon.io/). Since then there have been significant changes to the framework, such as the introduction of a DI container, injectable objects and lately interfaces (in 0.7.0, to be released in a couple of days), I had to make some changes.
 
-There are a couple of things that I as a developer would like to see in [PhalconPHP](https://phalconphp.com/), which I am pretty sure will appear later on, since let's face it the framework is still very young (not even 1.0 version yet). Despite its "*youth*" it is a robust framework with excellent support, features and a growing community. One of these features is behaviors which I had to implement myself, and this was something new that came with this upgrade.
+There are a couple of things that I as a developer would like to see in [PhalconPHP](https://phalcon.io/), which I am pretty sure will appear later on, since let's face it the framework is still very young (not even 1.0 version yet). Despite its "*youth*" it is a robust framework with excellent support, features and a growing community. One of these features is behaviors which I had to implement myself, and this was something new that came with this upgrade.
 
 Recently a new <a href="https://github.com/phalcon/incubator">repo</a> has been created on Github called the incubator, where developers can share implementations of common tasks, that act as drop ins to the framework and extend it. These implementations are all written in PHP so everyone can just download them and use them. The more submissions come in, the more the framework will grow and eventually these submissions will become part of the framework itself.
 
@@ -313,7 +314,7 @@ The loader is what does all the discovery of classes for me. As you can see I st
     }
 ```
 
-This is an interesting one. Registering the view and Volt. [Volt](https://docs.phalconphp.com/en/latest/volt) is the template engine that comes with [Phalcon](https://phalconphp.com/). It is inspired by [Twig](https://twig.sensiolabs.org/) and written in C, thus offering maximum performance. I set the compiled path, extension and separator for the template files and also I have a variable (set in the config of course) to allow the application to always create template files or not. In a production environment that variable (stat) will be set to false since templates do not change.
+This is an interesting one. Registering the view and Volt. [Volt](https://docs.phalcon.io/en/latest/volt) is the template engine that comes with [Phalcon](https://phalcon.io/). It is inspired by [Twig](https://twig.sensiolabs.org/) and written in C, thus offering maximum performance. I set the compiled path, extension and separator for the template files and also I have a variable (set in the config of course) to allow the application to always create template files or not. In a production environment that variable (stat) will be set to false since templates do not change.
 
 ```php
     /**
@@ -447,13 +448,13 @@ class Episodes extends \NDN\Model
 
 #### Controllers
 
-Very little has changed in the controller logic, so that was the easiest part of the upgrade. Of course I tweaked a few things but the code works as is. I still extended my custom `NDN\Controller` class which takes care of my breadcrumbs (`NDN\Breadcrumbs`) as well as the construction of the top menu. The biggest difference with the previous version is that I stopped using [AngularJS](https://angularjs.org/) to populate the menu (so I am no longer sending a JSON array in the view) and used [Volt](https://docs.phalconphp.com/en/latest/volt) instead. It was a matter of preference and nothing more.
+Very little has changed in the controller logic, so that was the easiest part of the upgrade. Of course I tweaked a few things but the code works as is. I still extended my custom `NDN\Controller` class which takes care of my breadcrumbs (`NDN\Breadcrumbs`) as well as the construction of the top menu. The biggest difference with the previous version is that I stopped using [AngularJS](https://angularjs.org/) to populate the menu (so I am no longer sending a JSON array in the view) and used [Volt](https://docs.phalcon.io/latest/en/volt) instead. It was a matter of preference and nothing more.
 
 #### Views
 
-Quite a bit of work had to be done in the views to switch everything to use [Volt](https://docs.phalconphp.com/en/latest/volt). Of course every view extension had to be changed to `.volt` but that was not the only change. I split the layout to use partials so that the header, navigation and footer are different sections (organizing things a bit better) and kept the master layout `index.volt`. 
+Quite a bit of work had to be done in the views to switch everything to use [Volt](https://docs.phalcon.io/latest/en/volt). Of course every view extension had to be changed to `.volt` but that was not the only change. I split the layout to use partials so that the header, navigation and footer are different sections (organizing things a bit better) and kept the master layout `index.volt`. 
 
-I started using the built in [Volt](https://docs.phalconphp.com/en/latest/volt) functions to generate content as well as tags and it was a nice surprise to see that everything was easy to use and it worked!
+I started using the built-in [Volt](https://docs.phalcon.io/latest/en/volt) functions to generate content as well as tags, and it was a nice surprise to see that everything was easy to use and it worked!
 
 ```html
 {% raw %}
@@ -552,7 +553,7 @@ The Episodes view became
 
 The beauty of [AngularJS](https://angularjs.org/)! I only have to pass a JSON array with my results. `ng-repeat` with the `orderBy` filter allows me to present the data to the user and offer sorting capabilities per column. This is all done at the browser level **without** any database hits! Pretty awesome feature!
 
-For those that have used [AngularJS](https://angularjs.org/) in the past, you will note that I had to change the interpolate provider (i.e. the characters that wrap a string or a piece of code that [AngularJS](https://angularjs.org/) understands). Usually these characters are the curly brackets `{% raw %}{{ }}{% endraw %}` but I changed them to `[[ ]]` to avoid collisions with [Volt](https://docs.phalconphp.com/en/latest/volt).
+For those that have used [AngularJS](https://angularjs.org/) in the past, you will note that I had to change the interpolate provider (i.e. the characters that wrap a string or a piece of code that [AngularJS](https://angularjs.org/) understands). Usually these characters are the curly brackets `{% raw %}{{ }}{% endraw %}` but I changed them to `[[ ]]` to avoid collisions with [Volt](https://docs.phalcon.io/latest/en/volt).
 
 This was done with a couple of lines of code in my definition of my [AngularJS](https://angularjs.org/) model:
 
@@ -575,7 +576,7 @@ var ngModule = angular.module(
 
 I spent at most a day working on this mostly because I wanted to try various things and see how it works. The actual time to convert the application (because let's face it, it is a small application) was a couple of hours inclusive of the time it took me to rename certain fields, restructure the folder structure, compile the new extension on my server and upload the data upstream.
 
-I am very satisfied with both [AngularJS](https://angularjs.org/), which helps tremendously in my presentation layer, as well as with [Phalcon](https://phalconphp.com/). Phalcon's new design makes implementation a breeze, while [AngularJS](https://angularjs.org/) offers a lot of flexibility on the view layer.
+I am very satisfied with both [AngularJS](https://angularjs.org/), which helps tremendously in my presentation layer, as well as with [Phalcon](https://phalcon.io/). Phalcon's new design makes implementation a breeze, while [AngularJS](https://angularjs.org/) offers a lot of flexibility on the view layer.
 
 As written before, you are more than welcome to download the [source code](https://github.com/niden/phalcon-angular-harryhogfootball) of this application here and use it for your own needs. Some resources are:
 
@@ -586,7 +587,7 @@ As written before, you are more than welcome to download the [source code](https
 * [AngularJS group](https://groups.google.com/forum/#!forum/angular)
 * [AngularJS Github](https://github.com/angular)
 
-* [Phalcon PHP main site](https://phalconphp.com/)
-* [Phalcon PHP documentation](https://docs.phalconphp.com/)
-* [Phalcon Forum](https://forum.phalconphp.com)
+* [Phalcon PHP main site](https://phalcon.io/)
+* [Phalcon PHP documentation](https://docs.phalcon.io/)
+* [Phalcon Discussions](https://phalcon.io/discussions)
 * [Phalcon PHP Github](https://github.com/phalcon)

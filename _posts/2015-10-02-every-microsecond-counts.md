@@ -8,6 +8,7 @@ tags:
   - phalcon
   - metrics
 image: '/assets/files/2015-10-02-clock.png'
+image-alt: Clock
 ---
 One of the primary factors that always needs to be taken into consideration when designing and implementing an application is performance. In this day and age of information overload, everything is about speed. If your website is slow (more than a second or two) to appear on the browser, most likely your visitors will leave and go elsewhere. If the application you designed/implemented is slow, it will use more resources (memory/cpu) and thus cost more money to run. Time is money.
 
@@ -17,7 +18,7 @@ I have the highest admiration for [Grace Hopper](https://en.wikipedia.org/wiki/G
 
 #### This Blog
 
-As I wrote in a previous [post](/post/new-look-more-posts), a new version of this blog has been launched, based on work done for for the [Phalcon](https://phalconphp.com) [blog](https://github.com/phalcon/blog). While in development mode, metrics that are printed in the logger. The output looks something like this:
+As I wrote in a previous [post](/post/new-look-more-posts), a new version of this blog has been launched, based on work done for the [Phalcon](https://phalcon.io) [blog](https://github.com/phalcon/blog). While in development mode, metrics that are printed in the logger. The output looks something like this:
 
 ```sh
 [Fri, 02 Oct 15 20:10:27 -0400][INFO] Shutdown completed [2.798s] - [4,134.16 KB] 
@@ -42,11 +43,11 @@ The first few lines show a relatively OK response (2.7-3.0 seconds) but a high u
  
  Additional [optimizations](https://github.com/niden/blog/commit/e907099e716aea7589f4572ff592d5d446b8ccd9) led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
  
- There are still a lot of [things](/post/fast-serialization-of-data-in-php) I can try (and will) both on the application level as well as the server level. I am aiming to reduce the execution time to below 1 second and I will for sure share the results and the tools/techniques used. 
+ There are still a lot of [things](/post/fast-serialization-of-data-in-php) I can try (and will) both on the application level and the server level. I am aiming to reduce the execution time to below 1 second and I will for sure share the results and the tools/techniques used. 
 
 I hope you enjoy the performance increase (however noticeable). More to come in the near future.
 
 #### References
 
 * [Phalcon Blog Github](https://github.com/phalcon/blog)
-* [This Blog Github](https://github.com/niden/blog)
+* [This Blog GitHub](https://github.com/niden/blog)

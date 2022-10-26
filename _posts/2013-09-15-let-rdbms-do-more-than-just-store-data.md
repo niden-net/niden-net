@@ -9,6 +9,7 @@ tags:
   - php
   - how-to
 image: '/assets/files/2013-09-15-mariadb.png'
+image-alt: MariaDB
 ---
 One of the common "mistakes" that programmers (and have been guilty as charged many a times in the past) is not to use the tools that are available to them to the maximum extent possible.
 
@@ -16,7 +17,7 @@ A common example is using the RDBMS of your choice to only store and retrieve da
 
 A RDBMS can do much, much more. One can use triggers that can auto update fields (as I will demonstrate in this blog post), log data into tables, trigger cascade deletes etc.; stored procedures can compute complex data sets, joining tables and transforming data; views can offer easier representations of data, hiding complex queries from the actual application. In addition, such features, like stored procedures/views, can offer security enhancements as well as maintainability to an application. Execution for instance can be restricted to particular groups/logins, while changing the stored procedure/view only requires a change on the database layer and not the application itself.
 
-In this blog post I will show you a simple example on how one can transfer some of the processing of an application to the [RDBMS](https://www.mariadb.org/). I am using MariaDB as the [RDBMS](https://www.mariadb.org/) and [PhalconPHP](https://phalconphp.com/) as the PHP framework.
+In this blog post I will show you a simple example on how one can transfer some of the processing of an application to the [RDBMS](https://www.mariadb.org/). I am using MariaDB as the [RDBMS](https://www.mariadb.org/) and [PhalconPHP](https://phalcon.io/) as the PHP framework.
 
 #### The RDBMS
 Each table of my database has several common fields that are used for logging and reporting as well as recording status.
@@ -142,7 +143,7 @@ class Model extends PhModel
 }
 ```
 
-By using [skipAttributes](https://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_Model.html), I am instructing the Phalcon model not to update those fields. By doing so, I am letting my triggers worry about that data.
+By using [skipAttributes](https://docs.phalcon.io/latest/en/api/Phalcon_Mvc_Model.html), I am instructing the Phalcon model not to update those fields. By doing so, I am letting my triggers worry about that data.
 
 #### Conclusion
 It might seem a very trivial task that I am delegating but in the grand scheme of things, the models of an application can be very complex and have a lot of logic in them (and so might controllers). Delegating some of that logic in the RDBMS simplifies things and also increases performance of the application, which now requires just a bit less computational power.

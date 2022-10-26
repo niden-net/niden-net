@@ -8,6 +8,7 @@ tags:
   - linux
   - how-to
 image: '/assets/files/gentoo.png'
+image-alt: Gentoo
 ---
 Gentoo is one of my favorite Linux distributions. Although I am comfortable with other distributions, Gentoo has a special place in my heart and whenever I can use it I do :)
 

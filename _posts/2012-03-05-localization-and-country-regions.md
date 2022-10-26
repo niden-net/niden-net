@@ -7,6 +7,7 @@ tags:
   - github
   - json
 image: '/assets/files/2012-03-05-world.png'
+image-alt: World
 ---
 I was recently assigned a task in my current job, to try and standardize address related data.
 

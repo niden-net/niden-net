@@ -6,6 +6,8 @@ tags:
   - php
   - composer
   - cache
+image: '/assets/files/php.png'
+image-alt: PHP
 ---
 When working with repositories that utilize composer packages, sometimes you might get into a situation, where you expect a package to be present, but a different version is what exists in your `vendor` folder. Even if you run 
 

@@ -7,12 +7,13 @@ tags:
   - hosting
   - how-to
 ---
-I have recently blogged about [Slicehost vs. Linode](/post/slicehost-vs-linode-hosting-vps) and my decision to move my sites to the latter. Since then I can safely say that I made the right choice about the move. [Linode](https://www.linode.com)'s support is phenomenal. There has never been a ticket unanswered more than 5 minutes and all the tickets have been resolved. Even when I asked about a configuration issue regarding Heartbeat, which was clearly not in the realm of support, the support engineers did look at my configuration and did identify the error area. That alone saved me hours of troubleshooting and trying to find where the error was.
+I have recently blogged about [Slicehost vs. Linode](/post/slicehost-vs-linode-hosting-vps) and my decision to move my sites to the latter. Since then, I can safely say that I made the right choice about the move. [Linode](https://www.linode.com)'s support is phenomenal. There has never been a ticket unanswered more than 5 minutes and all the tickets have been resolved. Even when I asked about a configuration issue regarding Heartbeat, which was clearly not in the realm of support, the support engineers did look at my configuration and did identify the error area. That alone saved me hours of troubleshooting and trying to find where the error was.
 
 #### The Task
 
-Your website must be available - all the time. Why? Because if you have something to say (a blog, a journal, a rant page, a forum etc.) you need your audience to be able to read your material all the time. Discussion forums, websites with custom applications or services, even information based websites need to have as close to 100% uptime as possible.. How can this be achieved? The solution is a High Availability (or HA) cluster.</span>
-<img class="post-image" src="/assets/files/2011-04-04-ha.jpg" />
+Your website must be available - all the time. Why? Because if you have something to say (a blog, a journal, a rant page, a forum etc.) you need your audience to be able to read your material all the time. Discussion forums, websites with custom applications or services, even information based websites need to have as close to 100% uptime as possible.. How can this be achieved? The solution is a High Availability (or HA) cluster.
+
+<img class="post-image" src="/assets/files/2011-04-04-ha.jpg" alt="HA"/>
 
 Linux has been used for HA tasks for many years. The [Linux-HA](http://www.linux-ha.org/wiki/Main_Page)'s wiki has a lot of valuable information as well as guides and resources that one can use to increase the redundancy of their websites. In addition to this, Google is your friend. There are numerous bloggers that have shared their experiences with the public on how to create HA resources. Finally, one can check Linode's [Library](https://library.linode.com/) - a set of guides to allow you to create HA clusters with your Linodes.
 

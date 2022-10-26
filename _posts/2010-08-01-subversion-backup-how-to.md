@@ -9,6 +9,7 @@ tags:
   - linux
   - subversion
 image: '/assets/files/2010-08-01-online-backup.png'
+image-alt: Subversion
 ---
 I will start this post once again with the words of a wise man:
 

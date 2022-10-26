@@ -9,8 +9,9 @@ tags:
   - ubuntu
   - how-to
 image: '/assets/files/2011-04-21-libreoffice.png'
+image-alt: LibreOffice
 ---
-We all knew it was coming. Ever since [Oracle](https://www.oracle.com/) took a really surprising turn towards the non-community orientation of [OpenOffice](https://www.openoffice.org/), a lot of users on the Internet were curious (and concerned) as to what will happen with the whole OpenOffice saga.
+We all knew it was coming. Ever since [Oracle](https://www.oracle.com/) took an astounding turn towards the non-community orientation of [OpenOffice](https://www.openoffice.org/), a lot of users on the Internet were curious (and concerned) as to what will happen with the whole OpenOffice saga.
 
 Thankfully the project was forked and [LibreOffice](https://www.libreoffice.org/) was born. Within a few months the same (and better) quality product was released for the community. As the project entered its alpha stage, then the beta stage and then the RC stages, I was waiting anxiously to install it on my notebook (which is running [Ubuntu](https://www.ubuntu.com/) 10.10 at the moment).
 

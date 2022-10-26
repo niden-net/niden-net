@@ -10,6 +10,7 @@ tags:
   - nexus one
   - review
 image: '/assets/files/2010-06-21-android.png'
+image-alt: Android
 ---
 The newest version of the Android Operating System has been codenamed Froyo (as in Frozen Yogurt).
 

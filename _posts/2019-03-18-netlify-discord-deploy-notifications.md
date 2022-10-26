@@ -8,7 +8,7 @@ tags:
   - phalcon
   - documentation
 ---
-This blog post is not related to the actual code of Phalcon, but to the process of updating our documentation and notifying our [Discord](https://phalcon.link/discord) server of the build status. (_cross posted from the [Phalcon Blog](https://blog.phalconphp.com/post/discord-deploy-notifications)_)
+This blog post is not related to the actual code of Phalcon, but to the process of updating our documentation and notifying our [Discord](https://phalcon.link/discord) server of the build status. (_cross posted from the [Phalcon Blog](https://blog.phalcon.io/post/discord-deploy-notifications)_)
 
 We have blogged in the past that we have switched our documentation to a static site, utilizing Jekyll on the Netlify platform. The build process starts automatically whenever we push changes to our repository.
 

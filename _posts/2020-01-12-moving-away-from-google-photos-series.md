@@ -6,6 +6,8 @@ tags:
   - degoogle
   - google
   - series
+image: '/assets/files/google.png'
+image-alt: Google
 ---
 Google Photos offers one of the best - if not the best - photo managing and sharing service on the Internet. Finding a suitable replacement proved to be a big challenge. 
 <!--more-->

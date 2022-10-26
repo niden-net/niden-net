@@ -6,6 +6,7 @@ tags:
   - personal
   - update
 image: '/assets/files/update.png'
+image-alt: Update
 ---
 It has been a very long time since I last blogged.
 

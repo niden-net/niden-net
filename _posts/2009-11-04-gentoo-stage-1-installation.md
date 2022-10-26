@@ -9,6 +9,7 @@ tags:
   - notebook
   - how-to
 image: '/assets/files/gentoo.png'
+image-alt: Gentoo
 ---
 This is my effort to install Gentoo Linux on my *Acer Ferrari LMi 3000*.
 
@@ -516,4 +517,3 @@ and reboot
 Make sure you eject the CD when the system reboots because you don’t want to boot from it.
 
 Well it appears to be OK so far since the grub menu showed up and after the whole boot sequence I had my first Linux login.
-

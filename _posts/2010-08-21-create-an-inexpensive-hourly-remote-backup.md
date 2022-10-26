@@ -10,6 +10,7 @@ tags:
   - storage
   - how-to
 image: '/assets/files/2010-08-21-remote-backup.png'
+image-alt: Backup
 ---
 > There are two kinds of people, those who backup regularly, and those that never had a hard drive fail
 

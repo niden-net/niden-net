@@ -7,6 +7,7 @@ tags:
   - linux
   - how-to
 image: '/assets/files/2012-01-15-phpunit.png'
+image-alt: PHPUnit
 ---
 Recently I had to rebuild my computer, and decided to install [Linux Mint](https://www.linuxmint.com/) 12 (Lisa), which is a very lean installation - for my taste that is.
 
@@ -84,4 +85,3 @@ pear install phpunit/PHPUnit-3.5.15
 ```
 
 I hope you find the above useful :)
-

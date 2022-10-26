@@ -8,6 +8,7 @@ tags:
   - mysql
   - how-to
 image: '/assets/files/mysql.gif'
+image-alt: MySql
 ---
 We all need data to function. Whether this is information regarding what our body craves at the moment - hence go to the local take-away and get it or cook it - or whether this is electronic data to make our tasks easier, makes no difference.
 

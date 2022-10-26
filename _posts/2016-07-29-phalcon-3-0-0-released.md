@@ -8,8 +8,9 @@ tags:
   - release
   - lts
 image: '/assets/files/phalcon-logo.png'
+image-alt: Phalcon
 ---
-This article is cross posted from the [Phalcon Blog](https://blog.phalconphp.com/post/phalcon-3-0-0-released)
+This article is cross posted from the [Phalcon Blog](https://blog.phalcon.io/post/phalcon-3-0-0-released)
 
 ## Phalcon 3.0.0 final (LTS) released
 
@@ -1127,9 +1128,9 @@ cd cphalcon/build
 sudo ./install
 ```
 
-Windows DLLs are available in the [download page](https://phalconphp.com/en/download/windows).
+Windows DLLs are available in the [download page](https://phalcon.io/en/download/windows).
 
-* [Documentation](https://docs.phalconphp.com)
+* [Documentation](https://docs.phalcon.io)
 
 As always, many thanks to everyone involved in this release and thanks for choosing Phalcon!
 

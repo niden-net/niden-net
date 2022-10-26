@@ -8,6 +8,7 @@ tags:
   - google apps
   - how-to
 image: '/assets/files/2010-08-18-google-apps.png'
+image-alt: Google Apps
 ---
 Anyone that has a Google Apps account and wants to access other services like [Google Reader](https://reader.google.com/), [Google Voice](https://voice.google.com/) etc. knows that the username and password of the Google Apps account does not work for these services, since those are not available for Google Apps accounts. To get around this limitation, what you could do (and what I have done in the past) is to sign up for a new Google Account with the same email address as your Google Apps account.  This of course creates confusion at times, duplication of data and disassociation of services. The most obvious example of this is on an Android device. To use my phone, I need to sign in with my Google Apps account. However, to use my Google Voice number, I  have to use sign in again for that service but now using my Google Account (which uses the same email address). This works but I still have to keep two sets of contacts - one for the Google Apps and one in Google Voice.
 

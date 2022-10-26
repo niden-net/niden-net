@@ -6,9 +6,11 @@ tags:
   - php
   - php8
   - upgrade
+image: '/assets/files/php.png'
+image-alt: PHP
 ---
 2020 is the year when PHP will change versions. The latest and greatest will no longer be 7 but 8.
-<!--more-->
+
 It is sad (kinda) since we will no longer be using a prime number as the latest version of PHP, which has additional significance as a number (here I am showing my nerdiness). There are 7 oceans, 7 continents, 7 layers of skin (2 outer and 5 inner), ocean waves roll in sevens, the rainbow has 7 colors, sound has 7 notes, etc. etc. Instead, we will be using 8, infinity rotated by 90 degrees.
 
 PHP 8 is expected to be released at the end of 2020. For those that have been following the RFC process as well as the project itself, there are some really exciting new goodies coming with the new version!
@@ -116,5 +118,3 @@ class Invoices
 Although the above is not an extensive list, it highlights the features that stuck out for me. PHP 8 will have a lot more features and honestly I cannot wait to see the final feature list. 
 
 More on PHP 8 in a future post.
-
-

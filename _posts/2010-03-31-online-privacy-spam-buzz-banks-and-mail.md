@@ -9,6 +9,7 @@ tags:
   - rant
   - spam
 image: '/assets/files/2010-03-31-privacy.png'
+image-alt: Privacy
 ---
 Everyone more or less has some sort of electronic presence. That presence can easily be seen on Twitter, Facebook, [Google Plus](https://google.com/+NikolaosDimopoulos-niden), personal blog etc.
 

@@ -11,6 +11,7 @@ tags:
   - replication
   - how-to
 image: '/assets/files/2015-09-29-aws.png'
+image-alt: AWS
 ---
 Recently I worked on setting up replication between our AWS RDS instance and a server running as a MySQL slave in our location. Although the task was not difficult, there are quite a few areas that one needs to pay attention to. 
 

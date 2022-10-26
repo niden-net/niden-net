@@ -10,6 +10,7 @@ tags:
   - linux
   - how-to
 image: '/assets/files/2009-11-24-chromium-os.png'
+image-alt: Chromium OS
 ---
 Continued from [Part II](/post/chromium-os-part-ii)
 

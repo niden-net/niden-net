@@ -6,6 +6,7 @@ tags:
   - personal
   - rant
 image: '/assets/files/2009-11-21-incompetence.png'
+image-alt: Incompetence
 ---
 Further to my previous post [Ultimate Incompetence...](/post/ultimate-incompetence), it has been a week or so since we contacted the DMV so as to have the suspension lifted from my wife's non existent (for a year now) VA drivers license. We were promised that the information will be sent in the mail and that we will have to act when we receive it.
 

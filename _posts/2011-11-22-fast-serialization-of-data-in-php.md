@@ -10,6 +10,7 @@ tags:
   - json
   - how-to
 image: '/assets/files/2011-11-22-serialization.png'
+image-alt: Serialization
 ---
 > Serialization is the process of converting a data structure or object state into a format that can be stored and "resurrected" later in the same or another computer environment. [source](https://en.wikipedia.org/wiki/Serialization)
 

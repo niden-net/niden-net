@@ -10,6 +10,7 @@ tags:
   - review
   - 'google apps'
 image: '/assets/files/2009-11-16-google-apps.png'
+image-alt: Google Apps
 ---
 I was one of the first people to beta test GMail when the only way you could get an account was by an invitation. I did manage to get one and created an email account which I still use until now.
 

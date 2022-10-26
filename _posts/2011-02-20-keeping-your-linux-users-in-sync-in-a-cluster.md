@@ -10,6 +10,7 @@ tags:
   - storage
   - how-to
 image: '/assets/files/2011-02-20-sync.png'
+image-alt: Sync
 ---
 As websites become more and more popular, your application might not be able to cope with the demand that your users put on your server. To accommodate that, you will need to move out of the one server solution and create a cluster. The easiest cluster to create would be with two servers, one to handle your web requests (HTTP/PHP etc.) and one to handle your database load (MySQL). Again this setup can only get you so far. If your site is growing, you will need a cluster of servers.
 

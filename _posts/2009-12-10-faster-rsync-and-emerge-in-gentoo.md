@@ -9,6 +9,7 @@ tags:
   - installation
   - how-to
 image: '/assets/files/gentoo.png'
+image-alt: Gentoo
 ---
 Recently I have started setting up a cluster of 7 Gentoo boxes for a project I am working on. The problem with boxes coming right out of the setup process of a hosting company is that they do not contain the packages that you need. Therefore you need to setup your `USE` flags and emerge the packages you require as per the role of every box.
 

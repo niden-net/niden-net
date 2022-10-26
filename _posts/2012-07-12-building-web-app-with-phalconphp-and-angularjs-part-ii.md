@@ -8,12 +8,13 @@ tags:
   - angularjs
   - how-to
 image: '/assets/files/phalcon-logo.png'
+image-alt: Phalcon
 ---
-This is Part II of a series of posts on building an application using [Phalcon](https://phalconphp.com) and [AngularJS](https://angularjs.org). Part I is located [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i).
+This is Part II of a series of posts on building an application using [Phalcon](https://phalcon.io) and [AngularJS](https://angularjs.org). Part I is located [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i).
 
-I have recently discovered [Phalcon](https://phalconphp.com) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="https://blog.phalconphp.com/post/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
+I have recently discovered [Phalcon](https://phalcon.io) and I was impressed with its speed and ease of use. At the time of this writing, PhalconPHP is at version 0.4.2, with some serious <a href="https://blog.phalcon.io/post/moving-towards-phalcon-0-5-x">redesign</a> coming down the line on 0.5.x.<br />
 
-[Phalcon](https://phalconphp.com) takes a different approach than any other PHP framework (see [Zend](https://framework.zend.com/), [Symfony](https://symfony.com/), [CakePHP](https://cakephp.org/) etc.). It is written in C and compiled as a module which is then loaded on your web server. Effectively the whole framework is in memory for you to use, without needing to access the file system so that you can include a file here or a file there.
+[Phalcon](https://phalcon.io) takes a different approach than any other PHP framework (see [Zend](https://framework.zend.com/), [Symfony](https://symfony.com/), [CakePHP](https://cakephp.org/) etc.). It is written in C and compiled as a module which is then loaded on your web server. Effectively the whole framework is in memory for you to use, without needing to access the file system so that you can include a file here or a file there.
 
 ##### Advantages
 
@@ -25,17 +26,17 @@ Finally, you can mix and match whatever you need, using any of the components as
 
 ##### Disadvantages
 
-Support and bug tracing are the two weaknesses of [Phalcon](https://phalconphp.com). By *support* I do not mean support from the developers. On the contrary, the developers are doing a great job listening to the relatively young community, and issuing fixes. However, as with any framework, if you find a bug, you will try to trace the code back to each component in an effort to find a solution to your problem. When developing an application and have access to the source files (the library PHP files like Zend Framework has), not only you can learn from those implementations, but you can quickly fix something that might be broken and continue working. With [Phalcon](https://phalconphp.com) you will need to wait until the next version is released, unless you are fluent in C and play around with the source code. For most PHP programmers (like myself), the process will be *report the bug and wait for the fix*.
+Support and bug tracing are the two weaknesses of [Phalcon](https://phalcon.io). By *support* I do not mean support from the developers. On the contrary, the developers are doing a great job listening to the relatively young community, and issuing fixes. However, as with any framework, if you find a bug, you will try to trace the code back to each component in an effort to find a solution to your problem. When developing an application and have access to the source files (the library PHP files like Zend Framework has), not only you can learn from those implementations, but you can quickly fix something that might be broken and continue working. With [Phalcon](https://phalcon.io) you will need to wait until the next version is released, unless you are fluent in C and play around with the source code. For most PHP programmers (like myself), the process will be *report the bug and wait for the fix*.
 
-Since the framework is a module on your web server, you will need to be careful on upgrades. If your applications do not take advantage of the latest functionality the framework offers, you might fix something in one application, while breaking something in another. You cannot mix and match versions of [Phalcon](https://phalconphp.com) per application.<br />
+Since the framework is a module on your web server, you will need to be careful on upgrades. If your applications do not take advantage of the latest functionality the framework offers, you might fix something in one application, while breaking something in another. You cannot mix and match versions of [Phalcon](https://phalcon.io) per application.<br />
 
 ##### Consideration
 
-[Phalcon](https://phalconphp.com) is very young as a framework. It does have a lot of power, but there are a lot of things still missing (for instance relationships between models and a query builder). In time these pieces will be implemented and the framework will grow stronger :)
+[Phalcon](https://phalcon.io) is very young as a framework. It does have a lot of power, but there are a lot of things still missing (for instance relationships between models and a query builder). In time these pieces will be implemented and the framework will grow stronger :)
 
 ##### Implementation
 
-<img class="media-body-inline-img" data-action="zoom" src="/assets/files/2012-07-12-db-diagram.png" />
+<img class="media-body-inline-img" data-action="zoom" src="/assets/files/2012-07-12-db-diagram.png" alt="Diagram"/>
 
 I downloaded the [INVO](https://github.com/phalcon/invo) sample application and set it up on my web browser. Using that as a starting point, I started modifying it to fit my needs. I also set up the PhalconPHP [developer tools](https://vimeo.com/39035250) and [PHPStorm support](https://vimeo.com/43455647).
 
@@ -103,7 +104,7 @@ class NDN_Model extends Phalcon_Model_Base
 ```
 
 ##### Session
-Although [Phalcon](https://phalconphp.com) provides a flash messenger utility, I had an issue with using the `_forward` function on a controller, after an action (say Add or Edit) was completed. Effectively the data would not refresh on screen. To combat that I used `_redirect`. However, all the messages that I had in the flash messenger (`Phalcon_Flash`) would disappear. An easy solution was to extend the `Phalcon_Session` and create two new functions `setFlash` and `getFlash`. The `setFlash` is called whenever I want to set a message for the user to see. The function stores the message in a session variable. Before the controller is dispatched, the `getFlash` is called to return any messages waiting to be displayed, and after that the messages are cleared from the session and displayed on screen.
+Although [Phalcon](https://phalcon.io) provides a flash messenger utility, I had an issue with using the `_forward` function on a controller, after an action (say Add or Edit) was completed. Effectively the data would not refresh on screen. To combat that I used `_redirect`. However, all the messages that I had in the flash messenger (`Phalcon_Flash`) would disappear. An easy solution was to extend the `Phalcon_Session` and create two new functions `setFlash` and `getFlash`. The `setFlash` is called whenever I want to set a message for the user to see. The function stores the message in a session variable. Before the controller is dispatched, the `getFlash` is called to return any messages waiting to be displayed, and after that the messages are cleared from the session and displayed on screen.
 
 ```php
 class NDN_Session extends Phalcon_Session
@@ -236,8 +237,7 @@ The whole application, from start to finish, took less than 4 hours to develop. 
 * [AngularJS group](https://groups.google.com/forum/#!forum/angular)
 * [AngularJS Github](https://github.com/angular)
 
-* [Phalcon PHP main site](https://phalconphp.com/)
-* [Phalcon PHP documentation](https://docs.phalconphp.com/)
-* [Phalcon Forum](https://forum.phalconphp.com)
+* [Phalcon PHP main site](https://phalcon.io/)
+* [Phalcon PHP documentation](https://docs.phalcon.io/)
+* [Phalcon Discussions](https://phalcon.io/discussions)
 * [Phalcon PHP Github](https://github.com/phalcon)
-

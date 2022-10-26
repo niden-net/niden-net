@@ -11,6 +11,7 @@ tags:
   - series
   - how-to
 image: '/assets/files/2010-01-06-design-patterns.png'
+image-alt: Design Patterns
 ---
 A lot of developers – including myself – have at some point in their programming careers found themselves repeating a task that they have completed for a previous project or for a previous part of the same project.
 

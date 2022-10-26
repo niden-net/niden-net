@@ -5,6 +5,7 @@ date: 2009-12-28T23:45:00.000Z
 tags:
   - technorati
 image: '/assets/files/2009-12-28-technorati.png'
+image-alt: Technorati
 ---
 A good friend of mine suggested that I should add my blog to [Technorati](https://www.technorati.com/) for more exposure. Although I do not have any misconceptions as to whether my blog will reach the top 100 - I know it never will - it is nice to know that I am making every effort to bring people here and share my thoughts with them.
 

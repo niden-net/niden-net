@@ -6,6 +6,7 @@ tags:
   - angularjs
   - how-to
 image: '/assets/files/angularjs.png'
+image-alt: AngularJS
 ---
 Recently I was contacted by an acquaintance through my Google+ circles, who needed some help with a project of hers.
 

@@ -7,6 +7,8 @@ tags:
   - sorting
   - usort
   - spaceship
+image: '/assets/files/php.png'
+image-alt: PHP
 ---
 PHP is an extremely powerful language with tons of features and functions. This wealth of functionality offered is often overlooked because there are so many ways of doing the same thing.
 

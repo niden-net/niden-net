@@ -16,50 +16,50 @@ Please note that I am not the original author of the email and I do not know if 
 <div style="text-align: center;">
     <h2><strong><span style="color: navy;">MEMORIAL DAY</span></strong></h2>
     It is the VETERAN, not the preacher, who has given us freedom of religion.
-    <img src="/assets/files/2010-05-31-001.gif" />
+    <img src="/assets/files/2010-05-31-001.gif" alt="Freedom of Religion"/>
     <br />
     <hr />
     <br />
     It is the VETERAN, not the reporter, who has given us freedom of the press.
-    <img src="/assets/files/2010-05-31-002.jpg" />
+    <img src="/assets/files/2010-05-31-002.jpg" alt="Freedom of the Press"/>
     <br />
     <hr />
     <br />
     It is the VETERAN, not the poet, who has given us freedom of speech.
     <br />
-    <img src="/assets/files/2010-05-31-003.gif" />
+    <img src="/assets/files/2010-05-31-003.gif" alt="Freedom of Speech" />
     <br />
     <hr />
     <br />
     It is the VETERAN, not the campus organizer, who has given us freedom to assemble.
     <br />
-    <img src="/assets/files/2010-05-31-004.gif" />
+    <img src="/assets/files/2010-05-31-004.gif" alt="Freedom to Assemble" />
     <br />
     <hr />
     <br />
     It is the VETERAN, not the lawyer, who has given us the right to a fair trial.
     <br />
-    <img src="/assets/files/2010-05-31-005.jpg" />
+    <img src="/assets/files/2010-05-31-005.jpg" alt="Right to a Fair Trial" />
     <br />
     <hr />
     <br />
     It is the VETERAN, not the politician, Who has given us the right to vote.
     <br />
-    <img src="/assets/files/2010-05-31-006.jpg" />
+    <img src="/assets/files/2010-05-31-006.jpg" alt="Right to Vote" />
     <br />
     <hr />
     <br />
     It is the VETERAN who salutes the Flag,
     <br />
-    <img src="/assets/files/2010-05-31-007.jpg" />
+    <img src="/assets/files/2010-05-31-007.jpg" alt="Salute the Flag" />
     <br />
     <hr />
     <br />
     It is the VETERAN who serves under the Flag,
     <br />
-    <img src="/assets/files/2010-05-31-008.jpg" />
+    <img src="/assets/files/2010-05-31-008.jpg" alt="Serving under the Flag" />
     <br />
-    <img src="/assets/files/2010-05-31-009.jpg" />
+    <img src="/assets/files/2010-05-31-009.jpg" alt="Serving under the Flag" />
     <br />
     <hr />
     <br />

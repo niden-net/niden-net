@@ -7,6 +7,8 @@ tags:
   - google
   - degoogle
   - google maps
+image: '/assets/files/google.png'
+image-alt: Google
 ---
 Google Maps is very convenient and accurate. It helps us with finding places and it is an integral part of the Android operating system. 
 <!--more-->

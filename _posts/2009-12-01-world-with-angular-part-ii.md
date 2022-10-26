@@ -11,6 +11,7 @@ tags:
   - review
   - how-to
 image: '/assets/files/2009-12-01-angular.png'
+image-alt: AngularJS
 ---
 Continued from [Part I](/post/world-with-angular-part-i)
 
