@@ -73,6 +73,7 @@ The familiar Nexus One X appeared on the screen. A few seconds later, a little a
 The next step I took was to press simultaneously the power button and the volume up button.
 
 This brought a new menu at the top.
+
 <img class="post-image" src="/assets/files/2010-06-21-recovery2.png" alt="Recovery" />
 
 The options available were:
@@ -93,6 +94,7 @@ At this point the update started and some information was flashing on the screen
 ##### Phone search (Search throughout the phone itself)
 
 This is one of the updates that I just love. Froyo allows you to search a lot of content that is stored on your phone. The content includes your contacts, sms messages, applications, Twitter feeds and many more. With all this power it is very easy to find the information you are looking for with the press of a few keys on the virtual keyboard (Figure 4).
+
 <img class="post-image" src="/assets/files/2010-06-21-search-phone.png" alt="Search Phone" />
 <img class="post-image" src="/assets/files/2010-06-21-search-areas.png" alt="Search Areas" />
 
