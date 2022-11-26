@@ -24,3 +24,4 @@ The problem we have is that Phalcon is an extension and as such, code coverage r
 
 S﻿ince I am also working on Phalcon v6, which is a pure PHP implementation, I have enabled Code coverage for the project and so far we are in a good path. The code is mostly rated at "A" and the code coverage is at 81%. When time allows, I will work more to increase the code coverage.
 
+U﻿ploading code coverage to Codacy or Codecov is a very easy task. However, in our case, we run different sets of tests with different evironments and as such we generate different reports. All these reports will need to be collected and sent to the two services so that the coverage report can be compiled.
