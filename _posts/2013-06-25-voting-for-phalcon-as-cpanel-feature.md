@@ -66,6 +66,7 @@ In my reply I pointed out the above, stating that a customer should effectively 
 > If this feature is truly in high demand from customers of cPanel, Inc. they will naturally vote for it.
 >
 > We do appreciate your support and ongoing efforts to get this in front of us. The massive amounts of votes and comments it received, put it on our developers radars, and we will continue to monitor the situation.
+{: .alert .alert-info }
 
 So in essence, if we want to achieve our objective, i.e. get Phalcon as an available extension for cPanel, we need to advise the community (but be careful to *Remove the blog links and tweets and allow the feature to grow its own set of wheels.*) to contact their hosting companies (that use cPanel) to in turn contact cPanel and request Phalcon to be included as an extension.
 
