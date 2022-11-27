@@ -28,7 +28,7 @@ The biggest issue for me that was related to these two separated accounts (Googl
 I have been very methodical in my filing, utilizing electronic storage as much as possible. For that reason I have been scanning documents and uploading them to Google Docs (or if they were available in PDF format I would just upload them). The documents would range from personal, utility bills, bank statements, anything that I want to store. Soon I realized that the 1GB that Google Apps offers for documents will not cut it. I therefore created a new account which I named DocsMule1 (clearly to signify its purpose). I created one folder in that account, uploaded as many documents as I could there and shared that document with my own account as well as my wife's. Soon I found more limitations since I ended up with 3 mule accounts. Since there was no option for me to upgrade the storage (even if I paid for it), I had to change my strategy. Managing documents from 3 or more different accounts is not an easy and convenient task.
 
 
-I downloaded all my documents back to my computer (gotta love Google's [Data Liberation](https://dataliberation.org)) and deleted them from the Google Apps mule accounts and then deleted those accounts - just to keep everything tidy. I then launched my Gmail account and logged in to Google Docs. I created one folder which I shared with my Google Apps accounts (my wife's and mine) and then paid $50.00 for a whole year - which provided me with 200GB of space. You can always check how much space you are using by visiting the [Manage Storage](https://www.google.com/accounts/b/0/ManageStorage) page of your Google Account.
+I downloaded all my documents back to my computer (gotta love Google's [Data Liberation](https://support.google.com/accounts/answer/3024190)) and deleted them from the Google Apps mule accounts and then deleted those accounts - just to keep everything tidy. I then launched my Gmail account and logged in to Google Docs. I created one folder which I shared with my Google Apps accounts (my wife's and mine) and then paid $50.00 for a whole year - which provided me with 200GB of space. You can always check how much space you are using by visiting the [Manage Storage](https://www.google.com/accounts/b/0/ManageStorage) page of your Google Account.
 
 <img class="post-image" src="/assets/files/2011-03-10-google-manage-storage.png" alt="Google Storage"/>
 
@@ -81,13 +81,13 @@ To take advantage of this feature, you will have to go to the [Purchase addition
 
 #### Conclusion
 
-In my view, Google has done it again. They now offer an extremely affordable and secure way of storing your data. There are loads of people that have concerns about where their data is stored, who has ownership of the data stored, what does Google do with the data etc. A lot of these questions can easily be answered if you google (duh) the relevant terms or search in [Google's Help Center](https://support.google.com/). [Data Liberation](https://dataliberation.org/) allows you to retrieve your data whenever you want to. If on the other hand you are skeptical and do not wish to store your data there, don't. It is your choice.
+In my view, Google has done it again. They now offer an extremely affordable and secure way of storing your data. There are loads of people that have concerns about where their data is stored, who has ownership of the data stored, what does Google do with the data etc. A lot of these questions can easily be answered if you google (duh) the relevant terms or search in [Google's Help Center](https://support.google.com/). [Data Liberation](https://support.google.com/accounts/answer/3024190/) allows you to retrieve your data whenever you want to. If on the other hand you are skeptical and do not wish to store your data there, don't. It is your choice.
 
 #### References
 
 * [Google Docs](https://docs.google.com/)
 * [Picasa Web Albums](https://picasaweb.google.com/)
-* [Data Liberation](https://dataliberation.org/)
+* [Data Liberation](https://support.google.com/accounts/answer/3024190/)
 * [Google Account - Manage Storage](https://www.google.com/accounts/b/0/ManageStorage)
 * [Photo and Video Requirements: Size Limits for Picasa Web Albums](https://support.google.com/picasa/answer/6383491)
 * [Google Storage - How it Works](https://support.google.com/drive/answer/2375123)

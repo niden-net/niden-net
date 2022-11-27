@@ -64,7 +64,7 @@ I have been using Linode for a week and so far so good. The support is superb an
 #### Resources
 
 * [Vertexhost](https://www.vertexhost.com/)
-* [Slicehost](https://www.rackspace.com/cloud/vps/)
+* [Slicehost](https://www.rackspace.com/cloud/public)
 * [Rackspace](https://www.rackspace.com)
 * [Gentoo](https://www.gentoo.org/)
 * [Linode](https://www.linode.com)
