@@ -258,11 +258,11 @@ The description of the video is used as a storage for the URL that will point to
 #### Conclusion
 This whole project was no more than 30 minutes, which included the time I had to research and experiment a bit with the [LiveStream](https://www.livestream.com/) API. This is a flexible design, with much much cleaner code (and a lot less of it). When the admin needs to add a new playlist (aka year), all they have to do is open the JS file and type a new element in the `$scope.playlists` array. The application will take care of the rest automatically.
 
-I cannot think of doing this with less lines of code than this.
+I cannot think of doing this with fewer lines of code than this.
 
 If you haven't heard of [AngularJS](https://angularjs.org/) or used it, I would highly encourage you to give it a shot. Great project, awesome support and a very very responsive, helpful and polite community.
 
 * [AngularJS](https://angularjs.org/)
 * [AngularJS documentation](https://docs.angularjs.org/api)
-* [AngularJS group](https://groups.google.com/forum/#!forum/angular)
+* [AngularJS group](https://groups.google.com/g/angular)
 * [AngularJS Github](https://github.com/angular)

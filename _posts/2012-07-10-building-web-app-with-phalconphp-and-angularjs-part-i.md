@@ -38,7 +38,7 @@ NOTE: The Github repository contains code that works with nginx. If you are havi
 
 * [AngularJS main site](https://angularjs.org/)
 * [AngularJS documentation](https://docs.angularjs.org/api)
-* [AngularJS group](https://groups.google.com/forum/#!forum/angular)
+* [AngularJS group](https://groups.google.com/g/angular)
 * [AngularJS Github](https://github.com/angular)
 
 * [Phalcon PHP main site](https://phalcon.io/)

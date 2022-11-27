@@ -120,9 +120,9 @@ When I first heard about this feature during the [presentation of Froyo at Googl
 
 I spend every day 3 hours on the train, where I mostly work on my notebook. Having the ability to tether my phone and work online is essential. A couple of years back when I bought my first iPhone, I managed to jailbreak it and installed iPhoneModem on it to achieve the functionality that I wanted (tethering). It wasn't fancy (after all don't expect miracles with AT&T's EDGE network) but it worked. I could get my emails reply quickly and disconnect.
 
-When I got my Nexus One, I bought [PDA Net](http://pdanet.co) to achieve the same result. It worked too but again in a very basic mode, but it was draining the battery very fast and was running the phone very hot.
+When I got my Nexus One, I bought PDA Net to achieve the same result. It worked too but again in a very basic mode, but it was draining the battery very fast and was running the phone very hot.
 
-After I upgraded to Froyo, I uninstalled [PDA Net](http://pdanet.co) and have been working with the built-in functionality ever since.
+After I upgraded to Froyo, I uninstalled PDA Net and have been working with the built-in functionality ever since.
 
 <img class="post-image" src="/assets/files/2010-06-21-configure-hotspot.png" alt="Hotspot" />
 

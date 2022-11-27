@@ -309,7 +309,7 @@ Our routes are stored in the `base.php`. Additional routes can be set in the `co
 
 The dispatcher is instantiated with a listener, attaching to the `beforeException` event of the dispatcher. A custom plugin `NotFoundPlugin` is used to send output to the 404 page. Using the plugin allows us to reuse it anywhere in the application. This implementation is very beneficial when developing multi module applications.
 
-*NOTE:* For the CLI application later on, we will need the [CLI dispatcher](https://docs.phalcon.io/latest/en/api/phalcon_cli#cli%5Cdispatcher).
+*NOTE:* For the CLI application later on, we will need the [CLI dispatcher](https://docs.phalcon.io/latest/en/api/phalcon_cli#cli-dispatcher).
 
 ```php
 
@@ -338,7 +338,7 @@ The dispatcher is instantiated with a listener, attaching to the `beforeExceptio
 
 ##### Views
 
-The views are being initialized using [Volt](https://docs.phalcon.io/latest/en/api/phalcon_mvc#mvc%5Cview%5Cengine%5Cvolt) as the template engine. The main view is set up with the expected options.
+The views are being initialized using [Volt](https://docs.phalcon.io/5.0/en/api/phalcon_mvc#mvc-view-engine-volt) as the template engine. The main view is set up with the expected options.
 
 ```php
         $di->set(

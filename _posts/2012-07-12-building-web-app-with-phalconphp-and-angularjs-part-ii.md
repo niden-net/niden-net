@@ -234,7 +234,7 @@ The whole application, from start to finish, took less than 4 hours to develop. 
 
 * [AngularJS main site](https://angularjs.org/)
 * [AngularJS documentation](https://docs.angularjs.org/api)
-* [AngularJS group](https://groups.google.com/forum/#!forum/angular)
+* [AngularJS group](https://groups.google.com/g/angular)
 * [AngularJS Github](https://github.com/angular)
 
 * [Phalcon PHP main site](https://phalcon.io/)

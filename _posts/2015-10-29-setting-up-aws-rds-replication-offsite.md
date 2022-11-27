@@ -314,7 +314,7 @@ I hope you find this post helpful :)
 
 #### References
 
-* [RDS Using SSL with a MySQL DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.SSLSupport)
+* [RDS Using SSL with a MySQL DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html)
 * [RDS SSL Public Key](https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem)
 * [RDS Importing/Exporting Data](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
 * [MySQL Time Zone Support](https://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html)
