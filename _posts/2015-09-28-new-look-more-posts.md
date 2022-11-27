@@ -22,7 +22,7 @@ Many of you know that I have been heavily involved in the [Phalcon Framework](ht
 
 The results can be seen on our [blog](https://blog.phalcon.io), which is also open sourced on [Github](https://github.com/phalcon/blog). 
 
-For my own purposes I modified the codebase, adding new functionality and modifying it somewhat for my needs. The changes are also on [Github](https://github.com/niden/blog) and will soon be propagated to the Phalcon repository for everyone to use. This software requires some libraries loaded by composer and of course Phalcon loaded on your web server. The content is served using Markdown.
+For my own purposes I modified the codebase, adding new functionality and modifying it somewhat for my needs. The changes are also on [Github](https://github.com/niden-net/niden-net) and will soon be propagated to the Phalcon repository for everyone to use. This software requires some libraries loaded by composer and of course Phalcon loaded on your web server. The content is served using Markdown.
 
 As far as the look is concerned, I tried (really did) but nothing came close to what I wanted. Since I am not a CSS developer by any means, I purchased this template by the guys that created [Bootstrap](https://getbootstrap.com). The result IMHO is really nice, responsive and clean. I hope you like it too!
 

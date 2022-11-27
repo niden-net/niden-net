@@ -18,7 +18,7 @@ A note about these series. It appears that [Giorgio Sironi](https://giorgiosiron
 
 #### The Problem
 
-When I started programming in PHP I was faced with creating a simple database driven web page for a [Ferrari Fans Fun Forecast Club](https://ffff.niden.net/). The page had 5 different sections that each accessed the database to retrieve data. Each section was included in more than one page and only the menu, header and footer were common in all pages.
+When I started programming in PHP I was faced with creating a simple database driven web page for a Ferrari Fans Fun Forecast Club. The page had 5 different sections that each accessed the database to retrieve data. Each section was included in more than one page and only the menu, header and footer were common in all pages.
 
 My first design and implementation was horrible. I still have the files and for the purposes of this blog post I went back and checked on them and I can safely say I am ashamed of that code. But then again we all start from somewhere so that was my start and more importantly I do not program like that any more. The picture below shows how the page was constructed:
 

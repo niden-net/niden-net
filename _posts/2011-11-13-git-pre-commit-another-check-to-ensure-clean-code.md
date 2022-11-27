@@ -20,7 +20,7 @@ One really good feature that Git has is its hooks. Although Subversion also supp
 
 Git comes with some predefined hooks that one can use as a starting point. The code is checked before it is being committed and if it does pass whatever the `pre-commit` (for instance) hook does, it will allow you to commit; alternatively it will stop until you correct the mistakes made.
 
-One very popular `pre-commit` hook is the one [here](https://github.com/ReekenX/git-php-syntax-checker) by Remigijus Jarmalavičius. It checkes the files that have been modified/added and runs the `php -l` on it to ensure that whatever will be committed does not have PHP syntax errors.
+One very popular `pre-commit` hook is the one [here](https://github.com/ReekenX) by Remigijus Jarmalavičius. It checkes the files that have been modified/added and runs the `php -l` on it to ensure that whatever will be committed does not have PHP syntax errors.
 
 I have downloaded that code and easily added it to my repository so everything is being checked prior to any of my commits.
 
@@ -32,7 +32,7 @@ I have been the culprit of using the function, forgot that I had it in a certain
 
 To combat this scenario, I wrote a `pre-commit` hook that will allow you to check for the existence of certain functions in the code and ensure that those functions (or strings for that matter since I am using [grep])https://en.wikipedia.org/wiki/Grep)) do not exist in what is to be committed.
 
-The `pre-commit hook` that I wrote is listed below and the code has been heavily based on Remigijus Jarmalavičius's [pre-commit syntax checker](https://github.com/ReekenX/git-php-syntax-checker).
+The `pre-commit hook` that I wrote is listed below and the code has been heavily based on Remigijus Jarmalavičius's [pre-commit syntax checker](https://github.com/ReekenX).
 
 ```sh
 #!/bin/bash

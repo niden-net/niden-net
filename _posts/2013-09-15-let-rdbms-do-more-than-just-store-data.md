@@ -143,7 +143,7 @@ class Model extends PhModel
 }
 ```
 
-By using [skipAttributes](https://docs.phalcon.io/latest/en/api/Phalcon_Mvc_Model.html), I am instructing the Phalcon model not to update those fields. By doing so, I am letting my triggers worry about that data.
+By using [skipAttributes](https://docs.phalcon.io/latest/en/api/phalcon_mvc#methods-11), I am instructing the Phalcon model not to update those fields. By doing so, I am letting my triggers worry about that data.
 
 #### Conclusion
 It might seem a very trivial task that I am delegating but in the grand scheme of things, the models of an application can be very complex and have a lot of logic in them (and so might controllers). Delegating some of that logic in the RDBMS simplifies things and also increases performance of the application, which now requires just a bit less computational power.

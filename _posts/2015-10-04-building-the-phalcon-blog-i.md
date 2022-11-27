@@ -14,7 +14,7 @@ image-alt: Phalcon
 ---
 This is the first of a series of posts, describing how we built the Phalcon Blog (and this one of course). The intention is to showcase some of the features of Phalcon and discuss the reasons behind implementing the code in such a way. I will amend this post with the links of the future posts once I post them.
 
-These series will focus initially on the Phalcon blog ([Github](https://github.com/phalcon/blog)) and will then expand on this blog ([Github](https://github.com/niden/blog)). In the very near future all the features available in this blog will be available in the Phalcon one :)
+These series will focus initially on the Phalcon blog ([Github](https://github.com/phalcon/blog)) and will then expand on this blog ([Github](https://github.com/niden-net/niden-net)). In the very near future all the features available in this blog will be available in the Phalcon one :)
 
 As I mentioned in a [previous post](/post/new-look-more-posts), [Andres](https://phalcon.io/en/team) and I were not 100% satisfied with [Tumblr](https://tumblr.com), the blogging platform that we have used for a few years for the purposes of the [Phalcon blog](https://blog.phalcon.io). So we decided that it would not only be beneficial for us to build something of our own, but also for the community, since the software is [open sourced](https://github.com/phalcon/blog) and available for everyone to use.
 
@@ -309,7 +309,7 @@ Our routes are stored in the `base.php`. Additional routes can be set in the `co
 
 The dispatcher is instantiated with a listener, attaching to the `beforeException` event of the dispatcher. A custom plugin `NotFoundPlugin` is used to send output to the 404 page. Using the plugin allows us to reuse it anywhere in the application. This implementation is very beneficial when developing multi module applications.
 
-*NOTE:* For the CLI application later on, we will need the [CLI dispatcher](https://docs.phalcon.io/latest/en/api/Phalcon_CLI_Dispatcher.html).
+*NOTE:* For the CLI application later on, we will need the [CLI dispatcher](https://docs.phalcon.io/latest/en/api/phalcon_cli#cli%5Cdispatcher).
 
 ```php
 
@@ -338,7 +338,7 @@ The dispatcher is instantiated with a listener, attaching to the `beforeExceptio
 
 ##### Views
 
-The views are being initialized using [Volt](https://docs.phalcon.io/latest/en/api/Phalcon_Mvc_View_Engine_Volt.html) as the template engine. The main view is set up with the expected options.
+The views are being initialized using [Volt](https://docs.phalcon.io/latest/en/api/phalcon_mvc#mvc%5Cview%5Cengine%5Cvolt) as the template engine. The main view is set up with the expected options.
 
 ```php
         $di->set(
@@ -469,4 +469,4 @@ Comments are more than welcome. If you have any questions on the implementation,
 #### References
 
 * [Phalcon Blog Github](https://github.com/phalcon/blog)
-* [This Blog Github](https://github.com/niden/blog)
+* [This Blog Github](https://github.com/niden-net/niden-net)

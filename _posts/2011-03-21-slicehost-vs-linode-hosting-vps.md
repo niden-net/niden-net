@@ -19,16 +19,16 @@ I used to host those sites on one of my company's clusters. The bandwidth consum
 
 #### Slicehost
 
-Without much thought, I signed up for [Slicehost](https://www.slicehost.com), which is a subsidiary of [Rackspace](https://www.rackspace.com), a very well known and reputable company.
+Without much thought, I signed up for [Slicehost](https://www.rackspace.com/cloud/vps/), which is a subsidiary of [Rackspace](https://www.rackspace.com), a very well known and reputable company.
 <img class="post-image" src="/assets/files/2011-03-21-slicehost.png" alt="Slicehost" />
 
 I got their 4GB package (250.00 USD per month) and installed <a href="https://www.gentoo.org/">Gentoo</a> on it. Apart from the price which was a bit steep, everything else was fine. I was happy to be able to host my sites in a configuration that I was comfortable with, under the understanding that if the VPS failed, then all my sites would go down. That however is the risk that everyone takes while hosting their sites on a single machine. The higher the availability and redundancy the higher the cost.
 
 I must admit that signing up was not a very happy experience. I went and paid with my credit card, as they pro-rate your month based on your package. Almost immediately after signing up, came the email informing me that my credit card has been charged for the relevant amount. I got into the box through ssh, updated the `/etc/make.conf` file with the USE flags that I needed, run `emerge --sync` and then `emerge --update --deep --newuse --verbose world` so as to update the system.
 
-It must have been around 5-10 minutes into the process that I received an email from [Slicehost](https://www.slicehost.com) saying that they are checking my account information and that I need to confirm my credit card details. I immediately replied to their email (gotta love the desktop notifications on GMail), with the information they needed.
+It must have been around 5-10 minutes into the process that I received an email from [Slicehost](https://www.rackspace.com/cloud/vps/) saying that they are checking my account information and that I need to confirm my credit card details. I immediately replied to their email (gotta love the desktop notifications on GMail), with the information they needed.
 
-After I sent the email, I noticed that the box was not responding. I tried to log back in and could not. I was also logged out (and could not log back in) to their management console on [Slicehost](https://www.slicehost.com) site. I was fuming! They severed the connection to the VPS in the middle of compilation to check my credit card information. I understand that they need to perform checks for fraud but two questions came to mind:
+After I sent the email, I noticed that the box was not responding. I tried to log back in and could not. I was also logged out (and could not log back in) to their management console on [Slicehost](https://www.rackspace.com/cloud/vps/) site. I was fuming! They severed the connection to the VPS in the middle of compilation to check my credit card information. I understand that they need to perform checks for fraud but two questions came to mind:
 
 * Why did they have to sever the connection and not just send an email, and if I did not reply, just block access to the box? That would have been a heck of a lot of an inconvenience to myself i.e. the end user.
 * Why did the initial email say that my credit card has been charged, and it had not?
@@ -64,7 +64,7 @@ I have been using Linode for a week and so far so good. The support is superb an
 #### Resources
 
 * [Vertexhost](https://www.vertexhost.com/)
-* [Slicehost](https://www.slicehost.com)
+* [Slicehost](https://www.rackspace.com/cloud/vps/)
 * [Rackspace](https://www.rackspace.com)
 * [Gentoo](https://www.gentoo.org/)
 * [Linode](https://www.linode.com)

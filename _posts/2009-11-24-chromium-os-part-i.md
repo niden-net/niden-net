@@ -28,7 +28,7 @@ Curious (as usual) I tried installing the Chromium OS on a virtual machine. My e
 
 My DELL Studio 17 has two hard drives and because I really really do not like Windows Vista, I have installed Ubuntu 9.10 32bit on the second partition. The notebook enjoys a 2.4GHz Intel processor and 6GB RAM.
 
-I applied all the relevant updates (just to be on the safe side) and a couple of reboots later I am ready to venture in the unknown. The [documentation](https://code.google.com/p/chromium/wiki/LinuxBuildInstructionsPrerequisites) outlines the minimum required packages:&nbsp;
+I applied all the relevant updates (just to be on the safe side) and a couple of reboots later I am ready to venture in the unknown. The documentation outlines the minimum required packages:&nbsp;
 
 Building on Linux requires the following software.
 
@@ -59,7 +59,7 @@ Optional (currently, all of these are only used by layout tests):
 - php5-cgi
 - sun-java6-fonts (needed for Lucida)
 
-Because I didn't want to go and check the version of every package mentioned above I run the following command (mentioned also in the [documentation](https://code.google.com/p/chromium/wiki/LinuxBuildInstructionsPrerequisites))
+Because I didn't want to go and check the version of every package mentioned above I run the following command (mentioned also in the documentation)
 
 ```sh
 sudo apt-get install subversion pkg-config python perl g++ g++-multilib bison flex gperf libnss3-dev libgtk2.0-dev libnspr4-0d libasound2-dev libnspr4-dev msttcorefonts libgconf2-dev libcairo2-dev libdbus-1-dev

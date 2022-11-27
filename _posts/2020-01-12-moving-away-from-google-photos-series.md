@@ -16,7 +16,7 @@ Google Photos offers one of the best - if not the best - photo managing and shar
 {: .alert .alert-warning }
 
 ### Google Photos
-Google Photos was 100 times better, when it was tightly integrated with [Picasa](https://picasa.google.com/). When Picasa was still _alive_, I could have my whole library of photos, all organized neatly in year folders and subfolders under that, and they would be automatically synched with Google Photos. It was not called Google Photos at the time I think but the sync was there.
+Google Photos was 100 times better, when it was tightly integrated with Picasa. When Picasa was still _alive_, I could have my whole library of photos, all organized neatly in year folders and subfolders under that, and they would be automatically synched with Google Photos. It was not called Google Photos at the time I think but the sync was there.
 
 We entered then a stage where one could still have Picasa (locally) to manipulate their photos as well as sync with the cloud and also have the mobile app which would ensure that memories would be kept once they were captured on a mobile device.
 
@@ -27,7 +27,7 @@ Google Photos offers a nice interface where one could have albums and even share
 There were a few annoying things with Google Photos, such as the ordering of photos - one could not choose a good ordering system, the ability to change en mass information about the photos (especially those that were scanned and had a creation date completely different than the one the picture was taken) as well as the ability to order albums in folders (such as year folders as I mentioned earlier). The fact also that I had to click on each album to delete it was a pain. I guess it makes sense. Google does not want you to delete all your data in one go.
 
 ### Amazon Photos
-[Amazon Photos](https://photos.amazon.com) was another alternative. I am sure that they are in line with what Google is doing with regards to analysis and facial recognition, but the user interface is good and so are the features. It also comes free (for photos) for those who have Amazon Prime. All you need is the mobile application and your data will be automatically synched. Still, privacy concerns exist.
+[Amazon Photos](https://www.amazon.com/b/?node=13234696011&ref_=ap_phc_unrec) was another alternative. I am sure that they are in line with what Google is doing with regards to analysis and facial recognition, but the user interface is good and so are the features. It also comes free (for photos) for those who have Amazon Prime. All you need is the mobile application and your data will be automatically synched. Still, privacy concerns exist.
 
 ### SmugMug
 I investigated [SmugMug](https://smugmug.com) and it looks really good. I even signed up for one year and from what I can say, it is rock solid. However the lack of a local sync is something that really makes me not want to use the site anymore. There is a good Android app but it is not enough. 

@@ -10,9 +10,9 @@ tags:
 image: '/assets/files/2010-08-18-google-apps.png'
 image-alt: Google Apps
 ---
-Anyone that has a Google Apps account and wants to access other services like [Google Reader](https://reader.google.com/), [Google Voice](https://voice.google.com/) etc. knows that the username and password of the Google Apps account does not work for these services, since those are not available for Google Apps accounts. To get around this limitation, what you could do (and what I have done in the past) is to sign up for a new Google Account with the same email address as your Google Apps account.  This of course creates confusion at times, duplication of data and disassociation of services. The most obvious example of this is on an Android device. To use my phone, I need to sign in with my Google Apps account. However, to use my Google Voice number, I  have to use sign in again for that service but now using my Google Account (which uses the same email address). This works but I still have to keep two sets of contacts - one for the Google Apps and one in Google Voice.
+Anyone that has a Google Apps account and wants to access other services like Google Reader, [Google Voice](https://voice.google.com/) etc. knows that the username and password of the Google Apps account does not work for these services, since those are not available for Google Apps accounts. To get around this limitation, what you could do (and what I have done in the past) is to sign up for a new Google Account with the same email address as your Google Apps account.  This of course creates confusion at times, duplication of data and disassociation of services. The most obvious example of this is on an Android device. To use my phone, I need to sign in with my Google Apps account. However, to use my Google Voice number, I  have to use sign in again for that service but now using my Google Account (which uses the same email address). This works but I still have to keep two sets of contacts - one for the Google Apps and one in Google Voice.
 
-According to Google, 9 of the top 20 requests from Google Apps customers are for their accounts to work with more services from Google. To facilitate this, the Google Apps account had to be merged with the Google Account. [This page](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182174) in Google Apps Help describes the transition.
+According to Google, 9 of the top 20 requests from Google Apps customers are for their accounts to work with more services from Google. To facilitate this, the Google Apps account had to be merged with the Google Account. [This page](https://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=182174) in Google Apps Help describes the transition.
 
 Unfortunately this was not a simple flip of a switch for Google. [Significant infrastructure changes](https://googleenterprise.blogspot.com/2010/05/more-google-applications-coming-for.html) had to be in place prior to the merging of the accounts. We were promised that this change would be in place by fall and we have not been disappointed. Google is rolling out the update slowly but if you want to 'speed up' the process, you can [sign up](https://spreadsheets1.google.com/a/google.com/viewform?hl=en&amp;formkey=dGdfTTA2eGhFT0c0SDVLXzMzMFNwUUE6MA#gid=0) for an early round of testing of the new infrastructure. I have signed up for several of my Google Apps domains a couple of weeks ago.
 
@@ -49,7 +49,7 @@ There are certain limitations to this merge (as one would expect :)). These are 
 - Delegating email only works with the same account type (i.e. Google Apps)
 - Any Picasa Web Album, Profile, or Wave usernames cannot be moved from an existing account to your Google Apps account.
 
-Resources: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Conflicting accounts, Early adopters, [Additional storage for Google Apps](https://www.google.com/support/a/bin/answer.py?answer=172732), Google Apps Administrator Help Center
+Resources: [Transition readiness checklist](https://support.google.com/a/answer/7044710), Conflicting accounts, Early adopters, [Additional storage for Google Apps](https://support.google.com/a/bin/answer.py?answer=172732), Google Apps Administrator Help Center
 
 #### The process
 
@@ -63,7 +63,7 @@ Resources: [Transition readiness checklist](https://www.google.com/support/a/bin
 
 Once I logged in my Google Apps Administration area, the Dashboard presented a new notice at the top. In short the notice states that new services will be available to the Google Apps accounts. This will be achieved with the transition of the Google Apps Account to a Google Account. The update is free and Google will automatically roll it out on **September 30, 2010**.
 
-Resource: [Google Apps core suite](https://www.google.com/apps/intl/en/business/index.html)
+Resource: [Google Apps core suite](https://workspace.google.com)
 
 ##### Google Apps - Understand the Transition
 
@@ -75,7 +75,7 @@ Resource: [Google Apps core suite](https://www.google.com/apps/intl/en/business/
 
 Clicking the **"Get Started"** button at the bottom of the notice will start a wizard that helps with the transition of the domain's accounts to Google accounts of your users (some or all). The first screen contains information that aids in understanding the transition and what is involved.   Moving to the new infrastructure will update your control panel and give you control over which Google services your users can access with their accounts.
 
-Resource: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Google Apps Administrator Help Center
+Resource: [Transition readiness checklist](https://support.google.com/a/answer/7044710), Google Apps Administrator Help Center
 
 ##### Google Apps - New Services
 
@@ -120,7 +120,7 @@ Resource: Early adopters
 
 Clicking **Continue** again will bring up the final screen which is the confirmation page. Google is very thorough and I like the confirmation screen. The information in this screen is a summary of what the wizard collected in previous steps. You (the administrator) will have to confirm in several places that you have understood the process, read the agreement and then accept the whole process. Clicking **I accept. Start the transition**. will make things happen :)
 
-Resources: [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034)
+Resources: [Transition readiness checklist](https://support.google.com/a/answer/7044710)
 
 ##### Google Apps - Transition in progress
 
@@ -143,7 +143,7 @@ Navigating back to the dashboard, you will see a message notifying you that ther
 
 If you (the administrator) chose to notify your users of this transition (see step *Select Users* above), they will receive an email like the one shown above. If you chose to notify your users with a different message then that message should have been sent to the temporary email address that Google has provided (see step *Notifying Conflicting Accounts* above)
 
-Resources: [Data ownership](https://www.google.com/support/accounts/bin/answer.py?answer=181692), [Transition readiness checklist](https://www.google.com/support/a/bin/answer.py?answer=182034), Google Apps Administrator Help Center
+Resources: [Data ownership](https://support.google.com/accounts/answer/181692), [Transition readiness checklist](https://support.google.com/a/answer/7044710), Google Apps Administrator Help Center
 
 ##### Google Apps - Email to User after Transition
 
@@ -155,7 +155,7 @@ Resources: [Data ownership](https://www.google.com/support/accounts/bin/answer.p
 
 Finally another email will be sent to the user summarizing what has happened with their account. This email contains links to additional resources.
 
-Resources: [List of products](https://www.google.com/options/), [New sign in option](https://www.google.com/support/accounts/bin/answer.py?answer=181703),  Data ownership, What is a browser?, [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), Help Center for Admins, Google Apps Administrator Help Center
+Resources: [List of products](https://www.google.com/options/), [New sign in option](https://support.google.com/accounts/bin/answer.py?answer=181703),  Data ownership, What is a browser?, [Using multiple accounts](https://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=182343), Help Center for Admins, Google Apps Administrator Help Center
 
 
 ##### Google Apps - User Login message for Account Merge
@@ -169,7 +169,7 @@ Resources: [List of products](https://www.google.com/options/), [New sign in opt
 Once the transition operation is completed, the next time the user logs in their account, they will see the screen above. In short this screen informs the user of what has happened and provides links to online resources for help. The user must click **I accept. Continue to my account** for them to have access to their account. This is  a one off process.
 
 
-Resources: Google Apps Administrator Help Center, [Google Security and Privacy](https://www.google.com/support/a/bin/answer.py?hl=en&amp;answer=60762), [Using multiple accounts](https://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=182343), [Terms of Service](https://www.google.com/intl/en/policies/terms/)
+Resources: Google Apps Administrator Help Center, [Google Security and Privacy](https://support.google.com/a/bin/answer.py?hl=en&amp;answer=60762), [Using multiple accounts](https://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=182343), [Terms of Service](https://www.google.com/intl/en/policies/terms/)
 
 #### Conclusion
 Without a doubt this is a huge step forward for Google and for us as admins or users. The ability to have a single sign on to use their products not only helps them but us by simplifying everything. That also means that if a hacker guesses that my password is **password1** they have access to all my Google related services... but oh well :)
@@ -180,7 +180,7 @@ Some questions come to mind:
 
 - Will the user be able to purchase storage for all services or just for email?
 - Will the 1Gb limit from Docs be lifted and will it be combined with storage for mail?
-- $20 a year gives you 80Gb in Picasa. Will Google follow that model or change it? According to the [Additional storage for Google Apps](https://www.google.com/support/a/bin/answer.py?answer=172732) page it appears that it will be more expensive now to have more space.
+- $20 a year gives you 80Gb in Picasa. Will Google follow that model or change it? According to the [Additional storage for Google Apps](https://support.google.com/a/bin/answer.py?answer=172732) page it appears that it will be more expensive now to have more space.
 - If storage is so cheap (Picasa) will it be extended to Google Documents? It appears that 7.5Gb is enough for the vast majority of users as far as email is concerned, but 1Gb for Docs is not enough. For a society moving towards a full electronic document storage this could help a lot.
 
 Still a long way to go until everything clears up. I am not sure that Google has all the answers yet but they are moving forward and this is the most encouraging news of all!

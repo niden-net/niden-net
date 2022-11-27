@@ -120,7 +120,7 @@ wget: unable to resolve host address `chrome-web'
 make: *** [build-stamp] Error 1
 ```
 
-I quickly found what I need to do (Google is your friend :)). It appears that this is [known bug](https://codereview.chromium.org/414029/show) and it is easily fixable. All I had to do is edit the `copy_chrome_zip.sh` file. I tried using nano in the chroot environment but it was not there. For that I exited the chroot and edited the file.
+I quickly found what I need to do (Google is your friend :)). It appears that this is known bug and it is easily fixable. All I had to do is edit the `copy_chrome_zip.sh` file. I tried using nano in the chroot environment but it was not there. For that I exited the chroot and edited the file.
 
 ```sh
 exit

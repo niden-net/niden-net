@@ -181,7 +181,7 @@ img {
 </head>
 <body ng-entity="incident=Incident" ng-init="incidents=Incident.all()">
   <span style='float:right;font-size:10px;'>
-    Powered by <a href='https://www.getangular.com'>`<angular/>`</a>
+    Powered by <a href='https://angularjs.org'>`<angular/>`</a>
   </span>
   <br />
   <div class="incident">

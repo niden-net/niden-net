@@ -28,7 +28,7 @@ At the time I was granted a development account for the software so that I can t
 
 And so I did. I created the feature request, and we also advertised this in our community via our [forum](https://forum.phalcon.io) and our [blog post](https://blog.phalcon.io/post/help-the-community-to-make-phalcon-available-on-cpanel).
 
-The [feature](https://features.cpanel.net/responses/add-support-for-phalconphp-extension-apache-php) received well over 180 votes, making it the third most requested feature in cPanel. Also if you follow the link, one of the engineers of cPanel requested additional information which was provided by myself and others.
+The [feature](https://features.cpanel.net/topic/add-support-for-phalconphp-extension-apache-php) received well over 180 votes, making it the third most requested feature in cPanel. Also if you follow the link, one of the engineers of cPanel requested additional information which was provided by myself and others.
 
 As time went by, I visited the feature and requested an update but never got a reply back. More and more votes kept on coming in so it was really a waiting game at that time.
 

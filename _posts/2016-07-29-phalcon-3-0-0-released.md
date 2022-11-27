@@ -1033,14 +1033,14 @@ We want to greatly thank everyone who has contributed to accomplish and achieve 
 * [dzubchik](https://github.com/dzubchik)
 * [Brian Moore](https://github.com/bmoore)
 * [Przemysław Lazarek](https://github.com/Daredzik)
-* [acwtools](https://github.com/acwtools)
+* acwtools
 * [nsossonko](https://github.com/nsossonko)
 * [Takuya Arita](https://github.com/ariarijp)
 * [Matthias von Bargen](https://github.com/mattvb91)
 * [Renato Montagna Junior](https://github.com/renatomjr)
 * [Ryo Moriwaki](https://github.com/ryomo)
 * [ifsnow](https://github.com/ifsnow)
-* [Zhao Yi](https://github.com/zhao5908)
+* Zhao Yi
 * [phecho](https://github.com/phecho)
 * [Decent Woo](https://github.com/mr5)
 * [Dreamszhu](https://github.com/dreamsxin)

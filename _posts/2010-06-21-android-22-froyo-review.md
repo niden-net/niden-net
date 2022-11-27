@@ -118,11 +118,11 @@ When I first heard about this feature during the [presentation of Froyo at Googl
 
 <img class="post-image" src="/assets/files/2010-06-21-hotspot-on.png" alt="Hotspot" />
 
-I spend every day 3 hours on the train, where I mostly work on my notebook. Having the ability to tether my phone and work online is essential. A couple of years back when I bought my first iPhone, I managed to jailbreak it and installed [iPhoneModem](https://www.iphonemodem.com/) on it to achieve the functionality that I wanted (tethering). It wasn't fancy (after all don't expect miracles with AT&T's EDGE network) but it worked. I could get my emails reply quickly and disconnect.
+I spend every day 3 hours on the train, where I mostly work on my notebook. Having the ability to tether my phone and work online is essential. A couple of years back when I bought my first iPhone, I managed to jailbreak it and installed iPhoneModem on it to achieve the functionality that I wanted (tethering). It wasn't fancy (after all don't expect miracles with AT&T's EDGE network) but it worked. I could get my emails reply quickly and disconnect.
 
-When I got my Nexus One, I bought [PDA Net](https://www.junefabrics.com/android/) to achieve the same result. It worked too but again in a very basic mode, but it was draining the battery very fast and was running the phone very hot.
+When I got my Nexus One, I bought [PDA Net](http://pdanet.co) to achieve the same result. It worked too but again in a very basic mode, but it was draining the battery very fast and was running the phone very hot.
 
-After I upgraded to Froyo, I uninstalled [PDA Net](https://www.junefabrics.com/android/) and have been working with the built-in functionality ever since.
+After I upgraded to Froyo, I uninstalled [PDA Net](http://pdanet.co) and have been working with the built-in functionality ever since.
 
 <img class="post-image" src="/assets/files/2010-06-21-configure-hotspot.png" alt="Hotspot" />
 
@@ -148,7 +148,7 @@ Perhaps a future version will allow you to customize those buttons.
 
 <img class="post-image" src="/assets/files/2010-06-21-mainscreen.png" alt="Main Screen" />
 
-Android development though has to be very cautious when releasing functionality. I am sure that Apple is checking everything that Android does with a microscope. With their enormous patent book nearby, they will not hesitate to sue Android (or Google for that matter) for patent infringement (see [Apple sues HTC](https://www.engadget.com/2010/03/02/apple-sues-htc-for-infringing-20-iphone-patents/)).
+Android development though has to be very cautious when releasing functionality. I am sure that Apple is checking everything that Android does with a microscope. With their enormous patent book nearby, they will not hesitate to sue Android (or Google for that matter) for patent infringement (see [Apple sues HTC](https://archive.ph/2St9C)).
 
 ##### More accounts to sync with
 
@@ -309,7 +309,7 @@ Again unfortunately this functionality (the one with the magnifying glass for se
 
 ##### FLASH Support
 
-Steve Jobs [never kept secret](https://www.apple.com/hotnews/thoughts-on-flash/) his thoughts about Flash support on an iPhone. Although many people were hopeful that something will be worked out with Adobe in the end, Mr. Jobs shut the door on Adobe. Adobe then invested time and resources to work something out and right before they were able to release their solution Apple changed the iPhone Developer License Agreement to allow only applications written in Objective-C, C, C++ or Javascript and executed by the OS Webkit engine. Adobe [had enough](https://mashable.com/2010/04/09/apple-adobe-flash-ban/) and issued a '[screw you apple](https://theflashblog.com/?p=1888)' (not officially of course).
+Steve Jobs [never kept secret](https://archive.ph/pxSTb) his thoughts about Flash support on an iPhone. Although many people were hopeful that something will be worked out with Adobe in the end, Mr. Jobs shut the door on Adobe. Adobe then invested time and resources to work something out and right before they were able to release their solution Apple changed the iPhone Developer License Agreement to allow only applications written in Objective-C, C, C++ or Javascript and executed by the OS Webkit engine. Adobe [had enough](https://archive.ph/xsBel) and issued a '[screw you apple](https://archive.ph/5purk)' (not officially of course).
 
 <img class="post-image" src="/assets/files/2010-06-21-pacman.png" alt="Pacman" />
 
@@ -325,7 +325,7 @@ The Android 2.2 (Froyo) is a huge step forward. It provides users with a lot of 
 
 ##### Update
 
-There has been another blog post on [AndroidAndMe](https://androidandme.com/) explaining [how to update Froyo](https://androidandme.com/2010/06/news/new-android-2-2-update-for-the-nexus-one-is-available-now/) to the latest build (this one is a patch not the real thing).
+There has been another blog post on AndroidAndMe explaining how to update Froyo to the latest build (this one is a patch not the real thing).
 
 ##### Update 2010-07-04
 

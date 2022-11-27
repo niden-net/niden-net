@@ -219,7 +219,7 @@ Each controller would extend my base controller. In the `initialize` function:
 * additional variables would be generated for displaying elements based on whether a user is logged in or not.
 
 ##### Views
-Creating the views was really easy. I already had the structure ready from the sample application ([INVO](https://github.com/phalcon/invo)) and with the help of [Bootstrap CSS](https://twitter.github.com/bootstrap/), I was done in no time. The views inherit from a base view (`index.phtml`) located at the root of the views folder. That view holds the skeleton of the web page and content is injected accordingly based on each controller (and its view).
+Creating the views was really easy. I already had the structure ready from the sample application ([INVO](https://github.com/phalcon/invo)) and with the help of [Bootstrap CSS](https://github.com/twbs/bootstrap), I was done in no time. The views inherit from a base view (`index.phtml`) located at the root of the views folder. That view holds the skeleton of the web page and content is injected accordingly based on each controller (and its view).
 
 In that file I added the relevant variables that will be used by [AngularJS](https://angularjs.org) as well as variables that hold conditional elements (i.e. elements that appear when a user is logged in).
 

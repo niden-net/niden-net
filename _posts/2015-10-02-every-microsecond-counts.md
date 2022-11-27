@@ -39,9 +39,9 @@ As I wrote in a previous [post](/post/new-look-more-posts), a new version of thi
 
 As you can see there is room for improvement. Granted these results come from my local installation, where the `debugMode` is set to `1`, which means that there is no caching and everything gets recalculated on every request. Still, if I can make this local installation perform as fast as possible, then on the production server it will be even faster.
 
-The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the [`PostFinder`](https://github.com/niden/niden-net/blob/0e0279a4f244d38a78a499401c2e33ad3396fa75/library/Kitsune/PostFinder.php) class and reduce the memory consumption significantly. Removing objects and referenced objects in them made a huge difference. Arrays work just fine for my purposes.
+The first few lines show a relatively OK response (2.7-3.0 seconds) but a high usage in memory. This had to be rectified and looking at the code, I managed to refactor the `PostFinder` class and reduce the memory consumption significantly. Removing objects and referenced objects in them made a huge difference. Arrays work just fine for my purposes.
  
- Additional [optimizations](https://github.com/niden/blog/commit/e907099e716aea7589f4572ff592d5d446b8ccd9) led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
+ Additional optimizations led to dropping the execution time to just above 2.0 seconds and the memory consumption below 1Mb. 
  
  There are still a lot of [things](/post/fast-serialization-of-data-in-php) I can try (and will) both on the application level and the server level. I am aiming to reduce the execution time to below 1 second and I will for sure share the results and the tools/techniques used. 
 
@@ -50,4 +50,4 @@ I hope you enjoy the performance increase (however noticeable). More to come in 
 #### References
 
 * [Phalcon Blog Github](https://github.com/phalcon/blog)
-* [This Blog GitHub](https://github.com/niden/blog)
+* [This Blog GitHub](https://github.com/niden-net/niden-net)

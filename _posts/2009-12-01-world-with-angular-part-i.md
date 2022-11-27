@@ -17,9 +17,9 @@ If you haven't heard about `<angular/>`, this article is intended to give you a 
 
 `<angular/>` is a [declarative programming language](https://www.britannica.com/EBchecked/topic/130670/computer-programming-language/248126/Declarative-languages#) that provides the programmer with a wealth of tools using a simplistic model. `<angular/>` lives in the HTML file and references all the necessary libraries and tools using a single JavaScript file. This approach removes the need of complex scripts, installations of development/production environments (like AMP, Microsoft equivalent or other) and makes upgrading a breeze since the developer doesn't have to deal with it - it's all managed in the cloud. Development IDEs are rendered obsolete and all the developer needs is Notepad/Textmate/gEdit or a similar text editor.
 
-Backed by the latest cloud technologies, `<angular/>` is built for scalability. It can handle virtually any task or load right off the box but should the developer need more resources, they can easily contact Brat Tech LLC. and additional arrangements can be made. [Ruby on Rails](https://www.rubyonrails.org/) and [Amazon EC2](https://aws.amazon.com/ec2/) along with [CouchDB](https://couchdb.apache.org/) are the core components that  utilizes, making it highly scalable, reliable and extremely fast!
+Backed by the latest cloud technologies, `<angular/>` is built for scalability. It can handle virtually any task or load right off the box but should the developer need more resources, they can easily contact Brat Tech LLC. and additional arrangements can be made. [Ruby on Rails](https://rubyonrails.org/) and [Amazon EC2](https://aws.amazon.com/ec2/) along with [CouchDB](https://couchdb.apache.org/) are the core components that  utilizes, making it highly scalable, reliable and extremely fast!
 
-According to their website ([https://www.getangular.com/](https://www.getangular.com)) `<angular/>` provides:
+According to their website ([https://angularjs.org/](https://angularjs.org)) `<angular/>` provides:
 
 * A managed database - manages data for you
 * HTML & CSS - Full control of the look and feel
@@ -32,6 +32,6 @@ All of the above (and much more available through the [documentation](https://do
 
 So why am I excited about this? For starters it is a really easy language to learn. It is by no means intimidating to any user and people that always wanted to enhance their website with some 'scripting' magic, can do so now with  with no installations of any software on their sites.
 
-To start you need to go and create an account on the  website https://www.getangular.com. In there you can select your subscription level. There is a free subscription (the default) and two paid ones at 14.95 USD and 45.95 USD per month respectively. The different subscription levels provide more functionality (i.e. SSL support, versioning, more documents etc.)
+To start you need to go and create an account on the  website https://angularjs.org. In there you can select your subscription level. There is a free subscription (the default) and two paid ones at 14.95 USD and 45.95 USD per month respectively. The different subscription levels provide more functionality (i.e. SSL support, versioning, more documents etc.)
 
 Continued in [Part II](/post/world-with-angular-part-ii)

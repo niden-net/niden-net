@@ -27,7 +27,7 @@ I have researched a lot in terms of finding a suitable home for my and my family
 If you look at all three factors, Gmail is pretty much at the top of the list. As alternatives (and this is just my personal opinion) the following services made my top list:
 - [Zoho Mail](https://mail.zoho.com)
 - [Librem One](https://librem.one)
-- [Tutanota](https://tutanotal.com)
+- [Tutanota](https://tutanota.com)
 - [ProtonMail](https://protonmail.com)
 
 ### Zoho Mail

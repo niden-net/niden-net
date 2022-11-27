@@ -19,7 +19,7 @@ A couple of months ago, I was finally happy with the package and the release, so
 
 The installation was pretty easy using the `dpkg` command. I run literally two commands and the application was installed :)
 
-There was a recent announcement about OpenOffice from Oracle. I posted a link at [HackerNews](https://news.ycombinator.com/item?id=2451079) for an article I read in MarketWire, regarding this *"Oracle to move OpenOffice.org to a Community-Based Project"*. Unfortunately the link does not work any more but you might be able to read a bit about the subject [here](https://www.pcworld.com/businesscenter/article/225459/oracles_openoffice_move_may_be_too_little_too_late.html). In short:
+There was a recent announcement about OpenOffice from Oracle. I posted a link at [HackerNews](https://archive.ph/ZlQtF) for an article I read in MarketWire, regarding this *"Oracle to move OpenOffice.org to a Community-Based Project"*. Unfortunately the link does not work any more. In short:
 
 > OpenOffice is dead, long live LibreOffice
 

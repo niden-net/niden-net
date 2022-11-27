@@ -10,7 +10,7 @@ tags:
 image: '/assets/files/phalcon-logo.png'
 image-alt: Phalcon
 ---
-It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for [Harry Hog Fottball](https://www.harryhogfootball.com/) using [PhalconPHP](https://phalcon.io/) and [AngularJS](https://angularjs.org/)
+It's been a while since I last wrote a blog post, so I wanted to touch on the effort to upgrade the application that I [wrote](https://github.com/niden/phalcon-angular-harryhogfootball) for Harry Hog Fottball using [PhalconPHP](https://phalcon.io/) and [AngularJS](https://angularjs.org/)
 
 If you haven't read it, the first two blog posts were [here](/post/building-web-app-with-phalconphp-and-angularjs-part-i) and [here](/post/building-web-app-with-phalconphp-and-angularjs-part-ii).
 
@@ -314,7 +314,7 @@ The loader is what does all the discovery of classes for me. As you can see I st
     }
 ```
 
-This is an interesting one. Registering the view and Volt. [Volt](https://docs.phalcon.io/en/latest/volt) is the template engine that comes with [Phalcon](https://phalcon.io/). It is inspired by [Twig](https://twig.sensiolabs.org/) and written in C, thus offering maximum performance. I set the compiled path, extension and separator for the template files and also I have a variable (set in the config of course) to allow the application to always create template files or not. In a production environment that variable (stat) will be set to false since templates do not change.
+This is an interesting one. Registering the view and Volt. [Volt](https://docs.phalcon.io/latest/en/volt is the template engine that comes with [Phalcon](https://phalcon.io/). It is inspired by [Twig](https://twig.symfony.com) and written in C, thus offering maximum performance. I set the compiled path, extension and separator for the template files, and also I have a variable (set in the config of course) to allow the application to always create template files or not. In a production environment that variable (stat) will be set to false since templates do not change.
 
 ```php
     /**

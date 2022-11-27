@@ -22,7 +22,7 @@ I started off my IT career as a network administrator. This was back in the good
 
 Since my programming knowledge came from within (studying, reading articles, trial and error), the problems that I was facing on a daily basis are the same as almost every developer faces. One particularly challenging problem that I had in the VB days as well as the PHP days was repetition of code and how to eliminate it.
 
-When I started programming for the [Ferrari Fans Fun Forecast](https://ffff.niden.net) site I was running the site using my apartment's ADSL line. In the beginning there were only 20 users or so, therefore that setup was fine. The scripts were VBScript against a local instance of Microsoft SQL Server. Later on though, I switched to PHP while keeping Microsoft SQL Server.
+When I started programming for the Ferrari Fans Fun Forecast site I was running the site using my apartment's ADSL line. In the beginning there were only 20 users or so, therefore that setup was fine. The scripts were VBScript against a local instance of Microsoft SQL Server. Later on though, I switched to PHP while keeping Microsoft SQL Server.
 
 #### Initial implementation
 

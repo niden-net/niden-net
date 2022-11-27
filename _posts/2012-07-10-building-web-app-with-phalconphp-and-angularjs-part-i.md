@@ -12,9 +12,9 @@ image-alt: Phalcon
 ---
 There are ample frameworks on the Internet, most free, that a programmer can use to build a web application. Two of these frameworks are [PhalconPHP](https://phalcon.io) and [AngularJS](https://angularjs.org).
 
-I decided to use those two frameworks and build a simple application which will keep track of the Game Balls and Kick in the Balls awards of [Harry Hog Football](https://www.harryhogfootball.com/).
+I decided to use those two frameworks and build a simple application which will keep track of the Game Balls and Kick in the Balls awards of Harry Hog Football.
 
-[Harry Hog Football](https://www.harryhogfootball.com/) is a podcast that has been going strong since 2005, created by Redskins fans for Redskins Fans. (for those that do not know, [Washington Redskins](https://www.redskins.com/) is a team on the [National Football League](https://www.nfl.com/) in the USA).
+Harry Hog Football is a podcast that has been going strong since 2005, created by Redskins fans for Redskins Fans. (for those that do not know, [Washington Redskins](https://www.redskins.com/) is a team on the [National Football League](https://www.nfl.com/) in the USA).
 
 Every week during the regular season, Aaron, Josh and John create a podcast, where they discuss the recent game, the injuries, the cuts, the new signings and they offer their Game Balls to the best players of the week as well as the Kick in the Balls awards for the ones that (according to the podcasters) '*suck*'.
 
@@ -26,7 +26,7 @@ After building the application, I listened to all the episodes I could find, and
 
 The data transfer between the application and the relevant sections is primarily handled by [AngularJS](https://angularjs.org), which is dominant in the view layer. [AngularJS](https://angularjs.org) controllers handle menu creation, breadcrumbx as well as displaying results on screen.
 
-Twitter's [Bootstrap CSS](https://twitter.github.com/bootstrap/)> is used to put the final touches for the application.
+Twitter's [Bootstrap CSS](https://github.com/twbs/bootstrap)> is used to put the final touches for the application.
 
 In subsequent posts I will explain each layer in turn, starting with [PhalconPHP](https://phalcon.io) and continuing with [AngularJS](https://angularjs.org).
 
