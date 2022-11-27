@@ -25,3 +25,12 @@ The problem we have is that Phalcon is an extension and as such, code coverage r
 S﻿ince I am also working on Phalcon v6, which is a pure PHP implementation, I have enabled Code coverage for the project and so far we are in a good path. The code is mostly rated at "A" and the code coverage is at 81%. When time allows, I will work more to increase the code coverage.
 
 U﻿ploading code coverage to Codacy or Codecov is a very easy task. However, in our case, we run different sets of tests with different evironments and as such we generate different reports. All these reports will need to be collected and sent to the two services so that the coverage report can be compiled.
+
+F﻿or example, there are several tests that need to run only for MySQL and to do so I need to run `vendor/bin/codecept` with specific parameters so that the environment is set up for those tests.
+
+`﻿``
+v﻿endor/bin/codecept run tests/database -g mysql --env mysql
+`﻿``
+T﻿he above command loads the MySQL environment by setting the database up and then runs all the tests that have the `@group mysql` annotation. The same happens with PostgreSql and Sqlite tests.
+
+##﻿# Collecting Reports
