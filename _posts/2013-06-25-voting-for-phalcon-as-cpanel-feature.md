@@ -20,7 +20,7 @@ However since a lot of people are using shared hosting, they do not have access 
 
 A few months ago I approached [cPanel](https://www.cpanel.net/) through their ticketing system, in an effort to make Phalcon an option for the extensions that can be installed and loaded through their EasyApache application. 
 
-At the time I was granted a development account for the software so that I can try and create an installation script and also was prompted to go to https://features.cpanel.net and open a new feature request regarding this (the request is [here](https://archive.ph/5BAkV)). The purpose of this exercise is for cPanel to get a feel of what features the community needs and address them. In my communications with them, I received the following (emphasis mine):
+At the time I was granted a development account for the software so that I can try and create an installation script and also was prompted to go to https://features.cpanel.net and open a new feature request regarding this (the request is [here](https://archive.ph/ZmdLl)). The purpose of this exercise is for cPanel to get a feel of what features the community needs and address them. In my communications with them, I received the following (emphasis mine):
 
 > Our EasyApache has multiple locations to add includes, or post hooks to compile third party libraries/software during a build, or after a build has completed. That being said, the extensions that we ship to be configured are maintained by the PHP & PECL groups. To answer the question as far as integration on all servers running cPanel, **I would recommend creating a feature request for this, and allowing the community to vote for this**:
 >
@@ -28,7 +28,7 @@ At the time I was granted a development account for the software so that I can t
 
 And so I did. I created the feature request, and we also advertised this in our community via our [forum](https://forum.phalcon.io) and our [blog post](https://blog.phalcon.io/post/help-the-community-to-make-phalcon-available-on-cpanel).
 
-The [feature](https://archive.ph/5BAkV) received well over 180 votes, making it the third most requested feature in cPanel. Also if you follow the link, one of the engineers of cPanel requested additional information which was provided by myself and others.
+The [feature](https://archive.ph/ZmdLl) received well over 180 votes, making it the third most requested feature in cPanel. Also if you follow the link, one of the engineers of cPanel requested additional information which was provided by myself and others.
 
 As time went by, I visited the feature and requested an update but never got a reply back. More and more votes kept on coming in so it was really a waiting game at that time.
 
