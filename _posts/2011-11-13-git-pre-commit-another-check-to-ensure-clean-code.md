@@ -10,11 +10,11 @@ image-alt: Git
 ---
 Throughout my career I have been using various [revision control systems](https://en.wikipedia.org/wiki/Revision_control). I started off with Visual SourceSafe which I thought at the time was great, primarily because of the small size of our team and the ease of use though the Visual Basic's IDE.
 
-Later on I switched to SVN which is a great version control system and it fulfilled all my needs for proper version control.
+Later on I switched to SVN which is a great version control system, and it fulfilled all my needs for proper version control.
 
 When I moved to the US and started working here, I introduced SVN to the company that I was working at the time. We adopted the technique of having one branch per project, since we were working on different projects at any given time. Using the plugin through Eclipse or in Windows the integrated Explorer plugin, I was checking in code, switching through projects etc.
 
-[Recently](/posts/new-beginnings-sleep6566400) I changed jobs and although we did use Subversion for a few months, we did switch to Git. The reasons behind it are too many to count - and I will probably go through them in another blog post.
+[Recently](/post/new-beginnings-sleep6566400) I changed jobs, and although we did use Subversion for a few months, we did switch to Git. The reasons behind it are too many to count - and I will probably go through them in another blog post.
 
 One really good feature that Git has is its hooks. Although Subversion also supports hooks, I have only been exposed to the ones from Git and have used them - hence this blog post.
 

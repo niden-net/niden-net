@@ -29,9 +29,9 @@ Everyone complained about Buzz. It was not secure enough, it exposed personal in
 
 #### My Financial Institution
 
-A few days ago I got a letter from [Flagstar Bank](https://flagstar.com/), which is (was) my mortgage bank. It appears that they sold my mortgage to EverHome (just another mortgage company). This is a really common practice over the course of a mortgage. Thus far (6 months into my mortgage), I have changed 3 companies. I would be interested to see what will happen in the course of 30 years :).
+A few days ago I got a letter from Flagstar Bank, which is (was) my mortgage bank. It appears that they sold my mortgage to EverHome (just another mortgage company). This is a really common practice over the course of a mortgage. Thus far (6 months into my mortgage), I have changed 3 companies. I would be interested to see what will happen in the course of 30 years :).
 
-After receiving this notice from [Flagstar Bank](https://flagstar.com/), I got a new letter from EverHome with some interesting information. The most interesting part of this documentation was the Privacy policy of EverHome. Here is what is in store for me *(emphasis mine)*:
+After receiving this notice from Flagstar Bank, I got a new letter from EverHome with some interesting information. The most interesting part of this documentation was the Privacy policy of EverHome. Here is what is in store for me *(emphasis mine)*:
 
 > **Do we disclose your information to non-affiliated third parties?**
 >
