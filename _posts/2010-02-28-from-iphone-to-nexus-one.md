@@ -278,17 +278,17 @@ The purchase was really trouble free. I also purchased the dock and the really n
 
 #### First experience
 
-<img class="post-image" src="/assets/files/2010-02-28-001.png" />
-<img class="post-image" src="/assets/files/2010-02-28-002.png" />
-<img class="post-image" src="/assets/files/2010-02-28-003.png" />
-<img class="post-image" src="/assets/files/2010-02-28-004.png" />
-<img class="post-image" src="/assets/files/2010-02-28-005.png" />
-<img class="post-image" src="/assets/files/2010-02-28-006.png" />
-<img class="post-image" src="/assets/files/2010-02-28-007.png" />
-<img class="post-image" src="/assets/files/2010-02-28-008.png" />
-<img class="post-image" src="/assets/files/2010-02-28-009.png" />
-<img class="post-image" src="/assets/files/2010-02-28-010.png" />
-<img class="post-image" src="/assets/files/2010-02-28-011.png" />
+<img class="post-image" src="/assets/files/2010-02-28-001.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-002.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-003.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-004.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-005.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-006.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-007.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-008.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-009.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-010.png" alt="unboxing" />
+<img class="post-image" src="/assets/files/2010-02-28-011.png" alt="unboxing" />
 
 The phone arrived while I was at work. When I came back home, two really nice boxes were waiting for me. As you can see the packaging is really nice and the Google colors appear subtly on it.
 

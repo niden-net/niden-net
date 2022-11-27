@@ -1,13 +1,9 @@
 # For local development only.
 
-version: '3'
-
 services:
     niden-net-blog:
         container_name: niden-net-blog
         hostname: niden-net-blog
-        image: jekyll/jekyll:latest
-        command: jekyll serve --verbose --incremental
-        working_dir: /srv/jekyll
+        image: bretfisher/jekyll-serve
         volumes:
-        - .:/srv/jekyll
+            - .:/site

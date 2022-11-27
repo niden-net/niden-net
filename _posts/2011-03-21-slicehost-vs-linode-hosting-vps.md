@@ -11,7 +11,7 @@ tags:
 image: '/assets/files/2011-03-21-vps.png'
 image-alt: VPS
 ---
-Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](http://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](http://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
+Through the years I have hosted my sites on various hosting companies. I had the really good experiences like [Vertexhost](https://www.vertexhost.com/) and really terrible ones - I don't remember the name of the host, but that kid, as it turned out to be later on, managed to lose 1.6GB of my data. You can safely say that I have been burned by bad hosting companies but also have enjoyed the services of good ones. In the case of [Vertexhost](https://www.vertexhost.com/), I part owned that company a few years back and I know that the current owner is a straight up guy and really cares for his customers.
 
 Since I moved my emails to [Google Apps](https://gsuite.google.com) I only need the hosting for my personal sites such as my blog, my wife's sites (burntoutmom.com, greekmommy.net) and a few other small sites.
 
@@ -20,7 +20,7 @@ I used to host those sites on one of my company's clusters. The bandwidth consum
 #### Slicehost
 
 Without much thought, I signed up for [Slicehost](https://www.slicehost.com), which is a subsidiary of [Rackspace](https://www.rackspace.com), a very well known and reputable company.
-<img class="post-image" src="/assets/files/2011-03-21-slicehost.png" />
+<img class="post-image" src="/assets/files/2011-03-21-slicehost.png" alt="Slicehost" />
 
 I got their 4GB package (250.00 USD per month) and installed <a href="https://www.gentoo.org/">Gentoo</a> on it. Apart from the price which was a bit steep, everything else was fine. I was happy to be able to host my sites in a configuration that I was comfortable with, under the understanding that if the VPS failed, then all my sites would go down. That however is the risk that everyone takes while hosting their sites on a single machine. The higher the availability and redundancy the higher the cost.
 
@@ -31,7 +31,7 @@ It must have been around 5-10 minutes into the process that I received an email 
 After I sent the email, I noticed that the box was not responding. I tried to log back in and could not. I was also logged out (and could not log back in) to their management console on [Slicehost](https://www.slicehost.com) site. I was fuming! They severed the connection to the VPS in the middle of compilation to check my credit card information. I understand that they need to perform checks for fraud but two questions came to mind:
 
 * Why did they have to sever the connection and not just send an email, and if I did not reply, just block access to the box? That would have been a heck of a lot of an inconvenience to myself i.e. the end user.
-* Why did the initial email say that my credit card has been charged and it had not?
+* Why did the initial email say that my credit card has been charged, and it had not?
 
 No more than 10 minutes later the whole thing had been resolved. I received an email saying that *"everything is OK and your account has been restored"*, at which point I logged back in to redo the compilations. I also received emails from their support/billing team apologizing but stating that although the initial email states that they charge the credit card, they don't. It is something they need to correct because it pisses people (like me) off.
 
@@ -46,12 +46,12 @@ After a lot of research I ended up with two winners: [Linode](https://www.linode
 #### Linode
 
 Setting up an account with Linode was very easy. I didn't have any of the mini-saga I had with Slicehost. The account was created right there and then, my credit card charged and I was up and running in no time. Immediately I could see a difference in price. Linode's package for 4GB or RAM is 90.00 USD cheaper (159.00 USD vs. 250.00 USD for Slicehost). For the same package, the price difference is huge.
-<img class="post-image" src="/assets/files/2011-03-21-linode.png" />
+<img class="post-image" src="/assets/files/2011-03-21-linode.png" alt="Linode" />
 
 I started testing the network, creating my VPS in the Atlanta, GA datacenter (Linode offers a number of data centers for you to create your own). The functionality that was available to me was identical and in some cases superior to that of Slicehost. There are a lot more distributions to choose from, and you can partition your VPS the way you want it to name a couple.
 
 
-Shifting through the [documentation](https://library.linode.com/), I saw a few topics regarding high availability websites. The articles described using [DRDB](https://www.linbit.com/en/drbd-community/drbd-download/), [nginX](https://nginx.org/), [heartbeat](http://www.linux-ha.org/wiki/Main_Page) and pacemaker etc. to keep your sites highly available. I was intrigued by the information and set off to create a load balancer using two VPSs and nginX. I have documented the process and this is another blog post that will come later on this week.
+Shifting through the [documentation](https://library.linode.com/), I saw a few topics regarding high availability websites. The articles described using [DRDB](https://www.linbit.com/en/drbd-community/drbd-download/), [nginX](https://nginx.org/), [heartbeat](https://www.linux-ha.org/wiki/Main_Page) and pacemaker etc. to keep your sites highly available. I was intrigued by the information and set off to create a load balancer using two VPSs and nginX. I have documented the process and this is another blog post that will come later on this week.
 
 While experimenting with the load balancer (and it was Saturday evening) I had to add a new IP address to one of the VPS instances. At the time my account would not allow such a change and I had to contact support. I did and got a reply in less than 5 minutes. I was really impressed by this. Subsequent tickets were answered within the 5 minute time frame. Kudos to Linode support for their speed and professionalism.
 
@@ -63,7 +63,7 @@ I have been using Linode for a week and so far so good. The support is superb an
 
 #### Resources
 
-* [Vertexhost](http://www.vertexhost.com/)
+* [Vertexhost](https://www.vertexhost.com/)
 * [Slicehost](https://www.slicehost.com)
 * [Rackspace](https://www.rackspace.com)
 * [Gentoo](https://www.gentoo.org/)

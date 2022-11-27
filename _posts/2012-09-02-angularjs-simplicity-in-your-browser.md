@@ -202,7 +202,7 @@ That is all the HTML I had to change. The full HTML file is 100 lines and 50 for
 
 The final page looks something like this:
 
-<img class="media-body-inline-img" data-action="zoom" src="/assets/files/2012-09-02-sermon.png" />
+<img class="media-body-inline-img" data-action="zoom" src="/assets/files/2012-09-02-sermon.png" alt="Sermon capture"/>
 
 #### Pointers
 

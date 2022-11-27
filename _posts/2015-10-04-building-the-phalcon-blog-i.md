@@ -21,7 +21,7 @@ As I mentioned in a [previous post](/post/new-look-more-posts), [Andres](https:/
 #### Bootstrapping process
 
 In this post I am going to concentrate on [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping) the application. By bootstrapping I do not mean using the [Bootstrap](https://getbootstrap.com) open source library, despite the probably misleading image on the right. 
-<img class="post-image" src="/assets/files/2015-10-04-bootstrap.png" />
+<img class="post-image" src="/assets/files/2015-10-04-bootstrap.png" alt="bootstrap" />
 
 Bootstrapping is the class (in our case) that handles pretty much everything that our application needs to run prior to executing actions. This entails
 

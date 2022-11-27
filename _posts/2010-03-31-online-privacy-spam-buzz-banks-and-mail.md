@@ -11,7 +11,7 @@ tags:
 image: '/assets/files/2010-03-31-privacy.png'
 image-alt: Privacy
 ---
-Everyone more or less has some sort of electronic presence. That presence can easily be seen on Twitter, Facebook, [Google Plus](https://google.com/+NikolaosDimopoulos-niden), personal blog etc.
+Everyone more or less has some sort of electronic presence. That presence can easily be seen on Twitter, Facebook, Google Plus, personal blog etc.
 
 What most people neglect to realize that this is only the tip of the iceberg. How about the information your bank stores about you? Isn't that an electronic/online presence? Some server contains vital information about you and your bank uses that information to identify you against someone else. If your bank provides online banking, then the Internet becomes the interface that you use to access your own personal information (mainly funds) which again is stored somewhere else.
 
@@ -31,7 +31,7 @@ Everyone complained about Buzz. It was not secure enough, it exposed personal in
 
 A few days ago I got a letter from [Flagstar Bank](https://www.flagstar.com/), which is (was) my mortgage bank. It appears that they sold my mortgage to EverHome (just another mortgage company). This is a really common practice over the course of a mortgage. Thus far (6 months into my mortgage), I have changed 3 companies. I would be interested to see what will happen in the course of 30 years :).
 
-After receiving this notice from [Flagstar Bank](https://www.flagstar.com/), I got a new letter from EverHome with some interesting information. The most interesting part of this documentation was the Privacy policy of [EverHome](http://www.everhome.com/). Here is what is in store for me *(emphasis mine)*:
+After receiving this notice from [Flagstar Bank](https://www.flagstar.com/), I got a new letter from EverHome with some interesting information. The most interesting part of this documentation was the Privacy policy of [EverHome](https://www.everhome.com/). Here is what is in store for me *(emphasis mine)*:
 
 > **Do we disclose your information to non-affiliated third parties?**
 >
@@ -73,7 +73,7 @@ After receiving this notice from [Flagstar Bank](https://www.flagstar.com/), I g
 From what I have heard from friends, this is pretty much standard text for almost every mortgage company. Let's have a look a bit on a couple of interesting points and how that relates to Google and Buzz.
  
 - This is not the initial mortgage company. I did not allow them to do anything with my personal information. My initial mortgage company had a clause that basically said "<em>we are allowed to sell your mortgage and with it your information</em>". So I am stuck. This new company has my personal information (vital information such as my SSN, information about my previous employment, account balances and possibly account numbers, name, credit cards, in short everything). Did my old mortgage company delete my records from their systems? Most probably no. So here I am having 2 records out there without having to lift a finger. Did the introduction of Buzz create a brand new record of all of your personal information and disclosed it/forwarded it to a brand new company?
-- **This is an Opt-Out policy**. Wait a minute!!! Why don't I see a revolution, people running on the streets of major cities with signs, crying and condemning EverHome for such sacrilege, sending thousands of tweets, blogging about it... condemning the company and associating them with the devil? [EverHome](http://www.everhome.com/) has hundreds of thousands of customers. I never heard any complain about this! How many of those customers have [GMail](https://gmail.google.com/) accounts? Chances are quite a few. How many complained about Buzz? Probably a significant number. Did they also complain to [EverHome](http://www.everhome.com/)? Did they blog about it or tweet about it?
+- **This is an Opt-Out policy**. Wait a minute!!! Why don't I see a revolution, people running on the streets of major cities with signs, crying and condemning EverHome for such sacrilege, sending thousands of tweets, blogging about it... condemning the company and associating them with the devil? [EverHome](https://www.everhome.com/) has hundreds of thousands of customers. I never heard any complain about this! How many of those customers have [GMail](https://gmail.google.com/) accounts? Chances are quite a few. How many complained about Buzz? Probably a significant number. Did they also complain to [EverHome](https://www.everhome.com/)? Did they blog about it or tweet about it?
 - If you carefully read the above, you will see that my whole life, all the vital information about me, can be transmitted to various other companies so long as they are affiliated to EverHome. Do I have a saying in this? Not really. The last paragraph clearly states that even if I Opt-Out, they will release my information under certain circumstances **"Please remember that even if you choose to opt-out, we will still disclose information about you as permiited by law or regulation."**
 
 #### Who else does Opt-Out?

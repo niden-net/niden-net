@@ -15,7 +15,7 @@ Your website must be available - all the time. Why? Because if you have somethin
 
 <img class="post-image" src="/assets/files/2011-04-04-ha.jpg" alt="HA"/>
 
-Linux has been used for HA tasks for many years. The [Linux-HA](http://www.linux-ha.org/wiki/Main_Page)'s wiki has a lot of valuable information as well as guides and resources that one can use to increase the redundancy of their websites. In addition to this, Google is your friend. There are numerous bloggers that have shared their experiences with the public on how to create HA resources. Finally, one can check Linode's [Library](https://library.linode.com/) - a set of guides to allow you to create HA clusters with your Linodes.
+Linux has been used for HA tasks for many years. The [Linux-HA](https://www.linux-ha.org/wiki/Main_Page)'s wiki has a lot of valuable information as well as guides and resources that one can use to increase the redundancy of their websites. In addition to this, Google is your friend. There are numerous bloggers that have shared their experiences with the public on how to create HA resources. Finally, one can check Linode's [Library](https://library.linode.com/) - a set of guides to allow you to create HA clusters with your Linodes.
 
 My task for the last few weeks has been to create a High Availability cluster of services to serve PHP and MySQL and also have the ability to grow infinitely (well close to that is). In the next few weeks I will post a series of blog posts outlining how to achieve a HA cluster for your sites.
 

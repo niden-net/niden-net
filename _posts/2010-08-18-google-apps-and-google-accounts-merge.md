@@ -22,7 +22,7 @@ I am happy to announce that one of my domains has already gone through the merge
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" data-width="790" data-height="754" src="/assets/files/2010-08-18-google-apps-merge-001.png">
+        <img data-action="zoom" data-width="790" data-height="754" src="/assets/files/2010-08-18-google-apps-merge-001.png" alt="Email Invitation">
     </div>
 </div>
 
@@ -57,7 +57,7 @@ Resources: [Transition readiness checklist](https://www.google.com/support/a/bin
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-002.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-002.png" alt="Dashboard Warning" />
     </div>
 </div>
 
@@ -69,7 +69,7 @@ Resource: [Google Apps core suite](https://www.google.com/apps/intl/en/business/
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-003.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-003.png" alt="Understand the Transition">
     </div>
 </div>
 
@@ -81,7 +81,7 @@ Resource: [Transition readiness checklist](https://www.google.com/support/a/bin/
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-004.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-004.png" alt="New Services">
     </div>
 </div>
 
@@ -91,7 +91,7 @@ Based on the services that are available for your domain user accounts, the scre
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-005.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-005.png" alt="Notify Conflicting Accounts">
     </div>
 </div>
 
@@ -101,7 +101,7 @@ Confirming the new services, the wizard will display a new screen, that will all
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-006.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-006.png" alt="Select Users">
     </div>
 </div>
 
@@ -114,7 +114,7 @@ Resource: Early adopters
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-007.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-007.png" alt="Confirmation">
     </div>
 </div>
 
@@ -126,7 +126,7 @@ Resources: [Transition readiness checklist](https://www.google.com/support/a/bin
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-008.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-008.png" alt="Transition in progress">
     </div>
 </div>
 
@@ -137,7 +137,7 @@ Navigating back to the dashboard, you will see a message notifying you that ther
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-009.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-009.png" alt="Email to User">
     </div>
 </div>
 
@@ -149,7 +149,7 @@ Resources: [Data ownership](https://www.google.com/support/accounts/bin/answer.p
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-010.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-010.png" alt="Email to User after Transition">
     </div>
 </div>
 
@@ -162,7 +162,7 @@ Resources: [List of products](https://www.google.com/options/), [New sign in opt
 
 <div class="media-body-inline-grid" data-grid="images">
     <div style="display: none">
-        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-011.png">
+        <img data-action="zoom" src="/assets/files/2010-08-18-google-apps-merge-011.png" alt="User Login message for Account Merge">
     </div>
 </div>
 

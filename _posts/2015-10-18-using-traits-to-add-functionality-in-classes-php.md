@@ -27,9 +27,9 @@ With Phalcon, we have model classes which represent pretty much a table in our d
 #### Scenario
 
 We have an application where we need to store information about Companies. Each Company can have one or more Customers as well as one or more Employees. We chose to store that information in three different tables.
-<img class="post-image" src="/assets/files/2015-10-18-model.png" />
+<img class="post-image" src="/assets/files/2015-10-18-model.png" alt="model" />
 
-For each Employee or Customer, we need to store their first name, middle name and last name. However we also need to be able to show the full name in this format:
+For each Employee or Customer, we need to store their first name, middle name and last name. However, we also need to be able to show the full name in this format:
 
 ```php
 <Last name>, <First Name> <Middle Name>

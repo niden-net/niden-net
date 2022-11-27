@@ -12,7 +12,7 @@ My expertise includes but is not limited to PHP, MySQL, MSSQL, AJAX, distributed
 
 I am also working in educating anyone who wants to listen :) on the benefits of Open Source applications and the benefits of using the Internet/Cloud versus the traditional server/desktop approach.
 
-I am a core member of [Phalcon](https://phalconphp.com), a PHP framework delivered as a C extension and written in [Zephir](https://zephir-lang.com).
+I am a core member of [Phalcon](https://phalcon.io), a PHP framework delivered as a C extension and written in [Zephir](https://zephir-lang.com).
 
 I am a [Zend Certified Engineer](https://www.zend.com/en/yellow-pages/ZEND006669) and a [Professional Scrum Developer](https://www.scrum.org/user/504482).
 
