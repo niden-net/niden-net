@@ -34,7 +34,7 @@ Since there are different sets of tests with different environment settings, the
 
 For example, some tests need to run only on MySQL and to do so I need to run `vendor/bin/codecept` with specific parameters so that the environment is set up for those tests.
 
-```
+```bash
 vendor/bin/codecept run tests/database -g mysql --env mysql
 ```
 
@@ -44,7 +44,7 @@ The above command loads the MySQL environment by setting the database up and the
 
 Each testing suite is run with the relevant command and a `coverage.xml` file is generated. The file then is uploaded in the GitHub Actions artifacts store, so that we can retrieve it later on. The command is:
 
-```
+```bash
 vendor/bin/codecept run --coverage-xml=coverage.xml --ext DotReporter unit
 ```
 
@@ -54,7 +54,7 @@ This will create a file called `coverage.xml` in the `tests/_output` folder. I a
 
 As mentioned above, GitHub Actions is executing the testing suite. The workflow has several steps and each step is run in its own container. The coverage file generated is then uploaded to the Artifact store
 
-```
+```yml
 - name: "Run Unit Tests"
   if: always()
   run: |
@@ -71,7 +71,7 @@ The first step shown above is running all the unit tests. The output file will b
 
 For the `unit` tests, I am using a matrix, running the tests in different PHP versions (8.0 and 8.1) but also different environments (Linux, macOS and Windows) as well as thread safe and non thread safe. For the above step, when the coverage reports are generated, the files will be named:
 
-```
+```bash
 unit-8.0-nts-macos-clang.coverage
 unit-8.0-nts-ubuntu-gcc.coverage
 unit-8.0-nts-windows2019-vs16.coverage
@@ -93,7 +93,7 @@ The code as is now does not have any conditionals that will run a specific metho
 
 The upload process to [Codacy](https://codacy.com) and [CodeCov](https://codecov.io) is also a step in the workflow. First, all the reports are downloaded from the artifact store and then one step uploads them to [Codacy](https://codacy.com) and another step to [CodeCov](https://codecov.io).
 
-```
+```yml
 name: "Upload coverage to Codecov/Codacy"
 runs-on: "ubuntu-22.04"
 needs:
@@ -105,7 +105,7 @@ needs:
 ```
 The above defines the prerequisites for the run. The upload will not run unless all the above steps have completed successfully, ensuring that resources are not wasted for unsuccessful runs.
 
-```
+```yml
 steps:
   - name: "Checkout"
     uses: "actions/checkout@v3"
@@ -128,7 +128,7 @@ steps:
 The steps above are pretty explanatory. The code is checked out, the artifacts are downloaded to the `reports` folder and then a listing of the reports is shown on the terminal. As soon as the reports are downloaded, they are also unzipped in their respective folders. The output looks like this:
 
 
-```
+```bash
 ...
 unit-8.0-nts-macos-clang.coverage
 unit-8.0-nts-ubuntu-gcc.coverage
@@ -148,7 +148,7 @@ coverage.xml
 
 Now that the files are all in the `reports` folder, uploading to [Codacy](https://codacy.com) and [CodeCov](https://codecov.io) is easy with the following steps:
 
-```
+```yml
 - name: "Upload to Codecov"
   uses: "codecov/codecov-action@v3"
   with:
