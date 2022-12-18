@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fujitsu ScanSnap S1300 in Linux
-date: 2022-12-18T21:07:57.806Z
+date: 2022-12-18T16:18:29.078Z
 tags:
   - fujitsu
   - scan
