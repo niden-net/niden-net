@@ -32,7 +32,7 @@ I set mine to 5 days which is extremely generous. If your replication is broken 
 
 #### Files
 
-There are numerous ways of keeping your cluster in sync. A really good tool that I have used when playing around with a cluster is [csync2](https://oss.linbit.com). Installation is really easy and and all you will need is to run a cron task every X minutes (up to you) to synchronize the new files. Imagine it as a two way [rsync](https://samba.anu.edu.au/rsync/). Another tool that can do this is [unison](https://www.cis.upenn.edu/~bcpierce/unison/) but I found it to be slow and difficult to implement - that's just me though.
+There are numerous ways of keeping your cluster in sync. A really good tool that I have used when playing around with a cluster is [csync2](https://oss.linbit.com). Installation is really easy and and all you will need is to run a cron task every X minutes (up to you) to synchronize the new files. Imagine it as a two way [rsync][rsync]. Another tool that can do this is [unison](https://www.cis.upenn.edu/~bcpierce/unison/) but I found it to be slow and difficult to implement - that's just me though.
 
 Assume an implementation of a website being served by two (or more) servers behind a load balancer. If your users upload files, you don't know where those files are uploaded, which server that is. As a result if user A uploads the file <em>abc.txt</em> to server A, user B might be served the content from server B and would not be able to access the file. [csync2](https://oss.linbit.com) would synchronize the file across the number of servers, thus providing access to the content and keeping multiple copies of the content (additional backup if you like).
 
@@ -155,7 +155,7 @@ The above might not be the best way of keeping users in sync in a cluster but it
 * [MySQL System Variables](https://dev.mysql.com/doc/refman/5.0/en/server-system-variables.html)
 * [Nagios](https://www.nagios.org/)
 * [csync2](https://oss.linbit.com)
-* [rsync](https://samba.anu.edu.au/rsync/)
+* [rsync](https://rsync.samba.org/)
 * [Unison File Synchronizer](https://www.cis.upenn.edu/~bcpierce/unison/)
 * [DRDB](https://oss.linbit.com/)
 * [Axivo Inc.](https://www.axivo.com/)
