@@ -41,7 +41,6 @@ c﻿at /proc/swaps
 T﻿his will output something like this:
 
 `﻿``shell
-nikos at IRIDIUM in ~/
 $ cat /proc/swaps 
 Filename                    Type        Size      Used    Priority
 /dev/mapper/vgmint-swap_1   partition   5000000   0       -2  
@@ -104,4 +103,52 @@ T﻿his will output something like this (enabled algorithm in brackets):
 
 `﻿``shell
 lzo [lzo-rle] lz4 lz4hc 842 zstd
+`﻿``
+
+T﻿he configuration options are stored in `/usr/bin/init-zram-swapping` file. The file contents are similar to this:
+
+`﻿``shell
+$ cat /usr/bin/init-zram-swapping
+#!/bin/sh
+
+modprobe zram
+
+# Calculate memory to use for zram (1/2 of ram)
+totalmem=`LC_ALL=C free | grep -e "^Mem:" | sed -e 's/^Mem: *//' -e 's/  *.*//'`
+mem=$((totalmem / 2 * 1024))
+
+# initialize the devices
+echo $mem > /sys/block/zram0/disksize
+mkswap /dev/zram0
+swapon -p 5 /dev/zram0
+`﻿``
+
+B﻿y editing this file, we can now reduce the size of our disk (remember it picks up half the RAM by default), but also change the compression algorithm.
+
+T﻿o change the size of the disk, change this line:
+
+`﻿``shell
+mem=$((totalmem / 2 * 1024))
+`﻿``
+
+T﻿o change the compression algoritm, change this:
+
+`﻿``shell
+mem=$((totalmem / 2 * 1024))
+`﻿``
+
+t﻿o this
+
+`﻿``shell
+mem=$((totalmem / 2 * 1024))
+echo zstd > /sys/block/zram0/comp_algorithm
+`﻿``
+
+R﻿eboot the system.
+
+A﻿fter the system comes back up, your new swap disk will be a `zRAM` one and it will use the compression mechanism you have chosen. In my case:
+
+`﻿``shell
+$ cat /sys/block/zram0/comp_algorithm
+lzo lzo-rle lz4 lz4hc 842 [zstd] 
 `﻿``
