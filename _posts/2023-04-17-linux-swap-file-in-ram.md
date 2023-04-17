@@ -26,7 +26,7 @@ Here comes `zRAM`.
 
 This Linux module allows us to create a swap disk in memory and the data stored in it is already compressed. Depending on the algorithm used, one can achieve from 1:2 to 1:3, possibly higher compression rates. Since the swap disk is in memory, it is very fast and the compression operation is really negligible, if one considers it a performance hit.
 
-zRAM is particularly helpful when your machine does not have a lot of memory. The constant swapping of data on a disk based swap device, certainly slows operations down. However, with zRAM one can achieve the same result but much faster (since the data will be compresed).
+`zRAM` is particularly helpful when your machine does not have a lot of memory. The constant swapping of data on a disk based swap device, certainly slows operations down. However, with `zRAM` one can achieve the same result but much faster (since the data will be compresed).
 
 There are many data compression algorithms such as `lz4`, `zlib`, `zstd` etc. I chose `zstd` for my implementation.
 
