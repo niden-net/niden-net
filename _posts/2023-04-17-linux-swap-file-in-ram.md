@@ -10,11 +10,11 @@ tags:
 ---
 Many of us have Linux machines, as our primary workstations. Mine comes with the Linux Mint flavor, and this post reflects that installation.
 
-The installation I chose was what came out of the box. I am running Linux Mint Cinnamon 21 currently.
-
-I have removed some of the pre-installed packages, such as LibreOffice (I use the `.AppImage` file instead), but in all I have not changed anything else.
+The installation I chose was what came out of the box. I am running Linux Mint Cinnamon 21 currently. I have removed some of the pre-installed packages, such as LibreOffice (I use the `.AppImage` file instead), but in all I have not changed anything else.
 
 After the installation, as expected I had a swap disk. This is the disk where data can be swapped from memory (to the disk) when more memory is required than is available.
+
+### Swap Disk
 
 To speed things up, I changed my swap disk to a RAM based one. 
 
@@ -30,7 +30,7 @@ zRAM is particularly helpful when your machine does not have a lot of memory. Th
 
 There are many data compression algorithms such as `lz4`, `zlib`, `zstd` etc. I chose `zstd` for my implementation.
 
-### Current Swap File
+### Current Swap Disk
 
 First, we need to figure out what our current swap disk is. 
 
@@ -108,7 +108,7 @@ lzo [lzo-rle] lz4 lz4hc 842 zstd
 The configuration options are stored in `/usr/bin/init-zram-swapping` file. The file contents are similar to this:
 
 ```shell
-$ cat /usr/bin/init-zram-swapping
+$ sudo nano /usr/bin/init-zram-swapping
 #!/bin/sh
 
 modprobe zram
