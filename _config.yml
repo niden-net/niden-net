@@ -49,6 +49,10 @@ include:
 sass:
   style: compressed # You might prefer to minify using :compressed
 
+# Jekyll Admin
+jekyll_admin:
+  homepage: "pages"
+
 # Exclude these files from your production _site
 exclude:
   - .github
