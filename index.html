@@ -55,7 +55,7 @@ layout: default
                                 <div class="post-by mb-3px">
                                     {{ reading_time }} &bull; {{ post.date | date: "%Y-%m-%d" }}
                                     <span class="divider">|</span>
-                                    {% for tag in post.tags %}<a href="/tags#{{ tag | slugify }}" class="badge bg-success">{{ tag }}</a>&nbsp;{% endfor %}
+                                    {% for tag in post.tags %}<a href="/tag/{{ tag | slugify }}" class="badge bg-success">{{ tag }}</a>&nbsp;{% endfor %}
                                 </div>
                                 <div class="post-desc">
                                     {{ post.excerpt }}

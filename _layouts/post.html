@@ -26,7 +26,7 @@ layout: default
                     <div class="post-by">
                         {{ reading_time }} &bull; {{ page.date | date: "%Y-%m-%d" }}
                         <span class="divider">|</span>
-                        {% for tag in page.tags %}<a href="/tags#{{ tag | slugify }}" class="badge bg-success">{{ tag }}</a>&nbsp;{% endfor %}
+                        {% for tag in page.tags %}<a href="/tag/{{ tag | slugify }}" class="badge bg-success">{{ tag }}</a>&nbsp;{% endfor %}
                     </div>
                     {% if page.image %}
                     <!-- begin post-image -->
