@@ -2,6 +2,8 @@
 layout: default
 ---
 
+                <!-- begin post-list -->
+                <ul class="post-list">
 {% for post in paginator.posts %}
 {% assign num_words = post.content | strip_html | number_of_words %}
 {% assign minutes   = num_words    | divided_by: 200 %}
@@ -20,56 +22,75 @@ layout: default
 {% else %}
 {% assign reading_time = minutes | append: ' minutes' %}
 {% endif %}
-                        <ul class="list-group media-list media-list-stream mb-4">
-                            <li class="media list-group-item p-4">
-                                <div class="media-body">
-                                    <div class="media-heading">
-                                        <small class="float-right text-muted">
-                                            {{ reading_time }} &bull; {{ post.date | date: "%Y-%m-%d" }}
-                                        </small>
-                                        <h6>
-                                            <a href="{{ post.url }}">{{ post.title | strip }}</a>
-                                        </h6>
-                                    </div>
-                                    <p>
-                                        {{ post.excerpt }}
-                                    </p>
-                                    <div class="media-body-actions">
-                                        {% for tag in post.tags %}
-                                        <a href="/tags#{{ tag | slugify }}">
-                                            <button class="btn btn-primary-outline btn-sm">
-                                                {{ tag }}
-                                            </button>
-                                        </a>
-                                        {% endfor %}
-                                    </div>
+                    <li>
+                        <!-- begin post-left-info -->
+                        <div class="post-left-info">
+                            <div class="post-date">
+                                <span class="day">{{ post.date | date: "%d" }}</span>
+                                <span class="month">{{ post.date | date: "%b" }}</span>
+                            </div>
+                            <div class="post-likes">
+                                <span class="year">{{ post.date | date: "%Y" }}</span>
+                            </div>
+                        </div>
+                        <!-- end post-left-info -->
+                        <!-- begin post-content -->
+                        <div class="post-content">
+                            {% if page.image %}
+                            <!-- begin post-image -->
+                            <div class="post-image">
+                                <a href="{{ post.url }}">
+                                    <div class="post-image-cover"
+                                         style="background-image: url({{ page.image }})"></div>
+                                </a>
+                            </div>
+                            <!-- end post-image -->
+                            {% endif %}
+
+                            <!-- begin post-info -->
+                            <div class="post-info">
+                                <h4 class="post-title">
+                                    <a href="{{ post.url }}">{{ post.title | strip }}</a>
+                                </h4>
+                                <div class="post-by mb-3px">
+                                    {{ reading_time }} &bull; {{ post.date | date: "%Y-%m-%d" }}
+                                    <span class="divider">|</span>
+                                    {% for tag in post.tags %}<a href="/tags#{{ tag | slugify }}" class="badge bg-success">{{ tag }}</a>&nbsp;{% endfor %}
                                 </div>
+                                <div class="post-desc">
+                                    {{ post.excerpt }}
+                                </div>
+                            </div>
+                            <!-- end post-info -->
+                            <!-- begin read-btn-container -->
+                            <div class="read-btn-container">
+                                <a href="{{ post.url }}">Read More <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                            <!-- end read-btn-container -->
+                        </div>
+                        <!-- end post-content -->
+                    </li>
+                    {% endfor %}
+                </ul>
+                <!-- end post-list -->
+
+                <!-- begin pagination -->
+                <div class="section-container">
+                    <div class="pagination-container">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}">
+                                <a class="badge bg-success"
+                                   href="{{ paginator.previous_page_path }}">
+                                    <i class="fa fa-arrow-circle-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}">
+                                <a class="badge bg-success"
+                                   href="{{ paginator.next_page_path }}">
+                                    <i class="fa fa-arrow-circle-right"></i>
+                                </a>
                             </li>
                         </ul>
-{% endfor %}
-                        <ul class="list-group media-list media-list-stream mb-4">
-                            <li class="media list-group-item p-4">
-                                <div class="media-body">
-                                    <div class="media-body-actions">
-                                        <span class="float-left">
-                                            {% if paginator.previous_page %}
-                                            <a href="{{ paginator.previous_page_path }}">
-                                                <i class="icon icon-arrow-with-circle-left"></i>
-                                            </a>
-                                            {% else %}
-                                            &nbsp;
-                                            {% endif %}
-                                        </span>
-                                        <span class="float-right">
-                                            {% if paginator.next_page %}
-                                            <a href="{{ paginator.next_page_path }}">
-                                                <i class="icon icon-arrow-with-circle-right"></i>
-                                            </a>
-                                            {% else %}
-                                            &nbsp;
-                                            {% endif %}
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    </div>
+                </div>
+                <!-- end pagination -->
