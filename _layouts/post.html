@@ -18,33 +18,30 @@ layout: default
 {% else %}
 {% assign reading_time = minutes | append: ' minutes' %}
 {% endif %}
-
-                        <ul class="list-group media-list media-list-stream mb-4">
-                            <li class="media list-group-item p-4">
-                                {% if page.image %}
-                                <img class="media-object d-flex align-self-start mr-3"
-                                     src="{{ page.image }}"
-                                     alt="{{ page.image-alt | default: '' }}" />
-                                {% endif %}
-                                <div class="media-body">
-                                    <div class="media-heading">
-                                        <small class="float-right text-muted">
-                                            {{ reading_time }} &bull; {{ page.date | date: "%Y-%m-%d" }}
-                                        </small>
-                                        <h6>
-                                            <a href="{{ page.url }}">{{ page.title }}</a>
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        {{ page.content }}
-                                    </div>
-                                    <div class="media-body-actions">
-                                        {% for tag in page.tags %}
-                                        <button class="btn btn-primary-outline btn-sm">
-                                            {{ tag }}
-                                        </button>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                <!-- begin post-detail -->
+                <div class="post-detail section-container">
+                    <h4 class="post-title">
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </h4>
+                    <div class="post-by">
+                        {{ reading_time }} &bull; {{ page.date | date: "%Y-%m-%d" }}
+                        <span class="divider">|</span>
+                        {% for tag in page.tags %}<a href="/tags#{{ tag | slugify }}" class="badge bg-success">{{ tag }}</a>&nbsp;{% endfor %}
+                    </div>
+                    {% if page.image %}
+                    <!-- begin post-image -->
+                    <div class="post-image">
+                        <div class="post-image-cover"
+                             style="background-image: url({{ page.image }})"></div>
+                    </div>
+                    <!-- end post-image -->
+                    {% endif %}
+                    <!-- begin post-desc -->
+                    <div class="post-desc">
+                        <p>
+                            {{ page.content }}
+                        </p>
+                    </div>
+                    <!-- end post-desc -->
+                </div>
+                <!-- end post-detail -->

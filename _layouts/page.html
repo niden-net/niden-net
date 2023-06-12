@@ -1,18 +1,13 @@
 ---
 layout: default
 ---
-
-                        <ul class="list-group media-list media-list-stream mb-4">
-                            <li class="media list-group-item p-4">
-                                <div class="media-body">
-                                    <div class="media-heading">
-                                        <h6>
-                                            <a href="{{ page.url }}">{{ page.title }}</a>
-                                        </h6>
-                                    </div>
-                                    <p>
-                                        {{ content }}
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+                <!-- begin section-container -->
+                <div class="section-container">
+                    <h3 class="about-me-title">
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </h3>
+                    <p class="about-me-desc">
+                        {{ content }}
+                    </p>
+                </div>
+                <!-- end section-container -->
