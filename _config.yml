@@ -9,12 +9,9 @@ url: https://niden.net
 
 social:
   email:
-  facebook:
   github: niden
   rss: niden
-  twitter:
 
-disqus:
 google_analytics: 'UA-26971391-1'
 
 paginate: 5
@@ -41,10 +38,21 @@ kramdown:
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-archives
 
 include:
   - _pages
   - _redirects
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/:month/'
+    day: '/archive/:year/:month/:day/'
+    tag: '/tag/:name/'
+#    category: '/category/:name/'
 
 sass:
   style: compressed # You might prefer to minify using :compressed
@@ -65,3 +73,4 @@ exclude:
   - LICENSE
   - README.md
   - serve
+  - color_admin_v5.1.5
