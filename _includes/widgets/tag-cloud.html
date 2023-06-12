@@ -1,13 +1,19 @@
-                    <div class="card card-default card-link-list">
-                        <div class="card-body">
-                            <h5 class="mb-3">Tag Cloud</h5>
-                            {% assign tags = site.tags | sort %}
-                            {% for tag in tags %}
-                            <span style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-                                <a href="/tags#{{ tag | first | slugify }}">
-                                    {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-                                </a>
-                            </span>
-                            {% endfor %}
-                        </div>
-                    </div>
+                <!-- begin section-container -->
+                <div class="section-container">
+                    <h4 class="section-title">
+                        <span>
+                            <a href="/tag">Tag Cloud</a>
+                        </span>
+                    </h4>
+                    <ul class="sidebar-recent-post">
+                        {% assign tags = site.tags | sort %}
+                        {% for tag in tags %}
+                        <span style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                            <a href="/tag/{{ tag | first | slugify }}">
+                                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                            </a>
+                        </span>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- end section-container -->

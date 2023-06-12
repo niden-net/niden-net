@@ -3,8 +3,16 @@ layout: default
 ---
                 <!-- begin section-container -->
                 <div class="section-container">
+                    {% if page.image %}
+                    <div class="post-image">
+                        <div class="post-image-cover"
+                             style="background-image: url({{ page.image }})"></div>
+                    </div>
+                    {% endif %}
                     <h3 class="about-me-title">
-                        <a href="{{ page.url }}">{{ page.title }}</a>
+                        <a href="{{page.url }}">
+                            {{ page.title }}
+                        </a>
                     </h3>
                     <p class="about-me-desc">
                         {{ content }}

@@ -1,5 +1,5 @@
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}">
     <meta name="generator" content="{{ site.generator }}">
@@ -32,22 +32,26 @@
     <link rel="canonical" href="{{ site.url }}">
     <link rel="publisher" href="{{ site.url }}">
     <link rel="author" href="{{ site.url }}">
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico' />
 
     <link rel="alternate"
           type="application/rss+xml"
           title="{{ site.name }} - {{ site.description }}"
           href="/sitemap.xml">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Titillium+Web&display=swap"
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap"
           rel='stylesheet'
-          type='text/css'
-          rel="preload">
-    <link href="/assets/css/toolkit.css?v=1111"
-          rel="stylesheet">
-    <link href="/assets/css/application.css?v=1111"
-          rel="stylesheet">
-    <link href="/assets/css/highlight.css?v=1111"
-          rel="stylesheet"
-          type="text/css" />
+          type='text/css'>
+    <link href="/assets/css/blog/vendor.min.css"
+          rel="stylesheet" />
+    <link href="/assets/css/blog/app.min.css"
+          rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dark.min.css"
+          integrity="sha512-bfLTSZK4qMP/TWeS1XJAR/VDX0Uhe84nN5YmpKk5x8lMkV0D+LwbuxaJMYTPIV13FzEv4CUOhHoc+xZBDgG9QA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+          rel="stylesheet" />
+    <!-- ================== END core-css ================== -->
+
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
