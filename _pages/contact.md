@@ -28,7 +28,7 @@ permalink: /contact
                     Name <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control">
+                    <input type="text" id="form_name" class="form-control">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -36,7 +36,7 @@ permalink: /contact
                     Email <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control">
+                    <input type="text" id="form_email" class="form-control">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -44,7 +44,7 @@ permalink: /contact
                     Message <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <textarea class="form-control" rows="10"></textarea>
+                    <textarea id="form_message" class="form-control" rows="10"></textarea>
                 </div>
             </div>
             <div class="mb-3 row">
@@ -74,11 +74,13 @@ permalink: /contact
 
         const myForm = event.target;
         var okFlag = true;
-        $('#niden-net-contact').each(function() {
-            if ($(this).val() === '') {
-                okFlag = false;
-            }
-        });
+        if (
+            $('#form_name').val() === '' ||
+            $('#form_email').val() === '' || 
+            $('#form_message').val() === ''
+        ) {
+            okFlag = false;
+        }
 
         if (okFlag) {
             const formData = new FormData(myForm);
