@@ -66,3 +66,39 @@ permalink: /contact
     <!-- end col-8 -->
 </div>
 <!-- end row -->
+
+<script type="application/javascript">
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const myForm = event.target;
+        var okFlag = true;
+        myForm.each(function() {
+            if ($(this).val() === '') {
+                okFlag = false;
+            }
+        });
+
+        if (okFlag) {
+            const formData = new FormData(myForm);
+            var payload = {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            };
+    
+            fetch("/", payload)
+                .then(() => {
+                    alert("Thank you for your query. We will get back to you shortly.");
+                    window.location.reload();
+                })
+                .catch((error) => alert(error));
+        } else {
+            alert("Please fill all the fields.")
+        }
+    };
+
+    document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
+</script>
