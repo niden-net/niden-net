@@ -68,27 +68,65 @@ permalink: /contact
 </div>
 <!-- end row -->
 
+
+<div class="modal fade" 
+     id="modal-contact" 
+     tabindex="-1" 
+     role="dialog" 
+     aria-labelledby="modal-contact-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" 
+                class="close" 
+                data-dismiss="modal" 
+                aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="modal-contact-label"></h4>
+      </div>
+      <div class="modal-body" id="modal-contact-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script type="application/javascript">
+    document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+        const contactForm = event.target;
+        const contactModal = $('#modal-contact');
+        const formData = new FormData(contactForm);
         var payload = {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         };
-
+        
+        contactModal.modal({ show: false });
+        
         fetch("/", payload)
             .then(() => {
-                alert("Thank you for your query. We will get back to you shortly.");
+                $('#modal-contact-label').innerHtml('Confirmation');
+                $('#modal-contact-body').innerHtml('Thank you for your query. We will get back to you shortly.');
+                contactModal.show();
                 window.location.reload();
             })
-            .catch((error) => alert(error));
-    };
+            .catch((error) => {
+                $('#modal-contact-label').innerHtml('Error');
+                $('#modal-contact-body').innerHtml(error);
+                contactModal.show();
 
-    document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
+            });
+    };
 </script>
