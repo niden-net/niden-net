@@ -14,6 +14,7 @@ permalink: /contact
     <div class="col-md">
         <form class="form-horizontal" 
               name="niden-net-contact"  
+              id="niden-net-contact"  
               data-netlify="true" 
               data-netlify-recaptcha="true">
             <div style="display: none;">
@@ -73,7 +74,7 @@ permalink: /contact
 
         const myForm = event.target;
         var okFlag = true;
-        myForm.each(function() {
+        $('#niden-net-contact').each(function() {
             if ($(this).val() === '') {
                 okFlag = false;
             }
