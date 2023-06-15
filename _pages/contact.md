@@ -13,8 +13,7 @@ permalink: /contact
     <!-- begin col-12 -->
     <div class="col-md">
         <form class="form-horizontal" 
-              name="niden-net-contact"  
-              id="niden-net-contact"  
+              name="niden-net-contact" 
               data-netlify="true" 
               data-netlify-recaptcha="true">
             <div style="display: none;">
@@ -28,7 +27,7 @@ permalink: /contact
                     Name <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <input type="text" id="form_name" class="form-control">
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -36,7 +35,7 @@ permalink: /contact
                     Email <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <input type="text" id="form_email" class="form-control">
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -44,7 +43,7 @@ permalink: /contact
                     Message <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <textarea id="form_message" class="form-control" rows="10"></textarea>
+                    <textarea class="form-control" rows="10"></textarea>
                 </div>
             </div>
             <div class="mb-3 row">
