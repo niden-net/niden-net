@@ -97,10 +97,6 @@ permalink: /contact
 </div>
 
 <script type="application/javascript">
-    document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
-
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -108,8 +104,8 @@ permalink: /contact
         const contactModal = $('#modal-contact');
         const formData = new FormData(contactForm);
         var payload = {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams(formData).toString(),
         };
         
@@ -117,16 +113,19 @@ permalink: /contact
         
         fetch("/", payload)
             .then(() => {
-                $('#modal-contact-label').innerHtml('Confirmation');
-                $('#modal-contact-body').innerHtml('Thank you for your query. We will get back to you shortly.');
+                $('#modal-contact-label').html('Confirmation');
+                $('#modal-contact-body').html('Thank you for your query. We will get back to you shortly.');
                 contactModal.show();
                 window.location.reload();
             })
             .catch((error) => {
-                $('#modal-contact-label').innerHtml('Error');
-                $('#modal-contact-body').innerHtml(error);
+                $('#modal-contact-label').html('Error');
+                $('#modal-contact-body').html(error);
                 contactModal.show();
-
             });
     };
+
+    document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
 </script>
