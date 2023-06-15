@@ -46,7 +46,11 @@ permalink: /contact
                 </div>
             </div>
             <div class="mb-3 row">
-                <div data-netlify-recaptcha="true"></div>
+                <label class="col-form-label col-md-3 text-md-right">
+                </label>
+                <div class="col-md-9">
+                    <div data-netlify-recaptcha="true"></div>
+                </div>
             </div>
             <div class="mb-3 row">
                 <label class="col-form-label col-md-3 text-md-right"></label>
