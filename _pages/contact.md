@@ -28,7 +28,7 @@ permalink: /contact
                     Name <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control">
+                    <input type="text" name="query-name" class="form-control">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -36,7 +36,7 @@ permalink: /contact
                     Email <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control">
+                    <input type="text" name="query-email" class="form-control">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -44,7 +44,7 @@ permalink: /contact
                     Message <span class="text-danger">*</span>
                 </label>
                 <div class="col-md-9">
-                    <textarea class="form-control" rows="10"></textarea>
+                    <textarea name="query-message" class="form-control" rows="10"></textarea>
                 </div>
             </div>
             <div class="mb-3 row">
