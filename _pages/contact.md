@@ -13,6 +13,7 @@ permalink: /contact
     <!-- begin col-12 -->
     <div class="col-md">
         <form class="form-horizontal" 
+              name="niden-net-contact"  
               data-netlify="true" 
               data-netlify-recaptcha="true">
             <div style="display: none;">
