@@ -14,6 +14,7 @@ permalink: /contact
     <div class="col-md">
         <form class="form-horizontal" 
               name="niden-net-contact" 
+              method="post"
               data-netlify="true" 
               data-netlify-recaptcha="true">
             <div style="display: none;">
