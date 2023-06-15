@@ -68,61 +68,24 @@ permalink: /contact
 </div>
 <!-- end row -->
 
-
-<div class="modal fade" 
-     id="modal-contact" 
-     tabindex="-1" 
-     role="dialog" 
-     aria-labelledby="modal-contact-label">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" 
-                class="close" 
-                data-dismiss="modal" 
-                aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="modal-contact-label"></h4>
-      </div>
-      <div class="modal-body" id="modal-contact-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">
-            Close
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script type="application/javascript">
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const contactForm = event.target;
-        const contactModal = $('#modal-contact');
-        const formData = new FormData(contactForm);
+        const myForm = event.target;
+        const formData = new FormData(myForm);
         var payload = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         };
         
-        contactModal.modal({ show: false });
-        
         fetch("/", payload)
             .then(() => {
-                $('#modal-contact-label').html('Confirmation');
-                $('#modal-contact-body').html('Thank you for your query. We will get back to you shortly.');
-                contactModal.show();
+                alert("Thank you for your query. We will get back to you shortly.");
                 window.location.reload();
             })
-            .catch((error) => {
-                $('#modal-contact-label').html('Error');
-                $('#modal-contact-body').html(error);
-                contactModal.show();
-            });
+            .catch((error) => alert(error));
     };
 
     document
