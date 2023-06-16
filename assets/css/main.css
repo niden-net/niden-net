@@ -1,3 +1,4 @@
-html * {
+p, li, address, dd, blockquote, td, th, a,
+body, h1, h2, h3, h4, h5, h6, p, dl, ul, ol {
     font-family: "Titillium Web", "Source Code Pro", sans-serif;
 }
