@@ -4,18 +4,22 @@ title: Hosting
 permalink: /hosting
 ---
 
-Throughout the years, I needed hosting for my personal websites or those of my clients. I have utilized the services of big players such as Amazon, Linode, DigitalOcean etc. but there has always been something that they were lacking, or they ended up being too expensive.
+If you are in need of a website for your personal or business needs, I can now offer my services to help you fulfill this need.
 
-The last few years, I have distanced myself from the plain vanilla model, which is _use WordPress for a simple website_.
+Whether you have an existing site or thinking of a new one, I would be happy to have a discussion with you, to figure out what is best for you.
 
-WordPress is a great platform, and although the core installation is fairly secure, the addons that people use, are not so much. As such, hackers will be able to find a back door through a plugin that has a defect (that they know of or not) and destroy a site's content.
+The websites that I create and host, are all static. This means that your website can never be hacked or deformed, and additionally it is going to be very fast.
 
-Because of the above, I have moved my efforts to create static websites and offer them to my customers. A static website cannot be hacked, and it is much faster than any other website that uses a web language.
+I am utilizing a static website generator called [Jekyll](https://jekyllrb.com/), which generates a website by parsing the main components of the site (and relevant programming). The output is then uploaded to the hosting company and becomes live.
 
-Static sites can be easily updated by the owner, using a simple interface, and once updated, they are pre-built, uploaded and the changes propagated to the live site. The static generator I prefer using is [Jekyll](https://jekyllrb.com/).
-
-If you are interested in building a simple website for your company, to have a presence on the Internet, or converting your existing site to a static one, feel free to contact me. I would be more than happy to discuss your project needs and come up with a plan that suits you best. Setup for the most part will be free, and the per-month hosting is extremely reasonable.
+All the code for the website is stored in a Git repository, ensuring that there is a record of any changes made to the site throughout its life.
 
 Please note though, I am not a UI designer. As such, any solution for your website would have to come from pre-made templates by others. I can only do the programming and set up parts, the content will be all yours.
+
+The websites that I create can have content that rarely changes or are dynamic, with content that changes frequently, such as a blog, newsletter updates etc.
+
+For the most part, the discussion and the setup are going to be free, and the monthly hosting is extremely reasonable.
+
+I would be happy to have a chat with you to figure out your needs and see if I can help. 
 
 [Contact Me](/contact)
