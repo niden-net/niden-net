@@ -27,4 +27,4 @@ jobs:
         run: bundle exec jekyll build -d _site
 
       - name: Test
-        run: bundle exec htmlproofer --ignore-urls "/archive.is/" ./_site
+        run: bundle exec htmlproofer --ignore-urls "/archive.ph/,/sane-project.org/" ./_site
