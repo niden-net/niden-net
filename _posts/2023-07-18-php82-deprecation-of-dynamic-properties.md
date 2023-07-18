@@ -154,6 +154,7 @@ Ideally, we would have loved to be able to rewrite our code so that we do not ha
 
 To add the `#[AllowDynamicProperties]` annotation in Zephir would be a nightmare, and it will require a lot of work, so the `stdClass` solution was the best one.
 
+The fix was [here](https://github.com/phalcon/cphalcon/pull/16376)
 
 [php-releases]: https://www.php.net/releases/index.php
 [phalcon]: https://phalcon.io
