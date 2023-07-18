@@ -15,7 +15,7 @@ permalink: /archive
     <div class="widget-list-item">
         <div class="widget-list-content">
             <h4 class="widget-list-title">
-                <a href="/{{ year }}/{{ month }}/">
+                <a href="/archive/{{ year }}/{{ month }}/">
                     {{ year }}-{{ month }}
                 </a>
             </h4>
