@@ -48,11 +48,11 @@ Frameworks, such as Phalcon rely on dynamic properties to assign data to the vie
 
 Until PHP 9.0 becomes the norm, we have to adjust our code to avoid the deprecation warnings and rewrite parts of our framework/application to avoid the dynamic properties.
 
-We have three exceptions for this deprecation.
+We have three potential solutions for this deprecation (other than fully refactoring our code).
 
 #### AllowDynamicProperties attribute
 
-The #[AllowDynamicProperties] attribute introduced in PHP 8.2, we can instruct PHP to stop emitting this deprecation notice. Even child classes of that class will inherit this behavior.
+The `#[AllowDynamicProperties]` attribute introduced in PHP 8.2, we can instruct PHP to stop emitting this deprecation notice. Even child classes of that class will inherit this behavior.
 
 ```php
 <?php
@@ -73,7 +73,7 @@ $invoice->inv_number = 'INV-1234';
 
 #### `stdClass` and its children
 
-`stdClass` already has #[AllowDynamicProperties] attribute defined, so extending `stdClass` would allow dynamic properties
+`stdClass` already has `#[AllowDynamicProperties]` attribute defined, so extending `stdClass` would allow dynamic properties
 
 ```php
 <?php
