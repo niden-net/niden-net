@@ -22,7 +22,7 @@ As the years passed, our scanner model has been discontinued, therefore there ar
 
 Recently, I decided to bring the scanner to my office and connect it to my Linux workstation. There had to be a way to scan documents from it. 
 
-After a lot of research, head scratching and playing around with [SANE (Scanner Access Now Easy)](https://sane-project.org), I was ready to give up, until I discovered a blog post by [Josh Archer](https://www.josharcher.uk/code/install-scansnap-s1300-drivers-linux/) regarding the matter. I have to thank him for sharing this information with all of us, since his solution was what made things work for me.
+After a lot of research, head scratching and playing around with [SANE (Scanner Access Now Easy)](http://sane-project.org), I was ready to give up, until I discovered a blog post by [Josh Archer](https://www.josharcher.uk/code/install-scansnap-s1300-drivers-linux/) regarding the matter. I have to thank him for sharing this information with all of us, since his solution was what made things work for me.
 
 This post concentrates on what I did to make my scanner work. For further information, please visit [his post](https://www.josharcher.uk/code/install-scansnap-s1300-drivers-linux/).
 
@@ -157,8 +157,3 @@ Open the scanning application (in my case `Document Scanner`). The application w
 I did notice that the scanning application is not as powerful as the one offered for Windows environments. In the past, when I was using Google Drive, I could just scan any document and the ScanSnap application suite will send it directly to my drive. Additionally, the suite has scan to print, scan to folder and other handy features. 
 
 The Linux application (Document Scanner) does not have all this functionality, which is perfectly fine with me. All I have to do is play a bit with the settings according to what I am scanning, and I will end up with a PDF in the end saved to where I need it to be.
-
-
-
-
-

@@ -78,16 +78,17 @@ layout: default
                 <div class="section-container">
                     <div class="pagination-container">
                         <ul class="pagination justify-content-center">
+
                             <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}">
                                 <a class="badge bg-success"
-                                   href="{{ paginator.previous_page_path }}">
+                                   href="{{ paginator.previous_page_path }}{% unless paginator.previous_page %}#{% endunless %}">
                                     <i class="fa fa-arrow-circle-left"></i>
                                 </a>
                             </li>
                             <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}">
                                 <a class="badge bg-success"
-                                   href="{{ paginator.next_page_path }}">
-                                    <i class="fa fa-arrow-circle-right"></i>
+                                   href="{{ paginator.next_page_path }}{% unless paginator.next_page %}#{% endunless %}">
+                                    <i class="fa fa-arrow-circle-left"></i>
                                 </a>
                             </li>
                         </ul>
