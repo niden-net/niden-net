@@ -21,7 +21,7 @@ Services like [Google Drive](https://drive.google.com/), [iCloud](https://www.ic
 
 #### Background
 
-My current setup at home consists of a few notebooks, a mac-mini and a Shuttle computer with a 1TB hard drive, where I store all my pictures, some movies and my songs. I use [Google Music Manager](https://music.google.com/) for my songs so that they are available at any time on my android phone, [Picasa](https://picasaweb.google.com/)> to be able to share my photos with my family and friends and [Google Drive](https://drive.google.com/) so as to keep every folder I have in sync. I also use RocksBox to stream some of that content (especially the movies) upstairs on either of our TVs through the [Roku](https://www.roku.com/) boxes we have.
+My current setup at home consists of a few notebooks, a mac-mini and a Shuttle computer with a 1TB hard drive, where I store all my pictures, some movies and my songs. I use [Google Music Manager](https://music.google.com/) for my songs so that they are available at any time on my android phone, Picasa to be able to share my photos with my family and friends and [Google Drive](https://drive.google.com/) so as to keep every folder I have in sync. I also use RocksBox to stream some of that content (especially the movies) upstairs on either of our TVs through the [Roku](https://www.roku.com/) boxes we have.
 
 Recently I went downstairs and noticed that the Shuttle computer (which run Windows XP at the time) was stuck in the POST screen. I rebooted the machine but it refused to load Windows, getting stuck either in the computer's POST screen or in the *Starting Windows*.
 
