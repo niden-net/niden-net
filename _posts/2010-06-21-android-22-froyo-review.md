@@ -24,7 +24,7 @@ Through my regular research on the Internet, I found a few interesting blog post
 
 #### Upgrade to Froyo
 
-Below is how I upgraded my Nexus One to Froyo. I had a couple of failed attempts, loads of Googling, but I finally managed to get it to work. Luckily a couple of days later an [article](https://lifehacker.com/5545347/get-android-22-on-your-nexus-one-without-the-wait) appeared on Lifehacker which confirmed that the steps I took were the correct ones!
+Below is how I upgraded my Nexus One to Froyo. I had a couple of failed attempts, loads of Googling, but I finally managed to get it to work. Luckily a couple of days later an [article][lifehacker] appeared on Lifehacker which confirmed that the steps I took were the correct ones!
 
 <img class="post-image" src="/assets/files/2010-06-21-froyo.png" alt="Froyo" />
 
@@ -32,7 +32,7 @@ I connected my Nexus One to my computer using the USB cable.
 
 The phone was detected and I mounted the SD card from the phone (bring down the notification area and select the USB connection – select mount to mount the SD card)
 
-When I performed these steps I had to navigate to a URL on the Android website (see [article](https://lifehacker.com/5545347/get-android-22-on-your-nexus-one-without-the-wait) on Lifehacker).
+When I performed these steps I had to navigate to a URL on the Android website (see [article][lifehacker] on Lifehacker).
 
 I copied the file and pasted it on my newly mounted drive which was the SD card of my Nexus One
 
@@ -330,3 +330,5 @@ There has been another blog post on AndroidAndMe explaining how to update Froyo 
 ##### Update 2010-07-04
 
 Happy 4th of July! It came with the update for Froyo (officially now) on my cellphone. I am now running the FFR91 build (and so does my wife).
+
+[lifehacker]: https://web.archive.org/web/20100525101120/https://lifehacker.com/5545347/get-android-22-on-your-nexus-one-without-the-wait
