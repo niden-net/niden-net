@@ -86,10 +86,8 @@ In my view, Google has done it again. They now offer an extremely affordable and
 #### References
 
 * [Google Docs](https://docs.google.com/)
-* [Picasa Web Albums](https://picasaweb.google.com/)
 * [Data Liberation](https://support.google.com/accounts/answer/3024190/)
 * [Google Account - Manage Storage](https://www.google.com/accounts/b/0/ManageStorage)
-* [Photo and Video Requirements: Size Limits for Picasa Web Albums](https://support.google.com/picasa/answer/6383491)
 * [Google Storage - How it Works](https://support.google.com/drive/answer/2375123)
 * [Google Account - Purchase additional storage](https://www.google.com/accounts/b/0/PurchaseStorage?hl=en_US)
 * [Google's Help Center](https://support.google.com/)
