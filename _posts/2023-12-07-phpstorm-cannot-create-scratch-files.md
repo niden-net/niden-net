@@ -67,7 +67,7 @@ drwxr-xr-x  2 nikos nikos  4096 Dec  7 08:42 options
 -rw-r--r--  1 nikos nikos    10 Nov 29 18:42 phpstorm64.vmoptions
 -rw-r--r--  1 nikos nikos 31076 Dec  2 19:23 phpstorm.key
 -rw-r--r--  1 nikos nikos 31076 Nov 29 18:50 plugin_PCWMP.license
-drwxr-xr-x  2 root  root   4096 Nov 30 21:41 scratches             <<<<<
+drwxr-xr-x  2 root  root   4096 Nov 30 21:41 scratches             <====
 drwxr-xr-x  8 nikos nikos  4096 Nov 29 18:43 settingsSync
 drwxr-xr-x  2 nikos nikos  4096 Nov 29 18:41 ssl
 drwxr-xr-x  2 nikos nikos  4096 Dec  5 09:06 tasks
@@ -83,3 +83,5 @@ sudo chown nikos:nikos -R ~/.config/JetBrains/PhpStorm2023.3/scratches
 ```
 
 and now the scratches are working in PhpStorm.
+
+I hope this helps.
