@@ -16,7 +16,7 @@ Google Maps is very convenient and accurate. It helps us with finding places and
 > This is part of a [series](/post/moving-away-from-google-series/) of blog posts, outlining my efforts to no longer use Google products
 {: .alert .alert-warning }
 
-Completely removing Google Maps and the related _tracking_ functionality is near impossible. The Android operating system regularly [reports back](https://apnews.com/828aefab64d4411bac257a07c1af0ecb/AP-Exclusive:-Google-tracks-your-movements,-like-it-or-not) to Google servers the location of your phone, as well as your activity (walking, driving etc.), whether you like it or not.
+Completely removing Google Maps and the related _tracking_ functionality is near impossible. The Android operating system regularly [reports back](https://apnews.com/article/828aefab64d4411bac257a07c1af0ecb)) to Google servers the location of your phone, as well as your activity (walking, driving etc.), whether you like it or not.
 
 After I uninstalled all the updates for Google Maps, I set the application to not auto update. However this does not stop the tracking. I switched off the Location/GPS option from the settings and only enable it when it is absolutely necessary. Sadly, even if you use a VPN service, it will not help you because the location service utilizes the GPS feature of your phone and not the Internet one.
 
