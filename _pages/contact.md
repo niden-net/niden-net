@@ -9,5 +9,5 @@ permalink: /contact
     would be happy to help you find the best solution for your needs.
     <br/>
     <br/>
-    <code>contact</code> <code>at</code> my domain name.
+    <code>contact</code> at (<code>@</code>) my domain name.
 </p>
