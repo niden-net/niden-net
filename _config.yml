@@ -13,6 +13,8 @@ social:
   rss: niden
 
 google_analytics: 'UA-26971391-1'
+cloudflare:
+  turnstile_key: '0x4AAAAAAAOgQrQzXntz4F6f'
 
 paginate: 5
 paginate_path: '/page-:num'
