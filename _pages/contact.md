@@ -44,13 +44,6 @@ permalink: /contact
                 </div>
             </div>
             <div class="mb-3 row">
-                <div class="col-md-9 text-left">
-                    <div class="cf-turnstile" 
-                        data-sitekey="{{ site.cloudflare.turnstile_key }}" 
-                        data-callback="javascriptCallback"></div>
-                </div>
-            </div>
-            <div class="mb-3 row">
                 <label class="col-form-label col-md-3 text-md-right"></label>
                 <div class="col-md-9 text-left">
                     <button type="submit" class="btn btn-dark btn-lg btn-block">
