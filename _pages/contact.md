@@ -8,13 +8,13 @@ permalink: /contact
     If you have a project you would like to discuss, get in touch with me. I 
     would be happy to help you find the best solution for your needs.
 </p>
-<!--               action="https://fabform.io/f/wIY7t0E" -->
 <!-- begin row -->
 <div class="row row-space-30">
     <!-- begin col-12 -->
     <div class="col-md">
         <form class="form-horizontal" 
               name="niden-net-contact" 
+              action="https://fabform.io/f/wIY7t0E"
               method="post">
             <div class="mb-3 row">
                 <label for="query-name"
