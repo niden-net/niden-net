@@ -4,22 +4,34 @@ title: Hosting
 permalink: /hosting
 ---
 
-If you are in need of a website for your personal or business needs, I can now offer my services to help you fulfill this need.
+Welcome to my website development services, where I cater to your personal and business needs. Whether you are looking to establish a new online presence or enhance an existing one, I am here to assist you.
 
-Whether you have an existing site or thinking of a new one, I would be happy to have a discussion with you, to figure out what is best for you.
+Key Features:
 
-The websites that I create and host, are all static. This means that your website can never be hacked or deformed, and additionally it is going to be very fast.
+### Static Websites for Security and Speed:
+All the websites that I create for customers are static, ensuring heightened security against hacking and distortion. Additionally, static sites boast faster loading times, providing an optimal user experience.
 
-I am utilizing a static website generator called [Jekyll](https://jekyllrb.com/), which generates a website by parsing the main components of the site (and relevant programming). The output is then uploaded to the hosting company and becomes live.
+### Powered by Jekyll:
+I employ Jekyll, a static website generator, to create websites efficiently. This process involves parsing the main components of the site and relevant programming. The output is then uploaded to the hosting company, making your website live.
 
-All the code for the website is stored in a Git repository, ensuring that there is a record of any changes made to the site throughout its life.
+### Version Control with Git:
+Your website's code is stored in a Git repository, guaranteeing a comprehensive record of any changes made throughout its life cycle.
 
-Please note though, I am not a UI designer. As such, any solution for your website would have to come from pre-made templates by others. I can only do the programming and set up parts, the content will be all yours.
+### Tailored Solutions:
+While I specialize in programming and setup, please note that I am not a UI designers. The visual elements of your website will be derived from pre-made templates, allowing you to retain full control over your content.
 
-The websites that I create can have content that rarely changes or are dynamic, with content that changes frequently, such as a blog, newsletter updates etc.
+### Dynamic Content Options:
+Whether you need static content or dynamic elements like a blog or newsletter updates, my services are customizable to meet your specific requirements.
 
-For the most part, the discussion and the setup are going to be free, and the monthly hosting is extremely reasonable.
+### Consultation and Setup:
+I offer complimentary consultations to discuss your needs and determine the best solution for you. The initial setup is also part of my service, ensuring a seamless experience for you.
 
-I would be happy to have a chat with you to figure out your needs and see if I can help. 
+### Reasonable Hosting Fees:
+The monthly hosting fees are highly reasonable, making professional website development accessible to all.
+
+### Get in Touch:
+I would be delighted to have a chat with you to understand your needs better. Feel free to reach out, and let's explore how we can collaborate to create the perfect online presence for you.
+
+Thank you for considering my services. We look forward to the opportunity to work with you.
 
 [Contact Me](/contact)
