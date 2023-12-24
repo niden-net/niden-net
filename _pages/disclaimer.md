@@ -4,7 +4,7 @@ title: Disclaimer
 permalink: /disclaimer
 ---
 
-### Disclaimer: Personal Blog Statement
+### Personal Blog Statement:
 
 Welcome to my personal blog. The views expressed here are solely mine and do not reflect those of my current or past employers. While I may reference work I've undertaken for these employers, I ensure that the content does not violate copyrighted/trademarked material or breach confidentiality agreements.
 
