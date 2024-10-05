@@ -9,7 +9,7 @@ tags:
 I have been using PhpStorm for a decade now I believe that it is the best IDE for PHP developers.
 
 ## TLDR
-Linux: Check the permissions in `~/.config/JetBrains/PhpStorm2023.3/` for the `scratches` folder. (your PhpStorm version might be different so check the folder name also.
+> Linux: Check the permissions in `~/.config/JetBrains/PhpStorm2023.3/` for the `scratches` folder. (your PhpStorm version might be different so check the folder name also.
 {:.alert .alert-info }
 
 ## Storytime
